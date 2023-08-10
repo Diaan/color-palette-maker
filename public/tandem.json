@@ -1,0 +1,212 @@
+{
+  "palette": [
+    {
+      "name": "sea-mist",
+      "color": "#a7bab1"
+    },
+    {
+      "name": "sherbert",
+      "color": "#f3cbaa"
+    },
+    {
+      "name": "starfish",
+      "color": "#efb19c"
+    },
+    {
+      "name": "taffy",
+      "color": "#ef6fa1"
+    },
+    {
+      "name": "tangerine",
+      "color": "#eb8a3b"
+    },
+    {
+      "name": "tiger",
+      "color": "#a87214"
+    },
+    {
+      "name": "truffle",
+      "color": "#3c261f"
+    },
+    {
+      "name": "unicorn",
+      "color": "#dbc2e6"
+    },
+    {
+      "name": "sand",
+      "color": "#dac2b1"
+    },
+    {
+      "name": "white-peach",
+      "color": "#f5e6d7"
+    },
+    {
+      "name": "sage",
+      "color": "#8a9782"
+    },
+    {
+      "name": "wellington",
+      "color": "#26261d"
+    },
+    {
+      "name": "north-sea",
+      "color": "#4e7479"
+    },
+    {
+      "name": "norway",
+      "color": "#1f444f"
+    },
+    {
+      "name": "pebble",
+      "color": "#c0c0bc"
+    },
+    {
+      "name": "pickle-juice",
+      "color": "#dee95d"
+    },
+    {
+      "name": "powder",
+      "color": "#f4e0e3"
+    },
+    {
+      "name": "red-hot",
+      "color": "#e3301c"
+    },
+    {
+      "name": "roswitha",
+      "color": "#c77875"
+    },
+    {
+      "name": "royal",
+      "color": "#1d2ea3"
+    },
+    {
+      "name": "mouse",
+      "color": "#3f3e3e"
+    },
+    {
+      "name": "morgaine",
+      "color": "#3e5a63"
+    },
+    {
+      "name": "glass",
+      "color": "#d0e5e4"
+    },
+    {
+      "name": "glow",
+      "color": "#e3af13"
+    },
+    {
+      "name": "grass-green",
+      "color": "#49ba76"
+    },
+    {
+      "name": "green-olive",
+      "color": "#575b08"
+    },
+    {
+      "name": "corduroy",
+      "color": "#3f1724"
+    },
+    {
+      "name": "dijon",
+      "color": "#b29012"
+    },
+    {
+      "name": "birch-tree",
+      "color": "#f0ebe3"
+    },
+    {
+      "name": "blue-spruce",
+      "color": "#8f9a9c"
+    },
+    {
+      "name": "greykjavik",
+      "color": "#89868d"
+    },
+    {
+      "name": "kardemumma",
+      "color": "#c04d2f"
+    },
+    {
+      "name": "marinière",
+      "color": "#1f1d25"
+    },
+    {
+      "name": "mocha",
+      "color": "#795e4e"
+    },
+    {
+      "name": "fuchsia",
+      "color": "#df2f6d"
+    },
+    {
+      "name": "french-grey",
+      "color": "#807c77"
+    },
+    {
+      "name": "chestnut",
+      "color": "#6e321b"
+    },
+    {
+      "name": "copenhagen",
+      "color": "#161719"
+    },
+    {
+      "name": "dutch-sky",
+      "color": "#b0b1b5"
+    },
+    {
+      "name": "enchanted",
+      "color": "#294650"
+    },
+    {
+      "name": "fandango",
+      "color": "#821d6e"
+    },
+    {
+      "name": "flamingo",
+      "color": "#eea095"
+    },
+    {
+      "name": "canal-house",
+      "color": "#403c43"
+    },
+    {
+      "name": "buttercup",
+      "color": "#efd36e"
+    },
+    {
+      "name": "avocado",
+      "color": "#969b2c"
+    },
+    {
+      "name": "beatrix",
+      "color": "#e95644"
+    },
+    {
+      "name": "berry",
+      "color": "#902025"
+    },
+    {
+      "name": "bianca",
+      "color": "#f4de0b"
+    },
+    {
+      "name": "biscuit",
+      "color": "#ac8057"
+    },
+    {
+      "name": "brackish",
+      "color": "#38879a"
+    },
+    {
+      "name": "aubergine",
+      "color": "#2e1f2a"
+    },
+    {
+      "name": "aquamarine",
+      "color": "#88c4cc"
+    }
+  ]
+}
