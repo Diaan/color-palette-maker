@@ -29,14 +29,14 @@ export class MySortableList extends LitElement {
     }
   }
 
-  handleDragStart(e:DragEvent){
+  handleDragStart(){
     this.style.opacity = '0.4';
 
     this.dragSrcEl = this;
     
   }
 
-  handleDragEnd(e:DragEvent){
+  handleDragEnd(){
     this.style.opacity = '1';
     this.dragSrcEl = undefined;
     console.log(
