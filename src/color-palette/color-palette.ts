@@ -14,7 +14,9 @@ export class MyColorPalette extends LitElement {
   /**
    * The number of times the button has been clicked.
    */
-  @property() palette: PaletteColor[] = [{ color: '#456789', name: 'bla' }];
+  @property({type:Array}) palette: PaletteColor[] = [{ color: '#456789', name: 'bla' }];
+
+  @property({attribute:'number-of-colors'}) numberOfColors: number = 1;
 
   @state() selectedColors: PaletteColor[] = [
     {
@@ -52,11 +54,14 @@ export class MyColorPalette extends LitElement {
 
       <h2>Selected colors:</h2>
       <section class="selected">
-      ${this.selectedColors.map(
-        (color) =>
+        ${this.selectedColors.map(
+          (color) =>
           html`<my-color-card .palette=${color} showname="true" @click=${() =>
             this.toggleColor(color)}></my-color-card>`
-      )}
+            
+            )}
+        <!--<my-sortable-list positions=${this.numberOfColors} @update=${(e: any)=>console.log(e)}>
+        </my-sortable-list>-->
       </section>
     `;
   }
@@ -92,8 +97,7 @@ export class MyColorPalette extends LitElement {
 
   async _getPalette(name: string): Promise<PaletteColor[] | undefined> {
     try {
-      const response = await fetch(`/${name}.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      const response = await fetch(`/yarns/${name}.json`);
       const json: { palette: PaletteColor[] } = await response?.json();
       return json?.palette;
     } catch (error) {
