@@ -91,6 +91,6 @@ export class MyColorSet extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-color-palette': MyColorPalette;
+    'my-color-set': MyColorSet;
   }
 }
