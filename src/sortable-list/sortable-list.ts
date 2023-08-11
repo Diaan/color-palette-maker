@@ -1,95 +1,171 @@
-import { LitElement, css, html } from 'lit';
-import { customElement, queryAssignedElements } from 'lit/decorators.js';
+import { PropertyValues } from 'lit';
+import { LitElement, html, css } from 'lit';
+import { property } from 'lit/decorators.js';
+import { PaletteColor } from '../color-palette/color-palette';
 
-@customElement('my-sortable-list')
-export class MySortableList extends LitElement {
-  /** The slotted checkboxes. */
-  @queryAssignedElements() items?: HTMLElement[];
+let id = 0;
+function uuid() {
+  return new Date().getTime() + '' + id++;
+}
 
-  keys = ['A','B','C','D','E','F','G','H','I','J'];
-  dragSrcEl?: HTMLElement;
-  possibleTarget?: number;
-
-  render() {
-    return html`<slot @slotchange=${this.#onSlotchange}></slot>`;
-  }
-
-  #onSlotchange(): void {
-    if(this.items){
-      this.items.forEach(item=>{
-        const index = item ? this.items?.indexOf(item) : 0;
-        item.setAttribute('data-index', (index||0).toString(10));
-        item.draggable = true;
-        item.addEventListener('drop', this.handleDrop);
-        item.addEventListener('dragstart', this.handleDragStart);
-        item.addEventListener('dragend', this.handleDragEnd);
-        item.addEventListener('dragenter', this.handleDragEnter);
-        item.addEventListener('dragleave', this.handleDragLeave);
-      })
-    }
-  }
-
-  handleDragStart(){
-    this.style.opacity = '0.4';
-
-    this.dragSrcEl = this;
-    
-  }
-
-  handleDragEnd(){
-    this.style.opacity = '1';
-    this.dragSrcEl = undefined;
-    console.log(
-      this.getAttribute('data-index'),
-      this.possibleTarget
-    )
-  }
-
-  handleDragEnter() {
-    this.classList.add('over');
-    const index = this ? this.items?.indexOf(this) : 0;
-    this.possibleTarget = index;
-    console.log(this.possibleTarget)
-  }
-
-  handleDragLeave() {
-    this.classList.remove('over');
-  }
-
-  handleDrop(e:DragEvent) {
-    console.log('drop',e.currentTarget);
-    // e.stopPropagation(); // stops the browser from redirecting.
-
-    if (this.dragSrcEl && this.dragSrcEl !== this && e.currentTarget) {
-      this.dragSrcEl.innerHTML = this.innerHTML;
-      // .innerHTML = e.dataTransfer?.getData('text/html');
-    }
-  
-    return false;
+class DraggableList extends LitElement {
+  connectedCallback() {
+    super.connectedCallback();
+    this.addEventListener('drop', this.drop);
   }
 
   static styles = css`
-    slot{
-      border: 1px solid gold;
+    section {
       display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    
-    ::slotted(*){
-       cursor: move;
-    }
+      flex-wrap: wrap;
+      gap:8px;
+    }`;
 
-    ::slotted(*.over){
-      border: 3px dotted #666;
-    }
-  `;
+  drop(e:DragEvent) {
+    // @ts-ignore
+    e.target.classList.remove('over');
+
+    const id = e.dataTransfer?.getData('text/plain');
+    const draggable = this.querySelector(`[draggable-id="${id}"]`);
+    const movingItem = (draggable as DraggableItem).data;
+    const insertBefore = (e.target as DraggableItem).data;
+    
+    const all = this.querySelectorAll('draggable-item');
+    const dataArray = Array.from(all).map(item => (item as DraggableItem).data).filter(item => item.name !== movingItem.name);
+    dataArray.splice(dataArray.indexOf(insertBefore),0,movingItem);
+    // @ts-ignore
+    this.emitOrder(dataArray);
+  }
+
+  render() {
+    return html`<slot></slot>`;
+  }
+
+  emitOrder(order: PaletteColor[]): void {
+    const options = {
+      detail: order,
+      bubbles: true,
+      composed: true,
+    };
+    this.dispatchEvent(new CustomEvent('updateOrder', options));
+  }
+  
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    'my-sortable-list': MySortableList;
+export class DraggableItem extends LitElement {
+  static styles = css`
+    :host {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    :host(.over) {
+      border-top: 2px dashed lightgrey;
+      border-radius: 5px;
+      opacity: 0.6; 
+    }
+
+    :host(.draggable) {
+      user-select: none;
+      cursor: move;
+    }
+
+    .draggable-marker {
+      font-size: 18px;
+      font-weight: bold;
+      cursor: move;
+    }
+    .draggable-content {
+      flex: 1;
+      pointer-events: none;
+    }
+
+    :host(.dragging) {
+      background-color: #ffff;
+      opacity: 1;
+    } 
+
+    .remove { cursor: default;}
+
+    `;
+
+  id = uuid();
+
+  @property() data: any;
+
+  #onSlotChange() {
+    this.addEventListener('dragstart', this.dragStart);
+    this.addEventListener('dragenter', this.dragEnter);
+    this.addEventListener('dragover', this.dragOver);
+    this.addEventListener('dragleave', this.dragLeave);
+    this.addEventListener('dragend', this.dragEnd);
+
+    this.setAttribute('draggable-id', this.id);
+
+    this.classList.add('draggable');
+
+    this.setAttribute('draggable', 'true');
+  }
+
+  dragStart(e:DragEvent) {
+    e.dataTransfer?.setData('text/plain', this.id);
+    if(e.dataTransfer){
+      e.dataTransfer.effectAllowed = 'move';
+    }
+    this.classList.add('dragging');
+  }
+
+  dragEnter(e:DragEvent) {
+    e.preventDefault();
+
+    // @ts-ignore
+    e.target.classList.add('over');
+  }
+
+  dragOver(e:DragEvent) {
+    e.preventDefault();
+    // @ts-ignore
+    e.dataTransfer.dropEffect = 'move';
+    return false;
+  }
+
+  dragLeave(e:DragEvent) {
+    e.stopPropagation();
+    // @ts-ignore
+    e.target.classList.remove('over');
+  }
+
+  dragEnd(e:DragEvent) {
+    this.style.opacity = '1';
+    // @ts-ignore
+    e.target.classList.remove('over');
+    this.classList.remove('dragging');
+  }
+
+  removeItem(e:MouseEvent): void {
+    e.stopPropagation();
+    const options = {
+      bubbles: true,
+      composed: true,
+    };
+    this.dispatchEvent(new CustomEvent('removeItem', options));
+  }
+
+  render() {
+    return html`
+    <div class="draggable-marker">::</div>
+    <div class="draggable-content">
+      <slot @slotchange=${this.#onSlotChange}></slot>
+    </div>
+    <div class="remove" @click=${this.removeItem}>x</div>
+    `;
   }
 }
 
-
+customElements.define('draggable-item', DraggableItem);
+customElements.define('draggable-list', DraggableList);

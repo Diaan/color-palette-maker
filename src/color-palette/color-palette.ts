@@ -47,23 +47,23 @@ export class MyColorPalette extends LitElement {
       ${this.palette.map(
         (color) =>
           html`<my-color-card .palette=${color} ?selected=${this.selectedColors.some(
-            (sc) => sc === color
+            (sc) => sc.name === color.name
           )} @click=${() => this.toggleColor(color)}></my-color-card>`
       )}
       </section>
 
       <h2>Selected colors:</h2>
       <section class="selected">
-        ${this.selectedColors.map(
-          (color) =>
-          html`<my-color-card .palette=${color} showname="true" @click=${() =>
-            this.toggleColor(color)}></my-color-card>`
-            
-            )}
-        <!--<my-sortable-list positions=${this.numberOfColors} @update=${(e: any)=>console.log(e)}>
-        </my-sortable-list>-->
+        <draggable-list @updateOrder=${this.updateOrder}>
+          ${this.selectedColors.map(
+            (color) => html`
+            <draggable-item .data=${color} @removeItem=${()=>this.removeColor(color)}>
+              <my-color-card .palette=${color} showname="true"></my-color-card>
+            </draggable-item>`            
+          )}
+        </draggable-list>
       </section>
-    `;
+      `;
   }
 
   override async connectedCallback(): Promise<void> {
@@ -72,7 +72,7 @@ export class MyColorPalette extends LitElement {
     await this._getPalette('tandem').then((p) => {
       if (p) {
         this.palette = p;
-        this.emitPalette();
+        this.emitPalette(this.selectedColors);
       }
     });
   }
@@ -80,15 +80,27 @@ export class MyColorPalette extends LitElement {
   toggleColor(color: PaletteColor): void {
     if (!this.selectedColors.some((sc) => sc === color)) {
       this.selectedColors = [...this.selectedColors, color];
+      this.emitPalette(this.selectedColors);
     } else {
-      this.selectedColors = this.selectedColors.filter((obj) => obj !== color);
+      this.removeColor(color);
     }
-    this.emitPalette();
   }
 
-  emitPalette(): void {
+  removeColor(color: PaletteColor): void {
+    console.log(color, this.selectedColors);
+    this.selectedColors = this.selectedColors.filter((obj) => obj.name !== color.name);
+    this.emitPalette(this.selectedColors);
+  }
+
+  //@ts-ignore
+  updateOrder(data): void {
+    this.selectedColors = data.detail;
+    this.emitPalette(data.detail);
+  }
+
+  emitPalette(palette: PaletteColor[]): void {
     const options = {
-      detail: this.selectedColors,
+      detail: palette,
       bubbles: true,
       composed: true,
     };

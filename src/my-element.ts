@@ -1,6 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { Pattern } from './pattern/pattern';
+import { PaletteColor } from './color-palette/color-palette';
 
 /**
  * An example element.
@@ -15,6 +16,8 @@ export class MyElement extends LitElement {
    */
   @property()
   docsHint = 'Click on the Vite and Lit logos to learn more';
+
+  private keys = ['A','B','C','D','E','F'];
 
   @state() selectedPattern?: Pattern;
   @state() patterns?: Pattern[];
@@ -32,11 +35,12 @@ export class MyElement extends LitElement {
   }
 
   updatePalette(value: CustomEvent) {
-    this.style.setProperty('--yarnA', value.detail[0].color);
-    this.style.setProperty('--yarnB', value.detail[1].color);
-    this.style.setProperty('--yarnC', value.detail[2].color);
-    this.style.setProperty('--yarnD', value.detail[3].color);
-    this.style.setProperty('--yarnE', value.detail[4].color);
+    this.keys.forEach((key:string) => {
+      this.style.setProperty(`--yarn${key}`, 'transparent');
+    });
+    value.detail.forEach((color:PaletteColor,index:number) => {
+      this.style.setProperty(`--yarn${this.keys[index]}`, color.color);
+    });
   }
 
   override async connectedCallback(): Promise<void> {

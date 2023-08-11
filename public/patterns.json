@@ -1,5 +1,9 @@
 { "patterns":[
   {
+    "name": "Simple stripes",
+    "file": "simplestripes.html",
+    "colors": 3
+  },{
     "name": "Hilma",
     "file": "hilma.html",
     "colors": 5
