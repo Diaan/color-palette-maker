@@ -14,32 +14,11 @@ export class MyColorPalette extends LitElement {
   /**
    * The number of times the button has been clicked.
    */
-  @property({type:Array}) palette: PaletteColor[] = [{ color: '#456789', name: 'bla' }];
+  @property({type:Array}) palette: PaletteColor[] = [];
 
   @property({attribute:'number-of-colors'}) numberOfColors: number = 1;
 
-  @state() selectedColors: PaletteColor[] = [
-    {
-      name: 'dijon',
-      color: '#b29012',
-    },
-    {
-      name: 'white-peach',
-      color: '#f5e6d7',
-    },
-    {
-      name: 'sherbert',
-      color: '#f3cbaa',
-    },
-    {
-      name: 'sea-mist',
-      color: '#a7bab1',
-    },
-    {
-      name: 'enchanted',
-      color: '#294650',
-    },
-  ];
+  @state() selectedColors: PaletteColor[] = [];
 
   render() {
     return html`
@@ -51,14 +30,16 @@ export class MyColorPalette extends LitElement {
           )} @click=${() => this.toggleColor(color)}></my-color-card>`
       )}
       </section>
+      <h2>Colour sets:</h2>
+      <my-color-set @selectSet=${this.selectSet}></my-color-set>
 
-      <h2>Selected colors:</h2>
+      <h2>Selected colours:</h2>
       <section class="selected">
         <draggable-list @updateOrder=${this.updateOrder}>
           ${this.selectedColors.map(
             (color) => html`
             <draggable-item .data=${color} @removeItem=${()=>this.removeColor(color)}>
-              <my-color-card .palette=${color} showname="true"></my-color-card>
+              <my-color-card .palette=${color} size="large"></my-color-card>
             </draggable-item>`            
           )}
         </draggable-list>
@@ -98,6 +79,12 @@ export class MyColorPalette extends LitElement {
     this.emitPalette(data.detail);
   }
 
+  //@ts-ignore
+  selectSet(data): void {
+    this.selectedColors = data.detail.colors;
+    this.emitPalette(data.detail.colors);
+  }
+
   emitPalette(palette: PaletteColor[]): void {
     const options = {
       detail: palette,
@@ -122,7 +109,7 @@ export class MyColorPalette extends LitElement {
     section {
       display: flex;
       flex-wrap: wrap;
-      gap:8px;
+      gap:10px;
     }
 
     section.selected{

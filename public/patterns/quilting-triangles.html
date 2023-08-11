@@ -1,0 +1,59 @@
+<article>
+<section>
+  <div class="part4"></div>
+  <div class="part3"></div>
+  <div class="part2"></div>
+  <div class="part1"></div>
+</section>
+</article>
+
+<style>
+  :host {
+    --square-size: 50px;
+  }
+  section {
+    transform: rotate(-45deg);
+     position: absolute;
+     top: 0;   
+  }
+  article{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+  }
+
+  div {
+    background-image: linear-gradient(45deg, var(--triangle1) 50%, var(--triangle2) 50%);
+    background-size: var(--square-size) var(--square-size);
+   
+    width: calc(var(--square-size) * var(--blocks));
+    aspect-ratio: 1;
+    position: absolute;
+    top: calc(((8 - var(--blocks)) / 2) * var(--square-size));
+    left: calc(((8 - var(--blocks)) / 2) * var(--square-size));
+  }
+  
+  .part1{
+    --triangle1: var(--yarnA);
+    --triangle2: var(--yarnB);
+    --blocks: 2;
+  }
+  
+  .part2{
+    --triangle1: var(--yarnC);
+    --triangle2: var(--yarnD);
+    --blocks: 4;
+  }
+  
+  .part3{
+    --triangle1: var(--yarnB);
+    --triangle2: var(--yarnE);
+    --blocks: 6;
+  }
+
+  .part4{
+    --triangle1: var(--yarnD);
+    --triangle2: var(--yarnA);
+    --blocks: 8;
+  }
+</style>

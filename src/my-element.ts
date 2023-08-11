@@ -28,6 +28,7 @@ export class MyElement extends LitElement {
     <my-color-palette @updatePalette=${this.updatePalette} .number-of-colors=${this.selectedPattern?.colors}> </my-color-palette>
 
     <nav>
+      Choose pattern:
       ${this.patterns?.map(p => html`<button @click=${()=>this.selectedPattern = p}>${p.name}</button>`)}
     </nav>
     <my-pattern .pattern=${this.selectedPattern}> </my-pattern>
@@ -72,10 +73,21 @@ export class MyElement extends LitElement {
     :host {
       display: grid;
       grid-template-columns: 30% max-content 1fr;
+      gap: 20px;
     }
+ 
     nav {
       display: flex;
-      flex-direction: column
+      flex-direction: column;
+      gap: 4px;
+      background-color: #f3f3f3;
+      padding: 4px;
+    }
+
+    button {
+      font: inherit;
+      border: 1px solid lightgrey;
+      background-color: #efefef;
     }
   `;
 }

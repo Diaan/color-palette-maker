@@ -17,17 +17,17 @@ export class MyColorCard extends LitElement {
   selected: boolean = false;
 
   @property({ reflect: true })
-  showname: boolean = false;
+  size: string = 'medium';
 
   render() {
-    const name = this.showname ? this.palette.name : nothing;
+    const name = this.size==='large' ? this.palette.name : nothing;
     return html`
-      <div style="--_bg:${this.palette.color}"></div>
+      <div style="--_bg:${this.palette.color}" title=${this.palette.name}></div>
       ${name}
     `;
   }
   static styles = css`
-    :host([showname]){
+    :host([size="large"]){
       display: flex;
       gap: 8px;
       align-items: center;
@@ -39,9 +39,13 @@ export class MyColorCard extends LitElement {
       aspect-ratio:1;
       border-radius: 50%;
     }
+    :host([size="mini"]) div{
+      width: 1rem;
+      border-radius: 2px;
+    }
 
     :host([selected]) div {
-      outline: var(--_bg) outset 2px;
+      outline: var(--_bg) outset 3px;
       outline-offset: 1px;
     }
   `;

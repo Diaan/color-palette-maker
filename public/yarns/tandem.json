@@ -1,212 +1,212 @@
 {
   "palette": [
     {
-      "name": "sea-mist",
-      "color": "#a7bab1"
+      "color": "#a7bab1",
+      "name": "sea-mist"
     },
     {
-      "name": "sherbert",
-      "color": "#f3cbaa"
+      "color": "#f3cbaa",
+      "name": "sherbert"
     },
     {
-      "name": "starfish",
-      "color": "#efb19c"
+      "color": "#efb19c",
+      "name": "starfish"
     },
     {
-      "name": "taffy",
-      "color": "#ef6fa1"
+      "color": "#ef6fa1",
+      "name": "taffy"
     },
     {
-      "name": "tangerine",
-      "color": "#eb8a3b"
+      "color": "#eb8a3b",
+      "name": "tangerine"
     },
     {
-      "name": "tiger",
-      "color": "#a87214"
+      "color": "#a87214",
+      "name": "tiger"
     },
     {
-      "name": "truffle",
-      "color": "#3c261f"
+      "color": "#3c261f",
+      "name": "truffle"
     },
     {
-      "name": "unicorn",
-      "color": "#dbc2e6"
+      "color": "#dbc2e6",
+      "name": "unicorn"
     },
     {
-      "name": "sand",
-      "color": "#dac2b1"
+      "color": "#dac2b1",
+      "name": "sand"
     },
     {
-      "name": "white-peach",
-      "color": "#f5e6d7"
+      "color": "#f5e6d7",
+      "name": "white-peach"
     },
     {
-      "name": "sage",
-      "color": "#8a9782"
+      "color": "#8a9782",
+      "name": "sage"
     },
     {
-      "name": "wellington",
-      "color": "#26261d"
+      "color": "#26261d",
+      "name": "wellington"
     },
     {
-      "name": "north-sea",
-      "color": "#4e7479"
+      "color": "#4e7479",
+      "name": "north-sea"
     },
     {
-      "name": "norway",
-      "color": "#1f444f"
+      "color": "#1f444f",
+      "name": "norway"
     },
     {
-      "name": "pebble",
-      "color": "#c0c0bc"
+      "color": "#c0c0bc",
+      "name": "pebble"
     },
     {
-      "name": "pickle-juice",
-      "color": "#dee95d"
+      "color": "#dee95d",
+      "name": "pickle-juice"
     },
     {
-      "name": "powder",
-      "color": "#f4e0e3"
+      "color": "#f4e0e3",
+      "name": "powder"
     },
     {
-      "name": "red-hot",
-      "color": "#e3301c"
+      "color": "#e3301c",
+      "name": "red-hot"
     },
     {
-      "name": "roswitha",
-      "color": "#c77875"
+      "color": "#c77875",
+      "name": "roswitha"
     },
     {
-      "name": "royal",
-      "color": "#1d2ea3"
+      "color": "#1d2ea3",
+      "name": "royal"
     },
     {
-      "name": "mouse",
-      "color": "#3f3e3e"
+      "color": "#3f3e3e",
+      "name": "mouse"
     },
     {
-      "name": "morgaine",
-      "color": "#3e5a63"
+      "color": "#3e5a63",
+      "name": "morgaine"
     },
     {
-      "name": "glass",
-      "color": "#d0e5e4"
+      "color": "#d0e5e4",
+      "name": "glass"
     },
     {
-      "name": "glow",
-      "color": "#e3af13"
+      "color": "#e3af13",
+      "name": "glow"
     },
     {
-      "name": "grass-green",
-      "color": "#49ba76"
+      "color": "#49ba76",
+      "name": "grass-green"
     },
     {
-      "name": "green-olive",
-      "color": "#575b08"
+      "color": "#575b08",
+      "name": "green-olive"
     },
     {
-      "name": "corduroy",
-      "color": "#3f1724"
+      "color": "#3f1724",
+      "name": "corduroy"
     },
     {
-      "name": "dijon",
-      "color": "#b29012"
+      "color": "#b29012",
+      "name": "dijon"
     },
     {
-      "name": "birch-tree",
-      "color": "#f0ebe3"
+      "color": "#f0ebe3",
+      "name": "birch-tree"
     },
     {
-      "name": "blue-spruce",
-      "color": "#8f9a9c"
+      "color": "#8f9a9c",
+      "name": "blue-spruce"
     },
     {
-      "name": "greykjavik",
-      "color": "#89868d"
+      "color": "#89868d",
+      "name": "greykjavik"
     },
     {
-      "name": "kardemumma",
-      "color": "#c04d2f"
+      "color": "#c04d2f",
+      "name": "kardemumma"
     },
     {
-      "name": "marinière",
-      "color": "#1f1d25"
+      "color": "#1f1d25",
+      "name": "marinière"
     },
     {
-      "name": "mocha",
-      "color": "#795e4e"
+      "color": "#795e4e",
+      "name": "mocha"
     },
     {
-      "name": "fuchsia",
-      "color": "#df2f6d"
+      "color": "#df2f6d",
+      "name": "fuchsia"
     },
     {
-      "name": "french-grey",
-      "color": "#807c77"
+      "color": "#807c77",
+      "name": "french-grey"
     },
     {
-      "name": "chestnut",
-      "color": "#6e321b"
+      "color": "#6e321b",
+      "name": "chestnut"
     },
     {
-      "name": "copenhagen",
-      "color": "#161719"
+      "color": "#161719",
+      "name": "copenhagen"
     },
     {
-      "name": "dutch-sky",
-      "color": "#b0b1b5"
+      "color": "#b0b1b5",
+      "name": "dutch-sky"
     },
     {
-      "name": "enchanted",
-      "color": "#294650"
+      "color": "#294650",
+      "name": "enchanted"
     },
     {
-      "name": "fandango",
-      "color": "#821d6e"
+      "color": "#821d6e",
+      "name": "fandango"
     },
     {
-      "name": "flamingo",
-      "color": "#eea095"
+      "color": "#eea095",
+      "name": "flamingo"
     },
     {
-      "name": "canal-house",
-      "color": "#403c43"
+      "color": "#403c43",
+      "name": "canal-house"
     },
     {
-      "name": "buttercup",
-      "color": "#efd36e"
+      "color": "#efd36e",
+      "name": "buttercup"
     },
     {
-      "name": "avocado",
-      "color": "#969b2c"
+      "color": "#969b2c",
+      "name": "avocado"
     },
     {
-      "name": "beatrix",
-      "color": "#e95644"
+      "color": "#e95644",
+      "name": "beatrix"
     },
     {
-      "name": "berry",
-      "color": "#902025"
+      "color": "#902025",
+      "name": "berry"
     },
     {
-      "name": "bianca",
-      "color": "#f4de0b"
+      "color": "#f4de0b",
+      "name": "bianca"
     },
     {
-      "name": "biscuit",
-      "color": "#ac8057"
+      "color": "#ac8057",
+      "name": "biscuit"
     },
     {
-      "name": "brackish",
-      "color": "#38879a"
+      "color": "#38879a",
+      "name": "brackish"
     },
     {
-      "name": "aubergine",
-      "color": "#2e1f2a"
+      "color": "#2e1f2a",
+      "name": "aubergine"
     },
     {
-      "name": "aquamarine",
-      "color": "#88c4cc"
+      "color": "#88c4cc",
+      "name": "aquamarine"
     }
   ]
 }

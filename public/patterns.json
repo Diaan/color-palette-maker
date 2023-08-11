@@ -1,5 +1,9 @@
 { "patterns":[
   {
+    "name": "Quitling triangles shawl",
+    "file": "quilting-triangles.html",
+    "colors": 5
+  },{
     "name": "Hilma",
     "file": "hilma.html",
     "colors": 5
