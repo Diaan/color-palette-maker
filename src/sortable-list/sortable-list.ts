@@ -1,4 +1,3 @@
-import { PropertyValues } from 'lit';
 import { LitElement, html, css } from 'lit';
 import { property } from 'lit/decorators.js';
 import { PaletteColor } from '../color-palette/color-palette';
@@ -15,7 +14,7 @@ class DraggableList extends LitElement {
   }
 
   static styles = css`
-    section {
+    :host {
       display: flex;
       flex-wrap: wrap;
       gap:8px;
