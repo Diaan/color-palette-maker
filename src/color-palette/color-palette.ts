@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 
-export type PaletteColor = { color: string; name: string };
+export type PaletteColor = { color: string; name: string, image?: string };
 
 /**
  * An example element.
@@ -50,7 +50,7 @@ export class MyColorPalette extends LitElement {
   override async connectedCallback(): Promise<void> {
     super.connectedCallback();
 
-    await this._getPalette('tandem').then((p) => {
+    await this._getPalette('foxy-fibers').then((p) => {
       if (p) {
         this.palette = p;
         this.emitPalette(this.selectedColors);

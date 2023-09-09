@@ -37,7 +37,7 @@ export class MyColorSet extends LitElement {
   override async connectedCallback(): Promise<void> {
     super.connectedCallback();
 
-    await this._getSets('tandem').then((sets) => {
+    await this._getSets('foxy-fibers').then((sets) => {
       if (sets) {
         this.sets = sets;
       }

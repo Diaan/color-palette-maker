@@ -1,5 +1,9 @@
 { "patterns":[
   {
+    "name": "Simple stripes",
+    "file": "simplestripes.html",
+    "colors": 4
+  },{
     "name": "Quitling triangles shawl",
     "file": "quilting-triangles.html",
     "colors": 5
@@ -7,10 +11,6 @@
     "name": "Hilma",
     "file": "hilma.html",
     "colors": 5
-  },{
-    "name": "Simple stripes",
-    "file": "simplestripes.html",
-    "colors": 3
   },{
     "name": "Lit shawl",
     "file": "shawl.svg",

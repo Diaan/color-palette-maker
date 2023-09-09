@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  height: 100%;
 
   color: #213547;
   background-color: #ffffff;
@@ -24,5 +25,17 @@ a:hover {
 
 body {
   margin: 0;
-  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+small {
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: beige;
+}
+
+my-element{
+  flex: 1 1 auto;
 }

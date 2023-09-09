@@ -22,7 +22,9 @@ export class MyColorCard extends LitElement {
   render() {
     const name = this.size==='large' ? this.palette.name : nothing;
     return html`
-      <div style="--_bg:${this.palette.color}" title=${this.palette.name}></div>
+      <div style="--_bg:${this.palette.color}" title=${this.palette.name}>
+        ${this.palette.image?html`<img src="yarns/foxy-fibers/${this.palette.image}">`:nothing}
+      </div>
       ${name}
     `;
   }
@@ -34,10 +36,17 @@ export class MyColorCard extends LitElement {
     }
     div {
       background-color: var(--_bg);
-      display: block;
+      display: grid;
       width: 50px;
       aspect-ratio:1;
       border-radius: 50%;
+      overflow: hidden;
+      place-content: center;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
     }
     :host([size="mini"]) div{
       width: 1rem;

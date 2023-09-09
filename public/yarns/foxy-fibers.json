@@ -1,0 +1,24 @@
+{
+  "palette": [
+    {
+      "color": "#BCCE9C",
+      "image": "013.jpg",
+      "name": "013"
+    },
+    {
+      "color": "#6C9A84",
+      "image": "012.jpg",
+      "name": "012"
+    },
+    {
+      "color": "#248D90",
+      "image": "011.jpg",
+      "name": "011"
+    },
+    {
+      "color": "#00748D",
+      "image": "010.jpg",
+      "name": "010"
+    }
+  ]
+}

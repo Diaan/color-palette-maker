@@ -11,12 +11,6 @@ import { PaletteColor } from './color-palette/color-palette';
  */
 @customElement('my-element')
 export class MyElement extends LitElement {
-  /**
-   * Copy for the read the docs hint.
-   */
-  @property()
-  docsHint = 'Click on the Vite and Lit logos to learn more';
-
   private keys = ['A','B','C','D','E','F'];
 
   @state() selectedPattern?: Pattern;
@@ -38,9 +32,13 @@ export class MyElement extends LitElement {
   updatePalette(value: CustomEvent) {
     this.keys.forEach((key:string) => {
       this.style.setProperty(`--yarn${key}`, 'transparent');
+      this.style.removeProperty(`--yarn${key}-image`);
     });
     value.detail.forEach((color:PaletteColor,index:number) => {
       this.style.setProperty(`--yarn${this.keys[index]}`, color.color);
+      if(color.image){
+        this.style.setProperty(`--yarn${this.keys[index]}-image`, `url(yarns/foxy-fibers/${color.image})`);
+      }
     });
   }
 
@@ -74,6 +72,7 @@ export class MyElement extends LitElement {
       display: grid;
       grid-template-columns: 30% max-content 1fr;
       gap: 20px;
+      padding: 20px;
     }
  
     nav {
