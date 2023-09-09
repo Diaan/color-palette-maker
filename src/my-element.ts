@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { customElement, state } from 'lit/decorators.js';
 import { Pattern } from './pattern/pattern';
 import { PaletteColor } from './color-palette/color-palette';
 
