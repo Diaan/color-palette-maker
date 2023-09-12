@@ -16,7 +16,7 @@ export class MyColorPalette extends LitElement {
    */
   @property({type:Array}) palette: PaletteColor[] = [];
 
-  @property({attribute:'number-of-colors'}) numberOfColors: number = 1;
+  @property({attribute:'number-of-colors', type: Number}) numberOfColors: number = 1;
 
   @state() selectedColors: PaletteColor[] = [];
 

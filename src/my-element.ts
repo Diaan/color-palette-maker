@@ -15,6 +15,7 @@ export class MyElement extends LitElement {
 
   @state() selectedPattern?: Pattern;
   @state() patterns?: Pattern[];
+  @state() svgPatterns: any;
 
   render() {
     return html`
@@ -25,8 +26,7 @@ export class MyElement extends LitElement {
       Choose pattern:
       ${this.patterns?.map(p => html`<button @click=${()=>this.selectedPattern = p}>${p.name}</button>`)}
     </nav>
-    <my-pattern .pattern=${this.selectedPattern}> </my-pattern>
-    `;
+    <my-pattern .pattern=${this.selectedPattern} .defs=${this.svgPatterns}> </my-pattern>`;
   }
 
   updatePalette(value: CustomEvent) {
@@ -34,6 +34,7 @@ export class MyElement extends LitElement {
       this.style.setProperty(`--yarn${key}`, 'transparent');
       this.style.removeProperty(`--yarn${key}-image`);
     });
+    this.svgPatterns = value.detail;
     value.detail.forEach((color:PaletteColor,index:number) => {
       this.style.setProperty(`--yarn${this.keys[index]}`, color.color);
       if(color.image){

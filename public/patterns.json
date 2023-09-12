@@ -1,5 +1,10 @@
 { "patterns":[
   {
+    "name": "Lit shawl",
+    "file": "shawl.svg",
+    "colors": 4
+  },
+  {
     "name": "Simple stripes",
     "file": "simplestripes.html",
     "colors": 4
@@ -11,9 +16,5 @@
     "name": "Hilma",
     "file": "hilma.html",
     "colors": 5
-  },{
-    "name": "Lit shawl",
-    "file": "shawl.svg",
-    "colors": 4
   }
 ]}
