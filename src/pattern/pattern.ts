@@ -11,7 +11,6 @@ export type Pattern = { name: string; file: string, colors: number };
  */
 @customElement('my-pattern')
 export class MyPattern extends LitElement {
-  private keys = ['A','B','C','D','E','F'];
   @property({type: Object})
   pattern?: Pattern;
 

@@ -11,9 +11,9 @@ import { Yarn } from '..';
  */
 @customElement('my-color-card')
 export class MyColorCard extends LitElement {
-  @property() palette: PaletteColor = { color: `#000`, name: '' };
-  @property() selected: boolean = false;
-  @property() yarn?: Yarn;
+  @property({type:Object}) palette: PaletteColor = { color: `#000`, name: '' };
+  @property({type:Boolean}) selected: boolean = false;
+  @property({type:Object}) yarn?: Yarn;
   @property({ reflect: true })  size: string = 'medium';
 
   render() {
