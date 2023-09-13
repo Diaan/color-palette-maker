@@ -36,18 +36,26 @@ export class MyColorPalette extends LitElement {
       <my-color-set @selectSet=${this.selectSet} .yarn=${this.yarn}></my-color-set>
 
       <h2>Selected colours:</h2>
-      <section class="selected">
-        <draggable-list @updateOrder=${this.updateOrder}>
-          ${this.selectedColors.map(
-            (color) => html`
-            <draggable-item .data=${color} @removeItem=${()=>this.removeColor(color)}>
-              <my-color-card .palette=${color} size="large" .yarn=${this.yarn}></my-color-card>
-            </draggable-item>`            
-          )}
-        </draggable-list>
-      </section>
+      ${
+        this.selectedColors.length>0 ? 
+        html`
+          <section class="selected">
+            <draggable-list @updateOrder=${this.updateOrder}>
+              ${this.selectedColors.map(
+                (color) => html`
+                <draggable-item .data=${color} @removeItem=${()=>this.removeColor(color)}>
+                  <my-color-card .palette=${color} size="large" .yarn=${this.yarn}></my-color-card>
+                </draggable-item>`            
+              )}
+            </draggable-list>
+          </section>
+        `: html`
+          <p>Select some colours from the palette above or choose a ready made set.</p>
+        `
+      }
+      
       ` : 
-      html`Please choose a yarn`;
+      html`Please choose a yarn above`;
   }
 
   override async updated(changes: PropertyValues<this>): Promise<void> {

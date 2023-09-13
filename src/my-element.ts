@@ -52,10 +52,8 @@ export class MyElement extends LitElement {
       this.style.removeProperty(`--yarn${key}-image`);
     });
     this.svgPatterns = value.detail.map( (color:PaletteColor, index:number) => {
-      console.log(color, index);
       return {url: `yarns/foxy-fibers/images/${color.image}`, index: this.keys[index]}
     });
-    console.log(this.svgPatterns);
     value.detail.forEach((color:PaletteColor,index:number) => {
       this.style.setProperty(`--yarn${this.keys[index]}`, color.color);
       if(color.image){

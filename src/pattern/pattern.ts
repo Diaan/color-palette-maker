@@ -20,10 +20,15 @@ export class MyPattern extends LitElement {
   @state() patternCode?: string;
 
   render() {
-    return this.pattern ? html`
-      <h3>${this.pattern?.name} (${this.pattern?.colors} colours)</h3>
-      ${ unsafeHTML(this.patternCode)}
-      <div></div>` : html`Please choose a pattern`;
+    return this.pattern ? 
+      html`
+        <h3>${this.pattern?.name} (${this.pattern?.colors} colours)</h3>
+        ${ unsafeHTML(this.patternCode)}
+        <div></div>
+      ` : html`
+        <p>Please choose a pattern above</p>
+        <p>Patterns marked with 🧶 support images of the yarn, the rest work only with solid colours</p>
+      `;
       
   }
   static styles = css``;
