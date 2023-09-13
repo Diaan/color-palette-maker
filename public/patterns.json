@@ -3,8 +3,11 @@
     "name": "Lit shawl",
     "file": "shawl.svg",
     "colors": 4
-  },
-  {
+  },{
+    "name": "Stained glass",
+    "file": "stained-glass.svg",
+    "colors": 6
+  },{
     "name": "Simple stripes",
     "file": "simplestripes.html",
     "colors": 4

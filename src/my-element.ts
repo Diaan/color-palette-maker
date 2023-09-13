@@ -3,6 +3,8 @@ import { customElement, state } from 'lit/decorators.js';
 import { Pattern } from './pattern/pattern';
 import { PaletteColor } from './color-palette/color-palette';
 
+export type Yarn = { name: string; folder: string };
+
 /**
  * An example element.
  *
@@ -14,19 +16,34 @@ export class MyElement extends LitElement {
   private keys = ['A','B','C','D','E','F'];
 
   @state() selectedPattern?: Pattern;
+  @state() selectedYarn?: Yarn;
   @state() patterns?: Pattern[];
+  @state() yarns?: Yarn[];
   @state() svgPatterns: any;
 
   render() {
     return html`
     <!-- needs input "palette" to load correct json file-->
-    <my-color-palette @updatePalette=${this.updatePalette} .number-of-colors=${this.selectedPattern?.colors}> </my-color-palette>
+    <section>
+      <header> Yarn:
+        <select @change=${(event:Event)=>this.selectYarn(event)}>
+          <option></option>
+          ${this.yarns?.map(y => html`<option value="${y.folder}" >${y.name}</option>`)}
+        </select>
+      </header>
+      <my-color-palette @updatePalette=${this.updatePalette} .yarn=${this.selectedYarn} .number-of-colors=${this.selectedPattern?.colors}> </my-color-palette>
+    </section>
 
-    <nav>
-      Choose pattern:
-      ${this.patterns?.map(p => html`<button @click=${()=>this.selectedPattern = p}>${p.name}</button>`)}
-    </nav>
-    <my-pattern .pattern=${this.selectedPattern} .defs=${this.svgPatterns}> </my-pattern>`;
+    <section>
+      <header> Pattern: 
+      <select @change=${(event:Event)=>this.selectPattern(event)}>
+          <option></option>
+          ${this.patterns?.map(p => html`<option value="${p.file}" >${p.name}</option>`)}
+        </select>
+      </header>
+      <my-pattern .pattern=${this.selectedPattern} .defs=${this.svgPatterns}> </my-pattern>
+    </section>
+    `;
   }
 
   updatePalette(value: CustomEvent) {
@@ -34,13 +51,25 @@ export class MyElement extends LitElement {
       this.style.setProperty(`--yarn${key}`, 'transparent');
       this.style.removeProperty(`--yarn${key}-image`);
     });
-    this.svgPatterns = value.detail;
+    this.svgPatterns = value.detail.map( (color:PaletteColor, index:number) => {
+      console.log(color, index);
+      return {url: `yarns/foxy-fibers/images/${color.image}`, index: this.keys[index]}
+    });
+    console.log(this.svgPatterns);
     value.detail.forEach((color:PaletteColor,index:number) => {
       this.style.setProperty(`--yarn${this.keys[index]}`, color.color);
       if(color.image){
-        this.style.setProperty(`--yarn${this.keys[index]}-image`, `url(yarns/foxy-fibers/${color.image})`);
+        this.style.setProperty(`--yarn${this.keys[index]}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${color.image})`);
       }
     });
+  }
+
+  selectYarn(event: Event): void {
+    this.selectedYarn = this.yarns?.find(yarn => yarn.folder === (event.target as HTMLSelectElement).value);
+  }
+
+  selectPattern(event: Event): void {
+    this.selectedPattern = this.patterns?.find(pattern => pattern.file === (event.target as HTMLSelectElement).value);
   }
 
   override async connectedCallback(): Promise<void> {
@@ -50,8 +79,13 @@ export class MyElement extends LitElement {
       if (p) {
         this.patterns = p;
         if(!this.selectedPattern){
-          this.selectedPattern = this.patterns[0];
         }
+      }
+    });
+
+    await this._getYarns().then((y) => {
+      if (y) {
+        this.yarns = y;
       }
     });
   }
@@ -68,20 +102,35 @@ export class MyElement extends LitElement {
     }
   }
 
+  async _getYarns(): Promise<Yarn[] | undefined> {
+    try {
+      const response = await fetch(`/yarns.json`);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      const json = await response?.json();
+      return json.yarns;
+    } catch (error) {
+      console.warn('error loading yarn');
+      return;
+    }
+  }
+
   static styles = css`
     :host {
       display: grid;
-      grid-template-columns: 30% max-content 1fr;
+      grid-template-columns: 30% 1fr;
       gap: 20px;
-      padding: 20px;
+    }
+
+    section {
+      display: flex;
+      flex-direction:column;
+      gap: 20px;
     }
  
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      background-color: #f3f3f3;
-      padding: 4px;
+    header {
+      background-color: cornflowerblue;
+      color: #efefef;
+      padding: 10px;
     }
 
     button {

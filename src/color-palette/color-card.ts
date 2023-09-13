@@ -1,6 +1,7 @@
 import { LitElement, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { PaletteColor } from './color-palette';
+import { Yarn } from '..';
 
 /**
  * An example element.
@@ -10,20 +11,16 @@ import { PaletteColor } from './color-palette';
  */
 @customElement('my-color-card')
 export class MyColorCard extends LitElement {
-  @property()
-  palette: PaletteColor = { color: `#000`, name: '' };
-
-  @property()
-  selected: boolean = false;
-
-  @property({ reflect: true })
-  size: string = 'medium';
+  @property() palette: PaletteColor = { color: `#000`, name: '' };
+  @property() selected: boolean = false;
+  @property() yarn?: Yarn;
+  @property({ reflect: true })  size: string = 'medium';
 
   render() {
     const name = this.size==='large' ? this.palette.name : nothing;
     return html`
       <div style="--_bg:${this.palette.color}" title=${this.palette.name}>
-        ${this.palette.image?html`<img src="yarns/foxy-fibers/${this.palette.image}">`:nothing}
+        ${this.yarn?.folder && this.palette.image ? html`<img src="yarns/${this.yarn.folder}/images/${this.palette.image}">` : nothing}
       </div>
       ${name}
     `;

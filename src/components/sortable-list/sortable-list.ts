@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { property } from 'lit/decorators.js';
-import { PaletteColor } from '../color-palette/color-palette';
+import { PaletteColor } from '../../color-palette/color-palette';
 
 let id = 0;
 function uuid() {
