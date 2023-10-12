@@ -1,0 +1,9 @@
+{ "yarns":[
+  {
+    "name": "Foxy Fibers",
+    "folder": "foxy-fibers"
+  },{
+    "name": "WestWool Tandem",
+    "folder": "tandem"
+  }
+]}

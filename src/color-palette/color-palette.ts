@@ -1,7 +1,8 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
+import { Yarn } from '..';
 
-export type PaletteColor = { color: string; name: string };
+export type PaletteColor = { color: string; name: string, image?: string };
 
 /**
  * An example element.
@@ -16,50 +17,64 @@ export class MyColorPalette extends LitElement {
    */
   @property({type:Array}) palette: PaletteColor[] = [];
 
-  @property({attribute:'number-of-colors'}) numberOfColors: number = 1;
+  @property({attribute:'number-of-colors', type: Number}) numberOfColors: number = 1;
 
   @state() selectedColors: PaletteColor[] = [];
+  @property({type:Object}) yarn?: Yarn;
 
   render() {
-    return html`
+    return this.yarn ? html`
       <section>
       ${this.palette.map(
         (color) =>
-          html`<my-color-card .palette=${color} ?selected=${this.selectedColors.some(
+          html`<my-color-card .palette=${color} .yarn=${this.yarn} ?selected=${this.selectedColors.some(
             (sc) => sc.name === color.name
           )} @click=${() => this.toggleColor(color)}></my-color-card>`
       )}
       </section>
       <h2>Colour sets:</h2>
-      <my-color-set @selectSet=${this.selectSet}></my-color-set>
+      <my-color-set @selectSet=${this.selectSet} .yarn=${this.yarn}></my-color-set>
 
       <h2>Selected colours:</h2>
-      <section class="selected">
-        <draggable-list @updateOrder=${this.updateOrder}>
-          ${this.selectedColors.map(
-            (color) => html`
-            <draggable-item .data=${color} @removeItem=${()=>this.removeColor(color)}>
-              <my-color-card .palette=${color} size="large"></my-color-card>
-            </draggable-item>`            
-          )}
-        </draggable-list>
-      </section>
-      `;
+      ${
+        this.selectedColors.length>0 ? 
+        html`
+          <section class="selected">
+            <draggable-list @updateOrder=${this.updateOrder}>
+              ${this.selectedColors.map(
+                (color) => html`
+                <draggable-item .data=${color} @removeItem=${()=>this.removeColor(color)}>
+                  <my-color-card .palette=${color} size="large" .yarn=${this.yarn}></my-color-card>
+                </draggable-item>`            
+              )}
+            </draggable-list>
+          </section>
+        `: html`
+          <p>Select some colours from the palette above or choose a ready made set.</p>
+        `
+      }
+      
+      ` : 
+      html`Please choose a yarn above`;
   }
 
-  override async connectedCallback(): Promise<void> {
-    super.connectedCallback();
+  override async updated(changes: PropertyValues<this>): Promise<void> {
+    super.updated(changes);
 
-    await this._getPalette('tandem').then((p) => {
-      if (p) {
-        this.palette = p;
-        this.emitPalette(this.selectedColors);
-      }
-    });
+    if (changes.has('yarn') && this.yarn) {
+      await this._getPalette(this.yarn.folder).then((p) => {
+        if (p) {
+          this.palette = p;
+          this.emitPalette(this.selectedColors);
+        }
+      });
+      this.selectedColors = [];
+      this.emitPalette([]);
+    }
   }
 
   toggleColor(color: PaletteColor): void {
-    if (!this.selectedColors.some((sc) => sc === color)) {
+    if (!this.selectedColors.some((sc) => sc.name === color.name)) {
       this.selectedColors = [...this.selectedColors, color];
       this.emitPalette(this.selectedColors);
     } else {
@@ -68,7 +83,6 @@ export class MyColorPalette extends LitElement {
   }
 
   removeColor(color: PaletteColor): void {
-    console.log(color, this.selectedColors);
     this.selectedColors = this.selectedColors.filter((obj) => obj.name !== color.name);
     this.emitPalette(this.selectedColors);
   }
@@ -94,9 +108,9 @@ export class MyColorPalette extends LitElement {
     this.dispatchEvent(new CustomEvent('updatePalette', options));
   }
 
-  async _getPalette(name: string): Promise<PaletteColor[] | undefined> {
+  async _getPalette(folder: string): Promise<PaletteColor[] | undefined> {
     try {
-      const response = await fetch(`/yarns/${name}.json`);
+      const response = await fetch(`/yarns/${folder}/colors.json`);
       const json: { palette: PaletteColor[] } = await response?.json();
       return json?.palette;
     } catch (error) {
@@ -106,6 +120,10 @@ export class MyColorPalette extends LitElement {
   }
 
   static styles = css`
+    :host {
+      padding: 10px;
+    }
+
     section {
       display: flex;
       flex-wrap: wrap;

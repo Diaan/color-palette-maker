@@ -14,12 +14,22 @@ export class MyPattern extends LitElement {
   @property({type: Object})
   pattern?: Pattern;
 
+  @property({attribute:'defs', type: Object})
+  defs?:any;
+
   @state() patternCode?: string;
 
   render() {
-    return html`
-      <h3>${this.pattern?.name} (${this.pattern?.colors} colours)</h3>
-      ${ unsafeHTML(this.patternCode)}`
+    return this.pattern ? 
+      html`
+        <h3>${this.pattern?.name} (${this.pattern?.colors} colours)</h3>
+        ${ unsafeHTML(this.patternCode)}
+        <div></div>
+      ` : html`
+        <p>Please choose a pattern above</p>
+        <p>Patterns marked with 🧶 support images of the yarn, the rest work only with solid colours</p>
+      `;
+      
   }
   static styles = css``;
 
@@ -32,6 +42,23 @@ export class MyPattern extends LitElement {
           this.patternCode = p;
         }
       });
+    }
+
+    if (changes.has('defs') || changes.has('pattern') && this.defs && this.pattern) {
+      const svgContainer = this.renderRoot.querySelector('div');
+      if(svgContainer){
+        svgContainer.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+          ${this.defs.map((def:{url:string, index:string}) => 
+            `<pattern id="img${def.index}" patternUnits="userSpaceOnUse" width="100" height="100" fill="var(--yarn${def.index})">
+              <rect  width="100" height="100" fill="var(--yarn${def.index})" />
+              <image href="${def.url}" x="0" y="0" width="130" height="100" preserveAspectRatio="xMinYMin slice"/>
+            </pattern>
+            `).join('\n')}
+          </defs>
+        </svg>`;
+      }
     }
   }
 

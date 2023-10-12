@@ -1,6 +1,7 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { PaletteColor } from '../color-palette/color-palette';
+import { Yarn } from '..';
 
 export type ColorSet = { colors: PaletteColor[]; name: string };
 
@@ -16,6 +17,7 @@ export class MyColorSet extends LitElement {
    * The number of times the button has been clicked.
    */
   @property({type:Array}) palette: PaletteColor[] = [];
+  @property({type:Object}) yarn?: Yarn;
 
   @state() sets: ColorSet[] = [];
 
@@ -26,7 +28,7 @@ export class MyColorSet extends LitElement {
           html`<li @click=${()=>this.emitSet(set)}>
             <span>${set.name}</span>
             ${set.colors.map((color) =>
-              html`<my-color-card .palette=${color} size="mini"></my-color-card>`
+              html`<my-color-card .palette=${color} size="mini" .yarn=${this.yarn}></my-color-card>`
             )}
           </li>`
         )}
@@ -34,14 +36,16 @@ export class MyColorSet extends LitElement {
       `;
   }
 
-  override async connectedCallback(): Promise<void> {
-    super.connectedCallback();
+  override async updated(changes: PropertyValues<this>): Promise<void> {
+    super.updated(changes);
 
-    await this._getSets('tandem').then((sets) => {
-      if (sets) {
-        this.sets = sets;
-      }
-    })
+    if (changes.has('yarn') && this.yarn) {
+      await this._getSets(this.yarn.folder).then((sets) => {
+        if (sets) {
+          this.sets = sets;
+        }
+      })
+    }
   }
 
   emitSet(set: ColorSet): void {
@@ -53,9 +57,9 @@ export class MyColorSet extends LitElement {
     this.dispatchEvent(new CustomEvent('selectSet', options));
   }
 
-  async _getSets(name: string): Promise<ColorSet[] | undefined> {
+  async _getSets(folder: string): Promise<ColorSet[] | undefined> {
     try {
-      const response = await fetch(`/sets/${name}.json`);
+      const response = await fetch(`/yarns/${folder}/sets.json`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const json = await response?.json();
       return json.sets;
