@@ -17,7 +17,7 @@ export class MyElement extends LitElement {
 
   @state() selectedPattern?: Pattern;
   @state() selectedYarn?: Yarn;
-  @state() patterns?: Pattern[];
+  @state() patterns?: Pattern[];  
   @state() yarns?: Yarn[];
   @state() svgPatterns: any;
 
@@ -52,7 +52,7 @@ export class MyElement extends LitElement {
       this.style.removeProperty(`--yarn${key}-image`);
     });
     this.svgPatterns = value.detail.map( (color:PaletteColor, index:number) => {
-      return {url: `yarns/foxy-fibers/images/${color.image}`, index: this.keys[index]}
+      return {url: `yarns/${this.selectedYarn?.folder}/images/${color.image}`, index: this.keys[index]}
     });
     value.detail.forEach((color:PaletteColor,index:number) => {
       this.style.setProperty(`--yarn${this.keys[index]}`, color.color);

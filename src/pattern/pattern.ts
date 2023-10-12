@@ -53,7 +53,7 @@ export class MyPattern extends LitElement {
           ${this.defs.map((def:{url:string, index:string}) => 
             `<pattern id="img${def.index}" patternUnits="userSpaceOnUse" width="100" height="100" fill="var(--yarn${def.index})">
               <rect  width="100" height="100" fill="var(--yarn${def.index})" />
-              <image href="${def.url}" x="0" y="0" width="100" height="100" />
+              <image href="${def.url}" x="0" y="0" width="130" height="100" preserveAspectRatio="xMinYMin slice"/>
             </pattern>
             `).join('\n')}
           </defs>
