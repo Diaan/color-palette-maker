@@ -3,7 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { PaletteColor } from '../color-palette/color-palette';
 import { Yarn } from '..';
 
-export type ColorSet = { colors: PaletteColor[]; name: string };
+export type ColorSet = { colors: string[]; name: string };
 
 /**
  * An example element.
@@ -27,9 +27,9 @@ export class MyColorSet extends LitElement {
         (set) =>
           html`<li @click=${()=>this.emitSet(set)}>
             <span>${set.name}</span>
-            ${set.colors.map((color) =>
-              html`<my-color-card .palette=${color} size="mini" .yarn=${this.yarn}></my-color-card>`
-            )}
+            ${set.colors.map(color => html`
+              <my-color-card .palette=${this.#getColorByName(color)} size="mini" .yarn=${this.yarn}></my-color-card>
+            `)}
           </li>`
         )}
       </ul>
@@ -39,10 +39,14 @@ export class MyColorSet extends LitElement {
   override async updated(changes: PropertyValues<this>): Promise<void> {
     super.updated(changes);
 
-    if (changes.has('yarn') && this.yarn) {
-      await this._getSets(this.yarn.folder).then((sets) => {
-        if (sets) {
-          this.sets = sets;
+    if (changes.has('yarn')) {
+      await this.#waitForWindowProperty().then(async () => {
+        if(this.yarn){
+          await this._getSets(this.yarn.folder).then((sets) => {
+            if (sets) {
+              this.sets = sets;
+            }
+          })
         }
       })
     }
@@ -50,7 +54,10 @@ export class MyColorSet extends LitElement {
 
   emitSet(set: ColorSet): void {
     const options = {
-      detail: set,
+      detail: {
+        ...set,
+        colors: set.colors.map(c => this.#getColorByName(c))
+      },
       bubbles: true,
       composed: true,
     };
@@ -67,6 +74,23 @@ export class MyColorSet extends LitElement {
       console.warn('error loading pattern');
       return;
     }
+  }
+
+  #getColorByName(name:string): PaletteColor {
+    return window.CPM.palette.find(c=>c.name===name) as PaletteColor;
+  }
+
+  async #waitForWindowProperty(): Promise<void> {
+    return new Promise<void>(resolve => {
+      const checkProperty = (): void => {
+        if (window.CPM?.palette && Object.keys(window.CPM.palette).length > 0) {
+          resolve();
+        } else {
+          setTimeout(checkProperty, 100); // check again in 100ms
+        }
+      };
+      checkProperty();
+    });
   }
 
   static styles = css`

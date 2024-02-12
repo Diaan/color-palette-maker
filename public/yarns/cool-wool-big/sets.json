@@ -2,25 +2,6 @@
   "sets":[
   {
     "name":"Let's have cake",
-    "colors":[{
-      "name": "986",
-      "color": "#d8a44b"
-    },
-    {
-      "name": "601",
-      "color": "#e9e2ce"
-    },
-    {
-      "name": "1016",
-      "color": "#f6d8b6"
-    },
-    {
-      "name": "947",
-      "color": "#adbdb7"
-    },
-    {
-      "name": "979",
-      "color": "#3d6276"
-    }]
+    "colors":["0986","0601", "1016", "0947", "0979"]
   }
 ]}

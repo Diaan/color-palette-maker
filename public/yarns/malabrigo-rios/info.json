@@ -1,0 +1,653 @@
+{
+  "weight":"worsted",
+  "running-length": 192,
+  "palette": [
+    {
+      "image": "baafa2c2-af79-4583-a98d-07c9fdf44751_RIO611_RAVELRY_RED.jpg",
+      "name": "611",
+      "color": "rgb(86,29,40)"
+    },
+    
+    {
+      "image": "3086ba10-763b-4b8a-aba8-abe2e69f8dcc_RIO_049+9.jpg",
+      "name": "049",
+      "color": "rgb(117,49,51)"
+    },
+    
+    {
+      "image": "3da9f91b-5601-4fce-874d-6e11af151a1b_RIO_651+7.jpg",
+      "name": "651",
+      "color": "rgb(157,43,49)"
+    },
+    
+    {
+      "image": "30274bb2-b053-426d-96e4-7a364d6805a2_RIO_033+8.jpg",
+      "name": "033",
+      "color": "rgb(177,24,44)"
+    },
+    
+    {
+      "image": "1b783528-2024-4fdf-9b41-22342c054017_RIO703+ALMOND+BLOSSOM.jpg",
+      "name": "703",
+      "color": "rgb(201,174,176)"
+    },
+    
+    {
+      "image": "d9af7a47-6cf5-4129-a29b-50d367342107_RIOS869+CUMPARTSITA.jpg",
+      "name": "869",
+      "color": "rgb(86,57,77)"
+    },
+    
+    {
+      "image": "e9ba21dc-fece-4f28-b72a-46d86e298f82_RIO_656+4.jpg",
+      "name": "656",
+      "color": "rgb(203,136,123)"
+    },
+    
+    {
+      "image": "810a4b7a-3d89-4dbd-a02c-532a301034e9_810A8547_57_ENGLISH_ROSE.jpg",
+      "name": "057",
+      "color": "rgb(142,72,99)"
+    },
+    
+    {
+      "image": "0ff61adc-21fa-4a63-add3-b5838f6b3705_RIO093+FUCSIA.jpeg",
+      "name": "093",
+      "color": "rgb(159,19,72)"
+    },
+    
+    {
+      "image": "81d27a8e-1b2b-4b4e-a1a6-bb121e7cfba8_RIO_653+10.jpg",
+      "name": "653",
+      "color": "rgb(128,19,61)"
+    },
+    
+    {
+      "image": "8d1e33fa-3ac9-40ab-8bb9-7aaa08a37739_RIO214+MAGENTA.jpeg",
+      "name": "214",
+      "color": "rgb(92,28,68)"
+    },
+    
+    {
+      "image": "62b5edd3-1263-4114-be89-2a085ad18bd8_RIO_872+11.jpg",
+      "name": "872",
+      "color": "rgb(70,38,64)"
+    },
+    
+    {
+      "image": "c26a47dc-72ac-4398-8874-89288c6b3f60_RIOS016+GLAZED+CARROT.jpg",
+      "name": "016",
+      "color": "rgb(116,48,36)"
+    },
+    
+    {
+      "image": "8e33c45b-971d-4a51-84d4-0acc8ed54fc2_RIOS136+SABIDURÍA.jpg",
+      "name": "136",
+      "color": "rgb(101,75,100)"
+    },
+    
+    {
+      "image": "RIOS-HOLLYHOCK.jpeg",
+      "name": "148",
+      "color": "rgb(86,27,84)"
+    },
+    
+    {
+      "image": "7b32423f-c756-48a4-8575-5d5ddff6c6fc_RIOS030+PURPLE+MISTERY.jpg",
+      "name": "030",
+      "color": "rgb(50,43,68)"
+    },
+    
+    {
+      "image": "e8326d2d-94df-48e8-8707-b175bd6d0129_RIO_066+4.jpg",
+      "name": "066",
+      "color": "rgb(78,63,98)"
+    },
+    
+    {
+      "image": "cdc4bfbc-ef32-49fb-a6f5-bfac994850a4_RIO211+SYRAH+GRAPES.jpeg",
+      "name": "211",
+      "color": "rgb(36,28,50)"
+    },
+    
+    {
+      "image": "f6f008b2-8381-4e70-b999-cf9edbaf6173_RIO_276+12.jpg",
+      "name": "276",
+      "color": "rgb(131,133,162)"
+    },
+    
+    {
+      "image": "d02759f6-6a79-4474-a5ba-35e4cfcec953_RIOS+VALENTINA.jpeg",
+      "name": "689",
+      "color": "rgb(167,145,171)"
+    },
+    
+    {
+      "image": "7b44b88e-f97a-44c0-9724-9c0f07be9865_RIO_657+3.jpg",
+      "name": "657",
+      "color": "rgb(169,136,137)"
+    },
+    
+    {
+      "image": "f1e2b1ca-47a0-4a5a-be84-d2c6b1e7d1b9_RIO_652+12.jpg",
+      "name": "652",
+      "color": "rgb(122,116,145)"
+    },
+    
+    {
+      "image": "3f7e1865-f7e2-4eed-8a7b-aa22db84f7ba_RIO_843+7.jpg",
+      "name": "843",
+      "color": "rgb(108,91,103)"
+    },
+    
+    {
+      "image": "73ce726d-210e-45a4-a85c-e387670feb83_RIOS863+ZARZAMORA.jpg",
+      "name": "863",
+      "color": "rgb(57,58,73)"
+    },
+    
+    {
+      "image": "c9fae8ba-1b59-4a9e-a5c3-afbd381a872a_RIO_846+4.jpg",
+      "name": "846",
+      "color": "rgb(114,118,126)"
+    },
+    
+    {
+      "image": "c5373853-fe8b-47b7-afb6-8a84552205cb_RIOS+AQUAMARINE.jpeg",
+      "name": "687",
+      "color": "rgb(107,152,203)"
+    },
+    
+    {
+      "image": "7e9034f9-44be-4857-8bc0-a0becd7b3a65_RIO_654+5.jpg",
+      "name": "654",
+      "color": "rgb(81,103,192)"
+    },
+    
+    {
+      "image": "26f04905-8b85-4ebd-88e3-74d471e6914b_RIO_644+12.jpg",
+      "name": "644",
+      "color": "rgb(59,96,122)"
+    },
+    
+    {
+      "image": "bc80a4e7-b56a-4676-8085-7601b3498466_RIO_027+14.jpg",
+      "name": "027",
+      "color": "rgb(62,114,144)"
+    },
+    
+    {
+      "image": "53414d37-26ae-4409-9898-0cb92a704925_RIO_856+9.jpg",
+      "name": "856",
+      "color": "rgb(80,112,154)"
+    },
+    
+    {
+      "image": "4b2a86f0-7dcb-4c4c-9cf1-36a50c017846_RIO_645+12.jpg",
+      "name": "645",
+      "color": "rgb(46,76,111)"
+    },
+    
+    {
+      "image": "173b8749-4d34-417b-bbb4-90a9e541fd26_RIO210+BLUE+JEAN.jpeg",
+      "name": "210",
+      "color": "rgb(30,72,126)"
+    },
+    
+    {
+      "image": "f7c2c796-f09d-4f40-b04c-819ac954354f_RIO209+DENIM.jpg",
+      "name": "209",
+      "color": "rgb(21,41,66)"
+    },
+    
+    {
+      "image": "28dbdb89-ca40-4e29-be8a-3e9a089c5369_RIOS-MATISSE+BLUE.jpeg",
+      "name": "415",
+      "color": "rgb(25,26,126)"
+    },
+    
+    {
+      "image": "d6ebb915-658c-4b17-b920-5c9fadcf08c9_RIO215+COWBOY.jpeg",
+      "name": "215",
+      "color": "rgb(31,43,58)"
+    },
+    
+    {
+      "image": "813c274c-438d-4445-9550-854d0177d362_RIO_052+6.jpg",
+      "name": "052",
+      "color": "rgb(49,59,96)"
+    },
+    
+    {
+      "image": "a3aac52b-0127-46d3-b0da-f5831cb68ed6_RIOS150+AZUL+PROFUNDO.jpg",
+      "name": "150",
+      "color": "rgb(48,60,81)"
+    },
+    
+    {
+      "image": "3d6c2448-2086-4d42-8970-56fc60bf0ca0_RIO_133+9.jpg",
+      "name": "133",
+      "color": "rgb(27,121,141)"
+    },
+    
+    {
+      "image": "37f7947a-ff82-42ba-8cf1-5a23778f63df_RIOS-CIAN.jpeg",
+      "name": "683",
+      "color": "rgb(8,149,175)"
+    },
+    
+    {
+      "image": "78290dfe-361b-4c67-95bf-6459cddafe20_RIO413+ANKARA+GREEN.jpeg",
+      "name": "413",
+      "color": "rgb(36,159,182)"
+    },
+    
+    {
+      "image": "6a6c454d-0382-4e38-903c-783b64aedda2_RIO708+CUCUMBER.jpg",
+      "name": "708",
+      "color": "rgb(139,175,167)"
+    },
+    
+    {
+      "image": "193c89a4-b985-4a17-9172-c202e1f5f8af_RIO_083+7.jpg",
+      "name": "083",
+      "color": "rgb(137,198,172)"
+    },
+    
+    {
+      "image": "251ee6bd-b21d-4383-854d-15197e1d2dc6_RIO_855+11.jpg",
+      "name": "855",
+      "color": "rgb(49,110,105)"
+    },
+    
+    {
+      "image": "cafaea4e-f0dc-46dd-8073-f8c7c006b31e_RIOS412+TEAL+FEATHER.jpg",
+      "name": "412",
+      "color": "rgb(43,73,77)"
+    },
+    
+    {
+      "image": "19da3629-ff03-40b8-96b3-79dd684c3f51_RIO_725+5.jpg",
+      "name": "725",
+      "color": "rgb(58,93,86)"
+    },
+    
+    {
+      "image": "962f1be3-f7f4-4e9a-898c-2beb82f8e771_RIO213+PINES.jpeg",
+      "name": "213",
+      "color": "rgb(17,45,51)"
+    },
+    
+    {
+      "image": "662ea9ef-a363-463a-b971-d54c4257792a_RIOS809+SOLIS.jpg",
+      "name": "809",
+      "color": "rgb(49,80,81)"
+    },
+    
+    {
+      "image": "f46da632-0258-406e-af23-b1ab2160a5f3_RIO_847+7.jpg",
+      "name": "847",
+      "color": "rgb(68,76,76)"
+    },
+    
+    {
+      "image": "ec1abb02-58bf-42ff-b2b4-2eeee0b17665_RIO_051+5.jpg",
+      "name": "051",
+      "color": "rgb(61,87,69)"
+    },
+    
+    {
+      "image": "8a542c7b-ee70-46f5-891b-4519dec71f53_RIOS128+FRESCO+Y+SECO.jpg",
+      "name": "128",
+      "color": "rgb(67,94,76)"
+    },
+    
+    {
+      "image": "521f027a-db04-4ad5-8641-05f658d7c1ea_RIOS880+HOJAS.jpg",
+      "name": "880",
+      "color": "rgb(94,90,66)"
+    },
+    
+    {
+      "image": "11a186a0-0879-485d-9273-8a5142ef0471_RIOS138+IVY.jpg",
+      "name": "138",
+      "color": "rgb(107,113,59)"
+    },
+    
+    {
+      "image": "ff7eb0e6-f9cf-4380-802c-72e6b81c0a0a_RIOS037+LETTUCE.jpg",
+      "name": "037",
+      "color": "rgb(134,133,68)"
+    },
+    
+    {
+      "image": "1670f5b2-52b8-41ef-bf28-ad5672c8f41d_IMG_0793.jpg",
+      "name": "011",
+      "color": "rgb(138,179,38)"
+    },
+    
+    {
+      "image": "eee36e1a-f402-438a-846a-fb2569f1941b_RIO_688+17.jpg",
+      "name": "688",
+      "color": "rgb(175,172,105)"
+    },
+    
+    {
+      "image": "0a916687-e7d0-41ca-a18e-583402627d6f_RIO_640+13.jpg",
+      "name": "640",
+      "color": "rgb(140,126,79)"
+    },
+    
+    {
+      "image": "9b33bd94-1577-4f0e-8463-16e48318bf1b_RIO_641+13.jpg",
+      "name": "641",
+      "color": "rgb(168,160,113)"
+    },
+    
+    {
+      "image": "dd357537-cd35-4bfc-8cb6-8cc8db25d9b2_RIOS035+FRANK+OCHRE.jpg",
+      "name": "035",
+      "color": "rgb(146,121,41)"
+    },
+    
+    {
+      "image": "8069f52a-6713-46fd-a91b-55becf536dc6_810A8467_48_GLITTER.jpg",
+      "name": "048",
+      "color": "rgb(87,64,44)"
+    },
+    
+    {
+      "image": "3dce494e-5cb1-4227-9c44-26f88af06d64_RIO_643+3-2.jpg",
+      "name": "643",
+      "color": "rgb(194,146,67)"
+    },
+    
+    {
+      "image": "eea9cce4-4f01-4a6d-be46-b14fe1165f92_RIO_208+8.jpg",
+      "name": "208",
+      "color": "rgb(196,152,97)"
+    },
+    
+    {
+      "image": "b68dd2d4-2737-4d52-a12c-b279b2f9ae6b_RIO_655+5.jpg",
+      "name": "655",
+      "color": "rgb(230,154,26)"
+    },
+    
+    {
+      "image": "1d0a10b2-821e-417f-8ccc-8d3c80a20882_RIO_647+7.jpg",
+      "name": "647",
+      "color": "rgb(175,95,34)"
+    },
+    
+    {
+      "image": "a7ed1525-1dca-438b-89f9-efe332297bb7_RIO_277+3-2.jpg",
+      "name": "277",
+      "color": "rgb(174,167,150)"
+    },
+    
+    {
+      "image": "3cb25015-f735-4491-bd6d-7455c966f979_096_SUNSET_.jpg",
+      "name": "096",
+      "color": "rgb(165,108,46)"
+    },
+    
+    {
+      "image": "af2b5898-c2e5-40b4-8351-b405410cc56e_RIO896+LIVING+CORAL.jpg",
+      "name": "896",
+      "color": "rgb(180,62,64)"
+    },
+    
+    {
+      "image": "3179d4f7-a2de-4ac6-9059-0a888079251f_RIOS695+PEACHY.jpeg",
+      "name": "695",
+      "color": "rgb(182,126,117)"
+    },
+    
+    {
+      "image": "d719e47b-fe31-4bc4-8cbf-915727717b02_RIO707+MELON.jpg",
+      "name": "707",
+      "color": "rgb(180,155,139)"
+    },
+    
+    {
+      "image": "65192cdb-38d4-4a3c-a409-0c0e3b82aedf_RIO704+IVORY.jpg",
+      "name": "704",
+      "color": "rgb(197,195,185)"
+    },
+    
+    {
+      "image": "2d0f4bfc-a186-4496-9ac9-e224e2a7c0fc_RIOS131+SAND+BANK.jpg",
+      "name": "131",
+      "color": "rgb(147,137,136)"
+    },
+    
+    {
+      "image": "6294e9db-4419-4c41-8aea-5fe92740f326_RIO696+WHOLE+GRAIN.jpg",
+      "name": "696",
+      "color": "rgb(136,133,137)"
+    },
+    
+    {
+      "image": "0238061a-1903-452f-ba01-3ae198eb35bf_RIOS122+NIEBLA.jpg",
+      "name": "122",
+      "color": "rgb(127,123,129)"
+    },
+    
+    {
+      "image": "2aea9de4-c823-43b7-913a-e295a7b8156f_RIOS036+PEARL.jpg",
+      "name": "036",
+      "color": "rgb(121,113,110)"
+    },
+    
+    {
+      "image": "1e38430a-f69a-438c-9426-4f4f8f234725_RIO705.jpg",
+      "name": "705",
+      "color": "rgb(165,165,166)"
+    },
+    
+    {
+      "image": "fcaa82a0-1a5d-461f-8c45-370dbd8bd323_RIO_212+5.jpg",
+      "name": "212",
+      "color": "rgb(140,157,165)"
+    },
+    
+    {
+      "image": "a495dfad-145d-4ac9-aa7d-86ede368e142_RIO706+COSMOS.jpg",
+      "name": "706",
+      "color": "rgb(127,131,136)"
+    },
+    
+    {
+      "image": "308cabed-b257-4ced-8e10-39eb936cf3d3_RIO429+CAPE+COD+GRAY.jpg",
+      "name": "429",
+      "color": "rgb(107,107,117)"
+    },
+    
+    {
+      "image": "3b354067-004a-4057-aa82-1f5adee8d0df_RIO_646+8.jpg",
+      "name": "646",
+      "color": "rgb(87,88,93)"
+    },
+    
+    {
+      "image": "b103dd98-8b3f-4bf5-b5fc-3bb91469adb3_RIOS845+CIRRUS+GRAY.jpg",
+      "name": "845",
+      "color": "rgb(77,80,89)"
+    },
+    
+    {
+      "image": "779964e5-e4b4-4e0b-9104-e9f06e90d08b_810A8463_69_PEARL_TEN.jpg",
+      "name": "069",
+      "color": "rgb(68,59,64)"
+    },
+    
+    {
+      "image": "4e47efd7-a7cf-4300-be9c-28adc7b981bf_RIOS043+PLOMO.jpg",
+      "name": "043",
+      "color": "rgb(69,67,76)"
+    },
+    
+    {
+      "image": "8b867742-5f27-43e8-a4fe-9ae86719a20b_RIOS624+COCO.jpg",
+      "name": "624",
+      "color": "rgb(61,50,52)"
+    },
+    
+    {
+      "image": "aca2c620-c62e-4031-9e0f-c785c31c787b_810A8679_TRANQUILO.jpg",
+      "name": "841",
+      "color": "rgb(92,73,76)"
+    },
+    
+    {
+      "image": "96d716c6-090e-48e4-84b7-a4b222db6efb_RIOS844+NIMBUS+GRAY.jpg",
+      "name": "844",
+      "color": "rgb(101,97,93)"
+    },
+    
+    {
+      "image": "672fb4ff-20fe-4ca7-8778-6052ec48aeae_RIOS848+SAND+STORM.jpg",
+      "name": "848",
+      "color": "rgb(81,73,70)"
+    },
+    
+    {
+      "image": "62f72afa-a428-4882-bd6e-23f040110b9a_RIO_642+17.jpg",
+      "name": "642",
+      "color": "rgb(174,150,120)"
+    },
+    
+    {
+      "image": "26329d79-91a8-4be6-9290-e89c97ea2a0c_RIOS063+NATURAL.jpg",
+      "name": "063",
+      "color": "rgb(167,158,137)"
+    },
+    
+    {
+      "image": "5f925b64-56b6-4024-8d94-fd60be24f77f_IMG_0805.jpg",
+      "name": "943",
+      "color": "rgb(219,224,234)"
+    },
+    
+    {
+      "image": "533d7c42-38cc-4809-b1e0-14426aa39922_RIO_005+6.jpg",
+      "name": "005",
+      "color": "rgb(140,117,75)"
+    },
+    
+    {
+      "image": "027248d2-bd89-4c15-91f8-ffc719db8df0_RIO_684+7.jpg",
+      "name": "684",
+      "color": "rgb(74,45,47)"
+    },
+    
+    {
+      "image": "f385b8f6-ee19-4e2a-8fd1-0e28e4b159cc_RIOS195+BLACK.jpg",
+      "name": "195",
+      "color": "rgb(29,29,32)"
+    },
+    
+    {
+      "image": "09d4359b-0941-47e6-a784-a14687caac63_RIO_618+6.jpg",
+      "name": "618",
+      "color": "rgb(95,149,135)"
+    },
+    
+    {
+      "image": "2f6a2731-0101-4df4-9e60-59407533a837_RIO_862+28.jpg",
+      "name": "862",
+      "color": "rgb(68,45,16)"
+    },
+    
+    {
+      "image": "0ac6ff6c-ff64-4321-944f-c7d6e8043d54_RIO_886+16.jpg",
+      "name": "886",
+      "color": "rgb(117,89,60)"
+    },
+    
+    {
+      "image": "1255cbaf-b91b-413d-99e6-a0a13a79f767_RIO_866+6.jpg",
+      "name": "866",
+      "color": "rgb(94,97,73)"
+    },
+    
+    {
+      "image": "4f51aa1f-890d-47a3-b244-e02327f2a16a_RIOS859+PRIMAVERA.jpg",
+      "name": "859",
+      "color": "rgb(82,75,69)"
+    },
+    
+    {
+      "image": "e0269d21-8403-462f-8907-1fa299781423_RIOS877+QUEGUAY.jpg",
+      "name": "877",
+      "color": "rgb(96,87,79)"
+    },
+    
+    {
+      "image": "89daa2ed-3e6b-4946-8243-af2e86b6917c_RIOS842+ILUSION.jpg",
+      "name": "842",
+      "color": "rgb(98,75,75)"
+    },
+    
+    {
+      "image": "2f6531cb-19c4-4854-ae51-99063ba98a29_RIOS870+CANDOMBE.jpg",
+      "name": "870",
+      "color": "rgb(85,73,80)"
+    },
+    
+    {
+      "image": "053e9bef-38c4-42b7-8215-dfb9bf495899_RIOS871+PLAYA.jpg",
+      "name": "871",
+      "color": "rgb(91,89,86)"
+    },
+    
+    {
+      "image": "cb80fbeb-c912-40d3-b7b6-07f344dade57_RIOS120+LOTUS.jpg",
+      "name": "120",
+      "color": "rgb(85,86,100)"
+    },
+    
+    {
+      "image": "8584ea47-cdf7-446e-95be-e7f845a6c3f2_RIOS121+MARTE.jpg",
+      "name": "121",
+      "color": "rgb(76,52,58)"
+    },
+    
+    {
+      "image": "ea824f0c-9064-47e6-9c2e-f5bdc65ecd41_RIOS139+POCION.jpg",
+      "name": "139",
+      "color": "rgb(72,68,74)"
+    },
+    
+    {
+      "image": "19b7cd69-add5-4011-ad25-b7771bb04c2e_RIOS850+ARCHANGEL.jpg",
+      "name": "850",
+      "color": "rgb(127,102,101)"
+    },
+    
+    {
+      "image": "c75994a5-f488-421c-98a5-8598a977692d_VOLCAN---RIO.jpg",
+      "name": "227",
+      "color": "rgb(128,65,47)"
+    },
+    
+    {
+      "image": "61d0d3bf-9e45-43bf-8574-23fc0f5f56ab_RIOS247+WHALES+ROAD.jpg",
+      "name": "247",
+      "color": "rgb(58,71,108)"
+    },
+    
+    {
+      "image": "RIO_894+10.jpg",
+      "name": "894",
+      "color": "rgb(73,87,99)"
+    },
+    
+    {
+      "image": "5477ddc7-15c3-412e-851a-bfa8192259fe_RIOS416+INDIECITA.jpg",
+      "name": "416",
+      "color": "rgb(102,109,131)"
+    }
+  ]
+}

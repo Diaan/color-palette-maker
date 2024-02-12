@@ -1,0 +1,214 @@
+{
+  "palette": [
+    {
+      "image": "51.jpg",
+      "name": "51",
+      "color": "rgb(160,130,99)"
+    },
+      {
+      "image": "49.jpg",
+      "name": "49",
+      "color": "rgb(100,67,56)"
+    },
+      {
+      "image": "50.jpg",
+      "name": "50",
+      "color": "rgb(225,210,191)"
+    },
+      {
+      "image": "39.jpg",
+      "name": "39",
+      "color": "rgb(201,207,205)"
+    },
+      {
+      "image": "28.jpg",
+      "name": "28",
+      "color": "rgb(40,98,111)"
+    },
+      {
+      "image": "27.jpg",
+      "name": "27",
+      "color": "rgb(54,50,78)"
+    },
+      {
+      "image": "15.jpg",
+      "name": "15",
+      "color": "rgb(159,174,166)"
+    },
+      {
+      "image": "09.jpg",
+      "name": "09",
+      "color": "rgb(56,40,36)"
+    },
+      {
+      "image": "48.jpg",
+      "name": "48",
+      "color": "rgb(112,43,53)"
+    },
+      {
+      "image": "47.jpg",
+      "name": "47",
+      "color": "rgb(146,151,128)"
+    },
+      {
+      "image": "46.jpg",
+      "name": "46",
+      "color": "rgb(209,158,141)"
+    },
+      {
+      "image": "45.jpg",
+      "name": "45",
+      "color": "rgb(191,111,94)"
+    },
+      {
+      "image": "44.jpg",
+      "name": "44",
+      "color": "rgb(107,87,120)"
+    },
+      {
+      "image": "43.jpg",
+      "name": "43",
+      "color": "rgb(69,151,165)"
+    },
+      {
+      "image": "42.jpg",
+      "name": "42",
+      "color": "rgb(166,91,73)"
+    },
+      {
+      "image": "40.jpg",
+      "name": "40",
+      "color": "rgb(223,182,182)"
+    },
+      {
+      "image": "38.jpg",
+      "name": "38",
+      "color": "rgb(151,154,162)"
+    },
+      {
+      "image": "37.jpg",
+      "name": "37",
+      "color": "rgb(91,116,102)"
+    },
+      {
+      "image": "36.jpg",
+      "name": "36",
+      "color": "rgb(189,138,159)"
+    },
+      {
+      "image": "35.jpg",
+      "name": "35",
+      "color": "rgb(116,34,60)"
+    },
+      {
+      "image": "34.jpg",
+      "name": "34",
+      "color": "rgb(162,50,82)"
+    },
+      {
+      "image": "32.jpg",
+      "name": "32",
+      "color": "rgb(167,50,67)"
+    },
+      {
+      "image": "30.jpg",
+      "name": "30",
+      "color": "rgb(218,160,70)"
+    },
+      {
+      "image": "29.jpg",
+      "name": "29",
+      "color": "rgb(7,142,165)"
+    },
+      {
+      "image": "26.jpg",
+      "name": "26",
+      "color": "rgb(163,171,130)"
+    },
+      {
+      "image": "25.jpg",
+      "name": "25",
+      "color": "rgb(218,146,157)"
+    },
+      {
+      "image": "24.jpg",
+      "name": "24",
+      "color": "rgb(239,201,146)"
+    },
+      {
+      "image": "23.jpg",
+      "name": "23",
+      "color": "rgb(87,117,143)"
+    },
+      {
+      "image": "22.jpg",
+      "name": "22",
+      "color": "rgb(155,124,147)"
+    },
+      {
+      "image": "20.jpg",
+      "name": "20",
+      "color": "rgb(54,57,91)"
+    },
+      {
+      "image": "19.jpg",
+      "name": "19",
+      "color": "rgb(130,159,185)"
+    },
+      {
+      "image": "18.jpg",
+      "name": "18",
+      "color": "rgb(141,141,84)"
+    },
+      {
+      "image": "16.jpg",
+      "name": "16",
+      "color": "rgb(218,174,190)"
+    },
+      {
+      "image": "13.jpg",
+      "name": "13",
+      "color": "rgb(88,93,118)"
+    },
+      {
+      "image": "11.jpg",
+      "name": "11",
+      "color": "rgb(174,38,47)"
+    },
+      {
+      "image": "08.jpg",
+      "name": "08",
+      "color": "rgb(195,187,179)"
+    },
+      {
+      "image": "05.jpg",
+      "name": "05",
+      "color": "rgb(187,183,178)"
+    },
+      {
+      "image": "01.jpg",
+      "name": "01",
+      "color": "rgb(239,229,211)"
+    },
+      {
+      "image": "07.jpg",
+      "name": "07",
+      "color": "rgb(145,133,122)"
+    },
+      {
+      "image": "06.jpg",
+      "name": "06",
+      "color": "rgb(103,96,89)"
+    },
+      {
+      "image": "04.jpg",
+      "name": "04",
+      "color": "rgb(99,97,95)"
+    },
+      {
+      "image": "03.jpg",
+      "name": "03",
+      "color": "rgb(59,58,58)"
+    }
+  ]
+}

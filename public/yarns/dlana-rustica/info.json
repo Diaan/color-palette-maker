@@ -1,0 +1,245 @@
+{
+  "weight":"worsted",
+  "running-length": 193,
+  "palette": [
+    {
+      "image": "vivos-V13.jpg",
+      "name": "vivos-V13",
+      "color": "rgb(134,29,35)"
+    },
+    
+    {
+      "image": "vivos-V2.jpg",
+      "name": "vivos-V2",
+      "color": "rgb(173,60,48)"
+    },
+    
+    {
+      "image": "vivos-V3.jpg",
+      "name": "vivos-V3",
+      "color": "rgb(213,52,126)"
+    },
+    
+    {
+      "image": "vivos-V5.jpg",
+      "name": "vivos-V5",
+      "color": "rgb(143,31,48)"
+    },
+    
+    {
+      "image": "vivos-V1.jpg",
+      "name": "vivos-V1",
+      "color": "rgb(190,129,50)"
+    },
+    
+    {
+      "image": "vivos-V8.jpg",
+      "name": "vivos-V8",
+      "color": "rgb(67,53,98)"
+    },
+    
+    {
+      "image": "vivos-V9.jpg",
+      "name": "vivos-V9",
+      "color": "rgb(9,61,103)"
+    },
+    
+    {
+      "image": "vivos0.jpg",
+      "name": "vivos0",
+      "color": "rgb(76,112,43)"
+    },
+    
+    {
+      "image": "vivos-V12.jpg",
+      "name": "vivos-V12",
+      "color": "rgb(156,48,58)"
+    },
+    
+    {
+      "image": "vivos-V14.jpg",
+      "name": "vivos-V14",
+      "color": "rgb(6,111,135)"
+    },
+    
+    {
+      "image": "Pastel-P1.jpg",
+      "name": "Pastel-P1",
+      "color": "rgb(175,143,125)"
+    },
+    
+    {
+      "image": "Pastel-P2.jpg",
+      "name": "Pastel-P2",
+      "color": "rgb(130,105,100)"
+    },
+    
+    {
+      "image": "Pastel-P3.jpg",
+      "name": "Pastel-P3",
+      "color": "rgb(121,80,73)"
+    },
+    
+    {
+      "image": "Pastel-P4.jpg",
+      "name": "Pastel-P4",
+      "color": "rgb(125,97,78)"
+    },
+    
+    {
+      "image": "Pastel-P5.jpg",
+      "name": "Pastel-P5",
+      "color": "rgb(114,81,71)"
+    },
+    
+    {
+      "image": "Pastel-P6.jpg",
+      "name": "Pastel-P6",
+      "color": "rgb(170,104,61)"
+    },
+    
+    {
+      "image": "Pastel-P7.jpg",
+      "name": "Pastel-P7",
+      "color": "rgb(181,106,98)"
+    },
+    
+    {
+      "image": "Pastel-P8.jpg",
+      "name": "Pastel-P8",
+      "color": "rgb(145,88,96)"
+    },
+    
+    {
+      "image": "Pastel-P9.jpg",
+      "name": "Pastel-P9",
+      "color": "rgb(104,112,54)"
+    },
+    
+    {
+      "image": "Pastel-P10.jpg",
+      "name": "Pastel-P10",
+      "color": "rgb(94,112,97)"
+    },
+    
+    {
+      "image": "Pastel-P11.jpg",
+      "name": "Pastel-P11",
+      "color": "rgb(80,122,143)"
+    },
+    
+    {
+      "image": "Pastel-P12.jpg",
+      "name": "Pastel-P12",
+      "color": "rgb(93,100,110)"
+    },
+    
+    {
+      "image": "Pastel-P13.jpg",
+      "name": "Pastel-P13",
+      "color": "rgb(95,121,133)"
+    },
+    
+    {
+      "image": "Pastel-P14.jpg",
+      "name": "Pastel-P14",
+      "color": "rgb(131,115,140)"
+    },
+    
+    {
+      "image": "oscuros-D1.jpg",
+      "name": "oscuros-D1",
+      "color": "rgb(163,97,39)"
+    },
+    
+    {
+      "image": "oscuros-D2.jpg",
+      "name": "oscuros-D2",
+      "color": "rgb(77,10,23)"
+    },
+    
+    {
+      "image": "oscuros-D3.jpg",
+      "name": "oscuros-D3",
+      "color": "rgb(50,19,36)"
+    },
+    
+    {
+      "image": "oscuros-D4.jpg",
+      "name": "oscuros-D4",
+      "color": "rgb(52,21,88)"
+    },
+    
+    {
+      "image": "oscuros-D5.jpg",
+      "name": "oscuros-D5",
+      "color": "rgb(4,56,100)"
+    },
+    
+    {
+      "image": "oscuros-D6.jpg",
+      "name": "oscuros-D6",
+      "color": "rgb(10,24,39)"
+    },
+    
+    {
+      "image": "oscuros-D7.jpg",
+      "name": "oscuros-D7",
+      "color": "rgb(4,65,44)"
+    },
+    
+    {
+      "image": "oscuros-D9.jpg",
+      "name": "oscuros-D9",
+      "color": "rgb(44,48,32)"
+    },
+    
+    {
+      "image": "oscuros-D10.jpg",
+      "name": "oscuros-D10",
+      "color": "rgb(9,9,12)"
+    },
+    
+    {
+      "image": "Natural-BL.jpg",
+      "name": "Natural-BL",
+      "color": "rgb(165,152,136)"
+    },
+    
+    {
+      "image": "oscuros-D8.jpg",
+      "name": "oscuros-D8",
+      "color": "rgb(18,64,53)"
+    },
+    
+    {
+      "image": "oscuros-D11.jpg",
+      "name": "oscuros-D11",
+      "color": "rgb(45,45,47)"
+    },
+    
+    {
+      "image": "Natural-GR.jpg",
+      "name": "Natural-GR",
+      "color": "rgb(47,34,31)"
+    },
+    
+    {
+      "image": "Natural-MA.jpg",
+      "name": "Natural-MA",
+      "color": "rgb(41,24,19)"
+    },
+    
+    {
+      "image": "Natural-GR1.jpg",
+      "name": "Natural-GR1",
+      "color": "rgb(85,70,64)"
+    },
+    
+    {
+      "image": "Natural-GR2.jpg",
+      "name": "Natural-GR2",
+      "color": "rgb(137,122,113)"
+    }
+  ]
+}

@@ -3,7 +3,15 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { Yarn } from '..';
 
 export type PaletteColor = { color: string; name: string, image?: string };
+declare global {
+  interface Window {
+    CPM: {
+      palette: PaletteColor[];
+    };
+  }
+}
 
+window.CPM ||= { palette: [] };
 /**
  * An example element.
  *
@@ -65,6 +73,7 @@ export class MyColorPalette extends LitElement {
       await this._getPalette(this.yarn.folder).then((p) => {
         if (p) {
           this.palette = p;
+          console.log(this.palette);
           this.emitPalette(this.selectedColors);
         }
       });
@@ -76,6 +85,7 @@ export class MyColorPalette extends LitElement {
   toggleColor(color: PaletteColor): void {
     if (!this.selectedColors.some((sc) => sc.name === color.name)) {
       this.selectedColors = [...this.selectedColors, color];
+      console.log(this.selectedColors);
       this.emitPalette(this.selectedColors);
     } else {
       this.removeColor(color);
@@ -110,8 +120,9 @@ export class MyColorPalette extends LitElement {
 
   async _getPalette(folder: string): Promise<PaletteColor[] | undefined> {
     try {
-      const response = await fetch(`/yarns/${folder}/colors.json`);
+      const response = await fetch(`/yarns/${folder}/info.json`);
       const json: { palette: PaletteColor[] } = await response?.json();
+      window.CPM.palette = json.palette;
       return json?.palette;
     } catch (error) {
       console.warn('error loading palette');

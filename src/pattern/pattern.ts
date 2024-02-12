@@ -2,7 +2,7 @@ import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
-export type Pattern = { name: string; file: string, colors: number };
+export type Pattern = { name: string; folder: string};
 /**
  * An example element.
  *
@@ -22,7 +22,7 @@ export class MyPattern extends LitElement {
   render() {
     return this.pattern ? 
       html`
-        <h3>${this.pattern?.name} (${this.pattern?.colors} colours)</h3>
+        <h3>${this.pattern?.name}</h3>
         ${ unsafeHTML(this.patternCode)}
         <div></div>
       ` : html`
@@ -37,7 +37,7 @@ export class MyPattern extends LitElement {
     super.updated(changes);
 
     if (changes.has('pattern') && this.pattern) {
-      await this._getPattern(this.pattern).then((p) => {
+      await this._getPatternInfo(this.pattern).then((p) => {
         if (p) {
           this.patternCode = p;
         }
@@ -62,9 +62,9 @@ export class MyPattern extends LitElement {
     }
   }
 
-  async _getPattern(pattern: Pattern): Promise<string | undefined> {
+  async _getPatternInfo(pattern: Pattern): Promise<string | undefined> {
     try {
-      const response = await fetch(`/patterns/${pattern.file}`);
+      const response = await fetch(`/patterns/${pattern.folder}/pattern.html`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const html = await response.text();
       return html;
