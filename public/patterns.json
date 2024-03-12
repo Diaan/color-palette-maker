@@ -1,13 +1,5 @@
 { "patterns":[
   {
-    "name": "Lit shawl 🧶",
-    "folder": "shawl",
-    "colors": 4
-  },{
-    "name": "Stained glass 🧶",
-    "folder": "stained-glass",
-    "colors": 6
-  },{
     "name": "Four simple stripes 🧶",
     "folder": "simple-stripes",
     "colors": 4
@@ -18,5 +10,8 @@
   },{
     "name": "Hilma",
     "folder": "hilma"
+  },{
+    "name": "Wave sweater",
+    "folder": "wave"
   }
 ]}
