@@ -2,7 +2,7 @@ import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
-export type Pattern = { name: string; file: string, colors: number };
+export type Pattern = { name: string; folder: string};
 /**
  * An example element.
  *
@@ -17,12 +17,15 @@ export class MyPattern extends LitElement {
   @property({attribute:'defs', type: Object})
   defs?:any;
 
+  @property()
+  imageScale:number = 50;
+
   @state() patternCode?: string;
 
   render() {
     return this.pattern ? 
       html`
-        <h3>${this.pattern?.name} (${this.pattern?.colors} colours)</h3>
+        <h3>${this.pattern?.name}</h3>
         ${ unsafeHTML(this.patternCode)}
         <div></div>
       ` : html`
@@ -37,7 +40,7 @@ export class MyPattern extends LitElement {
     super.updated(changes);
 
     if (changes.has('pattern') && this.pattern) {
-      await this._getPattern(this.pattern).then((p) => {
+      await this._getPatternInfo(this.pattern).then((p) => {
         if (p) {
           this.patternCode = p;
         }
@@ -51,9 +54,9 @@ export class MyPattern extends LitElement {
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
           ${this.defs.map((def:{url:string, index:string}) => 
-            `<pattern id="img${def.index}" patternUnits="userSpaceOnUse" width="100" height="100" fill="var(--yarn${def.index})">
-              <rect  width="100" height="100" fill="var(--yarn${def.index})" />
-              <image href="${def.url}" x="0" y="0" width="130" height="100" preserveAspectRatio="xMinYMin slice"/>
+            `<pattern id="img${def.index}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.index})">
+              <rect  width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.index})" />
+              <image href="${def.url}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
             </pattern>
             `).join('\n')}
           </defs>
@@ -62,11 +65,15 @@ export class MyPattern extends LitElement {
     }
   }
 
-  async _getPattern(pattern: Pattern): Promise<string | undefined> {
+  async _getPatternInfo(pattern: Pattern): Promise<string | undefined> {
     try {
-      const response = await fetch(`/patterns/${pattern.file}`);
+      const response = await fetch(`/patterns/${pattern.folder}/info.json`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const html = await response.text();
+      const data = await response.json();
+      console.log(data['pattern-file']);
+      const patterntext = await fetch(`/patterns/${pattern.folder}/${data['pattern-file']}`);
+      const html = await patterntext.text();
+      
       return html;
     } catch (error) {
       console.warn('error loading pattern');

@@ -1,0 +1,384 @@
+{
+  "palette": [
+    {
+      "image": "30295e4add8dc7cc7858ecdd8f9bf3c31c71faae_cool_wool_big_melange_lana_grossa_0640617_M.jpg",
+      "name": "0617",
+      "color": "rgb(71,71,69)"
+    },
+      {
+      "image": "dd1badf9310d042a652d34f9ec46ab25d0bc2222_cool_wool_big_lana_grossa_0640601_M.jpg",
+      "name": "0601",
+      "color": "rgb(233,225,203)"
+    },
+      {
+      "image": "1d66ab7383a8b4a496a38bc68c46b050aacf2b15_cool_wool_big_lana_grossa_0640604_M.jpg",
+      "name": "0604",
+      "color": "rgb(183,198,220)"
+    },
+      {
+      "image": "bcc864f44ad82cb7bf611377b051594d98a836cf_cool_wool_big_lana_grossa_0640605_M.jpg",
+      "name": "0605",
+      "color": "rgb(239,207,204)"
+    },
+      {
+      "image": "70b68f9983b0337b2ed2a53b0797f3797abbe357_cool_wool_big_lana_grossa_0640615_M.jpg",
+      "name": "0615",
+      "color": "rgb(234,233,227)"
+    },
+      {
+      "image": "ef43e36ba7255f5567e834794a1be71a1591907e_cool_wool_big_melange_lana_grossa_0640616_M.jpg",
+      "name": "0616",
+      "color": "rgb(170,170,168)"
+    },
+      {
+      "image": "f31146111efa0f6e567b9b96f19b1345940f549a_cool_wool_big_melange_lana_grossa_0640618_M.jpg",
+      "name": "0618",
+      "color": "rgb(39,40,38)"
+    },
+      {
+      "image": "4e5f28dbf5c816ec698c28a6345b94c0f9ccdf85_cool_wool_big_lana_grossa_0640627_M.jpg",
+      "name": "0627",
+      "color": "rgb(16,16,16)"
+    },
+      {
+      "image": "75da6eeaf481e400f2ccbfcf6db727c355fe25d2_cool_wool_big_lana_grossa_0640630_M.jpg",
+      "name": "0630",
+      "color": "rgb(13,16,31)"
+    },
+      {
+      "image": "82f9d86083f8ccc9fcbc1cf5e1363ec338825ecc_cool_wool_big_lana_grossa_0640648_M.jpg",
+      "name": "0648",
+      "color": "rgb(179,3,41)"
+    },
+      {
+      "image": "64f8d609849197e86f8f739245dbe0d00ec6e268_0640655_M.jpg",
+      "name": "0655",
+      "color": "rgb(38,42,58)"
+    },
+      {
+      "image": "201108675dc4f526a86463209d03b15ddb770598_cool_wool_big_lana_grossa_0640686_M.jpg",
+      "name": "0686",
+      "color": "rgb(111,95,79)"
+    },
+      {
+      "image": "0578efb2b6f10fd925e93c72ed6a341540b2682a_cool_wool_big_lana_grossa_0640690_M.jpg",
+      "name": "0690",
+      "color": "rgb(183,21,102)"
+    },
+      {
+      "image": "4ec5ac7037500df3bf82db3f76a7c982de0ec386_cool_wool_big_lana_grossa_0640910_M.jpg",
+      "name": "0910",
+      "color": "rgb(45,126,139)"
+    },
+      {
+      "image": "0e4bad0c376bf1ce1dd4d4cd2729e25e3f4822a6_cool_wool_big_lana_grossa_0640923_M.jpg",
+      "name": "0923",
+      "color": "rgb(186,6,23)"
+    },
+      {
+      "image": "0c37cb3fe7c7f10893a672fa02564f17d166dcb6_cool_wool_big_lana_grossa_0640924_M.jpg",
+      "name": "0924",
+      "color": "rgb(145,11,12)"
+    },
+      {
+      "image": "c843e48375c4b509dc8019c42a7e4cdd3da17d41_cool_wool_big_lana_grossa_0640928_M.jpg",
+      "name": "0928",
+      "color": "rgb(159,161,158)"
+    },
+      {
+      "image": "c106f98b043095391a5416ae8f21cc68ac5f92f3_cool_wool_big_lana_grossa_0640934_M.jpg",
+      "name": "0934",
+      "color": "rgb(27,36,102)"
+    },
+      {
+      "image": "7e916ba4ae4b33f5609b7dcf0c8b8619d44a77a9_cool_wool_big_lana_grossa_0640939_M.jpg",
+      "name": "0939",
+      "color": "rgb(28,75,35)"
+    },
+      {
+      "image": "819d5765eb4aaa2f876e679ace9be42e8d4a6b6c_cool_wool_big_lana_grossa_0640941_M.jpg",
+      "name": "0941",
+      "color": "rgb(81,166,52)"
+    },
+      {
+      "image": "c285a3ca3092b81af3c68a8d6008618a80348158_cool_wool_big_lana_grossa_0640945_M.jpg",
+      "name": "0945",
+      "color": "rgb(182,165,154)"
+    },
+      {
+      "image": "2682cfbf18641d56a949b46a88f75779c49893da_cool_wool_big_lana_grossa_0640946_M.jpg",
+      "name": "0946",
+      "color": "rgb(142,186,208)"
+    },
+      {
+      "image": "f456df6bce86f08a38e40293000d2b82b5403dd9_cool_wool_big_lana_grossa_0640947_M.jpg",
+      "name": "0947",
+      "color": "rgb(165,185,177)"
+    },
+      {
+      "image": "3e559a7ddcc861c8b66d0e87902031bb1a6ac029_cool_wool_big_lana_grossa_0640949_M.jpg",
+      "name": "0949",
+      "color": "rgb(34,73,47)"
+    },
+      {
+      "image": "05ecb93e1479192d6e171165946920312be570f3_cool_wool_big_lana_grossa_0640953_M.jpg",
+      "name": "0953",
+      "color": "rgb(177,154,154)"
+    },
+      {
+      "image": "ba79666cc538ef85a4137e4e5d1a6afd8d96d9d0_cool_wool_big_lana_grossa_0640958_M.jpg",
+      "name": "0958",
+      "color": "rgb(219,165,42)"
+    },
+      {
+      "image": "f692122ef670ce9362081c2a21c20905a6f6fc3f_cool_wool_big_lana_grossa_0640963_M.jpg",
+      "name": "0963",
+      "color": "rgb(227,170,186)"
+    },
+      {
+      "image": "bb8828ee5804b37fedf7027d99708162dba588ab_cool_wool_big_lana_grossa_0640967_M.jpg",
+      "name": "0967",
+      "color": "rgb(69,92,76)"
+    },
+      {
+      "image": "7694acf3fb85d5559459e317200c96217dbf4710_cool_wool_big_lana_grossa_0640968_M.jpg",
+      "name": "0968",
+      "color": "rgb(44,69,101)"
+    },
+      {
+      "image": "61fa48525b57802f543978c7b055c6e486e0cdcc_cool_wool_big_lana_grossa_0640970_M.jpg",
+      "name": "0970",
+      "color": "rgb(186,76,30)"
+    },
+      {
+      "image": "ecafd52070a3a152c841cb68634f52c19ec9f6c3_cool_wool_big_lana_grossa_0640974_M.jpg",
+      "name": "0974",
+      "color": "rgb(201,119,21)"
+    },
+      {
+      "image": "7d7858363646b5055a35dcaba98ba55171c5805e_cool_wool_big_lana_grossa_0640978_M.jpg",
+      "name": "0978",
+      "color": "rgb(173,220,197)"
+    },
+      {
+      "image": "6c8ba6d0d757b95ac1f7ef10bf617091207434be_cool_wool_big_lana_grossa_0640979_M.jpg",
+      "name": "0979",
+      "color": "rgb(30,76,100)"
+    },
+      {
+      "image": "57feb9a6bf698e3e1ce60c7eb0173f7ae5efc68f_cool_wool_big_lana_grossa_0640981_M.jpg",
+      "name": "0981",
+      "color": "rgb(90,97,103)"
+    },
+      {
+      "image": "1c613729846d5c3b33eae2739de58c56c71129c0_cool_wool_big_lana_grossa_0640982_M.jpg",
+      "name": "0982",
+      "color": "rgb(216,171,166)"
+    },
+      {
+      "image": "959901c859338b73037b04edb1ca624e6bec690c_cool_wool_big_lana_grossa_0640984_M.jpg",
+      "name": "0984",
+      "color": "rgb(86,136,134)"
+    },
+      {
+      "image": "22f4a0a2a5f22d8425b2bd39811abbdcc70272b8_cool_wool_big_lana_grossa_0640986_M.jpg",
+      "name": "0986",
+      "color": "rgb(211,154,52)"
+    },
+      {
+      "image": "ca9f9b1590ff5f338781e8b628145687e190c11f_cool_wool_big_lana_grossa_0640987_M.jpg",
+      "name": "0987",
+      "color": "rgb(59,41,38)"
+    },
+      {
+      "image": "68c3741024468ce4cdd116fa608b352d5761bfca_cool_wool_big_lana_grossa_0640990_M.jpg",
+      "name": "0990",
+      "color": "rgb(163,36,69)"
+    },
+      {
+      "image": "e832011d7602b8ce3470115e753f611481c56977_cool_wool_big_lana_grossa_0640992_M.jpg",
+      "name": "0992",
+      "color": "rgb(14,94,194)"
+    },
+      {
+      "image": "2ae9dea9400e11b6945c1532a1b6f610f4eaa7db_cool_wool_big_lana_grossa_0640997_M.jpg",
+      "name": "0997",
+      "color": "rgb(73,122,77)"
+    },
+      {
+      "image": "7ffeea3ba82670268b77a1d5ed4bd0ecb4b21c97_cool_wool_big_lana_grossa_0640998_M.jpg",
+      "name": "0998",
+      "color": "rgb(139,183,148)"
+    },
+      {
+      "image": "312e437cd403d77d241a37276aeb1a48971f40b9_cool_wool_big_lana_grossa_0640999_M.jpg",
+      "name": "0999",
+      "color": "rgb(149,63,48)"
+    },
+      {
+      "image": "f0b850b52114aa52b87d328740bc1605e05487b4_cool_wool_big_lana_grossa_0641000_M.jpg",
+      "name": "1000",
+      "color": "rgb(88,43,58)"
+    },
+      {
+      "image": "0f3e1c58851876b3e5f8984fe7cf68da452d2fec_cool_wool_big_lana_grossa_0641002_M.jpg",
+      "name": "1002",
+      "color": "rgb(182,186,173)"
+    },
+      {
+      "image": "7809ddd360413fbeeec83bd2a1c3c4252e0c338b_cool_wool_big_lana_grossa_0641003_M.jpg",
+      "name": "1003",
+      "color": "rgb(33,92,88)"
+    },
+      {
+      "image": "dbf63acfdae0618e0daa75d0930a64301b334f38_cool_wool_big_lana_grossa_0641004_M.jpg",
+      "name": "1004",
+      "color": "rgb(70,95,79)"
+    },
+      {
+      "image": "e4ab46a352aba2f99d62af8a9d371d07c75333e8_cool_wool_big_lana_grossa_0641005_M.jpg",
+      "name": "1005",
+      "color": "rgb(57,53,31)"
+    },
+      {
+      "image": "5538ba8d4cc8f61464a4058d2c4856a16de4a65c_cool_wool_big_lana_grossa_0641006_M.jpg",
+      "name": "1006",
+      "color": "rgb(111,102,46)"
+    },
+      {
+      "image": "2c229f00a926ce919d7d7533a9e9daf7291b6b35_cool_wool_big_lana_grossa_0641007_M.jpg",
+      "name": "1007",
+      "color": "rgb(233,211,126)"
+    },
+      {
+      "image": "003e67c0ef6fbaa094ca6f481594ab4387229b3b_cool_wool_big_lana_grossa_0641008_M.jpg",
+      "name": "1008",
+      "color": "rgb(230,217,192)"
+    },
+      {
+      "image": "82cb6646a91f3160b268466cfaff19344e645c6d_cool_wool_big_lana_grossa_0641009_M.jpg",
+      "name": "1009",
+      "color": "rgb(171,140,91)"
+    },
+      {
+      "image": "5b4b58d5b2e0b4d485c0610ce50a0d26f0f0ef4d_cool_wool_big_lana_grossa_0641010_M.jpg",
+      "name": "1010",
+      "color": "rgb(200,194,174)"
+    },
+      {
+      "image": "4025239e343ca8e8fbb996a34eed9ad91189e8db_cool_wool_big_lana_grossa_0641011_M.jpg",
+      "name": "1011",
+      "color": "rgb(119,100,76)"
+    },
+      {
+      "image": "93dd01458a671a03f86f7282dd049659d8371155_cool_wool_big_lana_grossa_0641012_M.jpg",
+      "name": "1012",
+      "color": "rgb(156,86,45)"
+    },
+      {
+      "image": "c09358045832a024e4eaa089cf43d8208ee17a73_cool_wool_big_lana_grossa_0641013_M.jpg",
+      "name": "1013",
+      "color": "rgb(160,167,210)"
+    },
+      {
+      "image": "f70ab2d0915111ee2e32e9257bba4fae881d6918_cool_wool_big_lana_grossa_0641014_M.jpg",
+      "name": "1014",
+      "color": "rgb(75,30,41)"
+    },
+      {
+      "image": "5b649cc76554fc403e255652aae5bb0b17c10893_cool_wool_big_lana_grossa_0641015_M.jpg",
+      "name": "1015",
+      "color": "rgb(248,75,30)"
+    },
+      {
+      "image": "802e6a7a5ca849f92d3a3f1bd85f31bfae8add13_cool_wool_big_lana_grossa_0641016_M.jpg",
+      "name": "1016",
+      "color": "rgb(245,216,182)"
+    },
+      {
+      "image": "b3f3189b2d2c7eccf68b593d43069a90f1954311_cool_wool_big_lana_grossa_0641017_M.jpg",
+      "name": "1017",
+      "color": "rgb(175,69,141)"
+    },
+      {
+      "image": "e2e52fada60a7d37d6fcaaa14a9608588764c69c_cool_wool_big_lana_grossa_0641018_M.jpg",
+      "name": "1018",
+      "color": "rgb(120,76,150)"
+    },
+      {
+      "image": "b29011bd7d047c643e395ca7f7ffced03d587683_cool_wool_big_lana_grossa_0641019_M.jpg",
+      "name": "1019",
+      "color": "rgb(158,159,174)"
+    },
+      {
+      "image": "612e0297aa255780fa4348be4967df32fb415c4c_cool_wool_big_melange_lana_grossa_0641602_M.jpg",
+      "name": "1602",
+      "color": "rgb(193,160,163)"
+    },
+      {
+      "image": "3137d632389777867a8068c84e798ac383c85c6f_cool_wool_big_melange_lana_grossa_0641604_M.jpg",
+      "name": "1604",
+      "color": "rgb(55,37,59)"
+    },
+      {
+      "image": "4e383df14d3e28798ccafa892a81c1b49959e0c8_cool_wool_big_melange_lana_grossa_0641606_M.jpg",
+      "name": "1606",
+      "color": "rgb(58,27,31)"
+    },
+      {
+      "image": "3ab7949d689ef00f02818223140e1126face2010_cool_wool_big_melange_lana_grossa_0641620_M.jpg",
+      "name": "1620",
+      "color": "rgb(139,180,198)"
+    },
+      {
+      "image": "350fc87b24d1a0325e19a6cac4d850f61e693bc3_cool_wool_big_melange_lana_grossa_0641621_M.jpg",
+      "name": "1621",
+      "color": "rgb(113,107,92)"
+    },
+      {
+      "image": "c792f3f2b69adea210ea6711a52ceb1936526ed6_cool_wool_big_melange_lana_grossa_0641622_M.jpg",
+      "name": "1622",
+      "color": "rgb(80,74,63)"
+    },
+      {
+      "image": "5211ea3af4a51cfac77e6e9a49f26fddad2292e1_cool_wool_big_melange_lana_grossa_0641623_M.jpg",
+      "name": "1623",
+      "color": "rgb(127,90,54)"
+    },
+      {
+      "image": "6d98e42baf48a669cd7e1fe331a0f1b6599d8c55_cool_wool_big_melange_lana_grossa_0641624_M.jpg",
+      "name": "1624",
+      "color": "rgb(210,201,176)"
+    },
+      {
+      "image": "909e9175115ab9cd0afa724c2ba9ad267b8d191f_cool_wool_big_melange_lana_grossa_0641625_M.jpg",
+      "name": "1625",
+      "color": "rgb(31,54,42)"
+    },
+      {
+      "image": "7ac0499818247d3678fa8a9e0239b0c2ecc37400_cool_wool_big_melange_lana_grossa_0641627_M.jpg",
+      "name": "1627",
+      "color": "rgb(61,77,104)"
+    },
+      {
+      "image": "f67947a1dc5273ff16efd93d04c62c4be9743e38_cool_wool_big_melange_lana_grossa_0641628_M.jpg",
+      "name": "1628",
+      "color": "rgb(152,39,32)"
+    },
+      {
+      "image": "2ef71c9926b0703a5ff1b2f15f49506696d71332_cool_wool_big_melange_lana_grossa_0641629_M.jpg",
+      "name": "1629",
+      "color": "rgb(54,51,42)"
+    },
+      {
+      "image": "a56309fee38fd2fa45e873dca83f17daf6186992_cool_wool_big_melange_lana_grossa_0641630_M.jpg",
+      "name": "1630",
+      "color": "rgb(15,22,33)"
+    },
+      {
+      "image": "7133ef481b1fcf46e65dff85f9a87f8a33577122_cool_wool_big_melange_lana_grossa_0641655_M.jpg",
+      "name": "1655",
+      "color": "rgb(51,71,100)"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "weight":"worsted",
+  "running-length": 125,
+  "palette": [
+    {
+      "image": "skifergra_5149.jpg",
+      "name": "skifergra_5149",
+      "color": "rgb(43,43,43)"
+    },
+    {
+      "image": "stovetpetroliumsbla_5106.jpg",
+      "name": "stovetpetroliumsbla_5106",
+      "color": "rgb(57,70,78)"
+    },
+    {
+      "image": "stovetartiskok_5072.jpg",
+      "name": "stovetartiskok_5072",
+      "color": "rgb(123,133,116)"
+    },
+    {
+      "image": "terracottarosa_5114.jpg",
+      "name": "terracottarosa_5114",
+      "color": "rgb(140,88,76)"
+    },
+    {
+      "image": "stovetoliven_5135.jpg",
+      "name": "stovetoliven_5135",
+      "color": "rgb(97,76,52)"
+    },
+    {
+      "image": "stovetelg_5117.jpg",
+      "name": "stovetelg_5117",
+      "color": "rgb(94,84,70)"
+    },
+    {
+      "image": "rosaler_5157.jpg",
+      "name": "rosaler_5157",
+      "color": "rgb(134,96,82)"
+    },
+    {
+      "image": "pudder_5095.jpg",
+      "name": "pudder_5095",
+      "color": "rgb(174,141,120)"
+    },
+    {
+      "image": "skifergron_5118.jpg",
+      "name": "skifergron_5118",
+      "color": "rgb(76,66,42)"
+    },
+    {
+      "image": "rust_5148.jpg",
+      "name": "rust_5148",
+      "color": "rgb(102,41,24)"
+    },
+    {
+      "image": "skifergra_5149.jpg",
+      "name": "skifergra_5149",
+      "color": "rgb(57,43,39)"
+    },
+    {
+      "image": "Snefnug.jpg",
+      "name": "Snefnug",
+      "color": "rgb(200,196,194)"
+    },
+    {
+      "image": "flode.jpg",
+      "name": "flode",
+      "color": "rgb(199,196,184)"
+    },
+    {
+      "image": "hyldeblomst.jpg",
+      "name": "hyldeblomst",
+      "color": "rgb(217,216,203)"
+    },
+    {
+      "image": "terracottarosa_5114.jpg",
+      "name": "terracottarosa_5114",
+      "color": "rgb(163,109,97)"
+    },
+    {
+      "image": "Ballerina.jpg",
+      "name": "Ballerina",
+      "color": "rgb(214,192,184)"
+    },
+    {
+      "image": "sky.jpg",
+      "name": "sky",
+      "color": "rgb(216,210,208)"
+    },
+    {
+      "image": "isbla.jpg",
+      "name": "isbla",
+      "color": "rgb(213,214,214)"
+    },
+    {
+      "image": "hvede.jpg",
+      "name": "hvede",
+      "color": "rgb(223,211,185)"
+    },
+    {
+      "image": "nordstrand.jpg",
+      "name": "nordstrand",
+      "color": "rgb(201,199,185)"
+    },
+    {
+      "image": "marinebla.jpg",
+      "name": "marinebla",
+      "color": "rgb(77,81,92)"
+    },
+    {
+      "image": "champignonrosa.jpg",
+      "name": "champignonrosa",
+      "color": "rgb(172,160,149)"
+    },
+    {
+      "image": "stovetartiskok_5072.jpg",
+      "name": "stovetartiskok_5072",
+      "color": "rgb(150,153,133)"
+    },
+    {
+      "image": "stovetoliven_5135.jpg",
+      "name": "stovetoliven_5135",
+      "color": "rgb(100,92,66)"
+    },
+    {
+      "image": "stovetpetroliumsbla_5106.jpg",
+      "name": "stovetpetroliumsbla_5106",
+      "color": "rgb(70,80,82)"
+    },
+    {
+      "image": "Morkelg.jpg",
+      "name": "Morkelg",
+      "color": "rgb(77,75,78)"
+    },
+    {
+      "image": "brunbjorn.jpg",
+      "name": "brunbjorn",
+      "color": "rgb(58,53,47)"
+    },
+    {
+      "image": "perlegra_6398.jpg",
+      "name": "perlegra_6398",
+      "color": "rgb(144,145,141)"
+    },
+    {
+      "image": "trenchcoat.jpg",
+      "name": "trenchcoat",
+      "color": "rgb(188,171,139)"
+    },
+    {
+      "image": "stovethonning.jpg",
+      "name": "stovethonning",
+      "color": "rgb(205,179,112)"
+    },
+    {
+      "image": "rosaler_5157.jpg",
+      "name": "rosaler_5157",
+      "color": "rgb(161,119,92)"
+    },
+    {
+      "image": "StovetBanan.jpg",
+      "name": "StovetBanan",
+      "color": "rgb(159,127,76)"
+    },
+    {
+      "image": "stovetelg_5117.jpg",
+      "name": "stovetelg_5117",
+      "color": "rgb(109,96,76)"
+    },
+    {
+      "image": "jord.jpg",
+      "name": "jord",
+      "color": "rgb(116,108,90)"
+    },
+    {
+      "image": "kul_5137.jpg",
+      "name": "kul_5137",
+      "color": "rgb(45,43,39)"
+    },
+    {
+      "image": "natur.jpg",
+      "name": "natur",
+      "color": "rgb(134,124,107)"
+    },
+    {
+      "image": "Blahval.jpg",
+      "name": "Blahval",
+      "color": "rgb(82,79,78)"
+    },
+    {
+      "image": "pudder_5095.jpg",
+      "name": "pudder_5095",
+      "color": "rgb(162,137,119)"
+    },
+    {
+      "image": "skifergron_5118.jpg",
+      "name": "skifergron_5118",
+      "color": "rgb(73,65,41)"
+    },
+    {
+      "image": "bark.jpg",
+      "name": "bark",
+      "color": "rgb(87,74,58)"
+    },
+    {
+      "image": "marcipan_6400.jpg",
+      "name": "marcipan_6400",
+      "color": "rgb(161,148,128)"
+    },
+    {
+      "image": "perlegra_5084.jpg",
+      "name": "perlegra_5084",
+      "color": "rgb(143,138,123)"
+    },
+    {
+      "image": "fennikelfro.jpg",
+      "name": "fennikelfro",
+      "color": "rgb(144,137,106)"
+    },
+    {
+      "image": "Midnat.jpg",
+      "name": "Midnat",
+      "color": "rgb(99,105,103)"
+    },
+    {
+      "image": "BlaJeans.jpg",
+      "name": "BlaJeans",
+      "color": "rgb(93,101,111)"
+    },
+    {
+      "image": "Bellispink.jpg",
+      "name": "Bellispink",
+      "color": "rgb(202,59,131)"
+    },
+    {
+      "image": "Valmuebla.jpg",
+      "name": "Valmuebla",
+      "color": "rgb(93,114,177)"
+    },
+    {
+      "image": "Granataeble_heavy.jpg",
+      "name": "Granataeble_heavy",
+      "color": "rgb(132,43,52)"
+    },
+    {
+      "image": "bordeaux_5090.jpg",
+      "name": "bordeaux_5090",
+      "color": "rgb(80,24,28)"
+    },
+    {
+      "image": "aragra.jpg",
+      "name": "aragra",
+      "color": "rgb(87,75,75)"
+    },
+    {
+      "image": "blodnougat.jpg",
+      "name": "blodnougat",
+      "color": "rgb(152,106,86)"
+    },
+    {
+      "image": "Blodappelsin.jpg",
+      "name": "Blodappelsin",
+      "color": "rgb(219,68,46)"
+    },
+    {
+      "image": "rust_5148.jpg",
+      "name": "rust_5148",
+      "color": "rgb(136,41,25)"
+    },
+    {
+      "image": "havregryn_5078.jpg",
+      "name": "havregryn_5078",
+      "color": "rgb(144,108,87)"
+    },
+    {
+      "image": "AErteskud.jpg",
+      "name": "AErteskud",
+      "color": "rgb(143,166,88)"
+    },
+    {
+      "image": "dybpetroliumsbla_5099.jpg",
+      "name": "dybpetroliumsbla_5099",
+      "color": "rgb(61,78,68)"
+    },
+    {
+      "image": "blommeler_5097.jpg",
+      "name": "blommeler_5097",
+      "color": "rgb(74,63,54)"
+    },
+    {
+      "image": "hasselnod_6385.jpg",
+      "name": "hasselnod_6385",
+      "color": "rgb(107,82,62)"
+    },
+    {
+      "image": "lyscognac_5113.jpg",
+      "name": "lyscognac_5113",
+      "color": "rgb(96,60,37)"
+    },
+    {
+      "image": "kobber_6392.jpg",
+      "name": "kobber_6392",
+      "color": "rgb(129,62,36)"
+    },
+    {
+      "image": "kamel_6393.jpg",
+      "name": "kamel_6393",
+      "color": "rgb(126,71,31)"
+    },
+    {
+      "image": "morkokker_5129.jpg",
+      "name": "morkokker_5129",
+      "color": "rgb(113,62,10)"
+    }
+  ]
+}

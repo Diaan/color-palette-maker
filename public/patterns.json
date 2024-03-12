@@ -1,23 +1,18 @@
 { "patterns":[
   {
-    "name": "Lit shawl 🧶",
-    "file": "shawl.svg",
-    "colors": 4
-  },{
-    "name": "Stained glass 🧶",
-    "file": "stained-glass.svg",
-    "colors": 6
-  },{
     "name": "Four simple stripes 🧶",
-    "file": "simplestripes.html",
+    "folder": "simple-stripes",
     "colors": 4
   },{
     "name": "Quitling triangles shawl",
-    "file": "quilting-triangles.html",
+    "folder": "quilting-triangles",
     "colors": 5
   },{
     "name": "Hilma",
-    "file": "hilma.html",
-    "colors": 5
+    "folder": "hilma"
+  },{
+    "name": "Wave sweater",
+    "thumbnail": "thumbnail.webp",
+    "folder": "wave"
   }
 ]}

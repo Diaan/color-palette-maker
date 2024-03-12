@@ -31,14 +31,14 @@ export class MyElement extends LitElement {
           ${this.yarns?.map(y => html`<option value="${y.folder}" >${y.name}</option>`)}
         </select>
       </header>
-      <my-color-palette @updatePalette=${this.updatePalette} .yarn=${this.selectedYarn} .number-of-colors=${this.selectedPattern?.colors}> </my-color-palette>
+      <my-color-palette @updatePalette=${this.updatePalette} .yarn=${this.selectedYarn}> </my-color-palette>
     </section>
 
     <section>
       <header> Pattern: 
       <select @change=${(event:Event)=>this.selectPattern(event)}>
           <option></option>
-          ${this.patterns?.map(p => html`<option value="${p.file}" >${p.name}</option>`)}
+          ${this.patterns?.map(p => html`<option value="${p.folder}" >${p.name}</option>`)}
         </select>
       </header>
       <my-pattern .pattern=${this.selectedPattern} .defs=${this.svgPatterns}> </my-pattern>
@@ -67,7 +67,7 @@ export class MyElement extends LitElement {
   }
 
   selectPattern(event: Event): void {
-    this.selectedPattern = this.patterns?.find(pattern => pattern.file === (event.target as HTMLSelectElement).value);
+    this.selectedPattern = this.patterns?.find(pattern => pattern.folder === (event.target as HTMLSelectElement).value);
   }
 
   override async connectedCallback(): Promise<void> {

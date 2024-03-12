@@ -2,86 +2,39 @@
   "sets":[
   {
     "name":"Let's have cake",
-    "colors":[{
-      "name": "dijon",
-      "color": "#b29012"
-    },
-    {
-      "name": "white-peach",
-      "color": "#f5e6d7"
-    },
-    {
-      "name": "sherbert",
-      "color": "#f3cbaa"
-    },
-    {
-      "name": "sea-mist",
-      "color": "#a7bab1"
-    },
-    {
-      "name": "enchanted",
-      "color": "#294650"
-    }]
+    "colors":[
+      "white-peach",
+      "tiger",
+      "sherbert",
+      "sea-mist",
+      "enchanted"
+    ]
   },
   {
     "name":"Wellington pickle",
-    "colors":[{
-      "name": "avocado",
-      "color": "#969b2c"
-    },
-    {
-      "name": "white-peach",
-      "color": "#f5e6d7"
-    },
-    {
-      "name": "flamingo",
-      "color": "#eea095"
-    },
-    {
-      "name": "pickle-juice",
-      "color": "#dee95d"
-    },
-    {
-      "name": "wellington",
-      "color": "#26261d"
-    }]
+    "colors":[
+      "white-peach",
+      "avocado",
+      "flamingo",
+      "pickle-juice",
+      "wellington"
+    ]
   },{
     "name":"Enchanted Peach",
     "colors":[
-      {
-        "color": "#f5e6d7",
-        "name": "white-peach"
-      },{
-        "color": "#575b08",
-        "name": "green-olive"
-      },
-      {
-        "color": "#294650",
-        "name": "enchanted"
-      },{
-        "color": "#26261d",
-        "name": "wellington"
-      }
+        "white-peach",
+        "green-olive",
+        "enchanted",
+        "wellington"
     ]
   },{
     "name":"Dutch mist",
     "colors":[
-      {
-        "color": "#a7bab1",
-        "name": "sea-mist"
-      },{
-        "color": "#795e4e",
-        "name": "mocha"
-      },{
-        "color": "#dac2b1",
-        "name": "sand"
-      }, {
-        "color": "#b0b1b5",
-        "name": "dutch-sky"
-      },{
-        "color": "#8f9a9c",
-        "name": "blue-spruce"
-      }
+        "sea-mist",
+        "mocha",
+        "sand",
+        "dutch-sky",
+        "blue-spruce"
     ]
   }
 ]}

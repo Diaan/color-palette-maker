@@ -1,0 +1,171 @@
+{
+  "weight":"worsted",
+  "running-length": 200,
+  "palette": [
+    {
+      "name":"137",
+      "color":"#d7e7e8"
+    },
+    {
+      "image": "111.jpg",
+      "name": "111",
+      "color": "rgb(85,85,88)"
+    },
+    
+    {
+      "image": "101.jpg",
+      "name": "101",
+      "color": "rgb(209,201,193)"
+    },
+    
+    {
+      "image": "102.jpg",
+      "name": "102",
+      "color": "rgb(234,228,218)"
+    },
+    
+    {
+      "image": "112.jpg",
+      "name": "112",
+      "color": "rgb(174,175,173)"
+    },
+    
+    {
+      "image": "109.jpg",
+      "name": "109",
+      "color": "rgb(40,36,40)"
+    },
+    
+    {
+      "image": "119.jpg",
+      "name": "119",
+      "color": "rgb(140,36,102)"
+    },
+    
+    {
+      "image": "124.jpg",
+      "name": "124",
+      "color": "rgb(176,30,70)"
+    },
+    
+    {
+      "image": "125.jpg",
+      "name": "125",
+      "color": "rgb(135,134,74)"
+    },
+    
+    {
+      "image": "133.jpg",
+      "name": "133",
+      "color": "rgb(198,142,70)"
+    },
+    
+    {
+      "image": "144.jpg",
+      "name": "144",
+      "color": "rgb(35,94,107)"
+    },
+    
+    {
+      "image": "146.jpg",
+      "name": "146",
+      "color": "rgb(76,106,165)"
+    },
+    
+    {
+      "image": "149.jpg",
+      "name": "149",
+      "color": "rgb(43,43,77)"
+    },
+    
+    {
+      "image": "155.jpg",
+      "name": "155",
+      "color": "rgb(61,60,68)"
+    },
+    
+    {
+      "image": "189.jpg",
+      "name": "189",
+      "color": "rgb(82,25,47)"
+    },
+    
+    {
+      "image": "192.jpg",
+      "name": "192",
+      "color": "rgb(76,87,111)"
+    },
+    
+    {
+      "image": "193.jpg",
+      "name": "193",
+      "color": "rgb(162,158,140)"
+    },
+    
+    {
+      "image": "188.jpg",
+      "name": "188",
+      "color": "rgb(94,67,61)"
+    },
+    
+    {
+      "image": "191.jpg",
+      "name": "191",
+      "color": "rgb(198,159,170)"
+    },
+    
+    {
+      "image": "190.jpg",
+      "name": "190",
+      "color": "rgb(122,87,98)"
+    },
+    
+    {
+      "image": "194.jpg",
+      "name": "194",
+      "color": "rgb(163,179,196)"
+    },
+    
+    {
+      "image": "195.jpg",
+      "name": "195",
+      "color": "rgb(224,111,153)"
+    },
+    
+    {
+      "image": "196.jpg",
+      "name": "196",
+      "color": "rgb(219,168,162)"
+    },
+    
+    {
+      "image": "197.jpg",
+      "name": "197",
+      "color": "rgb(67,97,103)"
+    },
+    
+    {
+      "image": "198.jpg",
+      "name": "198",
+      "color": "rgb(53,33,46)"
+    },
+    
+    {
+      "image": "199.jpg",
+      "name": "199",
+      "color": "rgb(100,115,98)"
+    },
+    
+    {
+      "image": "200.jpg",
+      "name": "200",
+      "color": "rgb(45,62,54)"
+    },
+    
+    {
+      "image": "201.jpg",
+      "name": "201",
+      "color": "rgb(186,60,45)"
+    }
+  ]
+}
