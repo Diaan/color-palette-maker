@@ -1,14 +1,18 @@
 {
   "name": "Wave Sweater",
+  "designer": "Spektakel strik",
+  "url": "https://spektakelstrik.dk/en/products/wave-sweater",
   "pattern-file": "wave-sweater.svg",
-  "sizes":["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+  "sizes":["XS", "S-M", "L-XL", "XXL"],
   "colors": [
     {
-      "name": "Yarn A",
-      "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576]
+      "name": "Main color",
+      "required":[664, 747, 830, 913],
+      "default": "#cabee4"
     },    {
-      "name": "Yarn B",
-      "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768]
+      "name": "Waves",
+      "required":[580, 652, 725, 797],
+      "default":"#b9c676"
     }
   ]
 }
