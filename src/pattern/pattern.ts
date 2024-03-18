@@ -1,8 +1,8 @@
 import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import { Pattern } from '../models/pattern';
 
-export type Pattern = { name: string; folder: string};
 /**
  * An example element.
  *

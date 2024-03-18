@@ -9,14 +9,15 @@ import { Yarn } from '..';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('my-color-card')
-export class MyColorCard extends LitElement {
+@customElement('cp-color-card')
+export class ColorCard extends LitElement {
   @property({type:Object}) palette: PaletteColor = { color: `#000`, name: '' };
   @property({type:Boolean}) selected: boolean = false;
   @property({type:Object}) yarn?: Yarn;
   @property({ reflect: true })  size: string = 'medium';
 
   render() {
+    console.log(this.palette);
     const name = this.size==='large' ? this.palette.name : nothing;
     return html`
       <div style="--_bg:${this.palette.color}" title=${this.palette.name}>
@@ -59,6 +60,6 @@ export class MyColorCard extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-color-card': MyColorCard;
+    'cp-color-card': ColorCard;
   }
 }
