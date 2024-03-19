@@ -16,7 +16,7 @@ export class PatternColors extends LitElement {
 
   render() {
     return html`
-      <h2>Colours</h2>
+      <h2>Pattern colours:</h2>
       ${this.patternColors?.map(pc=>html`
         <cp-color-card size="large" .palette=${{color:pc.default,name:pc.name}} @click=${()=>selectWorkingColor(pc)}></cp-color-card>
       `)}`;

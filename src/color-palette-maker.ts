@@ -1,9 +1,5 @@
-import { LitElement, PropertyValues, css, html, nothing } from 'lit';
+import { LitElement, PropertyValues, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { Pattern } from './pattern/pattern';
-import { PaletteColor } from './color-palette/color-palette';
-
-export type Yarn = { name: string; folder: string };
 
 /**
  * An example element.

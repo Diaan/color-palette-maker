@@ -14,8 +14,8 @@ export class PaletteMaker extends LitElement {
 
   @property({attribute: 'pattern-name'}) patternName!: string;
 
-  @property()
-  imageScale:number = 50;
+  // @property()
+  // imageScale:number = 50;
 
   @property({attribute:'defs', type: Object})
   defs?:any;
@@ -24,12 +24,15 @@ export class PaletteMaker extends LitElement {
   @state() patternData?: Pattern;
 
   render() {
-    console.log(this.patternData?.colors);
     return html`
       <button @click=${this.back}>back</button>
       <div></div>
       <section>
-        ${this.patternData&&this.patternCode?html`<cp-pattern-viewer .patternData=${this.patternData} .patternCode=${this.patternCode}></cp-pattern-viewer>`:nothing}
+        ${
+          this.patternData&&this.patternCode?
+          html`<cp-pattern-viewer .patternData=${this.patternData} .patternCode=${this.patternCode}></cp-pattern-viewer>`
+          :nothing
+        }
         <cp-color-chooser .patternColors=${this.patternData?.colors}></cp-color-chooser>
       </section>
     `;

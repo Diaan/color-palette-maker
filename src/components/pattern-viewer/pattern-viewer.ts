@@ -42,8 +42,6 @@ export class PatternViewer extends LitElement {
   override async updated(changes: PropertyValues<this>): Promise<void> {
     super.updated(changes);
 
-    console.log(this.patternCode);
-
     if (changes.has('patternData')) {
       //needs to be done in the same shadow dom as the pattern svg.
       const svgContainer = this.renderRoot.querySelector('div');
@@ -51,11 +49,15 @@ export class PatternViewer extends LitElement {
         svgContainer.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
-          ${this.patternData?.colors.map((def:{id:string, default:string}) => 
-            `<pattern id="img${def.id}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.id})">
+          ${this.patternData?.colors.map((def:{id:string, default:string}) => { 
+            // needs to be updated when colours are selected
+            const image = getComputedStyle(this).getPropertyValue(`--_yarn${def.id}-image`) ?? 0;
+            console.log(image);
+            return `<pattern id="img${def.id}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.id})">
               <rect width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.id})" />
+              <image href="${image}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
             </pattern>
-            `).join('\n')}
+            `}).join('\n')}
           </defs>
         </svg>`;
       }

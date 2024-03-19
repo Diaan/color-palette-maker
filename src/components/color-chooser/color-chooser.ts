@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import { PaletteColor } from '../..';
-import { PatternColor } from '../../models/pattern';
+import { PatternColor, Yarn } from '../../models';
 
 
 /**
@@ -12,22 +12,38 @@ import { PatternColor } from '../../models/pattern';
  */
 @customElement('cp-color-chooser')
 export class ColorChooser extends LitElement {
-  @property({type:Object}) patternColors?: PatternColor[];
+  @property({type:Array}) patternColors?: PatternColor[];
 
-  c1:PaletteColor = { color: `#700`, name: '' };
-  c2:PaletteColor = { color: `#070`, name: '' };
-  c3:PaletteColor = { color: `#007`, name: '' };
+  @property({type:Object}) selectedYarn?: Yarn;
+
+  @state() workingYarn = 'A';
 
   render() {
-    console.log(this.patternColors);
+    //TODO: get selecting of working yarn working :D New event and so on
     return html`
-    <cp-pattern-colors .patternColors=${this.patternColors}></cp-pattern-colors>
-
-    <cp-recent-colors></cp-recent-colors>`;
+    <cp-pattern-colors .patternColors=${this.patternColors} @click=${this.setWorkingYarn}></cp-pattern-colors>
+    Recent colours:
+    <cp-recent-colors></cp-recent-colors>
+    ${this.selectedYarn ?
+      html`<cp-yarn-colors @cp-select-color=${this.select} .yarnFolder=${this.selectedYarn.folder}></cp-yarn-colors>`:
+      html`<cp-yarn-list @selectYarn=${this.selectYarn}></cp-yarn-list>`}
+    `;
   }
 
-  select(color: PaletteColor){
-    document.body.style.setProperty(`--yarnA`, color.color);
+  select ({ detail: color }: CustomEvent<PaletteColor>): void{
+    console.log('select',color);
+    document.body.style.setProperty(`--yarn${this.workingYarn}`, color.color);
+    if(color.image){
+      document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${color.image})`);
+    }
+  }
+
+  selectYarn(yarn: CustomEvent<Yarn>){
+    this.selectedYarn = yarn.detail;
+  }
+
+  setWorkingYarn(){
+    this.workingYarn = 'B';
   }
 
   static styles = css`
