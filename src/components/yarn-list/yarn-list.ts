@@ -1,6 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { Pattern, YarnBase } from '../../models';
+import { CpSelectYarnEvent, EventEmitter, event } from '../../events';
 
 /**
  * An example element.
@@ -10,10 +11,9 @@ import { Pattern, YarnBase } from '../../models';
  */
 @customElement('cp-yarn-list')
 export class YarnList extends LitElement {
-
-  @state() selectedYarn?: YarnBase;
   @state() yarns?: YarnBase[];  
-  
+
+  @event({name:'cp-select-yarn'}) selectYarnEvent!: EventEmitter<CpSelectYarnEvent>;
 
   render() {
     return html`
@@ -25,13 +25,7 @@ export class YarnList extends LitElement {
   }
 
   selectYarn(yarn: YarnBase): void {
-    this.selectedYarn = yarn;
-    const options = {
-      detail: yarn,
-      bubbles: true,
-      composed: true,
-    };
-    this.dispatchEvent(new CustomEvent('selectYarn', options));
+    this.selectYarnEvent.emit(yarn);
   }
 
   override async connectedCallback(): Promise<void> {

@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { Pattern } from '../../models/pattern';
 import { ifDefined } from 'lit/directives/if-defined.js';
+import { PickedColor } from '../../models';
 
 
 /**
@@ -16,7 +17,7 @@ export class PatternViewer extends LitElement {
 
   @property({attribute: 'pattern-name'}) patternName!: string;
 
-  @property()
+  @property({type:Number})
   imageScale:number = 50;
 
   @property({attribute:'defs', type: Object})
@@ -24,6 +25,7 @@ export class PatternViewer extends LitElement {
 
   @property({attribute: 'pattern-code'}) patternCode?: string;
   @property({ attribute: 'pattern-data', type:Object}) patternData?: Pattern;
+  @property({type:Array}) pickedColors?: PickedColor[];
 
   render() {
     return html`${ unsafeHTML(this.patternCode)}
@@ -42,26 +44,31 @@ export class PatternViewer extends LitElement {
   override async updated(changes: PropertyValues<this>): Promise<void> {
     super.updated(changes);
 
-    if (changes.has('patternData')) {
+    if (changes.has('pickedColors')) {
       //needs to be done in the same shadow dom as the pattern svg.
-      const svgContainer = this.renderRoot.querySelector('div');
+      this.#renderDefs();
+    }
+  }
+
+  #renderDefs(): void{
+    const svgContainer = this.renderRoot.querySelector('div');
       if(svgContainer){
         svgContainer.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
-          ${this.patternData?.colors.map((def:{id:string, default:string}) => { 
+          ${this.pickedColors?.map(pc => { 
             // needs to be updated when colours are selected
-            const image = getComputedStyle(this).getPropertyValue(`--_yarn${def.id}-image`) ?? 0;
+            const image = getComputedStyle(this).getPropertyValue(`--yarn${pc.patternYarn}-image`) ?? 0;
+            // const image = ;
             console.log(image);
-            return `<pattern id="img${def.id}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.id})">
-              <rect width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${def.id})" />
+            return `<pattern id="img${pc.patternYarn}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${pc.patternYarn})">
+              <rect width="${this.imageScale}" height="${this.imageScale}" fill="${pc.color}" />
               <image href="${image}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
             </pattern>
             `}).join('\n')}
           </defs>
         </svg>`;
       }
-    }
   }
 
   static styles = css`

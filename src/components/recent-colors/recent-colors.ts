@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { PaletteColor } from '../..';
+import { YarnColor } from '../../models';
 
 
 /**
@@ -12,9 +12,9 @@ import { PaletteColor } from '../..';
 @customElement('cp-recent-colors')
 export class RecentColors extends LitElement {
 
-  c1:PaletteColor = { color: `#700`, name: '' };
-  c2:PaletteColor = { color: `#070`, name: '' };
-  c3:PaletteColor = { color: `#007`, name: '' };
+  c1:YarnColor = { color: `#700`, name: '' };
+  c2:YarnColor = { color: `#070`, name: '' };
+  c3:YarnColor = { color: `#007`, name: '' };
 
   render() {
     return html`<cp-color-card .palette=${this.c1} @click=${()=>this.select(this.c1)}></cp-color-card>
@@ -22,7 +22,7 @@ export class RecentColors extends LitElement {
     <cp-color-card .palette=${this.c3} @click=${()=>this.select(this.c3)}></cp-color-card>`;
   }
 
-  select(color: PaletteColor){
+  select(color: YarnColor){
     document.body.style.setProperty(`--yarnA`, color.color);
   }
 

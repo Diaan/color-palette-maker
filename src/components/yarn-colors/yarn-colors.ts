@@ -1,7 +1,7 @@
 import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { Yarn } from '../../models';
-import { CpSelectColorEvent, EventEmitter, PaletteColor, event } from '../..';
+import { Yarn, YarnColor } from '../../models';
+import { CpSelectColorEvent, EventEmitter, event } from '../..';
 
 
 /**
@@ -21,10 +21,11 @@ export class YarnColors extends LitElement {
   @event({name:'cp-select-color'}) selectColorEvent!: EventEmitter<CpSelectColorEvent>;
 
   render() {
-    return html`${this.yarnData?.name} 
-    <section>${this.yarnData?.palette.map(c=> html`
-      <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${()=>this.select(c)}></cp-color-card>
-    `)}</section>`;
+    return html`<section>
+      ${this.yarnData?.palette.map(c=> html`
+        <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${()=>this.select(c)}></cp-color-card>
+      `)}
+    </section>`;
   }
 
   override async updated(changes: PropertyValues<this>): Promise<void> {
@@ -43,7 +44,7 @@ export class YarnColors extends LitElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
-  select(yarn:PaletteColor){
+  select(yarn:YarnColor){
     this.selectColorEvent.emit(yarn);
   }
 

@@ -1,8 +1,6 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { PaletteColor } from '../..';
-import { PatternColor, Yarn } from '../../models';
-
+import { PickedColor, PatternColor, Yarn, YarnColor, YarnBase } from '../../models';
 
 /**
  * An example element.
@@ -14,36 +12,33 @@ import { PatternColor, Yarn } from '../../models';
 export class ColorChooser extends LitElement {
   @property({type:Array}) patternColors?: PatternColor[];
 
-  @property({type:Object}) selectedYarn?: Yarn;
+  @property({type:Object}) selectedYarn?: YarnBase;
 
-  @state() workingYarn = 'A';
+  @property() workingYarn = 'A';
 
   render() {
     //TODO: get selecting of working yarn working :D New event and so on
     return html`
-    <cp-pattern-colors .patternColors=${this.patternColors} @click=${this.setWorkingYarn}></cp-pattern-colors>
-    Recent colours:
-    <cp-recent-colors></cp-recent-colors>
+    ${this.patternColors
+      ?html`<cp-pattern-colors .patternColors=${this.patternColors}></cp-pattern-colors>`
+      :nothing
+    }
+    <!--Recent colours:
+    <cp-recent-colors></cp-recent-colors> -->
     ${this.selectedYarn ?
-      html`<cp-yarn-colors @cp-select-color=${this.select} .yarnFolder=${this.selectedYarn.folder}></cp-yarn-colors>`:
-      html`<cp-yarn-list @selectYarn=${this.selectYarn}></cp-yarn-list>`}
+      html`${this.selectedYarn.name} 
+        <button @click=${this.deselectYarn}>back</button><br/>
+        <cp-yarn-colors .yarnFolder=${this.selectedYarn.folder}></cp-yarn-colors>`:
+      html`<cp-yarn-list></cp-yarn-list>`}
     `;
   }
 
-  select ({ detail: color }: CustomEvent<PaletteColor>): void{
-    console.log('select',color);
-    document.body.style.setProperty(`--yarn${this.workingYarn}`, color.color);
-    if(color.image){
-      document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${color.image})`);
-    }
+  deselectYarn(){
+    this.selectedYarn = undefined;
   }
 
-  selectYarn(yarn: CustomEvent<Yarn>){
-    this.selectedYarn = yarn.detail;
-  }
-
-  setWorkingYarn(){
-    this.workingYarn = 'B';
+  setWorkingYarn(workingYarn: CustomEvent<PatternColor>){
+    this.workingYarn = workingYarn.detail.id;
   }
 
   static styles = css`

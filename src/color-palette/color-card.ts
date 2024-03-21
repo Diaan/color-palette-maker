@@ -1,7 +1,6 @@
 import { LitElement, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { PaletteColor } from './color-palette';
-import { Yarn } from '../models';
+import { Yarn, YarnColor } from '../models';
 
 /**
  * An example element.
@@ -11,7 +10,7 @@ import { Yarn } from '../models';
  */
 @customElement('cp-color-card')
 export class ColorCard extends LitElement {
-  @property({type:Object}) palette: PaletteColor = { color: `#000`, name: '' };
+  @property({type:Object}) palette: YarnColor = { color: `#000`, name: '' };
   @property({type:Boolean}) selected: boolean = false;
   @property({type:Object}) yarn?: Yarn;
   @property({ reflect: true })  size: string = 'medium';

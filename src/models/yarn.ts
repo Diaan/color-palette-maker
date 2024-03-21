@@ -9,10 +9,10 @@ export type Yarn = YarnBase & {
   palette: YarnColor[];
 }
  
-export type YarnWeight = 'dk'|'bulky'|'worsted';
+export type YarnWeight = 'dk'|'bulky'|'worsted'|'sport';
 
 export type YarnColor = {
-  image: string;
+  image?: string;
   name: string;
   color: string;
 }

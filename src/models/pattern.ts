@@ -1,3 +1,5 @@
+import { PickedColor } from "./color";
+
 export type PatternBase = { 
   name: string; 
   folder: string, 
@@ -15,5 +17,6 @@ export type PatternColor = {
   id:string,
   name: string,
   required:number[],
-  default: string
+  default: string,
+  pickedColor:PickedColor
 }

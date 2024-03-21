@@ -1,6 +1,10 @@
 import { LitElement, PropertyValues, css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { Pattern } from '../../models/pattern';
+import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
+import { PatternColors } from '../pattern-colors/pattern-colors';
+import { PickedColor } from '../../models/color';
+import { Yarn, YarnBase, YarnColor } from '../../models';
 
 
 /**
@@ -22,7 +26,17 @@ export class PaletteMaker extends LitElement {
 
   @state() patternCode?: string;
   @state() patternData?: Pattern;
+  @state() pickedColors: PickedColor[] = [];
+  @state() selectedYarn?: YarnBase;
+  @state() workingYarn?: string;
 
+  /** Events controller. */
+  #events = new EventsController(this, {
+    'cp-select-color': this.#onSelectColor,
+    'cp-select-yarn': this.#onSelectYarn,
+    'cp-set-working-yarn': this.#onSetWorkingYarn
+  });
+  
   render() {
     return html`
       <button @click=${this.back}>back</button>
@@ -30,10 +44,10 @@ export class PaletteMaker extends LitElement {
       <section>
         ${
           this.patternData&&this.patternCode?
-          html`<cp-pattern-viewer .patternData=${this.patternData} .patternCode=${this.patternCode}></cp-pattern-viewer>`
+          html`<cp-pattern-viewer .patternData=${this.patternData} .patternCode=${this.patternCode} .pickedColors=${this.pickedColors}></cp-pattern-viewer>`
           :nothing
         }
-        <cp-color-chooser .patternColors=${this.patternData?.colors}></cp-color-chooser>
+        <cp-color-chooser .patternColors=${this.patternData?.colors} .pickedColors=${this.pickedColors} .selectedYarn=${this.selectedYarn}></cp-color-chooser>
       </section>
     `;
   }
@@ -54,14 +68,38 @@ export class PaletteMaker extends LitElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
+  #onSelectColor(event: CpSelectColorEvent): void {
+    const color = event.detail;
+    if(!this.selectedYarn || !this.workingYarn) return;
+
+    const pickedColor: PickedColor = {
+      ...color,
+      patternYarn: this.workingYarn,
+      yarnFolder: this.selectedYarn.folder
+    };
+    document.body.style.setProperty(`--yarn${this.workingYarn}`, pickedColor.color);
+    if(pickedColor.image){
+      document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `yarns/${this.selectedYarn?.folder}/images/${color.image}`);
+    }
+    this.pickedColors = [
+      ... this.pickedColors.filter(pc => pc.patternYarn !==this.workingYarn),
+      pickedColor
+    ];
+    localStorage.setItem(`pickedColors`, JSON.stringify(this.pickedColors));
+  }
+
+  #onSelectYarn(event: CpSelectYarnEvent){
+    this.selectedYarn = event.detail;
+  }
+
+  #onSetWorkingYarn(event:CpSetWorkingYarnEvent){
+    this.workingYarn = event.detail;
+  }
+
   async _getPatternInfo(pattern: string): Promise<string | undefined> {
     try {
       const response = await fetch(`/patterns/${pattern}/info.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       this.patternData = await response.json();
-      this.patternData?.colors.forEach((color: any) => {
-      document.body.style.setProperty(`--yarn${color.id}`, color.default);
-      });
       const patterntext = await fetch(`/patterns/${pattern}/${this.patternData?.patternFile}`);
       const html = await patterntext.text();
       
