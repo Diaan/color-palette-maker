@@ -20,11 +20,10 @@ export class ColorCard extends LitElement {
     const image = `yarns/${this.yarn?.folder}/images/${this.palette.image}`;
 
     return html`
-      <div style="--_bg-color:${this.palette.color};--_bg-image:${image}" title=${this.palette.name}>
-        ${this.yarn?.folder && this.palette.image ? html`<img src="yarns/${this.yarn.folder}/images/${this.palette.image}">` : nothing}
+      <div style="--_bg-color:${this.palette.color};--_bg-image:url(${image})" title=${this.palette.name}>
       </div>
       ${name}
-    `;
+      `;
   }
   static styles = css`
     :host([size="large"]){
@@ -34,13 +33,13 @@ export class ColorCard extends LitElement {
     }
     div {
       background-color: var(--_bg-color);
-      background-image: var(--_bg-image);
+      background-image: var(--yarn-image, var(--_bg-image));
       display: grid;
       width: 50px;
       aspect-ratio:1;
       border-radius: 50%;
       overflow: hidden;
-      place-content: center;
+      place-content: center;  background-size: cover;
     }
     img {
       width: 100%;
@@ -53,7 +52,7 @@ export class ColorCard extends LitElement {
     }
 
     :host([selected]) div {
-      outline: var(--_bg) outset 3px;
+      outline: var(--_bg-color) outset 3px;
       outline-offset: 1px;
     }
   `;

@@ -17,6 +17,6 @@ export type PatternColor = {
   id:string,
   name: string,
   required:number[],
-  default: string,
+  default: PickedColor,
   pickedColor:PickedColor
 }

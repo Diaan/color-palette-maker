@@ -1,6 +1,6 @@
 import { LitElement, css, html, nothing } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
-import { PickedColor, PatternColor, Yarn, YarnColor, YarnBase } from '../../models';
+import { customElement, property } from 'lit/decorators.js';
+import { PatternColor, YarnBase } from '../../models';
 
 /**
  * An example element.
@@ -20,7 +20,9 @@ export class ColorChooser extends LitElement {
     //TODO: get selecting of working yarn working :D New event and so on
     return html`
     ${this.patternColors
-      ?html`<cp-pattern-colors .patternColors=${this.patternColors}></cp-pattern-colors>`
+      ?html`<cp-pattern-colors 
+        .patternColors=${this.patternColors} 
+        .workingYarn=${this.workingYarn}></cp-pattern-colors>`
       :nothing
     }
     <!--Recent colours:

@@ -44,10 +44,16 @@ export class PaletteMaker extends LitElement {
       <section>
         ${
           this.patternData&&this.patternCode?
-          html`<cp-pattern-viewer .patternData=${this.patternData} .patternCode=${this.patternCode} .pickedColors=${this.pickedColors}></cp-pattern-viewer>`
+          html`<cp-pattern-viewer 
+            .patternData=${this.patternData} 
+            .patternCode=${this.patternCode} 
+            .pickedColors=${this.pickedColors}></cp-pattern-viewer>`
           :nothing
         }
-        <cp-color-chooser .patternColors=${this.patternData?.colors} .pickedColors=${this.pickedColors} .selectedYarn=${this.selectedYarn}></cp-color-chooser>
+        <cp-color-chooser 
+          .patternColors=${this.patternData?.colors} 
+          .pickedColors=${this.pickedColors} 
+          .selectedYarn=${this.selectedYarn}></cp-color-chooser>
       </section>
     `;
   }
@@ -79,7 +85,7 @@ export class PaletteMaker extends LitElement {
     };
     document.body.style.setProperty(`--yarn${this.workingYarn}`, pickedColor.color);
     if(pickedColor.image){
-      document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `yarns/${this.selectedYarn?.folder}/images/${color.image}`);
+      document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${color.image})`);
     }
     this.pickedColors = [
       ... this.pickedColors.filter(pc => pc.patternYarn !==this.workingYarn),
@@ -101,6 +107,8 @@ export class PaletteMaker extends LitElement {
       const response = await fetch(`/patterns/${pattern}/info.json`);
       this.patternData = await response.json();
       const patterntext = await fetch(`/patterns/${pattern}/${this.patternData?.patternFile}`);
+      this.pickedColors = this.patternData ? this.patternData?.colors.map(c=>c.default):[];
+      console.log(this.pickedColors);
       const html = await patterntext.text();
       
       return html;

@@ -9,12 +9,12 @@
       "id":"A",
       "name": "Main color",
       "required":[664, 747, 830, 913],
-      "default": "#cabee4"
+      "default": {"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
     }, {
       "id": "B",
       "name": "Waves",
       "required":[580, 652, 725, 797],
-      "default":"#b9c676"
+      "default":{"image":"Vams-45.jpg","name":"Vams-45","color":"rgb(112,179,55)","patternYarn":"B","yarnFolder":"rauma-garn-vams"}
     }
   ]
 }

@@ -57,10 +57,7 @@ export class PatternViewer extends LitElement {
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
           ${this.pickedColors?.map(pc => { 
-            // needs to be updated when colours are selected
-            const image = getComputedStyle(this).getPropertyValue(`--yarn${pc.patternYarn}-image`) ?? 0;
-            // const image = ;
-            console.log(image);
+            const image = `yarns/${pc.yarnFolder}/images/${pc.image}`;
             return `<pattern id="img${pc.patternYarn}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${pc.patternYarn})">
               <rect width="${this.imageScale}" height="${this.imageScale}" fill="${pc.color}" />
               <image href="${image}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>

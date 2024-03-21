@@ -2,8 +2,6 @@ import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { PatternColor } from '../../models/pattern';
 import { CpSetWorkingYarnEvent, EventEmitter, event } from '../..';
-import { YarnColor } from '../../models';
-
 
 /**
  * An example element.
@@ -18,22 +16,22 @@ export class PatternColors extends LitElement {
   /** Emits when the filter has been added or removed. */
   @event({name:'cp-set-working-yarn'}) setWorkingYarnEvent!: EventEmitter<CpSetWorkingYarnEvent>;
 
-  @state() workingYarn?:PatternColor;
+  @state() workingYarn?:string;
 
   render() {
     return html`
       <h2>Pattern colours:</h2>
       ${this.patternColors?.map(pc=>html`
-        <cp-color-card size="large" ?active=${this.workingYarn===pc} .palette=${{color:pc.default,name:pc.name}} @click=${()=>this.selectWorkingColor(pc)}>s</cp-color-card>
+        <cp-color-card size="large" 
+          ?selected=${this.workingYarn===pc.id} 
+          style="--yarn-image: var(--yarn${pc.id}-image)"
+          .palette=${{color:`var(--yarn${pc.id})`,name:pc.name}} 
+          @click=${()=>this.selectWorkingColor(pc)}></cp-color-card>
       `)}`;
   }
 
-  static setColor(color:YarnColor): void{
-    console.log('set color in patternColors', color);
-  }
-
   selectWorkingColor(color:PatternColor): void{
-    this.workingYarn = color;
+    this.workingYarn = color.id;
     this.setWorkingYarnEvent.emit(color.id);
   }
 
@@ -42,10 +40,6 @@ export class PatternColors extends LitElement {
       display:flex;
       flex-direction: column;
       gap: 5px;
-    }
-
-    cp-color-card[active]{
-      outline: 1px solid green;
     }
   `;
 }
