@@ -2,9 +2,8 @@ import { LitElement, PropertyValues, css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { Pattern } from '../../models/pattern';
 import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
-import { PatternColors } from '../pattern-colors/pattern-colors';
 import { PickedColor } from '../../models/color';
-import { Yarn, YarnBase, YarnColor } from '../../models';
+import { YarnBase } from '../../models';
 
 
 /**
@@ -32,7 +31,6 @@ export class PaletteMaker extends LitElement {
 
   /** Events controller. */
   #events = new EventsController(this, {
-    'cp-select-color': this.#onSelectColor,
     'cp-select-yarn': this.#onSelectYarn,
     'cp-set-working-yarn': this.#onSetWorkingYarn
   });
@@ -68,6 +66,7 @@ export class PaletteMaker extends LitElement {
         }
       });
     }
+    this.#events.listen(window,'cp-select-color', this.#onSelectColor,);
   }
 
   back(){

@@ -1,6 +1,6 @@
 import { LitElement, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { Pattern } from '../../pattern/pattern';
+import { Pattern } from '../../models';
 
 
 /**
