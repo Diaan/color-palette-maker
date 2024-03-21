@@ -1,5 +1,10 @@
 import { type ReactiveElement } from 'lit';
-import { type Constructor } from '../types.js';
+
+export type Constructor<T = Record<string, unknown>> = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  new (...args: any[]): T;
+  prototype: T;
+};
 
 // From the TC39 Decorators proposal
 export interface ClassDescriptor {
