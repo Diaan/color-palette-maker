@@ -1,7 +1,8 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { PatternColor } from '../../models/pattern';
 import { CpSetWorkingYarnEvent, EventEmitter, event } from '../..';
+import { PickedColor, Yarn } from '../../models';
 
 /**
  * An example element.
@@ -11,7 +12,8 @@ import { CpSetWorkingYarnEvent, EventEmitter, event } from '../..';
  */
 @customElement('cp-pattern-colors')
 export class PatternColors extends LitElement {
-  @property({type:Array}) patternColors?: PatternColor[];
+  @property({type:Array}) colors?: PatternColor[];
+  @property({type:Array}) pickedColors?: PickedColor[];
 
   /** Emits when the filter has been added or removed. */
   @event({name:'cp-set-working-yarn'}) setWorkingYarnEvent!: EventEmitter<CpSetWorkingYarnEvent>;
@@ -21,14 +23,26 @@ export class PatternColors extends LitElement {
   render() {
     return html`
       <h2>Pattern colours:</h2>
-      ${this.patternColors?.map(pc=>html`
+      ${this.colors?.map(pc=>{
+        const color = pc.pickedColor ? pc.pickedColor : pc.default;
+        //TODO find a better way to pass the folder
+        return html`
         <cp-color-card size="large" 
           ?selected=${this.workingYarn===pc.id} 
-          style="--yarn-image: var(--yarn${pc.id}-image)"
-          .palette=${{color:`var(--yarn${pc.id})`,name:pc.name}} 
+          .yarn=${{folder:color.yarnFolder} as Yarn}
+          .palette=${{color:color.color,name:pc.name, image: color.image}} 
           @click=${()=>this.selectWorkingColor(pc)}></cp-color-card>
-      `)}`;
+          `})}`;
   }
+  
+  // {# style="--yarn-image: var(--yarn${pc.id}-image)" #}
+  // override async updated(changes: PropertyValues<this>): Promise<void> {
+  //   super.updated(changes);
+
+  //   if (changes.has('colors')) {
+  //     console.log(this.colors);
+  //   }
+  // }
 
   selectWorkingColor(color:PatternColor): void{
     this.workingYarn = color.id;

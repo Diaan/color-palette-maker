@@ -1,7 +1,7 @@
 import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
-import { Pattern } from '../../models/pattern';
+import { Pattern, PatternColor } from '../../models/pattern';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { PickedColor } from '../../models';
 
@@ -25,7 +25,7 @@ export class PatternViewer extends LitElement {
 
   @property({attribute: 'pattern-code'}) patternCode?: string;
   @property({ attribute: 'pattern-data', type:Object}) patternData?: Pattern;
-  @property({type:Array}) pickedColors?: PickedColor[];
+  @property({type:Array}) colors?: PatternColor[];
 
   render() {
     return html`${ unsafeHTML(this.patternCode)}
@@ -44,7 +44,7 @@ export class PatternViewer extends LitElement {
   override async updated(changes: PropertyValues<this>): Promise<void> {
     super.updated(changes);
 
-    if (changes.has('pickedColors')) {
+    if (changes.has('colors')) {
       //needs to be done in the same shadow dom as the pattern svg.
       this.#renderDefs();
     }
@@ -56,10 +56,11 @@ export class PatternViewer extends LitElement {
         svgContainer.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
-          ${this.pickedColors?.map(pc => { 
-            const image = `yarns/${pc.yarnFolder}/images/${pc.image}`;
-            return `<pattern id="img${pc.patternYarn}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${pc.patternYarn})">
-              <rect width="${this.imageScale}" height="${this.imageScale}" fill="${pc.color}" />
+          ${this.colors?.map(c => { 
+            const color = c.pickedColor?c.pickedColor:c.default;
+            const image = `yarns/${color.yarnFolder}/images/${color.image}`;
+            return `<pattern id="img${color.patternYarn}" patternUnits="userSpaceOnUse" width="${this.imageScale}" height="${this.imageScale}" fill="var(--yarn${color.patternYarn})">
+              <rect width="${this.imageScale}" height="${this.imageScale}" fill="${color.color}" />
               <image href="${image}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
             </pattern>
             `}).join('\n')}

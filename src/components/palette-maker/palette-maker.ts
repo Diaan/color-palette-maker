@@ -1,6 +1,6 @@
 import { LitElement, PropertyValues, css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { Pattern } from '../../models/pattern';
+import { Pattern, PatternColor } from '../../models/pattern';
 import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
 import { PickedColor } from '../../models/color';
 import { YarnBase } from '../../models';
@@ -25,14 +25,15 @@ export class PaletteMaker extends LitElement {
 
   @state() patternCode?: string;
   @state() patternData?: Pattern;
-  @state() pickedColors: PickedColor[] = [];
+  @state() colors: PatternColor[] = [];
   @state() selectedYarn?: YarnBase;
-  @state() workingYarn?: string;
+  @state() workingYarn?: string = 'B';
 
   /** Events controller. */
   #events = new EventsController(this, {
     'cp-select-yarn': this.#onSelectYarn,
-    'cp-set-working-yarn': this.#onSetWorkingYarn
+    'cp-set-working-yarn': this.#onSetWorkingYarn,
+    'cp-select-color': this.#onSelectColor
   });
   
   render() {
@@ -45,12 +46,12 @@ export class PaletteMaker extends LitElement {
           html`<cp-pattern-viewer 
             .patternData=${this.patternData} 
             .patternCode=${this.patternCode} 
-            .pickedColors=${this.pickedColors}></cp-pattern-viewer>`
+            .colors=${this.colors}></cp-pattern-viewer>`
           :nothing
         }
         <cp-color-chooser 
-          .patternColors=${this.patternData?.colors} 
-          .pickedColors=${this.pickedColors} 
+          .workingYarn=${this.workingYarn}
+          .colors=${this.colors} 
           .selectedYarn=${this.selectedYarn}></cp-color-chooser>
       </section>
     `;
@@ -66,7 +67,6 @@ export class PaletteMaker extends LitElement {
         }
       });
     }
-    this.#events.listen(window,'cp-select-color', this.#onSelectColor,);
   }
 
   back(){
@@ -74,6 +74,9 @@ export class PaletteMaker extends LitElement {
   }
 
   #onSelectColor(event: CpSelectColorEvent): void {
+    event.preventDefault();
+    event.stopPropagation();
+
     const color = event.detail;
     if(!this.selectedYarn || !this.workingYarn) return;
 
@@ -82,15 +85,18 @@ export class PaletteMaker extends LitElement {
       patternYarn: this.workingYarn,
       yarnFolder: this.selectedYarn.folder
     };
+    const workingColor = this.colors.find(c => c.id===this.workingYarn);
+    if(!workingColor) return;
+
+    workingColor.pickedColor = pickedColor;
+    this.colors = [...this.colors];
+    
     document.body.style.setProperty(`--yarn${this.workingYarn}`, pickedColor.color);
     if(pickedColor.image){
       document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${color.image})`);
     }
-    this.pickedColors = [
-      ... this.pickedColors.filter(pc => pc.patternYarn !==this.workingYarn),
-      pickedColor
-    ];
-    localStorage.setItem(`pickedColors`, JSON.stringify(this.pickedColors));
+
+    localStorage.setItem(`patternColors`, JSON.stringify(this.colors));
   }
 
   #onSelectYarn(event: CpSelectYarnEvent){
@@ -106,8 +112,7 @@ export class PaletteMaker extends LitElement {
       const response = await fetch(`/patterns/${pattern}/info.json`);
       this.patternData = await response.json();
       const patterntext = await fetch(`/patterns/${pattern}/${this.patternData?.patternFile}`);
-      this.pickedColors = this.patternData ? this.patternData?.colors.map(c=>c.default):[];
-      console.log(this.pickedColors);
+      this.colors = this.patternData ? this.patternData?.colors:[];
       const html = await patterntext.text();
       
       return html;

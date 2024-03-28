@@ -1,6 +1,6 @@
-import { LitElement, css, html, nothing } from 'lit';
+import { LitElement, PropertyValues, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { PatternColor, YarnBase } from '../../models';
+import { PatternColor, PickedColor, YarnBase } from '../../models';
 
 /**
  * An example element.
@@ -10,18 +10,17 @@ import { PatternColor, YarnBase } from '../../models';
  */
 @customElement('cp-color-chooser')
 export class ColorChooser extends LitElement {
-  @property({type:Array}) patternColors?: PatternColor[];
+  @property({type:Array}) colors?: PatternColor[];
 
   @property({type:Object}) selectedYarn?: YarnBase;
 
-  @property() workingYarn = 'A';
+  @property() workingYarn?: string;
 
   render() {
-    //TODO: get selecting of working yarn working :D New event and so on
     return html`
-    ${this.patternColors
+    ${this.colors
       ?html`<cp-pattern-colors 
-        .patternColors=${this.patternColors} 
+        .colors=${this.colors} 
         .workingYarn=${this.workingYarn}></cp-pattern-colors>`
       :nothing
     }
@@ -34,6 +33,14 @@ export class ColorChooser extends LitElement {
       html`<cp-yarn-list></cp-yarn-list>`}
     `;
   }
+
+  // override async updated(changes: PropertyValues<this>): Promise<void> {
+  //   super.updated(changes);
+
+  //   if (changes.has('colors') && this.colors) {
+  //     console.log(this.colors, 'has changed');
+  //   }
+  // }
 
   deselectYarn(){
     this.selectedYarn = undefined;

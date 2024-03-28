@@ -5,13 +5,13 @@
   "colors": [
     {
       "id":"A",
-      "default":"#f5e6d7",
+      "default":{"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"},
       "name": "Yarn A",
       "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576]
     },    {
       "name": "Yarn B",
       "id":"B",
-      "default":"#a87214",
+      "default":{"image":"Vams-45.jpg","name":"Vams-45","color":"rgb(112,179,55)","patternYarn":"B","yarnFolder":"rauma-garn-vams"},
       "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768]
     },    {
       "name": "Yarn C",
