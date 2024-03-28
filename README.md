@@ -6,3 +6,10 @@
 
 
 Nice tool to make svgs: [PicSVG](https://picsvg.com/)
+
+router:
+https://codesandbox.io/s/paulweezydesign-lit-routing-sd56my?file=/src/components/app-main.js
+https://www.npmjs.com/package/@lit-labs/router
+https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API
+
+refactor events when the types are clear: https://github.com/sl-design-system/components/pull/1061/files

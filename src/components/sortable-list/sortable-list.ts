@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { property } from 'lit/decorators.js';
-import { PaletteColor } from '../../color-palette/color-palette';
+import { YarnColor } from '../../models';
 
 let id = 0;
 function uuid() {
@@ -40,7 +40,7 @@ class DraggableList extends LitElement {
     return html`<slot></slot>`;
   }
 
-  emitOrder(order: PaletteColor[]): void {
+  emitOrder(order: YarnColor[]): void {
     const options = {
       detail: order,
       bubbles: true,
