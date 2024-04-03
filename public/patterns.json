@@ -9,10 +9,13 @@
     "colors": 5
   },{
     "name": "Hilma",
-    "folder": "hilma"
+    "folder": "hilma",
+    "colors": 5
   },{
     "name": "Wave sweater",
     "thumbnail": "thumbnail.webp",
-    "folder": "wave"
+    "designer": "Spektakel Strik",
+    "folder": "wave",
+    "colors": 2
   }
 ]}

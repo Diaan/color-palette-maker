@@ -30,11 +30,12 @@ export class PatternColors extends LitElement {
         <cp-color-card size="large" 
           ?selected=${this.workingYarn===pc.id} 
           .yarn=${{folder:color.yarnFolder} as Yarn}
-          .palette=${{color:color.color,name:pc.name, image: color.image}} 
-          @click=${()=>this.selectWorkingColor(pc)}></cp-color-card>
+          .palette=${color} 
+          @click=${()=>this.selectWorkingColor(pc)}>${pc.name}:</cp-color-card>
           `})}`;
   }
   
+  // .palette=${{color:color.color,name:pc.name, image: color.image}} 
   // {# style="--yarn-image: var(--yarn${pc.id}-image)" #}
   // override async updated(changes: PropertyValues<this>): Promise<void> {
   //   super.updated(changes);

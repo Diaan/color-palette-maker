@@ -22,7 +22,7 @@ export class ColorCard extends LitElement {
     return html`
       <div style="--_bg-color:${this.palette.color};--_bg-image:url(${image})" title=${this.palette.name}>
       </div>
-      ${name}
+      <slot></slot> ${name}      
       `;
   }
   static styles = css`
