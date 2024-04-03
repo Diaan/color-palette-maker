@@ -1,14 +1,14 @@
 { "patterns":[
   {
-    "name": "Four simple stripes",
-    "folder": "simple-stripes",
-    "colors": 4
-  },{
     "name": "Quitling triangles shawl",
+    "thumbnail": "thumbnail.jpeg",
     "folder": "quilting-triangles",
+    "designer":"Stephen West",
     "colors": 5
   },{
     "name": "Hilma",
+    "thumbnail": "thumbnail.jpg",
+    "designer":"Amy Blackwell",
     "folder": "hilma",
     "colors": 5
   },{

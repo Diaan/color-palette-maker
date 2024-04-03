@@ -16,17 +16,32 @@ export class PatternCard extends LitElement {
 
   render() {
     return html`
-    ${this.pattern.thumbnail?html`<img src="patterns/${this.pattern.folder}/${this.pattern.thumbnail}"/>`:nothing} 
-    <h1>${this.pattern.name}</h1>`;
+    <sl-card class="card-header">
+      ${this.pattern.thumbnail?html`<img src="patterns/${this.pattern.folder}/${this.pattern.thumbnail}" 
+      slot="image"/>`:nothing} 
+      <h2>${this.pattern.name}</h2>
+      <sl-icon name="person-square" aria-label="Designer"></sl-icon> ${this.pattern.designer}
+      <div slot="footer">
+        <small><sl-icon name="palette"></sl-icon> ${this.pattern.colors}</small>
+        <sl-button variant="primary">Design</sl-button>
+      </div>
+    </sl-card>`;
   }
 
   static styles = css`
-    :host {
-      display: grid;
-      grid-template-columns: 30% 1fr;
-      gap: 20px;
-      border: 1px solid red;
+     :host {
+      display: block;
     }
+ 
+    sl-card {
+      display: block
+    }
+ 
+    h2{
+      font-size: var(--sl-font-size-large);
+      margin: 0;
+    }
+
 
     img {
       aspect-ratio: 1/1;
@@ -37,6 +52,12 @@ export class PatternCard extends LitElement {
       object-position: var(--_object-position);
       overflow: hidden;
       padding: var(--_media-padding-full);
+    }
+   
+    [slot='footer'] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   `;
 }

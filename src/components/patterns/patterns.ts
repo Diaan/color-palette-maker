@@ -17,7 +17,8 @@ export class Patterns extends LitElement {
 
   render() {
     return html`
-      <h1>Patterns:</h1>
+      <h1>Patterns</h1>
+      <p>Select a pattern to start designing
       <section>
       ${this.patterns?.map(p => html`<cp-pattern-card  @click=${()=> this.selectPattern(p)} .pattern="${p}" ></cp-pattern-card>`)}
       </section>
@@ -59,18 +60,17 @@ export class Patterns extends LitElement {
 
   static styles = css`
     :host {
-      padding: 20px;
+      padding: var(--sl-spacing-2x-large);
+      display: block;
     }
     section {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr) );
+      gap: var(--sl-spacing-large);
     }
  
     h1 {
-      background-color: cornflowerblue;
-      color: #efefef;
-      padding: 10px;
+      color: var(--sl-color-primary-500);
     }
   `;
 }

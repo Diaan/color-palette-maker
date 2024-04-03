@@ -38,7 +38,7 @@ export class PaletteMaker extends LitElement {
   
   render() {
     return html`
-      <button @click=${this.back}>back</button>
+      <sl-button @click=${this.back}>back</sl-button>
       <div></div>
       <section>
         ${
