@@ -1,4 +1,5 @@
 export type YarnBase = { 
+  company: string;
   name: string; 
   folder: string 
 };

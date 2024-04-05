@@ -3,6 +3,7 @@ import { PickedColor } from "./color";
 export type PatternBase = { 
   name: string; 
   folder: string, 
+  colorAmount?:string,
   thumbnail: string
 };
 

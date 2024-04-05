@@ -18,7 +18,7 @@ export class Patterns extends LitElement {
   render() {
     return html`
       <h1>Patterns</h1>
-      <p>Select a pattern to start designing
+      <p>Select a pattern to start designing</p>
       <section>
       ${this.patterns?.map(p => html`<cp-pattern-card  @click=${()=> this.selectPattern(p)} .pattern="${p}" ></cp-pattern-card>`)}
       </section>

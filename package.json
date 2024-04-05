@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "extract-info": "node ./extract-info.js",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -13,6 +14,7 @@
     "lit": "^3.1.2"
   },
   "devDependencies": {
+    "fast-glob": "^3.3.2",
     "typescript": "^5.4.2",
     "vite": "^5.1.6"
   }

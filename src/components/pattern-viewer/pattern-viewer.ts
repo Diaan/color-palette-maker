@@ -3,7 +3,6 @@ import { customElement, property } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { Pattern, PatternColor } from '../../models/pattern';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { PickedColor } from '../../models';
 
 
 /**
@@ -28,16 +27,17 @@ export class PatternViewer extends LitElement {
   @property({type:Array}) colors?: PatternColor[];
 
   render() {
-    return html`${ unsafeHTML(this.patternCode)}
-    <article>
+    return html`
       <h1>${this.patternData?.name}</h1>
-      <p><a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></p>
-      <p>Colours:</p>
-      <ul>
-        ${this.patternData?.colors.map(c=>html`<li>${c.name}</li>`)}
-      </ul>
-    </article>  
-    <div class="svg-defs"></div>
+      ${ unsafeHTML(this.patternCode)}
+      <article>
+        <p><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></p>
+        <p>Colours:</p>
+        <ul>
+          ${this.patternData?.colors.map(c=>html`<li>${c.name}</li>`)}
+        </ul>
+      </article>  
+      <div class="svg-defs"></div>
     `;
   }
 
@@ -72,8 +72,10 @@ export class PatternViewer extends LitElement {
   static styles = css`
     :host {
       display: flex;
-      flex-direction: column;
-      /* gap: 20px; */
+      flex-direction: column; 
+    }
+    h1 {
+      color: var(--sl-color-primary-500);
     }
 
     .svg-defs{

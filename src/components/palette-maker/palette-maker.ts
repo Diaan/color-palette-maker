@@ -125,9 +125,18 @@ export class PaletteMaker extends LitElement {
   
 
   static styles = css`
+  :host {
+      padding: var(--sl-spacing-2x-large);
+      display: block;
+    }
+ 
+    h1 {
+      color: var(--sl-color-primary-500);
+    }
     section {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.4fr;
+      gap: var(--sl-spacing-large);
     }
   `;
 }

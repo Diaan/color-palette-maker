@@ -1,48 +1,101 @@
-{ "yarns":[
-  {
-    "name": "Foxy Fibers",
-    "folder": "foxy-fibers"
-  },{
-    "name": "WestWool Tandem",
-    "folder": "tandem"
-  },{
-    "name": "Hobbii - Friends Cotton",
-    "folder": "friends-cotton"
-  },{
-    "name": "Lana Grossa - Cool Wool Big",
-    "folder": "cool-wool-big"
-  },{
-    "name": "Garnstudio DROPS - Merino Extr Fine",
-    "folder": "merino-extra-fine"
-  },{
-    "name": "Knitting for Olive - Heavy Merino",
-    "folder": "heavy-merino"
-  },{
-    "name": "dLana - Rústica",
-    "folder": "dlana-rustica"
-  },{
-    "name": "Rowan - Pure wool",
-    "folder": "rowan-pure-wool"
-  },{
-    "name": "Rosarios 4 - Terra",
-    "folder": "rosarios4-terra"
-  },{
-    "name": "Malabrigo - rios",
-    "folder": "malabrigo-rios"
-  },{
-    "name": "Rauma garn - Vams",
-    "folder": "rauma-garn-vams"
-  },{
-    "name": "Kaos - Brushed Alpaca",
-    "folder": "kaos-brushed-alpaca"
-  },{
-    "name": "Kaos - Chunky Andean",
-    "folder": "kaos-chunky-andean"
-  },{
-    "name": "Sandnes Garn - Fritidsgarn",
-    "folder": "sandnes-garn-fritidsgarn"
-  },{
-    "name": "Sandnes Garn - Borstet Alpakka",
-    "folder": "sandnes-garn-borstet-alpakka"
-  }
-]}
+{
+  "yarns": [
+    {
+      "company": "Lana Grossa",
+      "name": "Cool Wool Big",
+      "folder": "cool-wool-big",
+      "color": 76
+    },
+    {
+      "company": "dlana",
+      "name": "Rustica",
+      "weight": "worsted",
+      "folder": "dlana-rustica",
+      "color": 40
+    },
+    {
+      "company": "Foxy Fibers",
+      "name": "Supersoft Sock",
+      "weight": "fingering",
+      "folder": "foxy-fibers",
+      "color": 4
+    },
+    {
+      "company": "Knitting for Olive",
+      "name": "Heavy merino",
+      "weight": "worsted",
+      "folder": "heavy-merino",
+      "color": 62
+    },
+    {
+      "company": "KAOS",
+      "name": "Brushed Alpaca",
+      "weight": "bulky",
+      "folder": "kaos-brushed-alpaca",
+      "color": 28
+    },
+    {
+      "company": "KAOS",
+      "name": "Chunky Andean",
+      "weight": "bulky",
+      "folder": "kaos-chunky-andean",
+      "color": 30
+    },
+    {
+      "company": "Malabrigo",
+      "name": "Rios",
+      "weight": "worsted",
+      "folder": "malabrigo-rios",
+      "color": 108
+    },
+    {
+      "company": "Garnstudio DROPS",
+      "name": "Merino Extra Fine",
+      "weight": "DK",
+      "folder": "merino-extra-fine",
+      "color": 42
+    },
+    {
+      "company": "Rauma Garn",
+      "name": "Vams",
+      "weight": "bulky",
+      "folder": "rauma-garn-vams",
+      "color": 91
+    },
+    {
+      "company": "Rosarios4",
+      "name": "Terra",
+      "weight": "worsted",
+      "folder": "rosarios4-terra",
+      "color": 16
+    },
+    {
+      "company": "Rowan",
+      "name": "Pure Wool",
+      "weight": "worsted",
+      "folder": "rowan-pure-wool",
+      "color": 28
+    },
+    {
+      "company": "Sandnes Garn",
+      "name": "Borstet Alpakka",
+      "weight": "bulky",
+      "folder": "sandnes-garn-borstet-alpakka",
+      "color": 39
+    },
+    {
+      "company": "Sandnes Garn",
+      "name": "Fritidsgarn",
+      "weight": "bulky",
+      "folder": "sandnes-garn-fritidsgarn",
+      "color": 51
+    },
+    {
+      "company": "Westwool",
+      "name": "Tandem",
+      "weight": "DK",
+      "folder": "tandem",
+      "color": 52
+    }
+  ]
+}

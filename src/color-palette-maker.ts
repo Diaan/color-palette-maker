@@ -33,7 +33,7 @@ export class App extends LitElement {
   close():void {
     this.pattern = undefined;
     this.params.delete('pattern');
-    window.history.pushState({}, '');
+    window.history.pushState({}, '','/?' + this.params);
   }
 
   selectPattern(event: CustomEvent):void {

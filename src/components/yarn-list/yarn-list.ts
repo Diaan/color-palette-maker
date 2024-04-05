@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { Pattern, YarnBase } from '../../models';
+import { Yarn, YarnBase } from '../../models';
 import { CpSelectYarnEvent, EventEmitter, event } from '../../events';
 
 /**
@@ -19,7 +19,7 @@ export class YarnList extends LitElement {
     return html`
       <h2>Yarns:</h2>
       <section>
-      ${this.yarns?.map(p => html`<cp-yarn-card  @click=${()=> this.selectYarn(p)} .yarn="${p}" >${p.name}</cp-yarn-card>`)}
+      ${this.yarns?.map(p => html`<sl-card  @click=${()=> this.selectYarn(p)} .yarn="${p}" >${p.company} - ${p.name}</sl-card>`)}
       </section>
     `;
   }
@@ -38,7 +38,7 @@ export class YarnList extends LitElement {
     });
   }
 
-  async _getYarns(): Promise<Pattern[] | undefined> {
+  async _getYarns(): Promise<YarnBase[] | undefined> {
     try {
       const response = await fetch(`/yarns.json`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -55,9 +55,13 @@ export class YarnList extends LitElement {
 
   static styles = css`
     section {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 5px;
+    }
+    
+    sl-card {
+      cursor: pointer;
     }
   `;
 }

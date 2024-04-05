@@ -4,6 +4,8 @@
   "url": "https://spektakelstrik.dk/en/products/wave-sweater",
   "patternFile": "wave-sweater.svg",
   "sizes":["XS", "S-M", "L-XL", "XXL"],
+  "yarnWeight":"bulky",
+  "thumbnail": "thumbnail.webp",
   "colors": [
     {
       "id":"A",

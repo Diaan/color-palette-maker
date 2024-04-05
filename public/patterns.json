@@ -1,21 +1,25 @@
-{ "patterns":[
-  {
-    "name": "Quitling triangles shawl",
-    "thumbnail": "thumbnail.jpeg",
-    "folder": "quilting-triangles",
-    "designer":"Stephen West",
-    "colors": 5
-  },{
-    "name": "Hilma",
-    "thumbnail": "thumbnail.jpg",
-    "designer":"Amy Blackwell",
-    "folder": "hilma",
-    "colors": 5
-  },{
-    "name": "Wave sweater",
-    "thumbnail": "thumbnail.webp",
-    "designer": "Spektakel Strik",
-    "folder": "wave",
-    "colors": 2
-  }
-]}
+{
+  "patterns": [
+    {
+      "name": "Hilma",
+      "designer": "Amy Blackwell",
+      "thumbnail": "thumbnail.jpg",
+      "folder": "hilma",
+      "colorAmount": 5
+    },
+    {
+      "name": "Quilting triangles",
+      "designer": "Stephen West",
+      "thumbnail": "thumbnail.jpeg",
+      "folder": "quilting-triangles",
+      "colorAmount": 5
+    },
+    {
+      "name": "Wave Sweater",
+      "designer": "Spektakel strik",
+      "thumbnail": "thumbnail.webp",
+      "folder": "wave",
+      "colorAmount": 2
+    }
+  ]
+}

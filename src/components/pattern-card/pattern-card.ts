@@ -22,7 +22,7 @@ export class PatternCard extends LitElement {
       <h2>${this.pattern.name}</h2>
       <sl-icon name="person-square" aria-label="Designer"></sl-icon> ${this.pattern.designer}
       <div slot="footer">
-        <small><sl-icon name="palette"></sl-icon> ${this.pattern.colors}</small>
+        <small><sl-icon name="palette"></sl-icon> ${this.pattern.colorAmount}</small>
         <sl-button variant="primary">Design</sl-button>
       </div>
     </sl-card>`;
