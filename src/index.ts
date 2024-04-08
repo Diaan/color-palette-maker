@@ -4,4 +4,4 @@ export * from './color-palette/color-card';
 export * from './components';
 
 import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
-setBasePath('/path/to/shoelace/dist');
+setBasePath('/assets/icons');
