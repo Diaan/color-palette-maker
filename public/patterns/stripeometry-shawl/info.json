@@ -1,0 +1,43 @@
+{
+  "name": "Stripeometry shawl",
+  "patternFile": "pattern.svg",
+  "designer":"Stephen West",
+  "thumbnail": "thumbnail.jpg",
+  "sizes":["1"],
+  "colors": [
+    {
+      "id":"A",
+      "name": "Yarn A",
+      "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576],
+      "default": {
+        "image": "Westwool-Tandem-Royal-2.jpg",
+        "name": "Royal",
+        "color": "rgb(4,37,128)",
+        "patternYarn": "A",
+        "yarnFolder": "westwool-bicycle"
+      }
+    },    {
+      "id":"B",
+      "name": "Yarn B",
+      "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768],
+      "default": {
+        "image": "Westwool-Tandem-Blue_Spruce-2.jpg",
+        "name": "Blue Spruce",
+        "color": "rgb(97,109,111)",
+        "patternYarn": "B",
+        "yarnFolder": "westwool-bicycle"
+      }
+    },    {
+      "id":"C",
+      "name": "Yarn C",
+      "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384],
+      "default": {
+        "image": "Westwool-Tandem-Mariniere-2.jpg",
+        "name": "Mariniere",
+        "color": "rgb(34,33,40)",
+        "patternYarn": "C",
+        "yarnFolder": "westwool-bicycle"
+      }
+    }
+  ]
+}

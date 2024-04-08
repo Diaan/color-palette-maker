@@ -26,12 +26,25 @@ export class ColorChooser extends LitElement {
     }
     <!--Recent colours:
     <cp-recent-colors></cp-recent-colors> -->
-    ${this.selectedYarn ?
-      html`${this.selectedYarn.name} 
-        <button @click=${this.deselectYarn}>back</button><br/>
-        <cp-yarn-colors .yarnFolder=${this.selectedYarn.folder}></cp-yarn-colors>`:
-      html`<cp-yarn-list></cp-yarn-list>`}
-    `;
+    <sl-tab-group>
+      <sl-tab slot="nav" panel="yarn">Yarn</sl-tab>
+      <sl-tab slot="nav" panel="recent">Recent</sl-tab>
+      <sl-tab slot="nav" panel="saved">Saved</sl-tab>
+
+      <sl-tab-panel name="yarn">
+        ${this.selectedYarn ?
+          html` 
+            <header>
+              <h2>${this.selectedYarn.company} - ${this.selectedYarn.name}</h2>        
+              <sl-button @click=${this.deselectYarn}>back</sl-button>
+            </header>
+            <cp-yarn-colors .yarnFolder=${this.selectedYarn.folder}></cp-yarn-colors>`:
+          html`<cp-yarn-list></cp-yarn-list>`}
+        
+      </sl-tab-panel>
+      <sl-tab-panel name="recent">This is the custom tab panel.</sl-tab-panel>
+      <sl-tab-panel name="saved">This is the advanced tab panel.</sl-tab-panel>
+    </sl-tab-group>`;
   }
 
   // override async updated(changes: PropertyValues<this>): Promise<void> {
@@ -51,7 +64,11 @@ export class ColorChooser extends LitElement {
   }
 
   static styles = css`
-
+    header {
+      display: flex;
+      justify-content: space-between;  
+      align-items: center;
+    }
   `;
 }
 

@@ -40,7 +40,9 @@ export class PaletteMaker extends LitElement {
     return html`
       <sl-button @click=${this.back}>back</sl-button>
       <div></div>
-      <section>
+      <sl-split-panel>
+        <sl-icon slot="divider" name="grip-vertical"></sl-icon>
+        <div slot="start">
         ${
           this.patternData&&this.patternCode?
           html`<cp-pattern-viewer 
@@ -49,11 +51,14 @@ export class PaletteMaker extends LitElement {
             .colors=${this.colors}></cp-pattern-viewer>`
           :nothing
         }
-        <cp-color-chooser 
-          .workingYarn=${this.workingYarn}
-          .colors=${this.colors} 
-          .selectedYarn=${this.selectedYarn}></cp-color-chooser>
-      </section>
+        </div>
+        <div slot="end">
+          <cp-color-chooser 
+            .workingYarn=${this.workingYarn}
+            .colors=${this.colors} 
+            .selectedYarn=${this.selectedYarn}></cp-color-chooser>
+        </div>
+      </sl-split-panel>
     `;
   }
 
@@ -133,10 +138,31 @@ export class PaletteMaker extends LitElement {
     h1 {
       color: var(--sl-color-primary-500);
     }
-    section {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
+
+    sl-split-panel {
+      --divider-width: 2px;
       gap: var(--sl-spacing-large);
+    }
+
+    sl-split-panel::part(divider) {
+      background-color: var(--sl-color-pink-600);
+    }
+
+    sl-icon {
+      position: absolute;
+      border-radius: var(--sl-border-radius-small);
+      background: var(--sl-color-pink-600);
+      color: var(--sl-color-neutral-0);
+      padding: 0.5rem 0.125rem;
+    }
+
+    sl-split-panel::part(divider):focus-visible {
+      background-color: var(--sl-color-primary-600);
+    }
+
+    sl-split-panel:focus-within sl-icon {
+      background-color: var(--sl-color-primary-600);
+      color: var(--sl-color-neutral-0);
     }
   `;
 }

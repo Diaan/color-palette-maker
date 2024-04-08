@@ -6,6 +6,7 @@
 
 
 Nice tool to make svgs: [PicSVG](https://picsvg.com/)
+Crop yarn images: https://bulkimagecrop.com/
 
 router:
 https://codesandbox.io/s/paulweezydesign-lit-routing-sd56my?file=/src/components/app-main.js

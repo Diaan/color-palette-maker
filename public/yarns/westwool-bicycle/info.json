@@ -1,0 +1,318 @@
+{
+  "company": "Westwool",
+  "name": "Bicycle",
+  "weight":"Fingering",
+  "palette": [
+    {
+      "image": "Westwool-Tandem-Wellington-2.jpg",
+      "name": "Wellington",
+      "color": "rgb(25,25,20)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-White_peach-2.jpg",
+      "name": "White peach",
+      "color": "rgb(212,176,147)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Red_Hot-2.jpg",
+      "name": "Red Hot",
+      "color": "rgb(202,2,6)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Powder-2.jpg",
+      "name": "Powder",
+      "color": "rgb(226,196,198)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Copenhagen-2.jpg",
+      "name": "Copenhagen",
+      "color": "rgb(19,20,24)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Birch_tree-2.jpg",
+      "name": "Birch tree",
+      "color": "rgb(206,197,182)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Bianca-2.jpg",
+      "name": "Bianca",
+      "color": "rgb(215,189,4)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Aubergine-2.jpg",
+      "name": "Aubergine",
+      "color": "rgb(36,22,33)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Unicorn-2.jpg",
+      "name": "Unicorn",
+      "color": "rgb(182,143,187)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Truffle-2.jpg",
+      "name": "Truffle",
+      "color": "rgb(55,33,29)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Tangerine-2.jpg",
+      "name": "Tangerine",
+      "color": "rgb(229,118,38)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Tandem_Tiger-2.jpg",
+      "name": "Tandem Tiger",
+      "color": "rgb(158,105,21)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Tandem_Taffy-2.jpg",
+      "name": "Tandem Taffy",
+      "color": "rgb(232,62,130)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Starfish-2.jpg",
+      "name": "Starfish",
+      "color": "rgb(231,147,128)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Sherbert-2.jpg",
+      "name": "Sherbert",
+      "color": "rgb(205,138,93)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Seamist-2.jpg",
+      "name": "Seamist",
+      "color": "rgb(113,136,126)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Sand-2.jpg",
+      "name": "Sand",
+      "color": "rgb(200,174,158)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Sage-2.jpg",
+      "name": "Sage",
+      "color": "rgb(82,94,78)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Royal-2.jpg",
+      "name": "Royal",
+      "color": "rgb(4,37,128)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Roswitha-2.jpg",
+      "name": "Roswitha",
+      "color": "rgb(190,106,108)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Pickle_Juice-2.jpg",
+      "name": "Pickle Juice",
+      "color": "rgb(189,198,68)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Pebble-2.jpg",
+      "name": "Pebble",
+      "color": "rgb(117,118,114)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Norway-2.jpg",
+      "name": "Norway",
+      "color": "rgb(7,62,68)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-North_Sea-2.jpg",
+      "name": "North Sea",
+      "color": "rgb(67,109,113)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Mouse-2.jpg",
+      "name": "Mouse",
+      "color": "rgb(56,55,54)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Morgaine-2.jpg",
+      "name": "Morgaine",
+      "color": "rgb(66,99,107)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Mocha-2.jpg",
+      "name": "Mocha",
+      "color": "rgb(118,91,77)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Mariniere-2.jpg",
+      "name": "Mariniere",
+      "color": "rgb(34,33,40)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Kardemumma-2.jpg",
+      "name": "Kardemumma",
+      "color": "rgb(182,63,40)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Greykjavik-2.jpg",
+      "name": "Greykjavik",
+      "color": "rgb(115,113,119)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Green_Olive-2.jpg",
+      "name": "Green Olive",
+      "color": "rgb(81,86,15)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Grass_Green-2.jpg",
+      "name": "Grass Green",
+      "color": "rgb(5,126,74)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Glow-2.jpg",
+      "name": "Glow",
+      "color": "rgb(201,142,11)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Glass-2.jpg",
+      "name": "Glass",
+      "color": "rgb(185,211,212)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Fuchsia-2.jpg",
+      "name": "Fuchsia",
+      "color": "rgb(184,4,85)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-French_Grey-2.jpg",
+      "name": "French Grey",
+      "color": "rgb(112,110,105)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Flamingo-2.jpg",
+      "name": "Flamingo",
+      "color": "rgb(244,137,127)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Fandango-2.jpg",
+      "name": "Fandango",
+      "color": "rgb(122,17,98)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Enchanted-2.jpg",
+      "name": "Enchanted",
+      "color": "rgb(36,73,82)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Dutch_sky-2.jpg",
+      "name": "Dutch sky",
+      "color": "rgb(149,151,154)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Dijon-2.jpg",
+      "name": "Dijon",
+      "color": "rgb(167,133,19)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Corduroy-2.jpg",
+      "name": "Corduroy",
+      "color": "rgb(63,18,35)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Chestnut-2.jpg",
+      "name": "Chestnut",
+      "color": "rgb(81,31,19)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Canal_House-2.jpg",
+      "name": "Canal House",
+      "color": "rgb(51,48,55)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Buttercup-2.jpg",
+      "name": "Buttercup",
+      "color": "rgb(199,164,53)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Brakish-2.jpg",
+      "name": "Brakish",
+      "color": "rgb(17,124,139)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Blue_Spruce-2.jpg",
+      "name": "Blue Spruce",
+      "color": "rgb(97,109,111)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Biscuit-2.jpg",
+      "name": "Biscuit",
+      "color": "rgb(134,94,63)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Berry-2.jpg",
+      "name": "Berry",
+      "color": "rgb(119,4,29)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Beatrix-2.jpg",
+      "name": "Beatrix",
+      "color": "rgb(237,49,41)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Avocado-2.jpg",
+      "name": "Avocado",
+      "color": "rgb(122,126,34)"
+    },
+    
+    {
+      "image": "Westwool-Tandem-Aquamarine-2.jpg",
+      "name": "Aquamarine",
+      "color": "rgb(61,157,163)"
+    }
+  ]
+}

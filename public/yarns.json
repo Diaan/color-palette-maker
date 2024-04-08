@@ -96,6 +96,13 @@
       "weight": "DK",
       "folder": "tandem",
       "color": 52
+    },
+    {
+      "company": "Westwool",
+      "name": "Bicycle",
+      "weight": "Fingering",
+      "folder": "westwool-bicycle",
+      "color": 52
     }
   ]
 }
