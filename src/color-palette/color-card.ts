@@ -1,7 +1,6 @@
 import { LitElement, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { PaletteColor } from './color-palette';
-import { Yarn } from '..';
+import { Yarn, YarnColor } from '../models';
 
 /**
  * An example element.
@@ -9,21 +8,22 @@ import { Yarn } from '..';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('my-color-card')
-export class MyColorCard extends LitElement {
-  @property({type:Object}) palette: PaletteColor = { color: `#000`, name: '' };
+@customElement('cp-color-card')
+export class ColorCard extends LitElement {
+  @property({type:Object}) palette: YarnColor = { color: `#000`, name: '' };
   @property({type:Boolean}) selected: boolean = false;
   @property({type:Object}) yarn?: Yarn;
   @property({ reflect: true })  size: string = 'medium';
 
   render() {
     const name = this.size==='large' ? this.palette.name : nothing;
+    const image = `yarns/${this.yarn?.folder}/images/${this.palette.image}`;
+
     return html`
-      <div style="--_bg:${this.palette.color}" title=${this.palette.name}>
-        ${this.yarn?.folder && this.palette.image ? html`<img src="yarns/${this.yarn.folder}/images/${this.palette.image}">` : nothing}
+      <div style="--_bg-color:${this.palette.color};--_bg-image:url(${image})" title=${this.palette.name}>
       </div>
-      ${name}
-    `;
+      <slot></slot> ${name}      
+      `;
   }
   static styles = css`
     :host([size="large"]){
@@ -32,13 +32,14 @@ export class MyColorCard extends LitElement {
       align-items: center;
     }
     div {
-      background-color: var(--_bg);
+      background-color: var(--_bg-color);
+      background-image: var(--yarn-image, var(--_bg-image));
       display: grid;
       width: 50px;
       aspect-ratio:1;
       border-radius: 50%;
       overflow: hidden;
-      place-content: center;
+      place-content: center;  background-size: cover;
     }
     img {
       width: 100%;
@@ -51,7 +52,7 @@ export class MyColorCard extends LitElement {
     }
 
     :host([selected]) div {
-      outline: var(--_bg) outset 3px;
+      outline: var(--_bg-color) outset 3px;
       outline-offset: 1px;
     }
   `;
@@ -59,6 +60,6 @@ export class MyColorCard extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-color-card': MyColorCard;
+    'cp-color-card': ColorCard;
   }
 }

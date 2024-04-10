@@ -1,0 +1,175 @@
+{
+  "company": "KAOS",
+  "name": "Brushed Alpaca",
+  "weight":"bulky",
+  "running-length": 83,
+  "palette": [
+    {
+      "image": "2065-BRILLIANT-2.jpg",
+      "name": "BRILLIANT",
+      "color": "rgb(158,204,206)"
+    },
+    
+    {
+      "image": "2014-CONFIDENT-2.jpg",
+      "name": "CONFIDENT",
+      "color": "rgb(231,199,21)"
+    },
+    
+    {
+      "image": "2029-SPARKLING.jpg",
+      "name": "SPARKLING",
+      "color": "rgb(249,182,170)"
+    },
+    
+    {
+      "image": "2022-COURAGEOUS-2.jpg",
+      "name": "COURAGEOUS",
+      "color": "rgb(235,138,39)"
+    },
+    
+    {
+      "image": "2061-ENIGMATIC-2.jpg",
+      "name": "ENIGMATIC",
+      "color": "rgb(36,37,57)"
+    },
+    
+    {
+      "image": "2062-ELECTRIC-2.jpg",
+      "name": "ELECTRIC",
+      "color": "rgb(60,85,170)"
+    },
+    
+    {
+      "image": "2042-GENTLE-2.jpg",
+      "name": "GENTLE",
+      "color": "rgb(226,174,190)"
+    },
+    
+    {
+      "image": "2036-GRACIOUS-2.jpg",
+      "name": "GRACIOUS",
+      "color": "rgb(166,101,101)"
+    },
+    
+    {
+      "image": "2063-KIND-2.jpg",
+      "name": "KIND",
+      "color": "rgb(119,152,186)"
+    },
+    
+    {
+      "image": "2079-GENEROUS-2.jpg",
+      "name": "GENEROUS",
+      "color": "rgb(77,99,46)"
+    },
+    
+    {
+      "image": "2082-FAIR-2.jpg",
+      "name": "FAIR",
+      "color": "rgb(145,143,146)"
+    },
+    
+    {
+      "image": "2055-MAGNIFICENT-2.jpg",
+      "name": "MAGNIFICENT",
+      "color": "rgb(126,25,102)"
+    },
+    
+    {
+      "image": "2020-SPARKLING-2.jpg",
+      "name": "SPARKLING",
+      "color": "rgb(236,186,136)"
+    },
+    
+    {
+      "image": "2025-GLAMOROUS-3.jpg",
+      "name": "GLAMOROUS-3",
+      "color": "rgb(171,120,81)"
+    },
+    
+    {
+      "image": "2076-VIVACIOUS-2.jpg",
+      "name": "VIVACIOUS",
+      "color": "rgb(171,216,164)"
+    },
+    
+    {
+      "image": "2049-CHARISMATIC-2.jpg",
+      "name": "CHARISMATIC",
+      "color": "rgb(249,102,172)"
+    },
+    
+    {
+      "image": "2051-SPIRITUAL-2.jpg",
+      "name": "SPIRITUAL",
+      "color": "rgb(192,158,200)"
+    },
+    
+    {
+      "image": "2075-ZEALOUS-2.jpg",
+      "name": "ZEALOUS",
+      "color": "rgb(20,142,82)"
+    },
+    
+    {
+      "image": "2072-INTUITIVE-2.jpg",
+      "name": "INTUITIVE",
+      "color": "rgb(25,168,150)"
+    },
+    
+    {
+      "image": "2088-MYSTERIOUS-2.jpg",
+      "name": "MYSTERIOUS",
+      "color": "rgb(51,52,55)"
+    },
+    
+    {
+      "image": "2011-OPTIMISTIC-2.jpg",
+      "name": "OPTIMISTIC",
+      "color": "rgb(224,223,170)"
+    },
+    
+    {
+      "image": "2001-NATURAL-1.jpg",
+      "name": "NATURAL-1",
+      "color": "rgb(228,217,201)"
+    },
+    
+    {
+      "image": "2067-SINCERE-2.jpg",
+      "name": "SINCERE",
+      "color": "rgb(87,101,122)"
+    },
+    
+    {
+      "image": "2008-GENUINE-2.jpg",
+      "name": "GENUINE",
+      "color": "rgb(83,61,48)"
+    },
+    
+    {
+      "image": "2057-DIVINE-2.jpg",
+      "name": "DIVINE",
+      "color": "rgb(123,72,165)"
+    },
+    
+    {
+      "image": "2016-FORTUNATE-2.jpg",
+      "name": "FORTUNATE",
+      "color": "rgb(200,152,40)"
+    },
+    
+    {
+      "image": "2085-MAGNETIC-3.jpg",
+      "name": "MAGNETIC-3",
+      "color": "rgb(108,117,108)"
+    },
+    
+    {
+      "image": "2031-PASSIONATE-2.jpg",
+      "name": "PASSIONATE",
+      "color": "rgb(215,30,34)"
+    }
+  ]
+}

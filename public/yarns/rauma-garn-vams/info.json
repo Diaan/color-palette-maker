@@ -1,550 +1,552 @@
 {
+  "company": "Rauma Garn",
+  "name": "Vams",
   "weight":"bulky",
   "running-length": 83,
   "palette": [
     {
       "image": "Vams-03.jpg",
-      "name": "Vams-03",
+      "name": "Vams 03",
       "color": "rgb(185,180,170)"
     },
     
     {
       "image": "Vams-00.jpg",
-      "name": "Vams-00",
+      "name": "Vams 00",
       "color": "rgb(224,221,211)"
     },
     
     {
       "image": "Vams-55.jpg",
-      "name": "Vams-55",
+      "name": "Vams 55",
       "color": "rgb(104,79,74)"
     },
     
     {
       "image": "Vams-06.jpg",
-      "name": "Vams-06",
+      "name": "Vams 06",
       "color": "rgb(163,136,121)"
     },
     
     {
       "image": "Vams-01.jpg",
-      "name": "Vams-01",
+      "name": "Vams 01",
       "color": "rgb(212,204,188)"
     },
     
     {
       "image": "Vams-13.jpg",
-      "name": "Vams-13",
+      "name": "Vams 13",
       "color": "rgb(121,120,116)"
     },
     
     {
       "image": "Vams-36.jpg",
-      "name": "Vams-36",
+      "name": "Vams 36",
       "color": "rgb(14,12,13)"
     },
     
     {
       "image": "Vams-14.jpg",
-      "name": "Vams-14",
+      "name": "Vams 14",
       "color": "rgb(56,52,51)"
     },
     
     {
       "image": "Vams-10.jpg",
-      "name": "Vams-10",
+      "name": "Vams 10",
       "color": "rgb(21,15,15)"
     },
     
     {
       "image": "Vams-42.jpg",
-      "name": "Vams-42",
+      "name": "Vams 42",
       "color": "rgb(133,46,14)"
     },
     
     {
       "image": "Vams-63.jpg",
-      "name": "Vams-63",
+      "name": "Vams 63",
       "color": "rgb(152,99,66)"
     },
     
     {
       "image": "Vams-64.jpg",
-      "name": "Vams-64",
+      "name": "Vams 64",
       "color": "rgb(58,40,36)"
     },
     
     {
       "image": "Vams-46.jpg",
-      "name": "Vams-46",
+      "name": "Vams 46",
       "color": "rgb(177,115,45)"
     },
     
     {
       "image": "Vams-26.jpg",
-      "name": "Vams-26",
+      "name": "Vams 26",
       "color": "rgb(236,187,25)"
     },
     
     {
       "image": "Vams-25.jpg",
-      "name": "Vams-25",
+      "name": "Vams 25",
       "color": "rgb(215,165,55)"
     },
     
     {
       "image": "Vams-60.jpg",
-      "name": "Vams-60",
+      "name": "Vams 60",
       "color": "rgb(193,135,135)"
     },
     
     {
       "image": "Vams-49.jpg",
-      "name": "Vams-49",
+      "name": "Vams 49",
       "color": "rgb(146,172,184)"
     },
     
     {
       "image": "Vams-66.jpg",
-      "name": "Vams-66",
+      "name": "Vams 66",
       "color": "rgb(211,171,174)"
     },
     
     {
       "image": "Vams-50.jpg",
-      "name": "Vams-50",
+      "name": "Vams 50",
       "color": "rgb(109,149,176)"
     },
     
     {
       "image": "Vams-51.jpg",
-      "name": "Vams-51",
+      "name": "Vams 51",
       "color": "rgb(54,94,133)"
     },
     
     {
       "image": "Vams-37.jpg",
-      "name": "Vams-37",
+      "name": "Vams 37",
       "color": "rgb(30,69,149)"
     },
     
     {
       "image": "Vams-05.jpg",
-      "name": "Vams-05",
+      "name": "Vams 05",
       "color": "rgb(192,162,138)"
     },
     
     {
       "image": "Vams-58.jpg",
-      "name": "Vams-58",
+      "name": "Vams 58",
       "color": "rgb(22,27,39)"
     },
     
     {
       "image": "Vams-77.jpg",
-      "name": "Vams-77",
+      "name": "Vams 77",
       "color": "rgb(20,24,50)"
     },
     
     {
       "image": "Vams-67.jpg",
-      "name": "Vams-67",
+      "name": "Vams 67",
       "color": "rgb(12,29,77)"
     },
     
     {
       "image": "Vams-18.jpg",
-      "name": "Vams-18",
+      "name": "Vams 18",
       "color": "rgb(180,2,20)"
     },
     
     {
       "image": "Vams-61.jpg",
-      "name": "Vams-61",
+      "name": "Vams 61",
       "color": "rgb(181,39,7)"
     },
     
     {
       "image": "Vams-35.jpg",
-      "name": "Vams-35",
+      "name": "Vams 35",
       "color": "rgb(98,9,19)"
     },
     
     {
       "image": "Vams-23.jpg",
-      "name": "Vams-23",
+      "name": "Vams 23",
       "color": "rgb(132,7,23)"
     },
     
     {
       "image": "Vams-82.jpg",
-      "name": "Vams-82",
+      "name": "Vams 82",
       "color": "rgb(29,56,109)"
     },
     
     {
       "image": "Vams-12.jpg",
-      "name": "Vams-12",
+      "name": "Vams 12",
       "color": "rgb(35,15,26)"
     },
     
     {
       "image": "Vams-57.jpg",
-      "name": "Vams-57",
+      "name": "Vams 57",
       "color": "rgb(54,30,63)"
     },
     
     {
       "image": "Vams-71.jpg",
-      "name": "Vams-71",
+      "name": "Vams 71",
       "color": "rgb(150,118,172)"
     },
     
     {
       "image": "Vams-43.jpg",
-      "name": "Vams-43",
+      "name": "Vams 43",
       "color": "rgb(238,93,5)"
     },
     
     {
       "image": "Vams-45.jpg",
-      "name": "Vams-45",
+      "name": "Vams 45",
       "color": "rgb(112,179,55)"
     },
     
     {
       "image": "Vams-80.jpg",
-      "name": "Vams-80",
+      "name": "Vams 80",
       "color": "rgb(91,115,33)"
     },
     
     {
       "image": "Vams-95.jpg",
-      "name": "Vams-95",
+      "name": "Vams 95",
       "color": "rgb(74,19,59)"
     },
     
     {
       "image": "Vams-87.jpg",
-      "name": "Vams-87",
+      "name": "Vams 87",
       "color": "rgb(63,59,23)"
     },
     
     {
       "image": "Vams-86.jpg",
-      "name": "Vams-86",
+      "name": "Vams 86",
       "color": "rgb(44,35,22)"
     },
     
     {
       "image": "Vams-53.jpg",
-      "name": "Vams-53",
+      "name": "Vams 53",
       "color": "rgb(7,40,53)"
     },
     
     {
       "image": "Vams-76.jpg",
-      "name": "Vams-76",
+      "name": "Vams 76",
       "color": "rgb(3,107,121)"
     },
     
     {
       "image": "Vams-89.jpg",
-      "name": "Vams-89",
+      "name": "Vams 89",
       "color": "rgb(133,113,66)"
     },
     
     {
       "image": "Vams-65.jpg",
-      "name": "Vams-65",
+      "name": "Vams 65",
       "color": "rgb(162,78,118)"
     },
     
     {
       "image": "Vams-47.jpg",
-      "name": "Vams-47",
+      "name": "Vams 47",
       "color": "rgb(52,72,84)"
     },
     
     {
       "image": "Vams-56.jpg",
-      "name": "Vams-56",
+      "name": "Vams 56",
       "color": "rgb(160,28,65)"
     },
     
     {
       "image": "Vams-300.jpg",
-      "name": "Vams-300",
+      "name": "Vams 300",
       "color": "rgb(152,138,155)"
     },
     
     {
       "image": "Vams-303.jpg",
-      "name": "Vams-303",
+      "name": "Vams 303",
       "color": "rgb(148,156,147)"
     },
     
     {
       "image": "Vams-301.jpg",
-      "name": "Vams-301",
+      "name": "Vams 301",
       "color": "rgb(139,148,153)"
     },
     
     {
       "image": "Vams-52.jpg",
-      "name": "Vams-52",
+      "name": "Vams 52",
       "color": "rgb(80,114,119)"
     },
     
     {
       "image": "Vams-304.jpg",
-      "name": "Vams-304",
+      "name": "Vams 304",
       "color": "rgb(159,137,84)"
     },
     
     {
       "image": "Vams-302.jpg",
-      "name": "Vams-302",
+      "name": "Vams 302",
       "color": "rgb(167,135,119)"
     },
     
     {
       "image": "Vams-400.jpg",
-      "name": "Vams-400",
+      "name": "Vams 400",
       "color": "rgb(76,26,26)"
     },
     
     {
       "image": "Vams-402.jpg",
-      "name": "Vams-402",
+      "name": "Vams 402",
       "color": "rgb(92,71,80)"
     },
     
     {
       "image": "Vams-404.jpg",
-      "name": "Vams-404",
+      "name": "Vams 404",
       "color": "rgb(39,47,59)"
     },
     
     {
       "image": "Vams-401.jpg",
-      "name": "Vams-401",
+      "name": "Vams 401",
       "color": "rgb(87,34,21)"
     },
     
     {
       "image": "Vams-405.jpg",
-      "name": "Vams-405",
+      "name": "Vams 405",
       "color": "rgb(60,71,79)"
     },
     
     {
       "image": "Vams-100-Grabeige-uten.jpg",
-      "name": "Vams-100-Grabeige-uten",
+      "name": "Vams 100 Grabeige uten",
       "color": "rgb(174,162,153)"
     },
     
     {
       "image": "Vams-101-Lavendel-uten.jpg",
-      "name": "Vams-101-Lavendel-uten",
+      "name": "Vams 101 Lavendel uten",
       "color": "rgb(153,114,145)"
     },
     
     {
       "image": "Vams-406.jpg",
-      "name": "Vams-406",
+      "name": "Vams 406",
       "color": "rgb(82,65,39)"
     },
     
     {
       "image": "Vams-403.jpg",
-      "name": "Vams-403",
+      "name": "Vams 403",
       "color": "rgb(63,66,34)"
     },
     
     {
       "image": "Vams-102-Lys-Syrin-uten.jpg",
-      "name": "Vams-102-Lys-Syrin-uten",
+      "name": "Vams 102 Lys Syrin uten",
       "color": "rgb(174,170,184)"
     },
     
     {
       "image": "Vams-103-Mork-Kamelbrun-uten.jpg",
-      "name": "Vams-103-Mork-Kamelbrun-uten",
+      "name": "Vams 103 Mork Kamelbrun uten",
       "color": "rgb(78,44,19)"
     },
     
     {
       "image": "Vams-104-Kamelbrun-uten.jpg",
-      "name": "Vams-104-Kamelbrun-uten",
+      "name": "Vams 104 Kamelbrun uten",
       "color": "rgb(133,92,46)"
     },
     
     {
       "image": "Vams-105-Kobberrod-uten.jpg",
-      "name": "Vams-105-Kobberrod-uten",
+      "name": "Vams 105 Kobberrod uten",
       "color": "rgb(59,12,13)"
     },
     
     {
       "image": "Vams-106-Brun-uten.jpg",
-      "name": "Vams-106-Brun-uten",
+      "name": "Vams 106 Brun uten",
       "color": "rgb(55,28,21)"
     },
     
     {
       "image": "Vams-107-Jadegronn-uten.jpg",
-      "name": "Vams-107-Jadegronn-uten",
+      "name": "Vams 107 Jadegronn uten",
       "color": "rgb(111,138,110)"
     },
     
     {
       "image": "Vams-108-Lys-Bondebla-uten.jpg",
-      "name": "Vams-108-Lys-Bondebla-uten",
+      "name": "Vams 108 Lys Bondebla uten",
       "color": "rgb(22,81,112)"
     },
     
     {
       "image": "Vams-109-Dyp-Gronn-uten.jpg",
-      "name": "Vams-109-Dyp-Gronn-uten",
+      "name": "Vams 109 Dyp Gronn uten",
       "color": "rgb(8,31,20)"
     },
     
     {
       "image": "Vams-112-Torr-Rosa-uten.jpg",
-      "name": "Vams-112-Torr-Rosa-uten",
+      "name": "Vams 112 Torr Rosa uten",
       "color": "rgb(209,164,136)"
     },
     
     {
       "image": "Vams-111-Mork-Gronn-uten.jpg",
-      "name": "Vams-111-Mork-Gronn-uten",
+      "name": "Vams 111 Mork Gronn uten",
       "color": "rgb(18,29,23)"
     },
     
     {
       "image": "Vams-114-Konjakk-uten.jpg",
-      "name": "Vams-114-Konjakk-uten",
+      "name": "Vams 114 Konjakk uten",
       "color": "rgb(140,96,83)"
     },
     
     {
       "image": "Vams-113-Melon-uten.jpg",
-      "name": "Vams-113-Melon-uten",
+      "name": "Vams 113 Melon uten",
       "color": "rgb(208,117,69)"
     },
     
     {
       "image": "Vams-110-Lys-Grabla-uten.jpg",
-      "name": "Vams-110-Lys-Grabla-uten",
+      "name": "Vams 110 Lys Grabla uten",
       "color": "rgb(136,166,161)"
     },
     
     {
       "image": "Vams-115-Salvie-uten.jpg",
-      "name": "Vams-115-Salvie-uten",
+      "name": "Vams 115 Salvie uten",
       "color": "rgb(195,179,140)"
     },
     
     {
       "image": "VAMS-305.jpg",
-      "name": "VAMS-305",
+      "name": "VAMS 305",
       "color": "rgb(178,151,148)"
     },
     
     {
       "image": "VAMS-306.jpg",
-      "name": "VAMS-306",
+      "name": "VAMS 306",
       "color": "rgb(189,174,144)"
     },
     
     {
       "image": "VAMS-307.jpg",
-      "name": "VAMS-307",
+      "name": "VAMS 307",
       "color": "rgb(117,80,43)"
     },
     
     {
       "image": "VAMS-309.jpg",
-      "name": "VAMS-309",
+      "name": "VAMS 309",
       "color": "rgb(122,81,57)"
     },
     
     {
       "image": "VAMS-308.jpg",
-      "name": "VAMS-308",
+      "name": "VAMS 308",
       "color": "rgb(157,127,105)"
     },
     
     {
       "image": "VAMS-407.jpg",
-      "name": "VAMS-407",
+      "name": "VAMS 407",
       "color": "rgb(32,57,36)"
     },
     
     {
       "image": "VAMS-311.jpg",
-      "name": "VAMS-311",
+      "name": "VAMS 311",
       "color": "rgb(191,112,83)"
     },
     
     {
       "image": "VAMS-412.jpg",
-      "name": "VAMS-412",
+      "name": "VAMS 412",
       "color": "rgb(58,74,74)"
     },
     
     {
       "image": "VAMS-312.jpg",
-      "name": "VAMS-312",
+      "name": "VAMS 312",
       "color": "rgb(172,97,39)"
     },
     
     {
       "image": "VAMS-414.jpg",
-      "name": "VAMS-414",
+      "name": "VAMS 414",
       "color": "rgb(81,64,44)"
     },
     
     {
       "image": "VAMS-416.jpg",
-      "name": "VAMS-416",
+      "name": "VAMS 416",
       "color": "rgb(76,56,44)"
     },
     
     {
       "image": "VAMS-413.jpg",
-      "name": "VAMS-413",
+      "name": "VAMS 413",
       "color": "rgb(47,31,20)"
     },
     
     {
       "image": "VAMS-415.jpg",
-      "name": "VAMS-415",
+      "name": "VAMS 415",
       "color": "rgb(79,69,63)"
     },
     
     {
       "image": "VAMS-418.jpg",
-      "name": "VAMS-418",
+      "name": "VAMS 418",
       "color": "rgb(63,29,19)"
     },
     
     {
       "image": "VAMS-417.jpg",
-      "name": "VAMS-417",
+      "name": "VAMS 417",
       "color": "rgb(30,18,15)"
     },
     
     {
       "image": "VAMS-68_Lakserosa.jpg",
-      "name": "VAMS-68_Lakserosa",
+      "name": "VAMS 68 Lakserosa",
       "color": "rgb(233,116,127)"
     },
     
     {
       "image": "VAMS-069_Lys-turkis.jpg",
-      "name": "VAMS-069_Lys-turkis",
+      "name": "VAMS 069 Lys turkis",
       "color": "rgb(109,206,217)"
     }
   ]

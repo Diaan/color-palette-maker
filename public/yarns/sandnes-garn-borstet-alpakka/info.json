@@ -1,0 +1,241 @@
+{
+  "company": "Sandnes Garn",
+  "name": "Borstet Alpakka",
+  "weight":"bulky",
+  "running-length": 70,
+  "palette": [
+    {
+      "image": "11902016_solgul_300dpi_close-up.jpg",
+      "name": "11902016_solgul_300dpi_close-up",
+      "color": "rgb(241,209,99)"
+    },
+    
+    {
+      "image": "11901014_porselen_72dpi_close-up.jpg",
+      "name": "11901014_porselen_72dpi_close-up",
+      "color": "rgb(226,221,217)"
+    },
+    
+    {
+      "image": "11901012_natur_300dpi_close-up_1.jpg",
+      "name": "11901012_natur_300dpi_close-up_1",
+      "color": "rgb(240,228,211)"
+    },
+    
+    {
+      "image": "11901001_hvit_300dpi_close-up.jpg",
+      "name": "11901001_hvit_300dpi_close-up",
+      "color": "rgb(241,235,229)"
+    },
+    
+    {
+      "image": "11901099_sort_300dpi_close-up.jpg",
+      "name": "11901099_sort_300dpi_close-up",
+      "color": "rgb(31,31,31)"
+    },
+    
+    {
+      "image": "11901042_graamelert_300dpi_close-up.jpg",
+      "name": "11901042_graamelert_300dpi_close-up",
+      "color": "rgb(160,159,157)"
+    },
+    
+    {
+      "image": "11902523_natur-tweed_300dpi_close-up_1.jpg",
+      "name": "11902523_natur-tweed_300dpi_close-up_1",
+      "color": "rgb(232,227,213)"
+    },
+    
+    {
+      "image": "11902112_lys-gul_72dpi_close-up.jpg",
+      "name": "11902112_lys-gul_72dpi_close-up",
+      "color": "rgb(244,219,171)"
+    },
+    
+    {
+      "image": "11902650_beigemelert_300dpi_close-up.jpg",
+      "name": "11902650_beigemelert_300dpi_close-up",
+      "color": "rgb(164,151,146)"
+    },
+    
+    {
+      "image": "11903021_beige_72dpi_close-up.jpg",
+      "name": "11903021_beige_72dpi_close-up",
+      "color": "rgb(210,186,169)"
+    },
+    
+    {
+      "image": "11903040_caffe-latte_72dpi_close-up.jpg",
+      "name": "11903040_caffe-latte_72dpi_close-up",
+      "color": "rgb(182,150,134)"
+    },
+    
+    {
+      "image": "11903161_eikenott_72dpi_close-up.jpg",
+      "name": "11903161_eikenott_72dpi_close-up",
+      "color": "rgb(123,98,92)"
+    },
+    
+    {
+      "image": "11903800_bristol-black_300dpi_close-up.jpg",
+      "name": "11903800_bristol-black_300dpi_close-up",
+      "color": "rgb(74,64,68)"
+    },
+    
+    {
+      "image": "11904213_blossom_300dpi_close-up.jpg",
+      "name": "11904213_blossom_300dpi_close-up",
+      "color": "rgb(252,182,180)"
+    },
+    
+    {
+      "image": "11903819_spicy-orange_72dpi_close-up.jpg",
+      "name": "11903819_spicy-orange_72dpi_close-up",
+      "color": "rgb(222,65,56)"
+    },
+    
+    {
+      "image": "11904008_poppy_300dpi_close-up.jpg",
+      "name": "11904008_poppy_300dpi_close-up",
+      "color": "rgb(232,74,83)"
+    },
+    
+    {
+      "image": "11904315_bubblegum-pink_300dpi_close-up.jpg",
+      "name": "11904315_bubblegum-pink_300dpi_close-up",
+      "color": "rgb(251,122,150)"
+    },
+    
+    {
+      "image": "11904236_dyp-rod_72dpi_close-up.jpg",
+      "name": "11904236_dyp-rod_72dpi_close-up",
+      "color": "rgb(129,17,37)"
+    },
+    
+    {
+      "image": "11904600_jazzy-pink_300dpi_close-up_1.jpg",
+      "name": "11904600_jazzy-pink_300dpi_close-up_1",
+      "color": "rgb(166,22,94)"
+    },
+    
+    {
+      "image": "11904628_magenta_300dpi_close-up.jpg",
+      "name": "11904628_magenta_300dpi_close-up",
+      "color": "rgb(190,93,155)"
+    },
+    
+    {
+      "image": "11904626_shocking-pink_300dpi_close-up.jpg",
+      "name": "11904626_shocking-pink_300dpi_close-up",
+      "color": "rgb(228,129,178)"
+    },
+    
+    {
+      "image": "11904602_pudder-rosa_300dpi_close-up.jpg",
+      "name": "11904602_pudder-rosa_300dpi_close-up",
+      "color": "rgb(231,180,176)"
+    },
+    
+    {
+      "image": "11904672_bjornebaersaft_300dpi_close-up-m.jpg",
+      "name": "11904672_bjornebaersaft_300dpi_close-up-m",
+      "color": "rgb(79,52,76)"
+    },
+    
+    {
+      "image": "11904632_rosa-lavendel_300dpi_close-up.jpg",
+      "name": "11904632_rosa-lavendel_300dpi_close-up",
+      "color": "rgb(193,156,174)"
+    },
+    
+    {
+      "image": "11904813_pink-lilac_300dpi_close-up.jpg",
+      "name": "11904813_pink-lilac_300dpi_close-up",
+      "color": "rgb(226,180,201)"
+    },
+    
+    {
+      "image": "11905575_marineblaa_72dpi_close-up.jpg",
+      "name": "11905575_marineblaa_72dpi_close-up",
+      "color": "rgb(30,36,59)"
+    },
+    
+    {
+      "image": "11905043_lilla_72dpi_close-up.jpg",
+      "name": "11905043_lilla_72dpi_close-up",
+      "color": "rgb(175,152,187)"
+    },
+    
+    {
+      "image": "11906003_lys-blaa_72dpi_close-up.jpg",
+      "name": "11906003_lys-blaa_72dpi_close-up",
+      "color": "rgb(153,176,206)"
+    },
+    
+    {
+      "image": "11906044_regatta-bl_300dpi_close-up.jpg",
+      "name": "11906044_regatta-bl_300dpi_close-up",
+      "color": "rgb(99,140,191)"
+    },
+    
+    {
+      "image": "11906064_blabaer_300dpi_close-up.jpg",
+      "name": "11906064_blabaer_300dpi_close-up",
+      "color": "rgb(71,85,107)"
+    },
+    
+    {
+      "image": "11906046_jolly-blue_72dpi_close-up.jpg",
+      "name": "11906046_jolly-blue_72dpi_close-up",
+      "color": "rgb(32,91,158)"
+    },
+    
+    {
+      "image": "11906315_turkis_300dpi_close-up.jpg",
+      "name": "11906315_turkis_300dpi_close-up",
+      "color": "rgb(89,181,204)"
+    },
+    
+    {
+      "image": "11907213_bla-turkis_300dpi_close-up.jpg",
+      "name": "11907213_bla-turkis_300dpi_close-up",
+      "color": "rgb(168,225,215)"
+    },
+    
+    {
+      "image": "11907281_dyp-petrol_300dpi_close-up.jpg",
+      "name": "11907281_dyp-petrol_300dpi_close-up",
+      "color": "rgb(53,82,85)"
+    },
+    
+    {
+      "image": "11908062_gronn-myrt_300dpi_close-up.jpg",
+      "name": "11908062_gronn-myrt_300dpi_close-up",
+      "color": "rgb(100,137,111)"
+    },
+    
+    {
+      "image": "11908236_jellybean-green_72dpi_close-up.jpg",
+      "name": "11908236_jellybean-green_72dpi_close-up",
+      "color": "rgb(47,149,93)"
+    },
+    
+    {
+      "image": "11908581_dyp-skoggronn_72dpi_close-up.jpg",
+      "name": "11908581_dyp-skoggronn_72dpi_close-up",
+      "color": "rgb(56,78,66)"
+    },
+    
+    {
+      "image": "11908532_pistasj-is_300dpi_close-up.jpg",
+      "name": "11908532_pistasj-is_300dpi_close-up",
+      "color": "rgb(146,168,140)"
+    },
+    
+    {
+      "image": "11909825_sunny-lime_300dpi_close-up.jpg",
+      "name": "11909825_sunny-lime_300dpi_close-up",
+      "color": "rgb(200,188,73)"
+    }
+  ]
+}

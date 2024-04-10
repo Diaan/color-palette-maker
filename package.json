@@ -5,14 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "extract-info": "node ./extract-info.js",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "lit": "^2.8.0"
+    "@shoelace-style/shoelace": "^2.15.0",
+    "lit": "^3.1.2"
   },
   "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.4.9"
+    "fast-glob": "^3.3.2",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-plugin-static-copy": "^1.0.2"
   }
 }
