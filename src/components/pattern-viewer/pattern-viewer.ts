@@ -34,15 +34,9 @@ export class PatternViewer extends LitElement {
       <span><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
       ${ unsafeHTML(this.patternCode)}
       <!--${this.yarnImage}-->
-      <div>
-        <label> blur: </label>
-        <sl-range min="0" max="50" step="1" value=${this.blurRadius} @sl-change=${this.#changeBlurRadius}></sl-range>
-      </div>
-      <div>
-        <label> Show yarn image</label>
-        <sl-switch ?checked=${this.yarnImage} @sl-change=${this.#changeYarnImage}></sl-switch>
-   
-      </div>
+      <sl-divider></sl-divider>
+      <sl-switch ?checked=${this.yarnImage} @sl-change=${this.#changeYarnImage} class="label-on-left">Show yarn image</sl-switch>
+      <sl-range min="0" max="50" step="1" value=${this.blurRadius} @sl-change=${this.#changeBlurRadius} label="Blur yarn image" class="label-on-left"></sl-range>
       <!--article>
         <p>Colours:</p>
         <ul>
@@ -61,7 +55,7 @@ export class PatternViewer extends LitElement {
                 <image href="${image}" x=${x} y=${y} width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
               `})}
         </svg>`}--> 
-      <div class="svg-defs">
+      <div class="svg-defs"> ${this.yarnImage}
         ${svg`<svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="f1" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +101,6 @@ export class PatternViewer extends LitElement {
   #changeYarnImage(event: Event & { target: HTMLInputElement }):void {
     this.yarnImage = event.target.checked;   
     this.colors = [...this.colors||[]];
-    console.log(this.yarnImage);
   }
 
   static styles = css`
