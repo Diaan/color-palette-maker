@@ -6,57 +6,57 @@
   "palette": [
     {
       "image": "skifergra_5149.jpg",
-      "name": "skifergra_5149",
+      "name": "skifergra",
       "color": "rgb(43,43,43)"
     },
     {
       "image": "stovetpetroliumsbla_5106.jpg",
-      "name": "stovetpetroliumsbla_5106",
+      "name": "stovetpetroliumsbla",
       "color": "rgb(57,70,78)"
     },
     {
       "image": "stovetartiskok_5072.jpg",
-      "name": "stovetartiskok_5072",
+      "name": "stovetartiskok",
       "color": "rgb(123,133,116)"
     },
     {
       "image": "terracottarosa_5114.jpg",
-      "name": "terracottarosa_5114",
+      "name": "terracottarosa",
       "color": "rgb(140,88,76)"
     },
     {
       "image": "stovetoliven_5135.jpg",
-      "name": "stovetoliven_5135",
+      "name": "stovetoliven",
       "color": "rgb(97,76,52)"
     },
     {
       "image": "stovetelg_5117.jpg",
-      "name": "stovetelg_5117",
+      "name": "stovetelg",
       "color": "rgb(94,84,70)"
     },
     {
       "image": "rosaler_5157.jpg",
-      "name": "rosaler_5157",
+      "name": "rosaler",
       "color": "rgb(134,96,82)"
     },
     {
       "image": "pudder_5095.jpg",
-      "name": "pudder_5095",
+      "name": "pudder",
       "color": "rgb(174,141,120)"
     },
     {
       "image": "skifergron_5118.jpg",
-      "name": "skifergron_5118",
+      "name": "skifergron",
       "color": "rgb(76,66,42)"
     },
     {
       "image": "rust_5148.jpg",
-      "name": "rust_5148",
+      "name": "rust",
       "color": "rgb(102,41,24)"
     },
     {
       "image": "skifergra_5149.jpg",
-      "name": "skifergra_5149",
+      "name": "skifergra",
       "color": "rgb(57,43,39)"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "image": "terracottarosa_5114.jpg",
-      "name": "terracottarosa_5114",
+      "name": "terracottarosa",
       "color": "rgb(163,109,97)"
     },
     {
@@ -116,17 +116,17 @@
     },
     {
       "image": "stovetartiskok_5072.jpg",
-      "name": "stovetartiskok_5072",
+      "name": "stovetartiskok",
       "color": "rgb(150,153,133)"
     },
     {
       "image": "stovetoliven_5135.jpg",
-      "name": "stovetoliven_5135",
+      "name": "stovetoliven",
       "color": "rgb(100,92,66)"
     },
     {
       "image": "stovetpetroliumsbla_5106.jpg",
-      "name": "stovetpetroliumsbla_5106",
+      "name": "stovetpetroliumsbla",
       "color": "rgb(70,80,82)"
     },
     {
@@ -141,7 +141,7 @@
     },
     {
       "image": "perlegra_6398.jpg",
-      "name": "perlegra_6398",
+      "name": "perlegra",
       "color": "rgb(144,145,141)"
     },
     {
@@ -156,7 +156,7 @@
     },
     {
       "image": "rosaler_5157.jpg",
-      "name": "rosaler_5157",
+      "name": "rosaler",
       "color": "rgb(161,119,92)"
     },
     {
@@ -166,7 +166,7 @@
     },
     {
       "image": "stovetelg_5117.jpg",
-      "name": "stovetelg_5117",
+      "name": "stovetelg",
       "color": "rgb(109,96,76)"
     },
     {
@@ -176,7 +176,7 @@
     },
     {
       "image": "kul_5137.jpg",
-      "name": "kul_5137",
+      "name": "kul",
       "color": "rgb(45,43,39)"
     },
     {
@@ -191,12 +191,12 @@
     },
     {
       "image": "pudder_5095.jpg",
-      "name": "pudder_5095",
+      "name": "pudder",
       "color": "rgb(162,137,119)"
     },
     {
       "image": "skifergron_5118.jpg",
-      "name": "skifergron_5118",
+      "name": "skifergron",
       "color": "rgb(73,65,41)"
     },
     {
@@ -206,12 +206,12 @@
     },
     {
       "image": "marcipan_6400.jpg",
-      "name": "marcipan_6400",
+      "name": "marcipan",
       "color": "rgb(161,148,128)"
     },
     {
       "image": "perlegra_5084.jpg",
-      "name": "perlegra_5084",
+      "name": "perlegra",
       "color": "rgb(143,138,123)"
     },
     {
@@ -241,12 +241,12 @@
     },
     {
       "image": "Granataeble_heavy.jpg",
-      "name": "Granataeble_heavy",
+      "name": "Granataeble",
       "color": "rgb(132,43,52)"
     },
     {
       "image": "bordeaux_5090.jpg",
-      "name": "bordeaux_5090",
+      "name": "bordeaux",
       "color": "rgb(80,24,28)"
     },
     {
@@ -266,12 +266,12 @@
     },
     {
       "image": "rust_5148.jpg",
-      "name": "rust_5148",
+      "name": "rust",
       "color": "rgb(136,41,25)"
     },
     {
       "image": "havregryn_5078.jpg",
-      "name": "havregryn_5078",
+      "name": "havregryn",
       "color": "rgb(144,108,87)"
     },
     {
@@ -281,37 +281,37 @@
     },
     {
       "image": "dybpetroliumsbla_5099.jpg",
-      "name": "dybpetroliumsbla_5099",
+      "name": "dybpetroliumsbla",
       "color": "rgb(61,78,68)"
     },
     {
       "image": "blommeler_5097.jpg",
-      "name": "blommeler_5097",
+      "name": "blommeler",
       "color": "rgb(74,63,54)"
     },
     {
       "image": "hasselnod_6385.jpg",
-      "name": "hasselnod_6385",
+      "name": "hasselnod",
       "color": "rgb(107,82,62)"
     },
     {
       "image": "lyscognac_5113.jpg",
-      "name": "lyscognac_5113",
+      "name": "lyscognac",
       "color": "rgb(96,60,37)"
     },
     {
       "image": "kobber_6392.jpg",
-      "name": "kobber_6392",
+      "name": "kobber",
       "color": "rgb(129,62,36)"
     },
     {
       "image": "kamel_6393.jpg",
-      "name": "kamel_6393",
+      "name": "kamel",
       "color": "rgb(126,71,31)"
     },
     {
       "image": "morkokker_5129.jpg",
-      "name": "morkokker_5129",
+      "name": "morkokker",
       "color": "rgb(113,62,10)"
     }
   ]

@@ -7,29 +7,61 @@
   "colors": [
     {
       "id":"A",
-      "default":{"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"},
+      "default":{
+        "image": "Westwool-Tandem-White_peach-2.jpg",
+        "name": "White peach",
+        "color": "#f0e2d4",
+        "patternYarn": "A",
+        "yarnFolder": "westwool-bicycle"
+      },
       "name": "Yarn A",
       "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576]
     },    {
       "name": "Yarn B",
       "id":"B",
-      "default":{"image":"Vams-45.jpg","name":"Vams-45","color":"rgb(112,179,55)","patternYarn":"B","yarnFolder":"rauma-garn-vams"},
+      "default":{
+        "image": "Westwool-Tandem-Tandem_Tiger-2.jpg",
+        "name": "Tandem Tiger",
+        "color": "rgb(158,105,21)",
+        "patternYarn": "B",
+        "yarnFolder": "westwool-bicycle"
+      },
       "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768]
     },    {
       "name": "Yarn C",
       "id":"C",
-      "default":"#f3cbaa",
+      "default":{
+        "image": "Westwool-Tandem-Sherbert-2.jpg",
+        "name": "Sherbert",
+        "color": "rgb(205,138,93)",
+        "patternYarn": "C",
+        "yarnFolder": "westwool-bicycle"
+      },
       "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384]
     },    {
       "name": "Yarn D",
       "id":"D",
-      "default":"#a7bab1",
+      "default":{
+        "image": "Westwool-Tandem-Seamist-2.jpg",
+        "name": "Seamist",
+        "color": "rgb(113,136,126)",
+        "patternYarn": "D",
+        "yarnFolder": "westwool-bicycle"
+      },
       "required":[192, 192, 192, 192, 384, 384, 384, 384, 384, 384]
     },    {
       "name": "Yarn E",
       "id":"E",
-      "default":"#294650",
+      "default":{
+        "image": "Westwool-Tandem-Enchanted-2.jpg",
+        "name": "Enchanted",
+        "color": "rgb(36,73,82)",
+        "patternYarn": "E",
+        "yarnFolder": "westwool-bicycle"
+      },
       "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384]
     }
   ]
 }
+
+

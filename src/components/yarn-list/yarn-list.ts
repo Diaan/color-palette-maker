@@ -17,10 +17,9 @@ export class YarnList extends LitElement {
 
   render() {
     return html`
-      <h2>Yarns:</h2>
-      <section>
-      ${this.yarns?.map(p => html`<sl-card  @click=${()=> this.selectYarn(p)} .yarn="${p}" >${p.company} - ${p.name}</sl-card>`)}
-      </section>
+      <ul>
+      ${this.yarns?.map(p => html`<li  @click=${()=> this.selectYarn(p)} .yarn="${p}" >${p.company} - ${p.name}</li>`)}
+  </ul>
     `;
   }
 
@@ -60,7 +59,7 @@ export class YarnList extends LitElement {
       gap: 5px;
     }
     
-    sl-card {
+    li {
       cursor: pointer;
     }
   `;
