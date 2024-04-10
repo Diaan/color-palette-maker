@@ -33,7 +33,7 @@ export class PatternViewer extends LitElement {
       <h1>${this.patternData?.name}</h1>
       <span><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
       ${ unsafeHTML(this.patternCode)}
-      ${this.yarnImage}
+      <!--${this.yarnImage}-->
       <div>
         <label> blur: </label>
         <sl-range min="0" max="50" step="1" value=${this.blurRadius} @sl-change=${this.#changeBlurRadius}></sl-range>
@@ -48,7 +48,7 @@ export class PatternViewer extends LitElement {
         <ul>
           ${this.patternData?.colors.map(c=>html`<li>${c.name}</li>`)}
         </ul>
-      </article-->  
+      </article 
       ${svg`<svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 ${(this.colors?.length||5) * 100} ${(this.colors?.length||5) * 100}">
             ${this.colors?.map((c,i) => { 
               const color = c.pickedColor?c.pickedColor:c.default;
@@ -60,7 +60,7 @@ export class PatternViewer extends LitElement {
                 <image href="${image}" x=${x} y=${y} width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice" filter="url(#f1)"/>
                 <image href="${image}" x=${x} y=${y} width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
               `})}
-        </svg>`}
+        </svg>`}--> 
       <div class="svg-defs">
         ${svg`<svg xmlns="http://www.w3.org/2000/svg">
           <defs>

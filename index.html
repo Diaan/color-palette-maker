@@ -11,7 +11,34 @@
     <script type="module" src="/src/index.ts"></script>
   </head>
   <body>
+  <script type="module">
+  import { registerIconLibrary } from '/node_modules/@shoelace-style/shoelace/dist/utilities/icon-library.js';
+
+  registerIconLibrary('my-icons', {
+    resolver: name => `/assets/custom-icons/${name}.svg`,
+    mutator: svg => svg.setAttribute('fill', 'currentColor')
+  });
+</script>
     <cp-app></cp-app>
-    <small>&copy; Diana Broeders - 2024</small>
+     <small id="opendialog">&copy; Diana Broeders - 2024</small>
+
+    <sl-dialog label="Contact" class="dialog-overview">
+      <p>Scan this code to visit the colour palette maker app!</p>
+      <sl-qr-code value="https://colour-palette-maker.netlify.app/" label="Scan this code to visit the colour palette maker app!"></sl-qr-code>
+      <p>Scan this to send me an email:</p>
+      <sl-qr-code value="mailto:diana.broeders+cpm@gmail.com" label="Scan this code to send me an email"></sl-qr-code>
+      <sl-button slot="footer" variant="primary">Close</sl-button>
+    </sl-dialog>
+
+
+
+<script>
+  const dialog = document.querySelector('.dialog-overview');
+  const openButton = document.querySelector('#opendialog');
+  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+  openButton.addEventListener('click', () => dialog.show());
+  closeButton.addEventListener('click', () => dialog.hide());
+</script>
   </body>
 </html>
