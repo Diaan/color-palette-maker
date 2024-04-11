@@ -54,7 +54,7 @@ export class PatternColors extends LitElement {
     :host {
       display: grid;
       grid-template-columns: max-content 1fr;
-      gap: 8px;
+      gap: 8px 16px;
       align-items: center;
     }
 

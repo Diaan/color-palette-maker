@@ -39,7 +39,7 @@ export class PaletteMaker extends LitElement {
   render() {
     return html`
       <sl-button @click=${this.back}>back</sl-button>
-      <sl-split-panel>
+      <sl-split-panel position="35">
         <sl-icon slot="divider" name="grip-vertical"></sl-icon>
         <div slot="start">
         ${
@@ -96,10 +96,6 @@ export class PaletteMaker extends LitElement {
     this.colors = [...this.colors];
     
     this.#setCSSProperties(this.workingYarn, pickedColor);
-    // document.body.style.setProperty(`--yarn${this.workingYarn}`, pickedColor.color);
-    // if(pickedColor.image){
-    //   document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${pickedColor.image})`);
-    // }
 
     localStorage.setItem(`patternColors`, JSON.stringify(this.colors));
   }
