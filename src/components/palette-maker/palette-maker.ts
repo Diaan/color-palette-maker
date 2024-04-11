@@ -39,7 +39,7 @@ export class PaletteMaker extends LitElement {
   render() {
     return html`
       <sl-button @click=${this.back}>back</sl-button>
-      <sl-split-panel>
+      <sl-split-panel position="35">
         <sl-icon slot="divider" name="grip-vertical"></sl-icon>
         <div slot="start">
         ${
@@ -95,10 +95,7 @@ export class PaletteMaker extends LitElement {
     workingColor.pickedColor = pickedColor;
     this.colors = [...this.colors];
     
-    document.body.style.setProperty(`--yarn${this.workingYarn}`, pickedColor.color);
-    if(pickedColor.image){
-      document.body.style.setProperty(`--yarn${this.workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${color.image})`);
-    }
+    this.#setCSSProperties(this.workingYarn, pickedColor);
 
     localStorage.setItem(`patternColors`, JSON.stringify(this.colors));
   }
@@ -111,12 +108,21 @@ export class PaletteMaker extends LitElement {
     this.workingYarn = event.detail;
   }
 
+  #setCSSProperties(workingYarn:string, pickedColor:PickedColor){
+    console.log(pickedColor);
+    document.body.style.setProperty(`--yarn${workingYarn}`, pickedColor.color);
+    if(pickedColor.image){
+      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${pickedColor.image})`);
+    }
+  }
+
   async _getPatternInfo(pattern: string): Promise<string | undefined> {
     try {
       const response = await fetch(`/patterns/${pattern}/info.json`);
       this.patternData = await response.json();
       const patterntext = await fetch(`/patterns/${pattern}/${this.patternData?.patternFile}`);
       this.colors = this.patternData ? this.patternData?.colors:[];
+      this.colors.forEach(color=>this.#setCSSProperties(color.id, color.default))
       const html = await patterntext.text();
       
       return html;

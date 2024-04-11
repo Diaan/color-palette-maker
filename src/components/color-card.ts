@@ -16,13 +16,14 @@ export class ColorCard extends LitElement {
   @property({ reflect: true })  size: string = 'medium';
 
   render() {
-    const name = this.size==='large' ? this.palette.name : nothing;
+    const name = this.size==='large' || this.size==='xl' ? this.palette.name : nothing;
     const image = `yarns/${this.yarn?.folder}/images/${this.palette.image}`;
 
     return html`
       <div style="--_bg-color:${this.palette.color};--_bg-image:url(${image})" title=${this.palette.name}>
       </div>
-      <slot></slot> ${name}      
+      <slot></slot> 
+      ${name}
       `;
   }
   static styles = css`
@@ -30,6 +31,14 @@ export class ColorCard extends LitElement {
       display: flex;
       gap: 8px;
       align-items: center;
+    }
+    :host([size="xl"]){
+      display: flex;
+      flex-direction: column;
+      padding: 4px;
+      gap: 8px;
+      align-items: center;
+      border: 1px solid red;
     }
     div {
       background-color: var(--_bg-color);

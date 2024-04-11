@@ -9,27 +9,57 @@
       "id":"A",
       "name": "Yarn A",
       "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576],
-      "default": {"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
+      "default": {
+        "image": "Westwool-Tandem-Bianca-2.jpg",
+        "name": "Bianca",
+        "color": "rgb(215,189,4)",
+        "patternYarn": "A",
+        "yarnFolder": "westwool-bicycle"
+      }
     },    {
       "id":"B",
       "name": "Yarn B",
       "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768],
-      "default": {"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
+      "default": {
+        "image": "Westwool-Tandem-Fuchsia-2.jpg",
+        "name": "Fuchsia",
+        "color": "rgb(184,4,85)",
+        "patternYarn": "B",
+        "yarnFolder": "westwool-bicycle"
+      }
     },    {
       "id":"C",
       "name": "Yarn C",
       "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384],
-      "default": {"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
+      "default": {
+        "image": "Westwool-Tandem-Starfish-2.jpg",
+        "name": "Starfish",
+        "color": "rgb(231,147,128)",
+        "patternYarn": "C",
+        "yarnFolder": "westwool-bicycle"
+      }
     },    {
       "id":"D",
       "name": "Yarn D",
       "required":[192, 192, 192, 192, 384, 384, 384, 384, 384, 384],
-      "default": {"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
+      "default": {
+        "image": "Westwool-Tandem-Sage-2.jpg",
+        "name": "Sage",
+        "color": "rgb(82,94,78)",
+        "patternYarn": "D",
+        "yarnFolder": "westwool-bicycle"
+      }
     },    {
       "id":"E",
       "name": "Yarn E",
       "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384],
-      "default": {"image":"Vams-71.jpg","name":"Vams-71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
+      "default": {
+        "image": "Westwool-Tandem-White_peach-2.jpg",
+        "name": "White peach",
+        "color": "#f0e2d4",
+        "patternYarn": "E",
+        "yarnFolder": "westwool-bicycle"
+      }
     }
   ]
 }

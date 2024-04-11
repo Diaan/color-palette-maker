@@ -22,16 +22,16 @@ export class PatternColors extends LitElement {
 
   render() {
     return html`
-      <h2>Pattern colours:</h2>
       ${this.colors?.map(pc=>{
         const color = pc.pickedColor ? pc.pickedColor : pc.default;
         //TODO find a better way to pass the folder
         return html`
-        <cp-color-card size="large" 
-          ?selected=${this.workingYarn===pc.id} 
-          .yarn=${{folder:color.yarnFolder} as Yarn}
-          .palette=${color} 
-          @click=${()=>this.selectWorkingColor(pc)}>${pc.name}:</cp-color-card>
+          <sl-tag variant="primary">${pc.name}</sl-tag>
+          <cp-color-card size="large" 
+            ?selected=${this.workingYarn===pc.id} 
+            .yarn=${{folder:color.yarnFolder} as Yarn}
+            .palette=${color} 
+            @click=${()=>this.selectWorkingColor(pc)}></cp-color-card>
           `})}`;
   }
   
@@ -52,9 +52,14 @@ export class PatternColors extends LitElement {
 
   static styles = css`
     :host {
-      display:flex;
-      flex-direction: column;
-      gap: 5px;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 8px 16px;
+      align-items: center;
+    }
+
+    cp-color-card {
+      cursor: pointer
     }
   `;
 }
