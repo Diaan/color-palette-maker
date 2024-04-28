@@ -8,6 +8,13 @@
       "colorAmount": 5
     },
     {
+      "name": "Holger sweater",
+      "designer": "Petite knit",
+      "thumbnail": "thumbnail.jpeg",
+      "folder": "holger-sweater",
+      "colorAmount": 2
+    },
+    {
       "name": "Quilting triangles",
       "designer": "Stephen West",
       "thumbnail": "thumbnail.jpeg",
