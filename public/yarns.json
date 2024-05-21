@@ -92,6 +92,13 @@
     },
     {
       "company": "Sandnes Garn",
+      "name": "Double Sunday",
+      "weight": "DK",
+      "folder": "sandnes-garn-double-sunday",
+      "color": 55
+    },
+    {
+      "company": "Sandnes Garn",
       "name": "Fritidsgarn",
       "weight": "bulky",
       "folder": "sandnes-garn-fritidsgarn",

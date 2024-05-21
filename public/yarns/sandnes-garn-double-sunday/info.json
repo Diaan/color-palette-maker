@@ -1,0 +1,337 @@
+{
+  "company": "Sandnes Garn",
+  "name": "Double Sunday",
+  "weight":"DK",
+  "running-length": 108,
+  "palette": [
+    {
+      "image": "111442511_almond_72dpi_close-up.jpg",
+      "name": "almond [4251]",
+      "color": "rgb(228,209,187)"
+    },
+    
+    {
+      "image": "11159825_sunny-lime_300dpi_close-up.jpg",
+      "name": "sunny lime [9825]",
+      "color": "rgb(197,180,94)"
+    },
+    
+    {
+      "image": "11155846_bla_300dpi_close-up.jpg",
+      "name": "bla [5846]",
+      "color": "rgb(35,62,111)"
+    },
+    
+    {
+      "image": "11159004_lemon_300dpi_close-up.jpg",
+      "name": "lemon [9004]",
+      "color": "rgb(245,223,124)"
+    },
+    
+    {
+      "image": "11159071_stovet-olivengronn_300dpi_close-up.jpg",
+      "name": "stovet olivengronn [9071]",
+      "color": "rgb(85,88,81)"
+    },
+    
+    {
+      "image": "11158733_spring-green_300dpi_close-up.jpg",
+      "name": "spring green [8733]",
+      "color": "rgb(161,188,136)"
+    },
+    
+    {
+      "image": "11154236_dyp-rod_300dpi_close-up.jpg",
+      "name": "dyp rod [4236]",
+      "color": "rgb(128,18,35)"
+    },
+    
+    {
+      "image": "11158521_stovet-lys-gronn_300dpi_close-up.jpg",
+      "name": "stovet lys gronn [8521]",
+      "color": "rgb(142,146,129)"
+    },
+    
+    {
+      "image": "11157720_bla-dis_300dpi_close-up.jpg",
+      "name": "bla dis [7720]",
+      "color": "rgb(200,220,213)"
+    },
+    
+    {
+      "image": "11158082_skoggronn_300dpi_close-up.jpg",
+      "name": "skoggronn [8082]",
+      "color": "rgb(38,54,41)"
+    },
+    
+    {
+      "image": "11159080_urban-chic_300dpi_close-up.jpg",
+      "name": "urban chic [9080]",
+      "color": "rgb(62,74,68)"
+    },
+    
+    {
+      "image": "11156580_bla-natt_300dpi_close-up.jpg",
+      "name": "bla natt [6580]",
+      "color": "rgb(45,51,63)"
+    },
+    
+    {
+      "image": "11156051_kveldshimmel_300dpi_close-up.jpg",
+      "name": "kveldshimmel [6051]",
+      "color": "rgb(110,127,138)"
+    },
+    
+    {
+      "image": "11157281_dyp-petrol_300dpi_close-up.jpg",
+      "name": "dyp petrol [7281]",
+      "color": "rgb(29,64,64)"
+    },
+    
+    {
+      "image": "11155023_lilac_300dpi_close-up.jpg",
+      "name": "lilac [5023]",
+      "color": "rgb(206,180,203)"
+    },
+    
+    {
+      "image": "11154813_pink-lilac_300dpi_close-up.jpg",
+      "name": "pink lilac [4813]",
+      "color": "rgb(213,172,198)"
+    },
+    
+    {
+      "image": "11154672_bjornebaersaft_300dpi_close-up.jpg",
+      "name": "bjornebaersaft [4672]",
+      "color": "rgb(81,43,74)"
+    },
+    
+    {
+      "image": "11154632_rosa-lavendel_300dpi_close-up.jpg",
+      "name": "rosa lavendel [4632]",
+      "color": "rgb(182,139,164)"
+    },
+    
+    {
+      "image": "11156315_turkis_300dpi_close-up.jpg",
+      "name": "turkis [6315]",
+      "color": "rgb(69,175,202)"
+    },
+    
+    {
+      "image": "11154315_bubblegum-pink_300dpi_close-up.jpg",
+      "name": "bubblegum pink [4315]",
+      "color": "rgb(251,132,160)"
+    },
+    
+    {
+      "image": "11154600_jazzy-pink_300dpi_close-up.jpg",
+      "name": "jazzy pink [4600]",
+      "color": "rgb(163,30,97)"
+    },
+    
+    {
+      "image": "11154213_blossom_300dpi_close-up.jpg",
+      "name": "blossom [4213]",
+      "color": "rgb(253,172,179)"
+    },
+    
+    {
+      "image": "11154018_scarlet-red_300dpi_close-up.jpg",
+      "name": "scarlet red [4018]",
+      "color": "rgb(203,40,46)"
+    },
+    
+    {
+      "image": "11153880_mork-sjokolade_300dpi_close-up.jpg",
+      "name": "mork sjokolade [3880]",
+      "color": "rgb(74,61,57)"
+    },
+    
+    {
+      "image": "11153800_bristol-black_300dpi_close-up.jpg",
+      "name": "bristol black [3800]",
+      "color": "rgb(45,39,42)"
+    },
+    
+    {
+      "image": "11151001_hvit_300dpi_close-up.jpg",
+      "name": "hvit [1001]",
+      "color": "rgb(245,241,237)"
+    },
+    
+    {
+      "image": "11156032_bla-hortensia_300dpi_close-up.jpg",
+      "name": "bla hortensia [6032]",
+      "color": "rgb(121,146,174)"
+    },
+    
+    {
+      "image": "11156044_regatta-bla_300dpi_close-up.jpg",
+      "name": "regatta bla [6044]",
+      "color": "rgb(90,130,183)"
+    },
+    
+    {
+      "image": "11153161_eikenott_300dpi_close-up.jpg",
+      "name": "eikenott [3161]",
+      "color": "rgb(112,85,79)"
+    },
+    
+    {
+      "image": "11155224_lys-lilla_300dpi_close-up.jpg",
+      "name": "lys lilla [5224]",
+      "color": "rgb(140,124,174)"
+    },
+    
+    {
+      "image": "11153021_lys-beige_300dpi_close-up.jpg",
+      "name": "lys beige [3021]",
+      "color": "rgb(202,175,161)"
+    },
+    
+    {
+      "image": "11152351_taupe_300dpi_close-up.jpg",
+      "name": "taupe [2351]",
+      "color": "rgb(155,139,130)"
+    },
+    
+    {
+      "image": "11151099_svart_300dpi_close-up.jpg",
+      "name": "svart [1099]",
+      "color": "rgb(23,22,27)"
+    },
+    
+    {
+      "image": "11151015_kitt_300dpi_close-up_1.jpg",
+      "name": "kitt [1015]",
+      "color": "rgb(222,216,212)"
+    },
+    
+    {
+      "image": "11154626_shocking-pink_300dpi_close-up.jpg",
+      "name": "shocking pink [4626]",
+      "color": "rgb(217,127,171)"
+    },
+    
+    {
+      "image": "11152321_marsipan_300dpi_close-up.jpg",
+      "name": "marsipan [2321]",
+      "color": "rgb(208,188,175)"
+    },
+    
+    {
+      "image": "11152122_gul-manesten_300dpi_close-up.jpg",
+      "name": "gul manesten [2122]",
+      "color": "rgb(240,207,152)"
+    },
+    
+    {
+      "image": "11152650_beigemelert_300dpi_close-up.jpg",
+      "name": "beigemelert [2650]",
+      "color": "rgb(202,177,165)"
+    },
+    
+    {
+      "image": "11153535_lys-kobberbrun_300dpi_close-up.jpg",
+      "name": "lys kobberbrun [3535]",
+      "color": "rgb(185,98,80)"
+    },
+    
+    {
+      "image": "11145581_sailor-in-the-dark_72dpi_close-up.jpg",
+      "name": "sailor in the dark [5581]",
+      "color": "rgb(22,22,35)"
+    },
+    
+    {
+      "image": "11148051_eucalyptus_72dpi_close-up.jpg",
+      "name": "eucalyptus [8051]",
+      "color": "rgb(131,149,138)"
+    },
+    
+    {
+      "image": "11145930_pale-blue_72dpi_close-up_1.jpg",
+      "name": "pale blue [5930]",
+      "color": "rgb(191,207,208)"
+    },
+    
+    {
+      "image": "11151042_gramelert_300dpi_close-up.jpg",
+      "name": "gramelert [1042]",
+      "color": "rgb(159,157,152)"
+    },
+    
+    {
+      "image": "11144081_coffe-bean_72dpi_close-up.jpg",
+      "name": "coffe bean [4081]",
+      "color": "rgb(77,45,45)"
+    },
+    
+    {
+      "image": "11142114_banana_72dpi_close-up.jpg",
+      "name": "banana [2114]",
+      "color": "rgb(244,222,174)"
+    },
+    
+    {
+      "image": "11143821_cardemome_72dpi_close-up.jpg",
+      "name": "cardemome [3821]",
+      "color": "rgb(203,185,170)"
+    },
+    
+    {
+      "image": "11143521_ballet-shoes_72dpi_close-up.jpg",
+      "name": "ballet shoes [3521]",
+      "color": "rgb(225,189,179)"
+    },
+    
+    {
+      "image": "11146046_electric-blue_72dpi_close-up.jpg",
+      "name": "electric blue [6046]",
+      "color": "rgb(0,72,143)"
+    },
+    
+    {
+      "image": "11148236_statement-green_72dpi_close-up.jpg",
+      "name": "statement green [8236]",
+      "color": "rgb(14,143,82)"
+    },
+    
+    {
+      "image": "11144008_poppy_300dpi_close-up-mid.jpg",
+      "name": "poppy [4008]",
+      "color": "rgb(225,50,52)"
+    },
+    
+    {
+      "image": "11143819_that-orange-feeling_72dpi_close-up.jpg",
+      "name": "that orange feeling [3819]",
+      "color": "rgb(223,40,20)"
+    },
+    
+    {
+      "image": "11143553_dusty-rouge_72dpi_close-up.jpg",
+      "name": "dusty rouge [3553]",
+      "color": "rgb(163,103,90)"
+    },
+    
+    {
+      "image": "11142542_camel_72dpi_close-up.jpg",
+      "name": "camel [2542]",
+      "color": "rgb(176,140,109)"
+    },
+    
+    {
+      "image": "11142345_croissant_72dpi_close-up.jpg",
+      "name": "croissant [2345]",
+      "color": "rgb(156,95,46)"
+    },
+    
+    {
+      "image": "11141012_whipped-cream_72dpi_close-up_2.jpg",
+      "name": "whipped cream [1012]",
+      "color": "rgb(235,228,210)"
+    }
+  ]
+}
