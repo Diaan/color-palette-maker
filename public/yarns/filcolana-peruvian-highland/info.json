@@ -1,0 +1,353 @@
+{
+  "company":"Filcolana",
+  "name":"Peruvian",
+  "weight":"aran",
+  "running-length":100,
+  "palette":[
+     {
+        "image":"ph973.jpg",
+        "name":"Nougat (melange) [973]",
+        "color":"rgb(56,44,35)"
+     },
+     {
+        "image":"ph978.jpg",
+        "name":"Oatmeal (melange) [978]",
+        "color":"rgb(143,130,121)"
+     },
+     {
+        "image":"ph977.jpg",
+        "name":"Marzipan (melange) [977]",
+        "color":"rgb(160,147,129)"
+     },
+     {
+        "image":"ph975.jpg",
+        "name":"Dark Chocolate (melange) [975]",
+        "color":"rgb(29,25,23)"
+     },
+     {
+        "image":"ph957.jpg",
+        "name":"Very Light Grey (melange) [957]",
+        "color":"rgb(129,129,120)"
+     },
+     {
+        "image":"ph956.jpg",
+        "name":"Charcoal (melange) [956]",
+        "color":"rgb(28,29,31)"
+     },
+     {
+        "image":"ph955.jpg",
+        "name":"Medium Grey (melange) [955]",
+        "color":"rgb(64,66,66)"
+     },
+     {
+        "image":"ph954.jpg",
+        "name":"Light Grey (melange) [954]",
+        "color":"rgb(84,85,81)"
+     },
+     {
+        "image":"ph834.jpg",
+        "name":"Emerald [834]",
+        "color":"rgb(39,97,80)"
+     },
+     {
+        "image":"ph833.jpg",
+        "name":"Limpopo (melange) [833]",
+        "color":"rgb(58,55,59)"
+     },
+     {
+        "image":"ph832.jpg",
+        "name":"Burnt Sienna (melange) [832]",
+        "color":"rgb(65,19,19)"
+     },
+     {
+        "image":"ph827.jpg",
+        "name":"Dijon (melange) [827]",
+        "color":"rgb(87,48,23)"
+     },
+     {
+        "image":"ph818.jpg",
+        "name":"Fisherman Blue (melange) [818]",
+        "color":"rgb(26,40,64)"
+     },
+     {
+        "image":"ph815.jpg",
+        "name":"Lavender Grey (melange) [815]",
+        "color":"rgb(108,97,111)"
+     },
+     {
+        "image":"ph817.jpg",
+        "name":"Cinnamon (melange) [817]",
+        "color":"rgb(72,40,29)"
+     },
+     {
+        "image":"ph814.jpg",
+        "name":"Storm Blue (melange) [814]",
+        "color":"rgb(17,37,49)"
+     },
+     {
+        "image":"ph812.jpg",
+        "name":"Granite (melange) [812]",
+        "color":"rgb(70,80,87)"
+     },
+     {
+        "image":"ph803.jpg",
+        "name":"Rust (melange) [803]",
+        "color":"rgb(111,19,18)"
+     },
+     {
+        "image":"ph805.jpg",
+        "name":"Erica (melange) [805]",
+        "color":"rgb(88,51,61)"
+     },
+     {
+        "image":"ph804.jpg",
+        "name":"Merlot (melange) [804]",
+        "color":"rgb(65,10,18)"
+     },
+     {
+        "image":"ph801.jpg",
+        "name":"Sea Green (melange) [801]",
+        "color":"rgb(15,46,46)"
+     },
+     {
+        "image":"ph379.jpg",
+        "name":"Sprout [379]",
+        "color":"rgb(157,159,56)"
+     },
+     {
+        "image":"ph369.jpg",
+        "name":"Slightly Purple [369]",
+        "color":"rgb(178,159,188)"
+     },
+     {
+        "image":"ph364.jpg",
+        "name":"Chai [364]",
+        "color":"rgb(168,137,107)"
+     },
+     {
+        "image":"ph361.jpg",
+        "name":"Madeira Rose [361]",
+        "color":"rgb(179,75,81)"
+     },
+     {
+        "image":"ph360.jpg",
+        "name":"Azalea [360]",
+        "color":"rgb(113,12,28)"
+     },
+     {
+        "image":"ph356.jpg",
+        "name":"Woodland Dawn [356]",
+        "color":"rgb(78,49,40)"
+     },
+     {
+        "image":"ph355.jpg",
+        "name":"Green Tea [355]",
+        "color":"rgb(131,135,96)"
+     },
+     {
+        "image":"ph352.jpg",
+        "name":"Red Squirrel [352]",
+        "color":"rgb(81,29,12)"
+     },
+     {
+        "image":"ph345.jpg",
+        "name":"Rosewood [345]",
+        "color":"rgb(107,37,41)"
+     },
+     {
+        "image":"ph344.jpg",
+        "name":"Lilac Fog [344]",
+        "color":"rgb(106,88,94)"
+     },
+     {
+        "image":"ph334.jpg",
+        "name":"Light Blush [334]",
+        "color":"rgb(199,163,152)"
+     },
+     {
+        "image":"ph333.jpg",
+        "name":"Seafoam [333]",
+        "color":"rgb(128,162,159)"
+     },
+     {
+        "image":"ph318.jpg",
+        "name":"Ballerina [318]",
+        "color":"rgb(184,145,153)"
+     },
+     {
+        "image":"ph313.jpg",
+        "name":"Bubblegum [313]",
+        "color":"rgb(200,94,142)"
+     },
+     {
+        "image":"ph283.jpg",
+        "name":"Calypso [283]",
+        "color":"rgb(206,46,60)"
+     },
+     {
+        "image":"ph284.jpg",
+        "name":"Kumquat [284]",
+        "color":"rgb(191,101,12)"
+     },
+     {
+        "image":"ph282.jpg",
+        "name":"Bark [282]",
+        "color":"rgb(81,69,59)"
+     },
+     {
+        "image":"ph281.jpg",
+        "name":"Rime Frost [281]",
+        "color":"rgb(108,141,150)"
+     },
+     {
+        "image":"ph279.jpg",
+        "name":"Juicy Green [279]",
+        "color":"rgb(16,90,27)"
+     },
+     {
+        "image":"ph270.jpg",
+        "name":"Midnight Blue [270]",
+        "color":"rgb(13,31,57)"
+     },
+     {
+        "image":"ph269.jpg",
+        "name":"Toxic [269]",
+        "color":"rgb(103,149,44)"
+     },
+     {
+        "image":"ph259.jpg",
+        "name":"Lavender [259]",
+        "color":"rgb(67,62,92)"
+     },
+     {
+        "image":"ph258.jpg",
+        "name":"Lilac [258]",
+        "color":"rgb(102,90,125)"
+     },
+     {
+        "image":"ph256.jpg",
+        "name":"Tile [256]",
+        "color":"rgb(145,24,24)"
+     },
+     {
+        "image":"ph254.jpg",
+        "name":"Coral [254]",
+        "color":"rgb(194,90,54)"
+     },
+     {
+        "image":"ph255.jpg",
+        "name":"Limelight [255]",
+        "color":"rgb(199,191,97)"
+     },
+     {
+        "image":"ph249.jpg",
+        "name":"Cobalt Blue [249]",
+        "color":"rgb(12,49,105)"
+     },
+     {
+        "image":"ph228.jpg",
+        "name":"Smoke Blue [228]",
+        "color":"rgb(19,47,65)"
+     },
+     {
+        "image":"ph223.jpg",
+        "name":"Sunflower [223]",
+        "color":"rgb(188,142,22)"
+     },
+     {
+        "image":"ph241.jpg",
+        "name":"Chestnut [241]",
+        "color":"rgb(30,19,15)"
+     },
+     {
+        "image":"ph222.jpg",
+        "name":"Plum [222]",
+        "color":"rgb(48,15,28)"
+     },
+     {
+        "image":"ph235.jpg",
+        "name":"Grape Royal [235]",
+        "color":"rgb(28,17,33)"
+     },
+     {
+        "image":"ph215.jpg",
+        "name":"Carrot [215]",
+        "color":"rgb(179,53,25)"
+     },
+     {
+        "image":"ph203.jpg",
+        "name":"Camel [203]",
+        "color":"rgb(103,75,55)"
+     },
+     {
+        "image":"ph202.jpg",
+        "name":"Teal [202]",
+        "color":"rgb(7,60,86)"
+     },
+     {
+        "image":"ph219.jpg",
+        "name":"Antrachite [219]",
+        "color":"rgb(18,19,25)"
+     },
+     {
+        "image":"ph196.jpg",
+        "name":"French Vanilla [196]",
+        "color":"rgb(211,193,134)"
+     },
+     {
+        "image":"ph145.jpg",
+        "name":"Navy Blue [145]",
+        "color":"rgb(16,23,46)"
+     },
+     {
+        "image":"ph227.jpg",
+        "name":"Old Rose [227]",
+        "color":"rgb(131,88,98)"
+     },
+     {
+        "image":"ph141.jpg",
+        "name":"Alaskan Blue [141]",
+        "color":"rgb(85,149,185)"
+     },
+     {
+        "image":"ph136.jpg",
+        "name":"Mustard [136]",
+        "color":"rgb(111,66,19)"
+     },
+     {
+        "image":"ph221.jpg",
+        "name":"Thyme [221]",
+        "color":"rgb(60,64,34)"
+     },
+     {
+        "image":"ph102.jpg",
+        "name":"Black [102]",
+        "color":"rgb(9,9,9)"
+     },
+     {
+        "image":"ph100.jpg",
+        "name":"Snow White [100]",
+        "color":"rgb(215,213,205)"
+     },
+     {
+        "image":"ph101.jpg",
+        "name":"Natural White [101]",
+        "color":"rgb(177,168,145)"
+     },
+     {
+        "image":"ph225.jpg",
+        "name":"Christmas Red [225]",
+        "color":"rgb(78,5,10)"
+     },
+     {
+        "image":"ph147.jpg",
+        "name":"Hunter Green [147]",
+        "color":"rgb(12,26,27)"
+     },
+     {
+        "image":"ph218.jpg",
+        "name":"Chinese Red [218]",
+        "color":"rgb(133,3,11)"
+     }
+  ]
+}
