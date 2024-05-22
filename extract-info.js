@@ -27,6 +27,7 @@ const buildPatterns = async () => {
   const patterns = await fg('public/patterns/*', { cwd, onlyDirectories: true });
 
   const extracted = patterns.map(pattern => getPatternInfo(pattern)).filter(p => !!p);
+  console.log(`Extracted info for ${extracted.length} patterns`);
   fs.writeFileSync('public/patterns.json', `${JSON.stringify({ patterns:extracted}, null, 2)}\n`);
 
 };
@@ -54,7 +55,7 @@ const buildYarns = async () => {
   const yarns = await fg('public/yarns/*', { cwd, onlyDirectories: true });
 
   const extracted = yarns.map(yarn => getYarnInfo(yarn)).filter(p => !!p);
-  console.log(extracted)
+  console.log(`Extracted info for ${extracted.length} yarns`);
   fs.writeFileSync('public/yarns.json', `${JSON.stringify({ yarns:extracted}, null, 2)}\n`);
 
 };
