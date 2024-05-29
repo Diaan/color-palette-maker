@@ -109,7 +109,7 @@ export class PaletteMaker extends LitElement {
   }
 
   #setCSSProperties(workingYarn:string, pickedColor:PickedColor){
-    console.log(pickedColor);
+    // console.log(pickedColor);
     document.body.style.setProperty(`--yarn${workingYarn}`, pickedColor.color);
     if(pickedColor.image){
       document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${pickedColor.image})`);

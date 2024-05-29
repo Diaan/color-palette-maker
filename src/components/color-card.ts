@@ -1,4 +1,4 @@
-import { LitElement, css, html, nothing } from 'lit';
+import { LitElement, PropertyValues, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { Yarn, YarnColor } from '../models';
 
@@ -14,6 +14,17 @@ export class ColorCard extends LitElement {
   @property({type:Boolean}) selected: boolean = false;
   @property({type:Object}) yarn?: Yarn;
   @property({ reflect: true })  size: string = 'medium';
+
+  @property() yarnImage?:string;
+
+  override async willUpdate(changes: PropertyValues<this>): Promise<void> {
+    super.willUpdate(changes);
+
+    if (changes.has('yarn') || changes.has('palette')) {
+      const image = `yarns/${this.yarn?.folder}/images/${this.palette.image}`;
+      this.yarnImage = image;
+    }
+  }
 
   render() {
     const name = this.size==='large' || this.size==='xl' ? this.palette.name : nothing;

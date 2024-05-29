@@ -23,7 +23,7 @@ export class YarnColors extends LitElement {
   render() {
     return html`<section>
       ${this.yarnData?.palette.map(c=> html`
-        <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${()=>this.select(c)}></cp-color-card>
+        <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${(event: Event)=>this.select(c,event)}></cp-color-card>
       `)}
     </section>`;
   }
@@ -44,8 +44,18 @@ export class YarnColors extends LitElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
-  select(yarn:YarnColor){
-    this.selectColorEvent.emit(yarn);
+  select(yarn:YarnColor, event:any){
+    var c = document.createElement('canvas');
+    var img = document.createElement('img');
+    img.src = event.target.yarnImage
+    c.height = img.naturalHeight;
+    c.width = img.naturalWidth;
+    var ctx = c.getContext('2d');
+
+    ctx?.drawImage(img, 0, 0, c.width, c.height);
+    var base64 = c.toDataURL();
+    console.log(base64);
+    this.selectColorEvent.emit({...yarn, base64});
   }
 
   async _getYarnInfo(folder: string): Promise<Yarn | undefined> {
