@@ -47,8 +47,12 @@ export class YarnColors extends LitElement {
   }
 
   async select(yarn:YarnColor, event:any){
-    var base64 = await getBase64FromImageUrl(event.target.yarnImage);
-    this.selectColorEvent.emit({...yarn, base64});
+    if(yarn.image){
+      var base64 = await getBase64FromImageUrl(event.target.yarnImage);
+      this.selectColorEvent.emit({...yarn, base64});
+    }else{
+      this.selectColorEvent.emit({...yarn, base64:undefined});
+    }
   }
 
   async _getYarnInfo(folder: string): Promise<Yarn | undefined> {

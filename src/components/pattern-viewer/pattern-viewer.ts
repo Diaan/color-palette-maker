@@ -58,7 +58,7 @@ export class PatternViewer extends LitElement {
                 <image href="${image}" x=${x} y=${y} width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice"/>
               `})}
         </svg>`}-->
-      <div class="svg-defs"> ${this.yarnImage}
+      <div class="svg-defs">
         ${svg`<svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="f1" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +66,6 @@ export class PatternViewer extends LitElement {
             </filter>
             ${this.colors?.map(c => { 
               const color = c.pickedColor?c.pickedColor:c.default;
-              
               return svg`
                 <pattern 
                   id="img${color.patternYarn}" 
@@ -75,7 +74,7 @@ export class PatternViewer extends LitElement {
                   height="${this.imageScale}" 
                   fill="var(--yarn${color.patternYarn})">
                 <rect width="${this.imageScale}" height="${this.imageScale}" fill="${color.color}"></rect>
-                ${this.yarnImage
+                ${this.yarnImage&&color.image
                   ?svg`<image href="${color.base64}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice" filter="url(#f1)"/>`
                   :nothing
                 }

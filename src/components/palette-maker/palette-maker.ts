@@ -82,6 +82,7 @@ export class PaletteMaker extends LitElement {
     event.preventDefault();
     event.stopPropagation();
 
+    
     const color = event.detail;
     if(!this.selectedYarn || !this.workingYarn) return;
 
