@@ -128,9 +128,6 @@ export class PaletteMaker extends LitElement {
         this.#setCSSProperties(color.id, color.default)
         return color;
       }));
-      // this.colors.forEach(async color=>{
-      //   this.#setCSSProperties(color.id, color.default)
-      // })
       const html = await patterntext.text();
       
       return html;
