@@ -1,0 +1,211 @@
+{
+  "company": "Sandnes Garn",
+  "name": "Merinoull",
+  "weight":"DK",
+  "running-length": 105,
+  "palette": [
+    {
+      "image": "11761001_optisk-hvit_72dpi_close-up.jpg",
+      "name": "optisk hvit [1001]",
+      "color": "rgb(242,238,228)"
+    },
+    
+    {
+      "image": "11761002_hvit_72dpi_close-up.jpg",
+      "name": "hvit [1002]",
+      "color": "rgb(246,237,226)"
+    },
+    
+    {
+      "image": "11761055_koksmelert_72dpi_close-up.jpg",
+      "name": "koksmelert [1055]",
+      "color": "rgb(47,46,48)"
+    },
+    
+    {
+      "image": "11762122_gul-manesten_300dpi_close-up.jpg",
+      "name": "gul manesten [2122]",
+      "color": "rgb(222,199,139)"
+    },
+    
+    {
+      "image": "11761015_kitt_72dpi_close-up.jpg",
+      "name": "kitt [1015]",
+      "color": "rgb(231,226,222)"
+    },
+    
+    {
+      "image": "11762321_marsipan_300dpi_close-up.jpg",
+      "name": "marsipan [2321]",
+      "color": "rgb(209,192,177)"
+    },
+    
+    {
+      "image": "11763161_mellombrun_72dpi_close-up.jpg",
+      "name": "mellombrun [3161]",
+      "color": "rgb(103,76,70)"
+    },
+    
+    {
+      "image": "11763511_pudder-rosa_72dpi_close-up.jpg",
+      "name": "pudder rosa [3511]",
+      "color": "rgb(229,197,194)"
+    },
+    
+    {
+      "image": "11766052_jeansblaa_72dpi_close-up.jpg",
+      "name": "jeansblaa [6052]",
+      "color": "rgb(66,85,111)"
+    },
+    
+    {
+      "image": "11764715_rosa_72dpi_close-up.jpg",
+      "name": "rosa [4715]",
+      "color": "rgb(195,117,148)"
+    },
+    
+    {
+      "image": "11761042_graamelert_3001dpi_close-up.jpg",
+      "name": "graamelert [1042]",
+      "color": "rgb(156,154,152)"
+    },
+    
+    {
+      "image": "11764219_rod_72dpi_close-up.jpg",
+      "name": "rod [4219]",
+      "color": "rgb(160,1,36)"
+    },
+    
+    {
+      "image": "11762743_karamell_300dpi_close-up_1.jpg",
+      "name": "karamell [2743]",
+      "color": "rgb(174,110,70)"
+    },
+    
+    {
+      "image": "11764622_lys-lyng_72dpi_close-up.jpg",
+      "name": "lys lyng [4622]",
+      "color": "rgb(156,109,130)"
+    },
+    
+    {
+      "image": "11766062_mork-blaa_72dpi_close-up.jpg",
+      "name": "mork blaa [6062]",
+      "color": "rgb(29,48,75)"
+    },
+    
+    {
+      "image": "11765252_lilla-skumring_300dpi_close-up.jpg",
+      "name": "lilla skumring [5252]",
+      "color": "rgb(98,94,124)"
+    },
+    
+    {
+      "image": "11764628_magenta_300dpi_close-up.jpg",
+      "name": "magenta [4628]",
+      "color": "rgb(200,86,140)"
+    },
+    
+    {
+      "image": "11767741_stovet-petrol_72dpi_close-up.jpg",
+      "name": "stovet-petrol [7741]",
+      "color": "rgb(123,156,151)"
+    },
+    
+    {
+      "image": "11765224_lys-lilla_300dpi_close-up.jpg",
+      "name": "lys lilla [5224]",
+      "color": "rgb(139,126,167)"
+    },
+    
+    {
+      "image": "11769825_sunny-lime_300dpi_close-up-ny.jpg",
+      "name": "sunny lime [9825]",
+      "color": "rgb(166,177,68)"
+    },
+    
+    {
+      "image": "11762550_lys-eikenott_72dpi_close-up.jpg",
+      "name": "lys-eikenott [2550]",
+      "color": "rgb(160,141,129)"
+    },
+    
+    {
+      "image": "11761099_svart_72dpi_close-up.jpg",
+      "name": "svart [1099]",
+      "color": "rgb(26,25,27)"
+    },
+    
+    {
+      "image": "11768581_dyp-skogggronn_72dpi_close-up.jpg",
+      "name": "dyp-skogggronn [8581]",
+      "color": "rgb(39,60,47)"
+    },
+    
+    {
+      "image": "11763073_sjokolade_300dpi_close-up.jpg",
+      "name": "sjokolade [3073]",
+      "color": "rgb(98,58,45)"
+    },
+    
+    {
+      "image": "11768521_lys-stovet-gronn_72dpi_close-up.jpg",
+      "name": "lys-stovet-gronn [8521]",
+      "color": "rgb(139,141,121)"
+    },
+    
+    {
+      "image": "11766032_bla-hortensia_300dpi_close-up.jpg",
+      "name": "bla-hortensia [6032]",
+      "color": "rgb(126,152,174)"
+    },
+    
+    {
+      "image": "11765575_marine_72dpi_close-up.jpg",
+      "name": "marine [5575]",
+      "color": "rgb(30,35,66)"
+    },
+    
+    {
+      "image": "11769062_olivengronn_300dpi_close-up_1.jpg",
+      "name": "olivengronn [9062]",
+      "color": "rgb(96,99,70)"
+    },
+    
+    {
+      "image": "11764645_lyng_72dpi_close-up.jpg",
+      "name": "lyng [4645]",
+      "color": "rgb(109,62,88)"
+    },
+    
+    {
+      "image": "11765846_blaa_72dpi_close-up.jpg",
+      "name": "blaa [5846]",
+      "color": "rgb(24,51,99)"
+    },
+    
+    {
+      "image": "11764813_pink-lilac_300dpi_close-up.jpg",
+      "name": "pink lilac [4813]",
+      "color": "rgb(236,182,196)"
+    },
+    
+    {
+      "image": "11767572_petroleum_72dpi_close-up.jpg",
+      "name": "petroleum [7572]",
+      "color": "rgb(60,80,79)"
+    },
+    
+    {
+      "image": "11764033_ferskenblomst_72dpi_close-up.jpg",
+      "name": "ferskenblomst [4033]",
+      "color": "rgb(208,145,137)"
+    },
+    
+    {
+      "image": "11766071_graablaa_72dpi_close-up.jpg",
+      "name": "graablaa [6071]",
+      "color": "rgb(59,64,74)"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
     {
       "company": "Lana Grossa",
       "name": "Cool Wool Big",
+      "weight": "worsted",
       "folder": "cool-wool-big",
       "color": 76
     },
@@ -103,6 +104,13 @@
       "weight": "bulky",
       "folder": "sandnes-garn-fritidsgarn",
       "color": 51
+    },
+    {
+      "company": "Sandnes Garn",
+      "name": "Merinoull",
+      "weight": "DK",
+      "folder": "sandnes-garn-merinoull",
+      "color": 34
     },
     {
       "company": "Westwool",

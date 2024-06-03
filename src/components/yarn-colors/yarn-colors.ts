@@ -2,6 +2,8 @@ import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { Yarn, YarnColor } from '../../models';
 import { CpSelectColorEvent, EventEmitter, event } from '../..';
+import { getBase64FromImageUrl } from '../../util/image';
+
 
 
 /**
@@ -23,7 +25,7 @@ export class YarnColors extends LitElement {
   render() {
     return html`<section>
       ${this.yarnData?.palette.map(c=> html`
-        <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${()=>this.select(c)}></cp-color-card>
+        <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${(event: Event)=>this.select(c,event)}></cp-color-card>
       `)}
     </section>`;
   }
@@ -44,8 +46,13 @@ export class YarnColors extends LitElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
-  select(yarn:YarnColor){
-    this.selectColorEvent.emit(yarn);
+  async select(yarn:YarnColor, event:any){
+    if(yarn.image){
+      var base64 = await getBase64FromImageUrl(event.target.yarnImage);
+      this.selectColorEvent.emit({...yarn, base64});
+    }else{
+      this.selectColorEvent.emit({...yarn, base64:undefined});
+    }
   }
 
   async _getYarnInfo(folder: string): Promise<Yarn | undefined> {
@@ -59,9 +66,7 @@ export class YarnColors extends LitElement {
       console.warn('error loading yarn info');
       return;
     }
-  }
-
-  
+  }  
 
   static styles = css`
     section {
