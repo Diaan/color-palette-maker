@@ -4,6 +4,7 @@ import { Pattern, PatternColor } from '../../models/pattern';
 import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
 import { PickedColor } from '../../models/color';
 import { YarnBase } from '../../models';
+import { getBase64FromImageUrl } from '../../util/image';
 
 
 /**
@@ -112,7 +113,7 @@ export class PaletteMaker extends LitElement {
     // console.log(pickedColor);
     document.body.style.setProperty(`--yarn${workingYarn}`, pickedColor.color);
     if(pickedColor.image){
-      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder}/images/${pickedColor.image})`);
+      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder||pickedColor.yarnFolder}/images/${pickedColor.image})`);
     }
   }
 
@@ -121,8 +122,15 @@ export class PaletteMaker extends LitElement {
       const response = await fetch(`/patterns/${pattern}/info.json`);
       this.patternData = await response.json();
       const patterntext = await fetch(`/patterns/${pattern}/${this.patternData?.patternFile}`);
-      this.colors = this.patternData ? this.patternData?.colors:[];
-      this.colors.forEach(color=>this.#setCSSProperties(color.id, color.default))
+      const colors =  this.patternData ? this.patternData?.colors:[];
+      this.colors = await Promise.all(colors.map(async color=>{
+        color.default.base64 = await getBase64FromImageUrl(`yarns/${color.default.yarnFolder}/images/${color.default.image}`);
+        this.#setCSSProperties(color.id, color.default)
+        return color;
+      }));
+      // this.colors.forEach(async color=>{
+      //   this.#setCSSProperties(color.id, color.default)
+      // })
       const html = await patterntext.text();
       
       return html;

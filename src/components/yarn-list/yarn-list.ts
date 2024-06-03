@@ -11,15 +11,18 @@ import { CpSelectYarnEvent, EventEmitter, event } from '../../events';
  */
 @customElement('cp-yarn-list')
 export class YarnList extends LitElement {
-  @state() yarns?: YarnBase[];  
+  @state() yarns?: Yarn[];  
 
   @event({name:'cp-select-yarn'}) selectYarnEvent!: EventEmitter<CpSelectYarnEvent>;
 
   render() {
     return html`
       <ul>
-      ${this.yarns?.map(p => html`<li  @click=${()=> this.selectYarn(p)} .yarn="${p}" >${p.company} - ${p.name}</li>`)}
-  </ul>
+        ${this.yarns?.map(p => html`
+          <li  @click=${()=> this.selectYarn(p)} .yarn="${p}" >
+            ${p.company} - ${p.name} <sl-badge>${p.weight}</sl-badge>
+          </li>`)}
+      </ul>
     `;
   }
 
@@ -37,7 +40,7 @@ export class YarnList extends LitElement {
     });
   }
 
-  async _getYarns(): Promise<YarnBase[] | undefined> {
+  async _getYarns(): Promise<Yarn[] | undefined> {
     try {
       const response = await fetch(`/yarns.json`);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -53,14 +56,22 @@ export class YarnList extends LitElement {
   
 
   static styles = css`
-    section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    ul {
+      display: flex;
+      flex-direction: column;
       gap: 5px;
+      margin:0;
+      padding:0;
     }
     
     li {
       cursor: pointer;
+      display: flex;
+      list-style: none;
+
+      sl-badge {
+        margin-inline-start: auto;
+      }
     }
   `;
 }

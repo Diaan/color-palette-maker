@@ -2,6 +2,8 @@ import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { Yarn, YarnColor } from '../../models';
 import { CpSelectColorEvent, EventEmitter, event } from '../..';
+import { getBase64FromImageUrl } from '../../util/image';
+
 
 
 /**
@@ -44,17 +46,8 @@ export class YarnColors extends LitElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
-  select(yarn:YarnColor, event:any){
-    var c = document.createElement('canvas');
-    var img = document.createElement('img');
-    img.src = event.target.yarnImage
-    c.height = img.naturalHeight;
-    c.width = img.naturalWidth;
-    var ctx = c.getContext('2d');
-
-    ctx?.drawImage(img, 0, 0, c.width, c.height);
-    var base64 = c.toDataURL();
-    console.log(base64);
+  async select(yarn:YarnColor, event:any){
+    var base64 = await getBase64FromImageUrl(event.target.yarnImage);
     this.selectColorEvent.emit({...yarn, base64});
   }
 
@@ -69,9 +62,7 @@ export class YarnColors extends LitElement {
       console.warn('error loading yarn info');
       return;
     }
-  }
-
-  
+  }  
 
   static styles = css`
     section {

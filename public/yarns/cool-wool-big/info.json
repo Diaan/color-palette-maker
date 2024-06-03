@@ -1,6 +1,8 @@
 {
-  "company":"Lana Grossa",
+  "company": "Lana Grossa",
   "name": "Cool Wool Big",
+  "weight":"worsted",
+  "running-length": 120,
   "palette": [
     {
       "image": "30295e4add8dc7cc7858ecdd8f9bf3c31c71faae_cool_wool_big_melange_lana_grossa_0640617_M.jpg",

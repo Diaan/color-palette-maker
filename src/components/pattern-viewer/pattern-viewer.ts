@@ -38,7 +38,9 @@ export class PatternViewer extends LitElement {
       <sl-divider></sl-divider>
       <sl-switch ?checked=${this.yarnImage} @sl-change=${this.#changeYarnImage} class="label-on-left">Show yarn image</sl-switch>
       <sl-range min="0" max="50" step="1" value=${this.blurRadius} @sl-change=${this.#changeBlurRadius} label="Blur yarn image" class="label-on-left"></sl-range>
-      <!--<article>
+      <!--
+        tweak part of image / blur that is shown in the pattern image  
+      <article>
         <p>Colours:</p>
         <ul>
           ${this.patternData?.colors.map(c=>html`<li>${c.name}</li>`)}
@@ -64,7 +66,6 @@ export class PatternViewer extends LitElement {
             </filter>
             ${this.colors?.map(c => { 
               const color = c.pickedColor?c.pickedColor:c.default;
-              // const image = `yarns/${color.yarnFolder}/images/${color.image}`;
               
               return svg`
                 <pattern 
@@ -88,11 +89,7 @@ export class PatternViewer extends LitElement {
       <img id="canvastemp" style="display:none">
     `;
   }
-
-  // override async updated(changes: PropertyValues<this>): Promise<void> {
-  //   super.updated(changes);
-  // }
-
+  
   // TODO: tweak image position, scale, blur, toggle images of yarn, toggle image or color rectangles
 
   #changeBlurRadius(event: Event & { target: HTMLInputElement }):void {
