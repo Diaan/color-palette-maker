@@ -42,7 +42,7 @@ export class ColorChooser extends LitElement {
           html`<cp-yarn-list></cp-yarn-list>`}
         
       </sl-tab-panel>
-      <sl-tab-panel name="recent">Still in progress... Here you will see all the ## yarns you recently used in your design</sl-tab-panel>
+      <sl-tab-panel name="recent"><cp-recent-colors></cp-recent-colors></sl-tab-panel>
       <sl-tab-panel name="saved">Still in progress... Here you will see yarn combinations you have saved 😍</sl-tab-panel>
     </sl-tab-group>`;
   }

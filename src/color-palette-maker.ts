@@ -1,6 +1,5 @@
 import { LitElement, PropertyValues, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
 
 
 
