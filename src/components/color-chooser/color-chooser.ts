@@ -1,6 +1,6 @@
-import { LitElement, PropertyValues, css, html, nothing } from 'lit';
+import { LitElement, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { PatternColor, PickedColor, YarnBase } from '../../models';
+import { PatternColor, YarnBase } from '../../models';
 
 /**
  * An example element.

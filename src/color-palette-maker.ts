@@ -27,7 +27,7 @@ export class App extends LitElement {
     super.firstUpdated(changes);
 
     const param = this.params.get('pattern');
-    if(!!param){
+    if(param){
       this.pattern = param;
     }
 

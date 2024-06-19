@@ -1,7 +1,7 @@
 import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { Yarn, YarnColor } from '../../models';
-import { CpSelectColorEvent, EventEmitter, event } from '../..';
+import { ColorCard, CpSelectColorEvent, EventEmitter, event } from '../..';
 import { getBase64FromImageUrl } from '../../util/image';
 
 
@@ -46,9 +46,10 @@ export class YarnColors extends LitElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
-  async select(yarn:YarnColor, event:any){
-    if(yarn.image){
-      var base64 = await getBase64FromImageUrl(event.target.yarnImage);
+  async select(yarn:YarnColor, event:Event){
+    const card = event?.target as ColorCard;
+    if(yarn.image && card.yarnImage){
+      const base64 = await getBase64FromImageUrl(card.yarnImage);
       this.selectColorEvent.emit({...yarn, base64});
     }else{
       this.selectColorEvent.emit({...yarn, base64:undefined});
@@ -58,7 +59,7 @@ export class YarnColors extends LitElement {
   async _getYarnInfo(folder: string): Promise<Yarn | undefined> {
     try {
       const response = await fetch(`/yarns/${folder}/info.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+       
       const data = await response.json();
       this.yarnData = {...data, folder};
       return this.yarnData;
