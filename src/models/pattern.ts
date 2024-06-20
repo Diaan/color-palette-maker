@@ -15,6 +15,7 @@ export type Pattern = PatternBase & {
 };
 
 export type PatternColor = {
+  base64: string,
   id:string,
   name: string,
   required:number[],

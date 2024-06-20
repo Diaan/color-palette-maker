@@ -4,5 +4,4 @@ export type PickedColor = {
   color: string;
   patternYarn:string;
   yarnFolder: string; 
-  base64?:string;
 }
