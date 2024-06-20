@@ -125,7 +125,6 @@ export class PaletteMaker extends LitElement {
       const patterntext = await fetch(`/patterns/${pattern}/${this.patternData?.patternFile}`);
       const colors =  this.patternData ? this.patternData?.colors:[];
       this.colors = await Promise.all(colors.map(async color=>{
-        // color.default.base64 = await getBase64FromImageUrl(`yarns/${color.default.yarnFolder}/images/${color.default.image}`);
         this.#setCSSProperties(color.id, color.default)
         return color;
       }));
