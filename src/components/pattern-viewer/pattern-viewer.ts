@@ -3,6 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { Pattern, PatternColor } from '../../models/pattern';
 import { ifDefined } from 'lit/directives/if-defined.js';
+import { getBase64FromImageUrl } from '../../util/image';
 
 
 /**
@@ -18,6 +19,7 @@ export class PatternViewer extends LitElement {
 
   @state() imageScale:number = 50;
   @state() blurRadius:number = 2;
+  @state() enrichedColors?: PatternColor[];
   @property({type:Boolean}) yarnImage:boolean = true;
 
   @property({attribute: 'pattern-code'}) patternCode?: string;
@@ -60,8 +62,9 @@ export class PatternViewer extends LitElement {
             <filter id="f1" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
               <feGaussianBlur in="SourceGraphic" stdDeviation="${this.blurRadius}" />
             </filter>
-            ${this.colors?.map(c => { 
+            ${this.enrichedColors?.map(c => { 
               const color = c.pickedColor?c.pickedColor:c.default;
+              console.log('set new colors',color.name, c.base64.substring(70,110));
               return svg`
                 <pattern 
                   id="img${color.patternYarn}" 
@@ -71,7 +74,7 @@ export class PatternViewer extends LitElement {
                   fill="var(--yarn${color.patternYarn})">
                 <rect width="${this.imageScale}" height="${this.imageScale}" fill="${color.color}"></rect>
                 ${this.yarnImage&&color.image
-                  ?svg`<image href="${color.base64}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice" filter="url(#f1)"/>`
+                  ?svg`<image href="${c.base64}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice" filter="url(#f1)"/>`
                   :nothing
                 }
               </pattern>
@@ -84,7 +87,18 @@ export class PatternViewer extends LitElement {
       <img id="canvastemp" style="display:none">
     `;
   }
-  
+
+  override async updated(changes: PropertyValues<this>): Promise<void> {
+    super.updated(changes);
+
+    if (changes.has('colors') && this.colors) {
+      this.enrichedColors = await Promise.all(this.colors.map(async c => {
+        const color = c.pickedColor?c.pickedColor:c.default;
+        const base64 = await getBase64FromImageUrl(`yarns/${color.yarnFolder}/images/${color.image}`);
+        return {...c, base64};
+      }));
+    }
+  }
   // TODO: tweak image position, scale, blur, toggle images of yarn, toggle image or color rectangles
 
   #changeBlurRadius(event: Event & { target: HTMLInputElement }):void {
@@ -110,10 +124,11 @@ export class PatternViewer extends LitElement {
 
     if(!svg || !img || !canvas || !defs) return;
 
-    svg?.append(defs.cloneNode(true));
+    const downloadableSvg = svg.cloneNode(true) as SVGElement;
+    downloadableSvg?.append(defs.cloneNode(true));
 
     // get svg data
-    const xml = new XMLSerializer().serializeToString(svg);
+    const xml = new XMLSerializer().serializeToString(downloadableSvg);
 
     // prepend a "header"
     const image64 = 'data:image/svg+xml;base64,' + btoa(xml);
@@ -129,6 +144,7 @@ export class PatternViewer extends LitElement {
         a.download = `${filename}.png`;
         a.click();
       }
+      console.log('download');
     }
     img.src = image64;
       
