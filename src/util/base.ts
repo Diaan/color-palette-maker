@@ -50,7 +50,7 @@ export const decorateProperty =
     protoOrDescriptor: ReactiveElement | ClassElement,
     name?: PropertyKey
     // Note TypeScript requires the return type to be `void|any`
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-redundant-type-constituents
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): void | any => {
     // TypeScript / Babel legacy mode
     if (name !== undefined) {
@@ -64,7 +64,7 @@ export const decorateProperty =
       // Note, the @property decorator saves `key` as `originalKey`
       // so try to use it here.
       const key: PropertyKey =
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ((protoOrDescriptor as unknown as any).originalKey as PropertyKey) ?? (protoOrDescriptor as ClassElement).key;
       const info: ClassElement =
         descriptor != undefined

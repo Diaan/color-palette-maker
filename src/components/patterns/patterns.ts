@@ -47,7 +47,7 @@ export class Patterns extends LitElement {
   async _getPatterns(): Promise<Pattern[] | undefined> {
     try {
       const response = await fetch(`/patterns.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+       
       const json = await response?.json();
       return json.patterns;
     } catch (error) {

@@ -43,7 +43,7 @@ export class YarnList extends LitElement {
   async _getYarns(): Promise<Yarn[] | undefined> {
     try {
       const response = await fetch(`/yarns.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+       
       const json = await response?.json();
 
       return json.yarns;

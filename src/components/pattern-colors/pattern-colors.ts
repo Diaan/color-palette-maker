@@ -1,4 +1,4 @@
-import { LitElement, PropertyValues, css, html } from 'lit';
+import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { PatternColor } from '../../models/pattern';
 import { CpSetWorkingYarnEvent, EventEmitter, event } from '../..';

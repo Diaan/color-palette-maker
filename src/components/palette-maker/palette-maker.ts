@@ -18,12 +18,6 @@ export class PaletteMaker extends LitElement {
 
   @property({attribute: 'pattern-name'}) patternName!: string;
 
-  // @property()
-  // imageScale:number = 50;
-
-  @property({attribute:'defs', type: Object})
-  defs?:any;
-
   @state() patternCode?: string;
   @state() patternData?: Pattern;
   @state() colors: PatternColor[] = [];
@@ -31,6 +25,7 @@ export class PaletteMaker extends LitElement {
   @state() workingYarn?: string = 'B';
 
   /** Events controller. */
+  // eslint-disable-next-line
   #events = new EventsController(this, {
     'cp-select-yarn': this.#onSelectYarn,
     'cp-set-working-yarn': this.#onSetWorkingYarn,

@@ -1,4 +1,4 @@
-import { LitElement, PropertyValues, css, html, nothing, svg } from 'lit';
+import { LitElement, css, html, nothing, svg } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { Pattern, PatternColor } from '../../models/pattern';
@@ -21,10 +21,6 @@ export class PatternViewer extends LitElement {
   @state() blurRadius:number = 2;
   @state() enrichedColors?: PatternColor[];
   @property({type:Boolean}) yarnImage:boolean = true;
-
-  @property({attribute:'defs', type: Object})
-  defs?:any;
-
 
   @property({attribute: 'pattern-code'}) patternCode?: string;
   @property({ attribute: 'pattern-data', type:Object}) patternData?: Pattern;
@@ -116,7 +112,7 @@ export class PatternViewer extends LitElement {
 
   #saveImage() {
     if(!this.patternCode) return;
-    var a = document.createElement("a");
+    const a = document.createElement("a");
     document.body.appendChild(a);
     a.style.display = 'none';
     
@@ -132,10 +128,10 @@ export class PatternViewer extends LitElement {
     downloadableSvg?.append(defs.cloneNode(true));
 
     // get svg data
-    var xml = new XMLSerializer().serializeToString(downloadableSvg);
+    const xml = new XMLSerializer().serializeToString(downloadableSvg);
 
     // prepend a "header"
-    var image64 = 'data:image/svg+xml;base64,' + btoa(xml);
+    const image64 = 'data:image/svg+xml;base64,' + btoa(xml);
 
     // set it as the source of the img element
     img.onload = function() {
@@ -143,7 +139,7 @@ export class PatternViewer extends LitElement {
       if(canvas){
           canvas.getContext('2d')?.drawImage(img, 0, 0, 800, 800);
                 
-        var myImage = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        const myImage = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
         a.href = myImage;
         a.download = `${filename}.png`;
         a.click();
