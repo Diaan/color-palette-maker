@@ -1,0 +1,544 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/malabrigo-rios/images/005.jpg",
+      "name": "005",
+      "color": "rgb(100,91,82)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/033.jpg",
+      "name": "033",
+      "color": "rgb(158,23,41)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/051.jpg",
+      "name": "051",
+      "color": "rgb(56,77,68)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/052.jpg",
+      "name": "052",
+      "color": "rgb(45,53,90)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/066.jpg",
+      "name": "066",
+      "color": "rgb(69,53,97)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/133.jpg",
+      "name": "133",
+      "color": "rgb(36,120,140)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/208.jpg",
+      "name": "208",
+      "color": "rgb(184,144,95)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/209-DENIM.jpg",
+      "name": "209 DENIM",
+      "color": "rgb(26,45,72)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/210-BLUE-JEAN.jpeg",
+      "name": "210 BLUE-JEAN",
+      "color": "rgb(32,72,127)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/212.jpg",
+      "name": "212",
+      "color": "rgb(153,168,174)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/213-PINES.jpeg",
+      "name": "213 PINES",
+      "color": "rgb(17,46,52)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/214-MAGENTA.jpeg",
+      "name": "214 MAGENTA",
+      "color": "rgb(115,38,84)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/215-COWBOY.jpeg",
+      "name": "215 COWBOY",
+      "color": "rgb(30,41,59)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/277.jpg",
+      "name": "277",
+      "color": "rgb(158,150,134)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/278.jpg",
+      "name": "278",
+      "color": "rgb(156,117,120)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/279.jpg",
+      "name": "279",
+      "color": "rgb(167,162,151)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/280.jpg",
+      "name": "280",
+      "color": "rgb(190,117,127)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/281.jpg",
+      "name": "281",
+      "color": "rgb(182,177,179)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/282-.jpg",
+      "name": "282 ",
+      "color": "rgb(133,129,174)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/283.jpg",
+      "name": "283",
+      "color": "rgb(181,171,172)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/284.jpg",
+      "name": "284",
+      "color": "rgb(135,109,115)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/285.jpg",
+      "name": "285",
+      "color": "rgb(134,137,142)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/286.jpg",
+      "name": "286",
+      "color": "rgb(158,133,136)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/287.jpg",
+      "name": "287",
+      "color": "rgb(173,164,160)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/288.jpg",
+      "name": "288",
+      "color": "rgb(147,129,142)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/289.jpg",
+      "name": "289",
+      "color": "rgb(166,175,176)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/413-ANKARA-GREEN.jpeg",
+      "name": "413 ANKARA-GREEN",
+      "color": "rgb(40,157,177)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/429-CAPE-COD-GRAY.jpg",
+      "name": "429 CAPE-COD-GRAY",
+      "color": "rgb(125,129,135)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/611_RAVELRY_RED.jpg",
+      "name": "611 RAVELRY_RED",
+      "color": "rgb(90,31,42)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/618.jpg",
+      "name": "618",
+      "color": "rgb(88,103,96)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/640.jpg",
+      "name": "640",
+      "color": "rgb(131,117,73)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/642.jpg",
+      "name": "642",
+      "color": "rgb(160,136,110)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/643.jpg",
+      "name": "643",
+      "color": "rgb(181,135,63)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/644.jpg",
+      "name": "644",
+      "color": "rgb(58,93,119)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/645.jpg",
+      "name": "645",
+      "color": "rgb(51,79,114)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/651.jpg",
+      "name": "651",
+      "color": "rgb(151,40,46)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/652.jpg",
+      "name": "652",
+      "color": "rgb(116,109,137)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/653.jpg",
+      "name": "653",
+      "color": "rgb(111,14,54)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/654.jpg",
+      "name": "654",
+      "color": "rgb(80,102,185)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/655.jpg",
+      "name": "655",
+      "color": "rgb(217,145,28)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/656.jpg",
+      "name": "656",
+      "color": "rgb(193,129,119)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/657.jpg",
+      "name": "657",
+      "color": "rgb(164,132,133)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/684.jpg",
+      "name": "684",
+      "color": "rgb(75,59,59)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/688.jpg",
+      "name": "688",
+      "color": "rgb(147,146,85)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/696-WHOLE-GRAIN.jpg",
+      "name": "696 WHOLE-GRAIN",
+      "color": "rgb(139,139,143)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/704-IVORY.jpg",
+      "name": "704 IVORY",
+      "color": "rgb(190,183,176)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/706-COSMOS.jpg",
+      "name": "706 COSMOS",
+      "color": "rgb(113,118,124)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/707-MELON.jpg",
+      "name": "707 MELON",
+      "color": "rgb(166,143,128)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/843.jpg",
+      "name": "843",
+      "color": "rgb(98,86,95)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/846.jpg",
+      "name": "846",
+      "color": "rgb(99,104,116)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/847.jpg",
+      "name": "847",
+      "color": "rgb(86,95,89)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/855.jpg",
+      "name": "855",
+      "color": "rgb(49,93,89)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/856.jpg",
+      "name": "856",
+      "color": "rgb(55,91,131)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/866.jpg",
+      "name": "866",
+      "color": "rgb(93,102,75)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/872.jpg",
+      "name": "872",
+      "color": "rgb(69,38,65)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/886.jpg",
+      "name": "886",
+      "color": "rgb(117,84,56)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/894.jpg",
+      "name": "894",
+      "color": "rgb(76,80,84)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/896-LIVING-CORAL.jpg",
+      "name": "896 LIVING-CORAL",
+      "color": "rgb(183,65,67)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S-AQUAMARINE.jpeg",
+      "name": "S AQUAMARINE",
+      "color": "rgb(106,147,191)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S-CIAN.jpeg",
+      "name": "S CIAN",
+      "color": "rgb(4,132,155)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S-HOLLYHOCK.jpeg",
+      "name": "S HOLLYHOCK",
+      "color": "rgb(84,27,83)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S-MATISSE-BLUE.jpeg",
+      "name": "S MATISSE-BLUE",
+      "color": "rgb(23,24,120)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S-VALENTINA.jpeg",
+      "name": "S VALENTINA",
+      "color": "rgb(168,156,178)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S016-GLAZED-CARROT.jpg",
+      "name": "S016 GLAZED-CARROT",
+      "color": "rgb(109,45,34)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S030-PURPLE-MISTERY.jpg",
+      "name": "S030 PURPLE-MISTERY",
+      "color": "rgb(56,48,80)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S036-PEARL.jpg",
+      "name": "S036 PEARL",
+      "color": "rgb(105,98,97)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S063-NATURAL.jpg",
+      "name": "S063 NATURAL",
+      "color": "rgb(165,157,138)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S120-LOTUS.jpg",
+      "name": "S120 LOTUS",
+      "color": "rgb(96,85,100)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S121-MARTE.jpg",
+      "name": "S121 MARTE",
+      "color": "rgb(77,48,52)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S122-NIEBLA.jpg",
+      "name": "S122 NIEBLA",
+      "color": "rgb(132,128,130)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S128-FRESCO-Y-SECO.jpg",
+      "name": "S128 FRESCO-Y-SECO",
+      "color": "rgb(58,77,63)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S131-SAND-BANK.jpg",
+      "name": "S131 SAND-BANK",
+      "color": "rgb(134,124,125)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S136-SABIDURÍA.jpg",
+      "name": "S136 SABIDURÍA",
+      "color": "rgb(76,47,74)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S138-IVY.jpg",
+      "name": "S138 IVY",
+      "color": "rgb(90,95,61)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S139-POCION.jpg",
+      "name": "S139 POCION",
+      "color": "rgb(77,70,75)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S195-BLACK.jpg",
+      "name": "S195 BLACK",
+      "color": "rgb(26,25,28)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S412-TEAL-FEATHER.jpg",
+      "name": "S412 TEAL-FEATHER",
+      "color": "rgb(41,71,76)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S416-INDIECITA.jpg",
+      "name": "S416 INDIECITA",
+      "color": "rgb(91,104,117)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S624-COCO.jpg",
+      "name": "S624 COCO",
+      "color": "rgb(71,57,57)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S695-PEACHY.jpeg",
+      "name": "S695 PEACHY",
+      "color": "rgb(171,121,109)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S809-SOLIS.jpg",
+      "name": "S809 SOLIS",
+      "color": "rgb(44,75,82)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S842-ILUSION.jpg",
+      "name": "S842 ILUSION",
+      "color": "rgb(113,91,86)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S844-NIMBUS-GRAY.jpg",
+      "name": "S844 NIMBUS-GRAY",
+      "color": "rgb(94,86,84)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S845-CIRRUS-GRAY.jpg",
+      "name": "S845 CIRRUS-GRAY",
+      "color": "rgb(69,72,81)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S850-ARCHANGEL.jpg",
+      "name": "S850 ARCHANGEL",
+      "color": "rgb(115,79,81)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S859-PRIMAVERA.jpg",
+      "name": "S859 PRIMAVERA",
+      "color": "rgb(111,97,83)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S869-CUMPARTSITA.jpg",
+      "name": "S869 CUMPARTSITA",
+      "color": "rgb(91,58,77)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S871-PLAYA.jpg",
+      "name": "S871 PLAYA",
+      "color": "rgb(85,80,81)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S877-QUEGUAY.jpg",
+      "name": "S877 QUEGUAY",
+      "color": "rgb(79,68,65)",
+      "yarn": "malabrigo-rios"
+    },
+    {
+      "image": "/yarns/malabrigo-rios/images/S880-HOJAS.jpg",
+      "name": "S880 HOJAS",
+      "color": "rgb(89,92,72)",
+      "yarn": "malabrigo-rios"
+    }
+  ]
+}

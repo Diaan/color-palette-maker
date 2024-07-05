@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@shoelace-style/shoelace": "^2.15.1",
+    "jimp": "^0.22.12",
     "lit": "^3.1.4"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { LitElement, css, html, nothing, svg } from 'lit';
+import { LitElement, PropertyValues, css, html, nothing, svg } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { Pattern, PatternColor } from '../../models/pattern';
@@ -31,6 +31,8 @@ export class PatternViewer extends LitElement {
       <h1>${this.patternData?.name}</h1>
       <span><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
       ${ unsafeHTML(this.patternCode)}
+      <cp-pattern-colors .colors=${this.colors}></cp-pattern-colors>
+        </div>
       <!--${this.yarnImage}-->
       <sl-button @click=${this.#saveImage}>Dowload image</sl-button>
       <sl-divider></sl-divider>
@@ -47,7 +49,7 @@ export class PatternViewer extends LitElement {
       ${svg`<svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 ${(this.colors?.length||5) * 100} ${(this.colors?.length||5) * 100}">
             ${this.colors?.map((c,i) => { 
               const color = c.pickedColor?c.pickedColor:c.default;
-              const image = `yarns/${color.yarnFolder}/images/${color.image}`;
+              const image = color.image;
               const x = 100 * i;
               const y = 0;
               return svg`
@@ -64,7 +66,6 @@ export class PatternViewer extends LitElement {
             </filter>
             ${this.enrichedColors?.map(c => { 
               const color = c.pickedColor?c.pickedColor:c.default;
-              console.log('set new colors',color.name, c.base64.substring(70,110));
               return svg`
                 <pattern 
                   id="img${color.patternYarn}" 
@@ -94,7 +95,9 @@ export class PatternViewer extends LitElement {
     if (changes.has('colors') && this.colors) {
       this.enrichedColors = await Promise.all(this.colors.map(async c => {
         const color = c.pickedColor?c.pickedColor:c.default;
-        const base64 = await getBase64FromImageUrl(`yarns/${color.yarnFolder}/images/${color.image}`);
+        if(!color?.image) return c;
+        const base64 = await getBase64FromImageUrl(color.image);
+        if(!base64) return c;
         return {...c, base64};
       }));
     }
@@ -116,6 +119,7 @@ export class PatternViewer extends LitElement {
     document.body.appendChild(a);
     a.style.display = 'none';
     
+    //TODO: don't use base 64 for svg shown on page, only use it for downloaded svg. for performance reasons.
     const defs = this.renderRoot.querySelector('defs');
     const svg = this.renderRoot.querySelector('svg:first-of-type');
     const img = this.renderRoot.querySelector('#canvastemp') as HTMLImageElement;
@@ -131,7 +135,7 @@ export class PatternViewer extends LitElement {
     const xml = new XMLSerializer().serializeToString(downloadableSvg);
 
     // prepend a "header"
-    const image64 = 'data:image/svg+xml;base64,' + btoa(xml);
+    const image64 = 'data:image/svg+xml;base64,' +window.btoa(xml);
 
     // set it as the source of the img element
     img.onload = function() {
@@ -144,7 +148,6 @@ export class PatternViewer extends LitElement {
         a.download = `${filename}.png`;
         a.click();
       }
-      console.log('download');
     }
     img.src = image64;
       

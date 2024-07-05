@@ -16,4 +16,5 @@ export type YarnColor = {
   image?: string;
   name: string;
   color: string;
+  yarn: string;
 }

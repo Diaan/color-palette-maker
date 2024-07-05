@@ -1,0 +1,238 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/1001_hvit.jpg",
+      "name": "1001 hvit",
+      "color": "rgb(223,217,211)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/1012_natur.jpg",
+      "name": "1012 natur",
+      "color": "rgb(221,211,197)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/1014_porselen.jpg",
+      "name": "1014 porselen",
+      "color": "rgb(208,203,199)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/1042_graamelert.jpg",
+      "name": "1042 graamelert",
+      "color": "rgb(148,145,145)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/1099_sort.jpg",
+      "name": "1099 sort",
+      "color": "rgb(30,30,30)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/2016_solgul.jpg",
+      "name": "2016 solgul",
+      "color": "rgb(225,193,94)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/2112_lys-gul.jpg",
+      "name": "2112 lys gul",
+      "color": "rgb(223,200,157)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/2523_natur-tweed.jpg",
+      "name": "2523 natur tweed",
+      "color": "rgb(212,207,194)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/2650_beigemelert.jpg",
+      "name": "2650 beigemelert",
+      "color": "rgb(155,143,138)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/3021_beige.jpg",
+      "name": "3021 beige",
+      "color": "rgb(194,172,156)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/3040_caffe-latte.jpg",
+      "name": "3040 caffe latte",
+      "color": "rgb(167,138,123)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/3161_eikenott.jpg",
+      "name": "3161 eikenott",
+      "color": "rgb(121,97,90)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/3800_bristol-black.jpg",
+      "name": "3800 bristol black",
+      "color": "rgb(70,61,65)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/3819_spicy-orange.jpg",
+      "name": "3819 spicy orange",
+      "color": "rgb(212,65,55)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4008_poppy.jpg",
+      "name": "4008 poppy",
+      "color": "rgb(215,69,78)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4213_blossom.jpg",
+      "name": "4213 blossom",
+      "color": "rgb(233,169,167)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4236_dyp-rod.jpg",
+      "name": "4236 dyp rod",
+      "color": "rgb(127,24,41)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4315_bubblegum-pink.jpg",
+      "name": "4315 bubblegum pink",
+      "color": "rgb(234,113,138)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4600_jazzy-pink.jpg",
+      "name": "4600 jazzy pink",
+      "color": "rgb(154,25,89)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4602_pudder-rosa.jpg",
+      "name": "4602 pudder rosa",
+      "color": "rgb(215,171,166)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4626_shocking-pink.jpg",
+      "name": "4626 shocking pink",
+      "color": "rgb(211,123,166)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4628_magenta.jpg",
+      "name": "4628 magenta",
+      "color": "rgb(179,92,147)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4632_rosa-lavendel.jpg",
+      "name": "4632 rosa lavendel",
+      "color": "rgb(180,146,163)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4672_bjornebaersaft.jpg",
+      "name": "4672 bjornebaersaft",
+      "color": "rgb(80,53,77)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/4813_pink-lilac.jpg",
+      "name": "4813 pink lilac",
+      "color": "rgb(209,168,188)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/5043_lilla.jpg",
+      "name": "5043 lilla",
+      "color": "rgb(165,144,175)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/5575_marineblaa.jpg",
+      "name": "5575 marineblaa",
+      "color": "rgb(29,36,58)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/6003_lys-blaa.jpg",
+      "name": "6003 lys blaa",
+      "color": "rgb(143,164,190)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/6044_regatta-bl.jpg",
+      "name": "6044 regatta bl",
+      "color": "rgb(97,135,179)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/6046_jolly-blue.jpg",
+      "name": "6046 jolly blue",
+      "color": "rgb(26,84,146)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/6064_blabaer.jpg",
+      "name": "6064 blabaer",
+      "color": "rgb(65,78,99)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/6315_turkis.jpg",
+      "name": "6315 turkis",
+      "color": "rgb(89,170,190)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/7213_bla-turkis.jpg",
+      "name": "7213 bla turkis",
+      "color": "rgb(153,207,197)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/7281_dyp-petrol.jpg",
+      "name": "7281 dyp petrol",
+      "color": "rgb(51,78,81)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/8062_gronnyrt.jpg",
+      "name": "8062 gronnyrt",
+      "color": "rgb(98,131,107)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/8236_jellybean-green.jpg",
+      "name": "8236 jellybean green",
+      "color": "rgb(50,144,90)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/8532_pistasj-is.jpg",
+      "name": "8532 pistasj is",
+      "color": "rgb(143,163,138)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/8581_dyp-skoggronn.jpg",
+      "name": "8581 dyp skoggronn",
+      "color": "rgb(53,73,61)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    },
+    {
+      "image": "/yarns/sandnes-garn-borstet-alpakka/images/9825_sunny-lime.jpg",
+      "name": "9825 sunny lime",
+      "color": "rgb(184,172,70)",
+      "yarn": "sandnes-garn-borstet-alpakka"
+    }
+  ]
+}

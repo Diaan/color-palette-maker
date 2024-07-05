@@ -1,6 +1,7 @@
 import { LitElement, PropertyValues, css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { Yarn, YarnColor } from '../models';
+import { YarnColor } from '../models';
+import { YarnList } from './yarn-list/yarn-list';
 
 /**
  * An example element.
@@ -10,9 +11,9 @@ import { Yarn, YarnColor } from '../models';
  */
 @customElement('cp-color-card')
 export class ColorCard extends LitElement {
-  @property({type:Object}) palette: YarnColor = { color: `#000`, name: '' };
+  @property({type:Object}) palette?: YarnColor;
   @property({type:Boolean}) selected: boolean = false;
-  @property({type:Object}) yarn?: Yarn;
+  @property() yarn?: string;
   @property({ reflect: true })  size: string = 'medium';
 
   @property() yarnImage?:string;
@@ -21,21 +22,32 @@ export class ColorCard extends LitElement {
     super.willUpdate(changes);
 
     if (changes.has('yarn') || changes.has('palette')) {
-      const image = `yarns/${this.yarn?.folder}/images/${this.palette.image}`;
-      this.yarnImage = image;
+      this.yarnImage = this.palette?.image;
     }
   }
 
   render() {
-    const name = this.size==='large' || this.size==='xl' ? this.palette.name : nothing;
-    const image = `yarns/${this.yarn?.folder}/images/${this.palette.image}`;
+    const name = this.size==='large' || this.size==='xl' ? this.palette?.name : nothing;
+    const image = this.palette?.image;
+    const yarnInfo = this.palette ? YarnList.getYarnInfo(this.palette?.yarn):undefined;
 
-    return html`
-      <div style="--_bg-color:${this.palette.color};--_bg-image:url(${image})" title=${this.palette.name}>
+    return this.palette?html`
+      <div style="--_bg-color:${this.palette?.color};--_bg-image:url(${image})" title=${this.palette?.name}>
       </div>
-      <slot></slot> 
-      ${name}
-      `;
+      ${ this.size==='large' || this.size==='xl'
+        ?html`
+          ${name}
+          <span>
+          ${
+            yarnInfo?
+            html`${yarnInfo.company}${yarnInfo.name}<sl-badge>${yarnInfo.weight}</sl-badge>`:
+            nothing
+          }
+          </span>
+        `
+        :nothing
+      }
+    `:nothing
   }
   static styles = css`
     :host([size="large"]){
@@ -65,6 +77,10 @@ export class ColorCard extends LitElement {
       width: 100%;
       object-fit: cover;
       object-position: center center;
+    }
+
+    span {
+      font-size: var(--sl-font-size-small);
     }
     :host([size="mini"]) div{
       width: 1rem;

@@ -3,8 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { Pattern, PatternColor } from '../../models/pattern';
 import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
 import { PickedColor } from '../../models/color';
-import { YarnBase } from '../../models';
-import { getBase64FromImageUrl } from '../../util/image';
+import { YarnBase, YarnColor } from '../../models';
 
 
 /**
@@ -23,6 +22,7 @@ export class PaletteMaker extends LitElement {
   @state() colors: PatternColor[] = [];
   @state() selectedYarn?: YarnBase;
   @state() workingYarn?: string = 'B';
+  @state() recentColors:YarnColor[] = [];
 
   /** Events controller. */
   // eslint-disable-next-line
@@ -43,15 +43,30 @@ export class PaletteMaker extends LitElement {
           html`<cp-pattern-viewer 
             .patternData=${this.patternData} 
             .patternCode=${this.patternCode} 
+            .workingYarn=${this.workingYarn}
             .colors=${this.colors}></cp-pattern-viewer>`
           :nothing
         }
         </div>
         <div slot="end">
-          <cp-color-chooser 
-            .workingYarn=${this.workingYarn}
-            .colors=${this.colors} 
-            .selectedYarn=${this.selectedYarn}></cp-color-chooser>
+
+          <sl-tab-group>
+            <sl-tab slot="nav" panel="yarn">Yarn</sl-tab>
+            <sl-tab slot="nav" panel="recent">Recent</sl-tab>
+            <sl-tab slot="nav" panel="saved">Saved</sl-tab>
+
+            <sl-tab-panel name="yarn">
+                <cp-color-chooser 
+                  .workingYarn=${this.workingYarn}
+                  .colors=${this.colors} 
+                  .selectedYarn=${this.selectedYarn}></cp-color-chooser>
+              
+            </sl-tab-panel>
+            <sl-tab-panel name="recent">
+              <cp-yarn-colors .yarnColors=${this.recentColors} card-size="large"></cp-yarn-colors>
+            </sl-tab-panel>
+      <sl-tab-panel name="saved">Still in progress... Here you will see yarn combinations you have saved 😍</sl-tab-panel>
+          </sl-tab-group>
         </div>
       </sl-split-panel>
     `;
@@ -68,6 +83,10 @@ export class PaletteMaker extends LitElement {
       });
     }
   }
+  override firstUpdated(changes: PropertyValues<this>): void {
+    super.firstUpdated(changes);
+    this.recentColors = JSON.parse(localStorage.getItem("recentColors")||'[]');
+  }
 
   back(){
     this.dispatchEvent(new CustomEvent('close'));
@@ -76,16 +95,18 @@ export class PaletteMaker extends LitElement {
   #onSelectColor(event: CpSelectColorEvent): void {
     event.preventDefault();
     event.stopPropagation();
-
+    
     
     const color = event.detail;
-    if(!this.selectedYarn || !this.workingYarn) return;
+    if(!this.workingYarn) return;
 
     const pickedColor: PickedColor = {
       ...color,
       patternYarn: this.workingYarn,
-      yarnFolder: this.selectedYarn.folder
+      yarnFolder: color.yarn
     };
+    this.#addToRecentColors(color);
+
     const workingColor = this.colors.find(c => c.id===this.workingYarn);
     if(!workingColor) return;
 
@@ -106,10 +127,16 @@ export class PaletteMaker extends LitElement {
   }
 
   #setCSSProperties(workingYarn:string, pickedColor:PickedColor){
-    // console.log(pickedColor);
     document.body.style.setProperty(`--yarn${workingYarn}`, pickedColor.color);
     if(pickedColor.image){
-      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder||pickedColor.yarnFolder}/images/${pickedColor.image})`);
+      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(${pickedColor.image})`);
+    }
+  }
+
+  #addToRecentColors(color: YarnColor){
+    const recentColors = JSON.parse(localStorage.getItem("recentColors")||'[]') as YarnColor[];
+    if(!recentColors.find(c => c.name === color.name)){
+      localStorage.setItem('recentColors',JSON.stringify([...recentColors, color]));
     }
   }
 

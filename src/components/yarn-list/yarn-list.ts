@@ -40,11 +40,17 @@ export class YarnList extends LitElement {
     });
   }
 
+  static getYarnInfo(id:string): Yarn | undefined {
+    const yarns: Yarn[] = JSON.parse(localStorage.getItem('yarns')||'[]');
+    return yarns?.find(yarn => yarn.folder === id);
+  }
+
   async _getYarns(): Promise<Yarn[] | undefined> {
     try {
       const response = await fetch(`/yarns.json`);
        
       const json = await response?.json();
+      localStorage.setItem(`yarns`, JSON.stringify(json.yarns));
 
       return json.yarns;
     } catch (error) {

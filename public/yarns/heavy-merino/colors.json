@@ -1,0 +1,316 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/heavy-merino/images/AErteskud.jpg",
+      "name": "AErteskud",
+      "color": "rgb(105,140,60)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Ballerina.jpg",
+      "name": "Ballerina",
+      "color": "rgb(206,192,184)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Bellispink.jpg",
+      "name": "Bellispink",
+      "color": "rgb(188,20,95)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/BlaJeans.jpg",
+      "name": "BlaJeans",
+      "color": "rgb(68,78,89)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Blahval.jpg",
+      "name": "Blahval",
+      "color": "rgb(48,47,51)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Blodappelsin.jpg",
+      "name": "Blodappelsin",
+      "color": "rgb(203,37,20)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Granataeble_heavy.jpg",
+      "name": "Granataeble heavy",
+      "color": "rgb(165,41,29)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Midnat.jpg",
+      "name": "Midnat",
+      "color": "rgb(51,55,61)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Morkelg.jpg",
+      "name": "Morkelg",
+      "color": "rgb(69,64,65)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Snefnug.jpg",
+      "name": "Snefnug",
+      "color": "rgb(208,209,209)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/StovetBanan.jpg",
+      "name": "StovetBanan",
+      "color": "rgb(181,155,97)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/Valmuebla.jpg",
+      "name": "Valmuebla",
+      "color": "rgb(53,116,168)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/aragra.jpg",
+      "name": "aragra",
+      "color": "rgb(79,81,83)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/bark.jpg",
+      "name": "bark",
+      "color": "rgb(85,70,55)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/blodnougat.jpg",
+      "name": "blodnougat",
+      "color": "rgb(149,101,77)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/blommeler_5097.jpg",
+      "name": "blommeler 5097",
+      "color": "rgb(103,81,74)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/bordeaux_5090.jpg",
+      "name": "bordeaux 5090",
+      "color": "rgb(50,14,14)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/brunbjorn.jpg",
+      "name": "brunbjorn",
+      "color": "rgb(45,38,31)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/champignonrosa.jpg",
+      "name": "champignonrosa",
+      "color": "rgb(174,158,142)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/dybpetroliumsbla_5099.jpg",
+      "name": "dybpetroliumsbla 5099",
+      "color": "rgb(29,42,52)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/fennikelfro.jpg",
+      "name": "fennikelfro",
+      "color": "rgb(162,153,117)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/flode.jpg",
+      "name": "flode",
+      "color": "rgb(184,181,168)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/hasselnod_6385.jpg",
+      "name": "hasselnod 6385",
+      "color": "rgb(117,92,70)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/havregryn_5078.jpg",
+      "name": "havregryn 5078",
+      "color": "rgb(166,150,129)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/hvede.jpg",
+      "name": "hvede",
+      "color": "rgb(199,183,149)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/hyldeblomst.jpg",
+      "name": "hyldeblomst",
+      "color": "rgb(207,204,187)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/isbla.jpg",
+      "name": "isbla",
+      "color": "rgb(174,179,180)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/jord.jpg",
+      "name": "jord",
+      "color": "rgb(109,101,88)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/kamel_6393.jpg",
+      "name": "kamel 6393",
+      "color": "rgb(148,96,45)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/kobber_6392.jpg",
+      "name": "kobber 6392",
+      "color": "rgb(151,74,42)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/kul_5137.jpg",
+      "name": "kul 5137",
+      "color": "rgb(23,23,23)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/lyscognac_5113.jpg",
+      "name": "lyscognac 5113",
+      "color": "rgb(94,53,27)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/marcipan_6400.jpg",
+      "name": "marcipan 6400",
+      "color": "rgb(173,159,141)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/marinebla.jpg",
+      "name": "marinebla",
+      "color": "rgb(31,35,50)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/morkokker_5129.jpg",
+      "name": "morkokker 5129",
+      "color": "rgb(122,74,7)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/natur.jpg",
+      "name": "natur",
+      "color": "rgb(146,135,117)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/nordstrand.jpg",
+      "name": "nordstrand",
+      "color": "rgb(176,175,166)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/perlegra_5084.jpg",
+      "name": "perlegra 5084",
+      "color": "rgb(143,143,128)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/perlegra_6398.jpg",
+      "name": "perlegra 6398",
+      "color": "rgb(165,166,161)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/pudder_5095.jpg",
+      "name": "pudder 5095",
+      "color": "rgb(182,157,136)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/rosaler_5157.jpg",
+      "name": "rosaler 5157",
+      "color": "rgb(160,113,98)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/rust_5148.jpg",
+      "name": "rust 5148",
+      "color": "rgb(108,32,18)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/skifergra_5149.jpg",
+      "name": "skifergra 5149",
+      "color": "rgb(41,41,41)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/skifergron_5118.jpg",
+      "name": "skifergron 5118",
+      "color": "rgb(53,48,27)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/sky.jpg",
+      "name": "sky",
+      "color": "rgb(201,201,201)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/stovetartiskok_5072.jpg",
+      "name": "stovetartiskok 5072",
+      "color": "rgb(133,140,116)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/stovetelg_5117.jpg",
+      "name": "stovetelg 5117",
+      "color": "rgb(106,102,93)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/stovethonning.jpg",
+      "name": "stovethonning",
+      "color": "rgb(169,145,86)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/stovetoliven_5135.jpg",
+      "name": "stovetoliven 5135",
+      "color": "rgb(73,62,37)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/stovetpetroliumsbla_5106.jpg",
+      "name": "stovetpetroliumsbla 5106",
+      "color": "rgb(60,76,88)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/terracottarosa_5114.jpg",
+      "name": "terracottarosa 5114",
+      "color": "rgb(142,72,60)",
+      "yarn": "heavy-merino"
+    },
+    {
+      "image": "/yarns/heavy-merino/images/trenchcoat.jpg",
+      "name": "trenchcoat",
+      "color": "rgb(165,144,111)",
+      "yarn": "heavy-merino"
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/rauma-garn-vams/images/00.jpg",
+      "name": "00",
+      "color": "rgb(206,203,193)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/01.jpg",
+      "name": "01",
+      "color": "rgb(193,186,170)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/03.jpg",
+      "name": "03",
+      "color": "rgb(170,165,155)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/05.jpg",
+      "name": "05",
+      "color": "rgb(174,145,121)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/06.jpg",
+      "name": "06",
+      "color": "rgb(151,126,112)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/069_Lys-turkis.jpg",
+      "name": "069 Lys turkis",
+      "color": "rgb(101,189,198)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/10.jpg",
+      "name": "10",
+      "color": "rgb(20,14,14)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/100-Grabeige-uten.jpg",
+      "name": "100 Grabeige-uten",
+      "color": "rgb(158,148,140)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/101-Lavendel-uten.jpg",
+      "name": "101 Lavendel-uten",
+      "color": "rgb(144,110,137)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/102-Lys-Syrin-uten.jpg",
+      "name": "102 Lys-Syrin-uten",
+      "color": "rgb(160,157,168)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/103-Mork-Kamelbrun-uten.jpg",
+      "name": "103 Mork-Kamelbrun-uten",
+      "color": "rgb(68,37,14)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/104-Kamelbrun-uten.jpg",
+      "name": "104 Kamelbrun-uten",
+      "color": "rgb(118,82,41)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/105-Kobberrod-uten.jpg",
+      "name": "105 Kobberrod-uten",
+      "color": "rgb(64,15,16)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/106-Brun-uten.jpg",
+      "name": "106 Brun-uten",
+      "color": "rgb(48,23,17)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/107-Jadegronn-uten.jpg",
+      "name": "107 Jadegronn-uten",
+      "color": "rgb(98,123,97)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/108-Lys-Bondebla-uten.jpg",
+      "name": "108 Lys-Bondebla-uten",
+      "color": "rgb(20,79,109)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/109-Dyp-Gronn-uten.jpg",
+      "name": "109 Dyp-Gronn-uten",
+      "color": "rgb(7,29,18)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/110-Lys-Grabla-uten.jpg",
+      "name": "110 Lys-Grabla-uten",
+      "color": "rgb(122,149,144)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/111-Mork-Gronn-uten.jpg",
+      "name": "111 Mork-Gronn-uten",
+      "color": "rgb(12,21,16)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/112-Torr-Rosa-uten.jpg",
+      "name": "112 Torr-Rosa-uten",
+      "color": "rgb(180,140,116)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/113-Melon-uten.jpg",
+      "name": "113 Melon-uten",
+      "color": "rgb(182,102,61)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/114-Konjakk-uten.jpg",
+      "name": "114 Konjakk-uten",
+      "color": "rgb(128,88,77)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/115-Salvie-uten.jpg",
+      "name": "115 Salvie-uten",
+      "color": "rgb(173,159,125)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/12.jpg",
+      "name": "12",
+      "color": "rgb(32,13,24)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/13.jpg",
+      "name": "13",
+      "color": "rgb(111,109,105)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/14.jpg",
+      "name": "14",
+      "color": "rgb(55,51,51)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/18.jpg",
+      "name": "18",
+      "color": "rgb(158,1,18)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/23.jpg",
+      "name": "23",
+      "color": "rgb(118,6,20)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/25.jpg",
+      "name": "25",
+      "color": "rgb(192,146,47)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/26.jpg",
+      "name": "26",
+      "color": "rgb(214,169,22)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/300.jpg",
+      "name": "300",
+      "color": "rgb(132,117,134)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/301.jpg",
+      "name": "301",
+      "color": "rgb(128,134,140)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/302.jpg",
+      "name": "302",
+      "color": "rgb(154,125,112)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/303.jpg",
+      "name": "303",
+      "color": "rgb(129,136,126)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/304.jpg",
+      "name": "304",
+      "color": "rgb(144,123,74)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/305.jpg",
+      "name": "305",
+      "color": "rgb(165,140,138)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/306.jpg",
+      "name": "306",
+      "color": "rgb(171,158,130)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/307.jpg",
+      "name": "307",
+      "color": "rgb(113,78,42)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/308.jpg",
+      "name": "308",
+      "color": "rgb(141,115,96)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/309.jpg",
+      "name": "309",
+      "color": "rgb(118,78,55)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/311.jpg",
+      "name": "311",
+      "color": "rgb(169,99,73)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/312.jpg",
+      "name": "312",
+      "color": "rgb(158,88,34)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/35.jpg",
+      "name": "35",
+      "color": "rgb(88,8,16)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/36.jpg",
+      "name": "36",
+      "color": "rgb(12,11,11)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/37.jpg",
+      "name": "37",
+      "color": "rgb(26,65,139)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/400.jpg",
+      "name": "400",
+      "color": "rgb(74,26,26)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/401.jpg",
+      "name": "401",
+      "color": "rgb(77,30,18)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/402.jpg",
+      "name": "402",
+      "color": "rgb(83,61,69)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/403.jpg",
+      "name": "403",
+      "color": "rgb(56,58,29)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/404.jpg",
+      "name": "404",
+      "color": "rgb(37,44,55)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/405.jpg",
+      "name": "405",
+      "color": "rgb(48,57,64)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/406.jpg",
+      "name": "406",
+      "color": "rgb(74,58,37)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/407.jpg",
+      "name": "407",
+      "color": "rgb(27,50,31)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/412.jpg",
+      "name": "412",
+      "color": "rgb(50,66,65)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/413.jpg",
+      "name": "413",
+      "color": "rgb(44,29,18)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/414.jpg",
+      "name": "414",
+      "color": "rgb(79,62,42)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/415.jpg",
+      "name": "415",
+      "color": "rgb(79,69,62)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/416.jpg",
+      "name": "416",
+      "color": "rgb(73,53,42)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/417.jpg",
+      "name": "417",
+      "color": "rgb(29,17,14)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/418.jpg",
+      "name": "418",
+      "color": "rgb(59,28,19)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/42.jpg",
+      "name": "42",
+      "color": "rgb(127,45,13)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/43.jpg",
+      "name": "43",
+      "color": "rgb(216,85,6)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/45.jpg",
+      "name": "45",
+      "color": "rgb(104,164,47)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/46.jpg",
+      "name": "46",
+      "color": "rgb(165,107,42)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/47.jpg",
+      "name": "47",
+      "color": "rgb(47,65,76)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/49.jpg",
+      "name": "49",
+      "color": "rgb(143,164,175)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/50.jpg",
+      "name": "50",
+      "color": "rgb(94,130,153)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/51.jpg",
+      "name": "51",
+      "color": "rgb(49,82,115)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/52.jpg",
+      "name": "52",
+      "color": "rgb(72,103,106)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/53.jpg",
+      "name": "53",
+      "color": "rgb(8,41,54)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/55.jpg",
+      "name": "55",
+      "color": "rgb(94,71,66)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/56.jpg",
+      "name": "56",
+      "color": "rgb(142,24,57)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/57.jpg",
+      "name": "57",
+      "color": "rgb(48,26,55)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/58.jpg",
+      "name": "58",
+      "color": "rgb(18,22,33)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/60.jpg",
+      "name": "60",
+      "color": "rgb(175,123,122)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/61.jpg",
+      "name": "61",
+      "color": "rgb(164,36,7)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/63.jpg",
+      "name": "63",
+      "color": "rgb(135,87,57)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/64.jpg",
+      "name": "64",
+      "color": "rgb(55,37,33)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/65.jpg",
+      "name": "65",
+      "color": "rgb(147,70,107)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/66.jpg",
+      "name": "66",
+      "color": "rgb(194,157,160)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/67.jpg",
+      "name": "67",
+      "color": "rgb(8,24,69)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/68_Lakserosa.jpg",
+      "name": "68 Lakserosa",
+      "color": "rgb(211,102,113)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/71.jpg",
+      "name": "71",
+      "color": "rgb(145,118,166)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/76.jpg",
+      "name": "76",
+      "color": "rgb(2,101,113)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/77.jpg",
+      "name": "77",
+      "color": "rgb(17,21,45)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/80.jpg",
+      "name": "80",
+      "color": "rgb(83,106,30)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/82.jpg",
+      "name": "82",
+      "color": "rgb(28,50,99)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/86.jpg",
+      "name": "86",
+      "color": "rgb(41,31,19)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/87.jpg",
+      "name": "87",
+      "color": "rgb(57,51,18)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/89.jpg",
+      "name": "89",
+      "color": "rgb(126,107,64)",
+      "yarn": "rauma-garn-vams"
+    },
+    {
+      "image": "/yarns/rauma-garn-vams/images/95.jpg",
+      "name": "95",
+      "color": "rgb(68,18,55)",
+      "yarn": "rauma-garn-vams"
+    }
+  ]
+}
