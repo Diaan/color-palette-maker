@@ -35,7 +35,7 @@ export class PaletteMaker extends LitElement {
   render() {
     return html`
       <sl-button @click=${this.back}>back</sl-button>
-      <sl-split-panel position="35">
+      <sl-split-panel position="55">
         <sl-icon slot="divider" name="grip-vertical"></sl-icon>
         <div slot="start">
         ${

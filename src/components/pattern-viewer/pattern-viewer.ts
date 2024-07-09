@@ -30,8 +30,8 @@ export class PatternViewer extends LitElement {
     return html`
       <h1>${this.patternData?.name}</h1>
       <span><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
-      ${ unsafeHTML(this.patternCode)}
       <cp-pattern-colors .colors=${this.colors}></cp-pattern-colors>
+      ${ unsafeHTML(this.patternCode)}
         </div>
       <!--${this.yarnImage}-->
       <sl-button @click=${this.#saveImage}>Dowload image</sl-button>

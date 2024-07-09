@@ -1,4 +1,4 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, PropertyValues, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { PatternColor } from '../../models/pattern';
 import { CpSetWorkingYarnEvent, EventEmitter, event } from '../..';
@@ -35,15 +35,15 @@ export class PatternColors extends LitElement {
           `})}`;
   }
   
-  // .palette=${{color:color.color,name:pc.name, image: color.image}} 
-  // {# style="--yarn-image: var(--yarn${pc.id}-image)" #}
-  // override async updated(changes: PropertyValues<this>): Promise<void> {
-  //   super.updated(changes);
+  override async updated(changes: PropertyValues<this>): Promise<void> {
+    super.updated(changes);
 
-  //   if (changes.has('colors')) {
-  //     console.log(this.colors);
-  //   }
-  // }
+    if (changes.has('colors')) {
+      if(this.colors && !this.workingYarn){
+        this.workingYarn = this.colors[0].id;
+      }
+    }
+  }
 
   selectWorkingColor(color:PatternColor): void{
     this.workingYarn = color.id;
