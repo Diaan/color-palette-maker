@@ -4,6 +4,7 @@ import { Pattern, PatternColor } from '../../models/pattern';
 import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
 import { PickedColor } from '../../models/color';
 import { YarnBase, YarnColor } from '../../models';
+import { SlChangeEvent, SlRadioGroup } from '@shoelace-style/shoelace';
 
 
 /**
@@ -23,6 +24,7 @@ export class PaletteMaker extends LitElement {
   @state() selectedYarn?: YarnBase;
   @state() workingYarn?: string = 'B';
   @state() recentColors:YarnColor[] = [];
+  @state() cardSize = 'large';
 
   /** Events controller. */
   // eslint-disable-next-line
@@ -49,7 +51,7 @@ export class PaletteMaker extends LitElement {
         }
         </div>
         <div slot="end">
-
+          
           <sl-tab-group>
             <sl-tab slot="nav" panel="yarn">Yarn</sl-tab>
             <sl-tab slot="nav" panel="recent">Recent</sl-tab>
@@ -63,7 +65,16 @@ export class PaletteMaker extends LitElement {
               
             </sl-tab-panel>
             <sl-tab-panel name="recent">
-              <cp-yarn-colors .yarnColors=${this.recentColors} card-size="large"></cp-yarn-colors>
+              <section>
+                <header>
+                  <h2>Recently used yarns</h2>
+                  <sl-radio-group label="Select an view option" name="view-mode" value="large"  size="small" @sl-change=${this.#toggleView}>
+                    <sl-radio-button value="large">Large tiles</sl-radio-button>
+                    <sl-radio-button value="medium">Small tiles</sl-radio-button>
+                  </sl-radio-group>
+                </header>
+                <cp-yarn-colors .yarnColors=${this.recentColors} .cardSize=${this.cardSize}></cp-yarn-colors>
+              </section>
             </sl-tab-panel>
       <sl-tab-panel name="saved">Still in progress... Here you will see yarn combinations you have saved 😍</sl-tab-panel>
           </sl-tab-group>
@@ -90,6 +101,10 @@ export class PaletteMaker extends LitElement {
 
   back(){
     this.dispatchEvent(new CustomEvent('close'));
+  }
+
+  #toggleView(event: SlChangeEvent & { target: SlRadioGroup }): void{
+    this.cardSize = event.target.value;
   }
 
   #onSelectColor(event: CpSelectColorEvent): void {
@@ -195,6 +210,21 @@ export class PaletteMaker extends LitElement {
     sl-split-panel:focus-within sl-icon {
       background-color: var(--sl-color-primary-600);
       color: var(--sl-color-neutral-0);
+    }
+
+    sl-tab-panel[name="recent"] section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+     
+      header {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+      }
+      sl-radio-group::part(form-control-label){
+        display: none;
+      }
     }
   `;
 }

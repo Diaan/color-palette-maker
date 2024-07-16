@@ -15,7 +15,7 @@ import { CpSelectColorEvent, EventEmitter, event } from '../..';
 export class YarnColors extends LitElement {
 
   @property() yarnColors?: YarnColor[] ;
-  @property({attribute:'card-size'}) cardSize = 'medium' ;
+  @property({attribute:'card-size', reflect: true}) cardSize = 'medium' ;
 
   /** Emits when the filter has been added or removed. */
   @event({name:'cp-select-color'}) selectColorEvent!: EventEmitter<CpSelectColorEvent>;

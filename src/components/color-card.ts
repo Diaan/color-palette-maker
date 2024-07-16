@@ -32,28 +32,34 @@ export class ColorCard extends LitElement {
     const yarnInfo = this.palette ? YarnList.getYarnInfo(this.palette?.yarn):undefined;
 
     return this.palette?html`
-      <div style="--_bg-color:${this.palette?.color};--_bg-image:url(${image})" title=${this.palette?.name}>
+      <div class="img" style="--_bg-color:${this.palette?.color};--_bg-image:url(${image})" title=${this.palette?.name}>
       </div>
       ${ this.size==='large' || this.size==='xl'
         ?html`
-          ${name}
-          <span>
+          <span>${name}</span>
           ${
             yarnInfo?
-            html`${yarnInfo.company}${yarnInfo.name}<sl-badge>${yarnInfo.weight}</sl-badge>`:
+          
+            html`<div class="meta">${yarnInfo.company} - ${yarnInfo.name}</div><sl-badge>${yarnInfo.weight}</sl-badge>`:
             nothing
           }
-          </span>
+          
         `
         :nothing
       }
     `:nothing
   }
   static styles = css`
+    :host {
+      cursor:pointer;
+    }
     :host([size="large"]){
-      display: flex;
-      gap: 8px;
-      align-items: center;
+      display: grid;
+      gap: 4px 8px;
+      grid-template-areas:
+        'img color badge'
+         'img meta badge';
+      grid-template-columns: 50px 1fr;
     }
     :host([size="xl"]){
       display: flex;
@@ -63,7 +69,7 @@ export class ColorCard extends LitElement {
       align-items: center;
       border: 1px solid red;
     }
-    div {
+    .img {
       background-color: var(--_bg-color);
       background-image: var(--yarn-image, var(--_bg-image));
       display: grid;
@@ -72,6 +78,7 @@ export class ColorCard extends LitElement {
       border-radius: 50%;
       overflow: hidden;
       place-content: center;  background-size: cover;
+      grid-area: img;
     }
     img {
       width: 100%;
@@ -79,17 +86,29 @@ export class ColorCard extends LitElement {
       object-position: center center;
     }
 
-    span {
+    .meta {
       font-size: var(--sl-font-size-small);
+      display: flex;
+      grid-area: meta;
     }
+    sl-badge {
+      align-self: center;
+      grid-area: badge;  
+    }
+
     :host([size="mini"]) div{
       width: 1rem;
       border-radius: 2px;
     }
 
-    :host([selected]) div {
+    :host([selected]) .img {
       outline: var(--_bg-color) outset 3px;
       outline-offset: 1px;
+    }
+    
+    :host([selected][size="large"]) .img {
+      outline: #fff solid 2px;
+      outline-offset: -3px;
     }
   `;
 }
