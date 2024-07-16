@@ -28,8 +28,10 @@ export class PatternViewer extends LitElement {
 
   render() {
     return html`
-      <h1>${this.patternData?.name}</h1>
-      <span><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
+      <header>
+        <h1>${this.patternData?.name}</h1>
+        <span>by <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
+      </header>
       <cp-pattern-colors .colors=${this.colors}></cp-pattern-colors>
       ${ unsafeHTML(this.patternCode)}
         </div>
@@ -158,6 +160,12 @@ export class PatternViewer extends LitElement {
       display: flex;
       flex-direction: column; 
     }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
     h1 {
       color: var(--sl-color-primary-500);
     }
