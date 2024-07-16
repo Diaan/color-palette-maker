@@ -72,7 +72,7 @@ const readColor = (image, yarn) => {
     const r = Math.floor(values.reduce((n, {r}) => n + r, 0)/nrOfPixels);
     const g = Math.floor(values.reduce((n, {g}) => n + g, 0)/nrOfPixels);
     const b = Math.floor(values.reduce((n, {b}) => n + b, 0)/nrOfPixels);
-    console.log(yarn)
+    // console.log(yarn);
     return {
       image: getFilePath(image),
       name: getPrettyName(image),
@@ -102,7 +102,7 @@ const buildYarns = async () => {
 
 };
 
-// buildPatterns();
+buildPatterns();
 buildYarns();
 // await getYarnInfo('public/yarns/rosarios4-terra');
 

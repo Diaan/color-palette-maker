@@ -107,6 +107,13 @@
     },
     {
       "company": "Sandnes Garn",
+      "name": "Mandarin Petit",
+      "weight": "fingering",
+      "folder": "sandnes-garn-mandarin-petit",
+      "color": 0
+    },
+    {
+      "company": "Sandnes Garn",
       "name": "Merinoull",
       "weight": "DK",
       "folder": "sandnes-garn-merinoull",
