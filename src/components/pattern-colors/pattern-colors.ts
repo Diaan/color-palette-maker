@@ -12,10 +12,11 @@ import { PickedColor, Yarn } from '../../models';
  */
 @customElement('cp-pattern-colors')
 export class PatternColors extends LitElement {
-  @property({type:Array}) colors?: PatternColor[];
-  @property({type:Array}) pickedColors?: PickedColor[];
+  @property({type: Array}) colors?: PatternColor[];
+  @property({type: Array}) pickedColors?: PickedColor[];
 
   /** Emits when the filter has been added or removed. */
+  // The @event decorator is used to define a custom event that this component will emit.
   @event({name:'cp-set-working-yarn'}) setWorkingYarnEvent!: EventEmitter<CpSetWorkingYarnEvent>;
 
   @state() workingYarn?:string;
@@ -35,6 +36,11 @@ export class PatternColors extends LitElement {
           `})}`;
   }
   
+  /**
+   * Called when the element's properties change. 
+   * If the 'colors' property changes and 'workingYarn' is not set, 
+   * it sets 'workingYarn' to the first color's id.
+   */
   override async updated(changes: PropertyValues<this>): Promise<void> {
     super.updated(changes);
 

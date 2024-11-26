@@ -1,6 +1,20 @@
 {
   "patterns": [
     {
+      "name": "Astrid cardigan",
+      "designer": "Sanne Bjerregaard for Filcolana",
+      "thumbnail": "thumbnail.webp",
+      "folder": "astrid",
+      "colorAmount": 5
+    },
+    {
+      "name": "Heavy Natural Blocks",
+      "designer": "Diana Broeders",
+      "thumbnail": "thumbnail.png",
+      "folder": "heavy-natural-blocks",
+      "colorAmount": 4
+    },
+    {
       "name": "Hilma",
       "designer": "Amy Blackwell",
       "thumbnail": "thumbnail.jpg",

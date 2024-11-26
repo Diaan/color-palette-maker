@@ -1,0 +1,298 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/filcolana-pernilla/images/101_-_Natural_White.jpg",
+      "name": "101  _Natural_White",
+      "color": "rgb(198,192,178)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/102_-_Black.jpg",
+      "name": "102  _Black",
+      "color": "rgb(68,68,70)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/145_-_Navy_Blue.jpg",
+      "name": "145  _Navy_Blue",
+      "color": "rgb(71,77,92)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/192_-_Steel_Blue.jpg",
+      "name": "192  _Steel_Blue",
+      "color": "rgb(91,108,123)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/196_-_French_Vanilla.jpg",
+      "name": "196  _French_Vanilla",
+      "color": "rgb(203,191,155)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/201_-_Deep_Mahogany.jpg",
+      "name": "201  _Deep_Mahogany",
+      "color": "rgb(88,75,73)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/218_-_Chinese_Red.jpg",
+      "name": "218  _Chinese_Red",
+      "color": "rgb(132,64,64)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/254_-_Coral.jpg",
+      "name": "254  _Coral",
+      "color": "rgb(193,135,109)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/317_-_Cerise.jpg",
+      "name": "317  _Cerise",
+      "color": "rgb(141,65,76)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/333_-_Seafoam.jpg",
+      "name": "333  _Seafoam",
+      "color": "rgb(167,189,187)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/334_-_Light_Blush.jpg",
+      "name": "334  _Light_Blush",
+      "color": "rgb(197,174,168)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/346_-_Thuja.jpg",
+      "name": "346  _Thuja",
+      "color": "rgb(76,88,79)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/357_-_Sumac.jpg",
+      "name": "357  _Sumac",
+      "color": "rgb(118,77,76)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/359_-_Spruce_Green.jpg",
+      "name": "359  _Spruce_Green",
+      "color": "rgb(69,98,90)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/364_-_Chai.jpg",
+      "name": "364  _Chai",
+      "color": "rgb(163,143,121)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/366_-_Sugar_Almond.jpg",
+      "name": "366  _Sugar_Almond",
+      "color": "rgb(135,92,72)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/368_-_Eucalyptus.jpg",
+      "name": "368  _Eucalyptus",
+      "color": "rgb(110,135,132)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/369_-_Slightly_Purple.jpg",
+      "name": "369  _Slightly_Purple",
+      "color": "rgb(175,165,183)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/370_-_Flamingo.jpg",
+      "name": "370  _Flamingo",
+      "color": "rgb(184,141,143)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/377_-_Blue_Mist.jpg",
+      "name": "377  _Blue_Mist",
+      "color": "rgb(107,141,151)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/804_-_Merlot_-_melange.jpg",
+      "name": "804  _Merlot_-_melange",
+      "color": "rgb(118,74,82)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/807_-_Boysenberry_-_melange.jpg",
+      "name": "807  _Boysenberry_-_melange",
+      "color": "rgb(114,78,94)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/808_-_Aqua_Mist_-_melange.jpg",
+      "name": "808  _Aqua_Mist_-_melange",
+      "color": "rgb(101,129,131)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/810_-_Chrysantemum_-_melange.jpg",
+      "name": "810  _Chrysantemum_-_melange",
+      "color": "rgb(146,82,83)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/812_-_Granite_-_melange.jpg",
+      "name": "812  _Granite_-_melange",
+      "color": "rgb(111,120,126)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/814_-_Storm_Blue_-_melange.jpg",
+      "name": "814  _Storm_Blue_-_melange",
+      "color": "rgb(70,86,94)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/815_-_Lavender_Grey_-_melange.jpg",
+      "name": "815  _Lavender_Grey_-_melange",
+      "color": "rgb(130,123,131)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/817_-_Cinnamon_-_melange.jpg",
+      "name": "817  _Cinnamon_-_melange",
+      "color": "rgb(106,82,74)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/818_-_Fisherman_Blue_-_melange.jpg",
+      "name": "818  _Fisherman_Blue_-_melange",
+      "color": "rgb(83,98,117)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/819_-_Raindrop_-_melange.jpg",
+      "name": "819  _Raindrop_-_melange",
+      "color": "rgb(141,160,165)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/820_-_Isabella_-_melange.jpg",
+      "name": "820  _Isabella_-_melange",
+      "color": "rgb(158,135,136)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/821_-_Macaron_-_melange.jpg",
+      "name": "821  _Macaron_-_melange",
+      "color": "rgb(196,132,138)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/822_-_Willow_-_melange.jpg",
+      "name": "822  _Willow_-_melange",
+      "color": "rgb(104,103,85)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/823_-_Juniper_-_melange.jpg",
+      "name": "823  _Juniper_-_melange",
+      "color": "rgb(101,104,85)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/824_-_Parrot_Green_-_melange.jpg",
+      "name": "824  _Parrot_Green_-_melange",
+      "color": "rgb(104,133,89)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/825_-_Acacia_-_melange.jpg",
+      "name": "825  _Acacia_-_melange",
+      "color": "rgb(156,137,79)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/827_-_Dijon_-_melange.jpg",
+      "name": "827  _Dijon_-_melange",
+      "color": "rgb(104,80,68)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/828_-_Tropical_Sea_-_melange.jpg",
+      "name": "828  _Tropical_Sea_-_melange",
+      "color": "rgb(76,100,136)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/829_-_Malva_-_melange.jpg",
+      "name": "829  _Malva_-_melange",
+      "color": "rgb(184,138,167)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/830_-_Ranunculus_-_melange.jpg",
+      "name": "830  _Ranunculus_-_melange",
+      "color": "rgb(164,129,125)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/831_-_Tangelo_-_melange.jpg",
+      "name": "831  _Tangelo_-_melange",
+      "color": "rgb(162,79,70)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/954_-_Light_Grey_-_melange.jpg",
+      "name": "954  _Light_Grey_-_melange",
+      "color": "rgb(142,144,140)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/955_-_Medium_Grey_-_melange.jpg",
+      "name": "955  _Medium_Grey_-_melange",
+      "color": "rgb(94,97,96)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/956_-_Charcoal_-_melange.jpg",
+      "name": "956  _Charcoal_-_melange",
+      "color": "rgb(75,76,78)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/957_-_Very_Light_Grey_-_melange.jpg",
+      "name": "957  _Very_Light_Grey_-_melange",
+      "color": "rgb(163,163,159)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/973_-_Nougat_-_melange.jpg",
+      "name": "973  _Nougat_-_melange",
+      "color": "rgb(100,94,89)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/975_-_Dark_Chocolate_-_melange.jpg",
+      "name": "975  _Dark_Chocolate_-_melange",
+      "color": "rgb(83,80,79)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/977_-_Marzipan_-_melange.jpg",
+      "name": "977  _Marzipan_-_melange",
+      "color": "rgb(179,171,158)",
+      "yarn": "filcolana-pernilla"
+    },
+    {
+      "image": "/yarns/filcolana-pernilla/images/978_-_Oatmeal_-_melange.jpg",
+      "name": "978  _Oatmeal_-_melange",
+      "color": "rgb(120,113,108)",
+      "yarn": "filcolana-pernilla"
+    }
+  ]
+}

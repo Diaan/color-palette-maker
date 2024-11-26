@@ -16,6 +16,13 @@
     },
     {
       "company": "Filcolana",
+      "name": "Pernilla",
+      "weight": "fingering",
+      "folder": "filcolana-pernilla",
+      "color": 0
+    },
+    {
+      "company": "Filcolana",
       "name": "Peruvian",
       "weight": "aran",
       "folder": "filcolana-peruvian-highland",
@@ -125,6 +132,13 @@
       "weight": "DK",
       "folder": "tandem",
       "color": 52
+    },
+    {
+      "company": "The Wee Yarn Company",
+      "name": "Any",
+      "weight": "DK",
+      "folder": "the-wee-yarn-company",
+      "color": 0
     },
     {
       "company": "Westwool",
