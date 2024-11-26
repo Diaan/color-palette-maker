@@ -12,8 +12,8 @@
       "name": "Main color",
       "required":[664, 747, 830, 913],
       "default": {
-        "image":"/yarns/filcolana-peruvian-highland/images/ph804.jpg",
-        "name":"ph804",
+        "image":"/yarns/filcolana-peruvian-highland/images/ph222.jpg",
+        "name":"ph222",
         "color":"rgb(42,7,10)",
         "patternYarn":"A",
         "yarn":"filcolana-peruvian-highland",

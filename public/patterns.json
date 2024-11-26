@@ -29,6 +29,13 @@
       "colorAmount": 2
     },
     {
+      "name": "Mood sweater",
+      "designer": "Spektakelstrik",
+      "thumbnail": "thumbnail.webp",
+      "folder": "mood-sweater",
+      "colorAmount": 5
+    },
+    {
       "name": "Quilting triangles",
       "designer": "Stephen West",
       "thumbnail": "thumbnail.jpeg",

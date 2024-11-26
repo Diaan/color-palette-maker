@@ -1,0 +1,76 @@
+{
+  "name": "Mood sweater",
+  "designer": "Spektakelstrik",
+  "url": "https://spektakelstrik.dk/en/products/mood-sweater",
+  "patternFile": "pattern.svg",
+  "sizes":["XS","S","M","L","XL","2XL","3XL"],
+  "yarnWeight":"aran",
+  "thumbnail": "thumbnail.webp",
+  "colors": [
+    {
+      "id":"MC1",
+      "name": "Main colour 1",
+      "required":[664, 747, 830, 913],
+      "default": {
+        "image": "/yarns/filcolana-peruvian-highland/images/ph269.jpg",
+        "name": "ph269",
+        "color": "rgb(96,142,41)",
+        "yarn": "filcolana-peruvian-highland",
+        "patternYarn": "MC1",
+        "yarnFolder": "filcolana-peruvian-highland"
+      }
+    }, {
+      "id": "MC2",
+      "name": "Main colour 2",
+      "required":[580, 652, 725, 797],
+      "default": {
+        "image": "/yarns/filcolana-peruvian-highland/images/ph279.jpg",
+        "name": "ph279",
+        "color": "rgb(6,68,12)",
+        "yarn": "filcolana-peruvian-highland",
+        "patternYarn": "MC2",
+        "yarnFolder": "filcolana-peruvian-highland"
+      }
+    }, {
+      "id": "CC",
+      "name": "Collar",
+      "required":[580, 652, 725, 797],
+      "default": {
+        "image": "/yarns/filcolana-peruvian-highland/images/ph313.jpg",
+        "name": "ph313",
+        "color": "rgb(179,74,119)",
+        "yarn": "filcolana-peruvian-highland",
+        "patternYarn": "CC",
+        "yarnFolder": "filcolana-peruvian-highland"
+      }
+    }, {
+      "id": "BR",
+      "name": "Bottom rib",
+      "required":[580, 652, 725, 797],
+      "default": {
+        "image": "/yarns/filcolana-peruvian-highland/images/ph313.jpg",
+        "name": "ph313",
+        "color": "rgb(179,74,119)",
+        "yarn": "filcolana-peruvian-highland",
+        "patternYarn": "BR",
+        "yarnFolder": "filcolana-peruvian-highland"
+      }
+    }, {
+      "id": "SR",
+      "name": "Sleeve rib",
+      "required":[580, 652, 725, 797],
+      "default": {
+        "image": "/yarns/filcolana-peruvian-highland/images/ph313.jpg",
+        "name": "ph313",
+        "color": "rgb(179,74,119)",
+        "yarn": "filcolana-peruvian-highland",
+        "patternYarn": "SR",
+        "yarnFolder": "filcolana-peruvian-highland"
+      }
+    }
+  ]
+}
+
+
+
+
