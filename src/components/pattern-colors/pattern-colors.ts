@@ -12,10 +12,11 @@ import { PickedColor, Yarn } from '../../models';
  */
 @customElement('cp-pattern-colors')
 export class PatternColors extends LitElement {
-  @property({type:Array}) colors?: PatternColor[];
-  @property({type:Array}) pickedColors?: PickedColor[];
+  @property({type: Array}) colors?: PatternColor[];
+  @property({type: Array}) pickedColors?: PickedColor[];
 
   /** Emits when the filter has been added or removed. */
+  // The @event decorator is used to define a custom event that this component will emit.
   @event({name:'cp-set-working-yarn'}) setWorkingYarnEvent!: EventEmitter<CpSetWorkingYarnEvent>;
 
   @state() workingYarn?:string;
@@ -35,15 +36,20 @@ export class PatternColors extends LitElement {
           `})}`;
   }
   
-  // .palette=${{color:color.color,name:pc.name, image: color.image}} 
-  // {# style="--yarn-image: var(--yarn${pc.id}-image)" #}
-  // override async updated(changes: PropertyValues<this>): Promise<void> {
-  //   super.updated(changes);
+  /**
+   * Called when the element's properties change. 
+   * If the 'colors' property changes and 'workingYarn' is not set, 
+   * it sets 'workingYarn' to the first color's id.
+   */
+  override async updated(changes: PropertyValues<this>): Promise<void> {
+    super.updated(changes);
 
-  //   if (changes.has('colors')) {
-  //     console.log(this.colors);
-  //   }
-  // }
+    if (changes.has('colors')) {
+      if(this.colors && !this.workingYarn){
+        this.workingYarn = this.colors[0].id;
+      }
+    }
+  }
 
   selectWorkingColor(color:PatternColor): void{
     this.workingYarn = color.id;

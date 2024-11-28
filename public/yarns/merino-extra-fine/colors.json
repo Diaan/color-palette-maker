@@ -1,0 +1,256 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/merino-extra-fine/images/01.jpg",
+      "name": "01",
+      "color": "rgb(224,215,199)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/03.jpg",
+      "name": "03",
+      "color": "rgb(57,55,55)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/04.jpg",
+      "name": "04",
+      "color": "rgb(85,82,81)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/05.jpg",
+      "name": "05",
+      "color": "rgb(183,179,175)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/06.jpg",
+      "name": "06",
+      "color": "rgb(116,110,104)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/07.jpg",
+      "name": "07",
+      "color": "rgb(135,124,114)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/08.jpg",
+      "name": "08",
+      "color": "rgb(180,174,167)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/09.jpg",
+      "name": "09",
+      "color": "rgb(44,31,27)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/11.jpg",
+      "name": "11",
+      "color": "rgb(166,36,43)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/13.jpg",
+      "name": "13",
+      "color": "rgb(88,93,118)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/15.jpg",
+      "name": "15",
+      "color": "rgb(142,157,150)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/16.jpg",
+      "name": "16",
+      "color": "rgb(199,155,171)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/18.jpg",
+      "name": "18",
+      "color": "rgb(141,141,89)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/19.jpg",
+      "name": "19",
+      "color": "rgb(132,157,181)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/20.jpg",
+      "name": "20",
+      "color": "rgb(53,56,87)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/22.jpg",
+      "name": "22",
+      "color": "rgb(148,119,139)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/23.jpg",
+      "name": "23",
+      "color": "rgb(84,112,136)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/24.jpg",
+      "name": "24",
+      "color": "rgb(220,183,132)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/25.jpg",
+      "name": "25",
+      "color": "rgb(200,134,144)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/26.jpg",
+      "name": "26",
+      "color": "rgb(143,150,112)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/27.jpg",
+      "name": "27",
+      "color": "rgb(56,52,79)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/28.jpg",
+      "name": "28",
+      "color": "rgb(32,80,90)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/29.jpg",
+      "name": "29",
+      "color": "rgb(4,127,151)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/30.jpg",
+      "name": "30",
+      "color": "rgb(203,148,63)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/32.jpg",
+      "name": "32",
+      "color": "rgb(155,46,62)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/34.jpg",
+      "name": "34",
+      "color": "rgb(152,45,76)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/35.jpg",
+      "name": "35",
+      "color": "rgb(108,31,56)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/36.jpg",
+      "name": "36",
+      "color": "rgb(178,128,147)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/37.jpg",
+      "name": "37",
+      "color": "rgb(79,102,89)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/38.jpg",
+      "name": "38",
+      "color": "rgb(140,143,149)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/39.jpg",
+      "name": "39",
+      "color": "rgb(195,200,198)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/40.jpg",
+      "name": "40",
+      "color": "rgb(210,172,171)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/42.jpg",
+      "name": "42",
+      "color": "rgb(154,85,68)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/43.jpg",
+      "name": "43",
+      "color": "rgb(86,157,169)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/44.jpg",
+      "name": "44",
+      "color": "rgb(101,81,113)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/45.jpg",
+      "name": "45",
+      "color": "rgb(180,105,89)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/46.jpg",
+      "name": "46",
+      "color": "rgb(199,151,135)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/47.jpg",
+      "name": "47",
+      "color": "rgb(137,141,121)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/48.jpg",
+      "name": "48",
+      "color": "rgb(110,43,53)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/49.jpg",
+      "name": "49",
+      "color": "rgb(97,67,57)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/50.jpg",
+      "name": "50",
+      "color": "rgb(212,200,183)",
+      "yarn": "merino-extra-fine"
+    },
+    {
+      "image": "/yarns/merino-extra-fine/images/51.jpg",
+      "name": "51",
+      "color": "rgb(152,123,93)",
+      "yarn": "merino-extra-fine"
+    }
+  ]
+}

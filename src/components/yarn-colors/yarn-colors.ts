@@ -1,8 +1,7 @@
-import { LitElement, PropertyValues, css, html } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
-import { Yarn, YarnColor } from '../../models';
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { YarnColor } from '../../models';
 import { CpSelectColorEvent, EventEmitter, event } from '../..';
-import { getBase64FromImageUrl } from '../../util/image';
 
 
 
@@ -15,31 +14,18 @@ import { getBase64FromImageUrl } from '../../util/image';
 @customElement('cp-yarn-colors')
 export class YarnColors extends LitElement {
 
-  @property({attribute: 'yarn-folder'}) yarnFolder!: string;
-
-  @state() yarnData?: Yarn ;
+  @property() yarnColors?: YarnColor[] ;
+  @property({attribute:'card-size', reflect: true}) cardSize = 'medium' ;
 
   /** Emits when the filter has been added or removed. */
   @event({name:'cp-select-color'}) selectColorEvent!: EventEmitter<CpSelectColorEvent>;
 
   render() {
     return html`<section>
-      ${this.yarnData?.palette.map(c=> html`
-        <cp-color-card .yarn=${this.yarnData} .palette=${c} @click=${()=>this.select(c)}></cp-color-card>
+      ${this.yarnColors?.map(c=> html`
+        <cp-color-card .yarn=${c.yarn} .palette=${c} @click=${()=>this.select(c)} .size=${this.cardSize}></cp-color-card>
       `)}
     </section>`;
-  }
-
-  override async updated(changes: PropertyValues<this>): Promise<void> {
-    super.updated(changes);
-
-    if (changes.has('yarnFolder') && this.yarnFolder) {
-      await this._getYarnInfo(this.yarnFolder).then((p) => {
-        if (p) {
-          this.yarnData = p;
-        }
-      });
-    }
   }
 
   back(){
@@ -48,19 +34,6 @@ export class YarnColors extends LitElement {
 
   select(yarn:YarnColor){
     this.selectColorEvent.emit(yarn);
-  }
-
-  async _getYarnInfo(folder: string): Promise<Yarn | undefined> {
-    try {
-      const response = await fetch(`/yarns/${folder}/info.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const data = await response.json();
-      this.yarnData = {...data, folder};
-      return this.yarnData;
-    } catch (error) {
-      console.warn('error loading yarn info');
-      return;
-    }
   }  
 
   static styles = css`
@@ -68,6 +41,9 @@ export class YarnColors extends LitElement {
       display: flex;
       gap: 5px;
       flex-wrap: wrap;
+    }
+    :host([card-size=large]) section {
+      flex-direction: column;
     }
   `;
 }

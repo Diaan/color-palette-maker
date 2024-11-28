@@ -1,0 +1,40 @@
+{
+  "name": "Lola top",
+  "designer": "Kutova kika",
+  "url": "https://www.kutovakika.com/shop/p/lola-top",
+  "patternFile": "pattern.svg",
+  "sizes":["XS","S","M","L","XL","2XL","3XL","4XL"],
+  "yarnWeight":"fingering",
+  "thumbnail": "thumbnail.jpg",
+  "colors": [
+    {
+      "id":"MC",
+      "name": "Main",
+      "required":[664, 747, 830, 913],
+      "default": {
+        "image":"/yarns/sandnes-garn-mandarin-petit/images/1002.jpg",
+        "name":"1002",
+        "color":"rgb(220,219,212)",
+        "yarn":"sandnes-garn-mandarin-petit",
+        "patternYarn":"MC",
+        "yarnFolder":"sandnes-garn-mandarin-petit"
+      }
+    }, {
+      "id": "CC",
+      "name": "Contrast",
+      "required":[580, 652, 725, 797],
+      "default":{
+        "image":"/yarns/sandnes-garn-mandarin-petit/images/4018.jpg",
+        "name":"4018",
+        "color":"rgb(199,56,47)",
+        "yarn":"sandnes-garn-mandarin-petit",
+        "patternYarn":"CC",
+        "yarnFolder":"sandnes-garn-mandarin-petit"
+      }
+    }
+  ]
+}
+
+
+
+

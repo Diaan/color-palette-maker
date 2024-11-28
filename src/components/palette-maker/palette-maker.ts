@@ -3,8 +3,8 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { Pattern, PatternColor } from '../../models/pattern';
 import { CpSelectColorEvent, CpSelectYarnEvent, CpSetWorkingYarnEvent, EventsController } from '../../events';
 import { PickedColor } from '../../models/color';
-import { YarnBase } from '../../models';
-import { getBase64FromImageUrl } from '../../util/image';
+import { YarnBase, YarnColor } from '../../models';
+import { SlChangeEvent, SlRadioGroup } from '@shoelace-style/shoelace';
 
 
 /**
@@ -18,19 +18,16 @@ export class PaletteMaker extends LitElement {
 
   @property({attribute: 'pattern-name'}) patternName!: string;
 
-  // @property()
-  // imageScale:number = 50;
-
-  @property({attribute:'defs', type: Object})
-  defs?:any;
-
   @state() patternCode?: string;
   @state() patternData?: Pattern;
   @state() colors: PatternColor[] = [];
   @state() selectedYarn?: YarnBase;
   @state() workingYarn?: string = 'B';
+  @state() recentColors:YarnColor[] = [];
+  @state() cardSize = 'large';
 
   /** Events controller. */
+  // eslint-disable-next-line
   #events = new EventsController(this, {
     'cp-select-yarn': this.#onSelectYarn,
     'cp-set-working-yarn': this.#onSetWorkingYarn,
@@ -40,7 +37,7 @@ export class PaletteMaker extends LitElement {
   render() {
     return html`
       <sl-button @click=${this.back}>back</sl-button>
-      <sl-split-panel position="35">
+      <sl-split-panel position="55">
         <sl-icon slot="divider" name="grip-vertical"></sl-icon>
         <div slot="start">
         ${
@@ -48,15 +45,39 @@ export class PaletteMaker extends LitElement {
           html`<cp-pattern-viewer 
             .patternData=${this.patternData} 
             .patternCode=${this.patternCode} 
+            .workingYarn=${this.workingYarn}
             .colors=${this.colors}></cp-pattern-viewer>`
           :nothing
         }
         </div>
         <div slot="end">
-          <cp-color-chooser 
-            .workingYarn=${this.workingYarn}
-            .colors=${this.colors} 
-            .selectedYarn=${this.selectedYarn}></cp-color-chooser>
+          
+          <sl-tab-group>
+            <sl-tab slot="nav" panel="yarn">Yarn</sl-tab>
+            <sl-tab slot="nav" panel="recent">Recent</sl-tab>
+            <sl-tab slot="nav" panel="saved">Saved</sl-tab>
+
+            <sl-tab-panel name="yarn">
+                <cp-color-chooser 
+                  .workingYarn=${this.workingYarn}
+                  .colors=${this.colors} 
+                  .selectedYarn=${this.selectedYarn}></cp-color-chooser>
+              
+            </sl-tab-panel>
+            <sl-tab-panel name="recent">
+              <section>
+                <header>
+                  <h2>Recently used yarns</h2>
+                  <sl-radio-group label="Select an view option" name="view-mode" value="large"  size="small" @sl-change=${this.#toggleView}>
+                    <sl-radio-button value="large">Large tiles</sl-radio-button>
+                    <sl-radio-button value="medium">Small tiles</sl-radio-button>
+                  </sl-radio-group>
+                </header>
+                <cp-yarn-colors .yarnColors=${this.recentColors} .cardSize=${this.cardSize}></cp-yarn-colors>
+              </section>
+            </sl-tab-panel>
+      <sl-tab-panel name="saved">Still in progress... Here you will see yarn combinations you have saved 😍</sl-tab-panel>
+          </sl-tab-group>
         </div>
       </sl-split-panel>
     `;
@@ -73,24 +94,34 @@ export class PaletteMaker extends LitElement {
       });
     }
   }
+  override firstUpdated(changes: PropertyValues<this>): void {
+    super.firstUpdated(changes);
+    this.recentColors = JSON.parse(localStorage.getItem("recentColors")||'[]');
+  }
 
   back(){
     this.dispatchEvent(new CustomEvent('close'));
   }
 
+  #toggleView(event: SlChangeEvent & { target: SlRadioGroup }): void{
+    this.cardSize = event.target.value;
+  }
+
   #onSelectColor(event: CpSelectColorEvent): void {
     event.preventDefault();
     event.stopPropagation();
-
+    
     
     const color = event.detail;
-    if(!this.selectedYarn || !this.workingYarn) return;
+    if(!this.workingYarn) return;
 
     const pickedColor: PickedColor = {
       ...color,
       patternYarn: this.workingYarn,
-      yarnFolder: this.selectedYarn.folder
+      yarnFolder: color.yarn
     };
+    this.#addToRecentColors(color);
+
     const workingColor = this.colors.find(c => c.id===this.workingYarn);
     if(!workingColor) return;
 
@@ -111,10 +142,16 @@ export class PaletteMaker extends LitElement {
   }
 
   #setCSSProperties(workingYarn:string, pickedColor:PickedColor){
-    // console.log(pickedColor);
     document.body.style.setProperty(`--yarn${workingYarn}`, pickedColor.color);
     if(pickedColor.image){
-      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(yarns/${this.selectedYarn?.folder||pickedColor.yarnFolder}/images/${pickedColor.image})`);
+      document.body.style.setProperty(`--yarn${workingYarn}-image`, `url(${pickedColor.image})`);
+    }
+  }
+
+  #addToRecentColors(color: YarnColor){
+    const recentColors = JSON.parse(localStorage.getItem("recentColors")||'[]') as YarnColor[];
+    if(!recentColors.find(c => c.name === color.name)){
+      localStorage.setItem('recentColors',JSON.stringify([...recentColors, color]));
     }
   }
 
@@ -173,6 +210,21 @@ export class PaletteMaker extends LitElement {
     sl-split-panel:focus-within sl-icon {
       background-color: var(--sl-color-primary-600);
       color: var(--sl-color-neutral-0);
+    }
+
+    sl-tab-panel[name="recent"] section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+     
+      header {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+      }
+      sl-radio-group::part(form-control-label){
+        display: none;
+      }
     }
   `;
 }

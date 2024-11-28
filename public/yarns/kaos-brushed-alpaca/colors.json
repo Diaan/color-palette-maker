@@ -1,0 +1,172 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2001-NATURAL.jpg",
+      "name": "2001 NATURAL",
+      "color": "rgb(210,199,184)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2008-GENUINE.jpg",
+      "name": "2008 GENUINE",
+      "color": "rgb(59,38,27)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2011-OPTIMISTIC.jpg",
+      "name": "2011 OPTIMISTIC",
+      "color": "rgb(202,200,143)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2014-CONFIDENT.jpg",
+      "name": "2014 CONFIDENT",
+      "color": "rgb(211,177,5)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2016-FORTUNATE.jpg",
+      "name": "2016 FORTUNATE",
+      "color": "rgb(180,129,16)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2020-SPARKLING.jpg",
+      "name": "2020 SPARKLING",
+      "color": "rgb(206,153,103)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2022-COURAGEOUS.jpg",
+      "name": "2022 COURAGEOUS",
+      "color": "rgb(207,107,11)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2025-GLAMOROUS.jpg",
+      "name": "2025 GLAMOROUS",
+      "color": "rgb(129,77,42)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2029-SPARKLING.jpg",
+      "name": "2029 SPARKLING",
+      "color": "rgb(218,144,133)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2031-PASSIONATE.jpg",
+      "name": "2031 PASSIONATE",
+      "color": "rgb(195,2,10)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2036-GRACIOUS.jpg",
+      "name": "2036 GRACIOUS",
+      "color": "rgb(145,77,77)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2042-GENTLE.jpg",
+      "name": "2042 GENTLE",
+      "color": "rgb(213,161,178)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2049-CHARISMATIC.jpg",
+      "name": "2049 CHARISMATIC",
+      "color": "rgb(225,67,145)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2051-SPIRITUAL.jpg",
+      "name": "2051 SPIRITUAL",
+      "color": "rgb(157,119,165)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2055-MAGNIFICENT.jpg",
+      "name": "2055 MAGNIFICENT",
+      "color": "rgb(96,5,75)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2057-DIVINE.jpg",
+      "name": "2057 DIVINE",
+      "color": "rgb(80,29,123)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2061-ENIGMATIC.jpg",
+      "name": "2061 ENIGMATIC",
+      "color": "rgb(22,22,41)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2062-ELECTRIC.jpg",
+      "name": "2062 ELECTRIC",
+      "color": "rgb(22,48,138)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2063-KIND.jpg",
+      "name": "2063 KIND",
+      "color": "rgb(90,122,157)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2065-BRILLIANT.jpg",
+      "name": "2065 BRILLIANT",
+      "color": "rgb(126,179,181)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2067-SINCERE.jpg",
+      "name": "2067 SINCERE",
+      "color": "rgb(66,79,99)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2072-INTUITIVE.jpg",
+      "name": "2072 INTUITIVE",
+      "color": "rgb(8,136,121)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2075-ZEALOUS.jpg",
+      "name": "2075 ZEALOUS",
+      "color": "rgb(4,112,56)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2076-VIVACIOUS.jpg",
+      "name": "2076 VIVACIOUS",
+      "color": "rgb(131,181,129)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2079-GENEROUS.jpg",
+      "name": "2079 GENEROUS",
+      "color": "rgb(45,64,17)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2082-FAIR.jpg",
+      "name": "2082 FAIR",
+      "color": "rgb(126,123,126)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2085-MAGNETIC.jpg",
+      "name": "2085 MAGNETIC",
+      "color": "rgb(71,80,72)",
+      "yarn": "kaos-brushed-alpaca"
+    },
+    {
+      "image": "/yarns/kaos-brushed-alpaca/images/2088-MYSTERIOUS.jpg",
+      "name": "2088 MYSTERIOUS",
+      "color": "rgb(27,29,31)",
+      "yarn": "kaos-brushed-alpaca"
+    }
+  ]
+}

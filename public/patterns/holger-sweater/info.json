@@ -12,7 +12,7 @@
       "name": "Collar",
       "required":[664, 747, 830, 913],
       "default": {
-        "image": "11154018_scarlet-red_300dpi_close-up.jpg",
+        "image": "/yarns/sandnes-garn-double-sunday/images/4018_scarlet-red.jpg",
         "name": "scarlet red",
         "color": "rgb(203,40,46)",
         "patternYarn": "A",
@@ -23,7 +23,7 @@
       "name": "Stripe 1",
       "required":[580, 652, 725, 797],
       "default": {
-        "image": "11151001_hvit_300dpi_close-up.jpg",
+        "image": "/yarns/sandnes-garn-double-sunday/images/1001_hvit.jpg",
         "name": "hvit",
         "color": "rgb(245,241,237)",
         "patternYarn": "B",
@@ -34,7 +34,7 @@
       "name": "Stripe 2",
       "required":[580, 652, 725, 797],
       "default": {
-        "image": "11151099_svart_300dpi_close-up.jpg",
+        "image": "/yarns/sandnes-garn-double-sunday/images/1099_svart.jpg",
         "name": "svart",
         "color": "rgb(23,22,27)",
         "patternYarn": "C",
@@ -45,7 +45,7 @@
       "name": "Sleeve 1",
       "required":[580, 652, 725, 797],
       "default": {
-        "image": "11148236_statement-green_72dpi_close-up.jpg",
+        "image": "/yarns/sandnes-garn-double-sunday/images/8236_statement-green.jpg",
         "name": "statement green",
         "color": "rgb(14,143,82)",
         "patternYarn": "D",
@@ -56,7 +56,7 @@
       "name": "Sleeve 2",
       "required":[580, 652, 725, 797],
       "default": {
-        "image": "11155846_bla_300dpi_close-up.jpg",
+        "image": "/yarns/sandnes-garn-double-sunday/images/5846_bla.jpg",
         "name": "bla",
         "color": "rgb(35,62,111)",
         "patternYarn": "E",
@@ -67,7 +67,7 @@
       "name": "Hem",
       "required":[580, 652, 725, 797],
       "default": {
-        "image": "11156044_regatta-bla_300dpi_close-up.jpg",
+        "image": "/yarns/sandnes-garn-double-sunday/images/6044_regatta-bla.jpg",
         "name": "regatta bla",
         "color": "rgb(90,130,183)",
         "patternYarn": "F",

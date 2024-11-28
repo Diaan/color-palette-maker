@@ -1,6 +1,5 @@
 import { LitElement, PropertyValues, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
 
 
 
@@ -28,21 +27,9 @@ export class App extends LitElement {
     super.firstUpdated(changes);
 
     const param = this.params.get('pattern');
-    if(!!param){
+    if(param){
       this.pattern = param;
     }
-
-    // console.log('register');
-    // registerIconLibrary('boxicons', {
-    //   // resolver: (name:string) => {console.log(name); return `/assets/custom-icons/${name}.svg`},
-    //   resolver: name => {
-    //     let folder = 'regular';
-    //     if (name.substring(0, 4) === 'bxs-') folder = 'solid';
-    //     if (name.substring(0, 4) === 'bxl-') folder = 'logos';
-    //     return `https://cdn.jsdelivr.net/npm/boxicons@2.0.5/svg/${folder}/${name}.svg`;
-    //   },
-    //   mutator: (svg:SVGElement) => svg.setAttribute('fill', 'currentColor')
-    // });
   }
 
   close():void {

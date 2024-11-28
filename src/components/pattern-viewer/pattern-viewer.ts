@@ -22,19 +22,19 @@ export class PatternViewer extends LitElement {
   @state() enrichedColors?: PatternColor[];
   @property({type:Boolean}) yarnImage:boolean = true;
 
-  @property({attribute:'defs', type: Object})
-  defs?:any;
-
-
   @property({attribute: 'pattern-code'}) patternCode?: string;
   @property({ attribute: 'pattern-data', type:Object}) patternData?: Pattern;
   @property({type:Array}) colors?: PatternColor[];
 
   render() {
     return html`
-      <h1>${this.patternData?.name}</h1>
-      <span><sl-icon name="person-square" aria-label="Designer"></sl-icon> <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
+      <header>
+        <h1>${this.patternData?.name}</h1>
+        <span>by <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
+      </header>
+      <cp-pattern-colors .colors=${this.colors}></cp-pattern-colors>
       ${ unsafeHTML(this.patternCode)}
+        </div>
       <!--${this.yarnImage}-->
       <sl-button @click=${this.#saveImage}>Dowload image</sl-button>
       <sl-divider></sl-divider>
@@ -51,7 +51,7 @@ export class PatternViewer extends LitElement {
       ${svg`<svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 ${(this.colors?.length||5) * 100} ${(this.colors?.length||5) * 100}">
             ${this.colors?.map((c,i) => { 
               const color = c.pickedColor?c.pickedColor:c.default;
-              const image = `yarns/${color.yarnFolder}/images/${color.image}`;
+              const image = color.image;
               const x = 100 * i;
               const y = 0;
               return svg`
@@ -68,7 +68,6 @@ export class PatternViewer extends LitElement {
             </filter>
             ${this.enrichedColors?.map(c => { 
               const color = c.pickedColor?c.pickedColor:c.default;
-              console.log('set new colors',color.name, c.base64.substring(70,110));
               return svg`
                 <pattern 
                   id="img${color.patternYarn}" 
@@ -98,7 +97,9 @@ export class PatternViewer extends LitElement {
     if (changes.has('colors') && this.colors) {
       this.enrichedColors = await Promise.all(this.colors.map(async c => {
         const color = c.pickedColor?c.pickedColor:c.default;
-        const base64 = await getBase64FromImageUrl(`yarns/${color.yarnFolder}/images/${color.image}`);
+        if(!color?.image) return c;
+        const base64 = await getBase64FromImageUrl(color.image);
+        if(!base64) return c;
         return {...c, base64};
       }));
     }
@@ -116,10 +117,11 @@ export class PatternViewer extends LitElement {
 
   #saveImage() {
     if(!this.patternCode) return;
-    var a = document.createElement("a");
+    const a = document.createElement("a");
     document.body.appendChild(a);
     a.style.display = 'none';
     
+    //TODO: don't use base 64 for svg shown on page, only use it for downloaded svg. for performance reasons.
     const defs = this.renderRoot.querySelector('defs');
     const svg = this.renderRoot.querySelector('svg:first-of-type');
     const img = this.renderRoot.querySelector('#canvastemp') as HTMLImageElement;
@@ -132,10 +134,10 @@ export class PatternViewer extends LitElement {
     downloadableSvg?.append(defs.cloneNode(true));
 
     // get svg data
-    var xml = new XMLSerializer().serializeToString(downloadableSvg);
+    const xml = new XMLSerializer().serializeToString(downloadableSvg);
 
     // prepend a "header"
-    var image64 = 'data:image/svg+xml;base64,' + btoa(xml);
+    const image64 = 'data:image/svg+xml;base64,' +window.btoa(xml);
 
     // set it as the source of the img element
     img.onload = function() {
@@ -143,12 +145,11 @@ export class PatternViewer extends LitElement {
       if(canvas){
           canvas.getContext('2d')?.drawImage(img, 0, 0, 800, 800);
                 
-        var myImage = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        const myImage = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
         a.href = myImage;
         a.download = `${filename}.png`;
         a.click();
       }
-      console.log('download');
     }
     img.src = image64;
       
@@ -159,6 +160,12 @@ export class PatternViewer extends LitElement {
       display: flex;
       flex-direction: column; 
     }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
     h1 {
       color: var(--sl-color-primary-500);
     }

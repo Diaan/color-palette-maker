@@ -1,0 +1,310 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/1012_natur.jpg",
+      "name": "1012 natur",
+      "color": "rgb(220,207,189)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/1021_lys-gramelert.jpg",
+      "name": "1021 lys gramelert",
+      "color": "rgb(192,190,178)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/1042_lys-graamelert.jpg",
+      "name": "1042 lys graamelert",
+      "color": "rgb(148,151,146)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/1055_mork-graamelert.jpg",
+      "name": "1055 mork graamelert",
+      "color": "rgb(92,93,93)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/1088_koksmelert.jpg",
+      "name": "1088 koksmelert",
+      "color": "rgb(47,49,50)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/1099_svart.jpg",
+      "name": "1099 svart",
+      "color": "rgb(22,22,22)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/2015_maisgul.jpg",
+      "name": "2015 maisgul",
+      "color": "rgb(191,151,64)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/2206_gul.jpg",
+      "name": "2206 gul",
+      "color": "rgb(231,169,59)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/2335_sennepsgul.jpg",
+      "name": "2335 sennepsgul",
+      "color": "rgb(171,111,38)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/2641_naturmelert.jpg",
+      "name": "2641 naturmelert",
+      "color": "rgb(204,188,171)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/2650_beige-melert.jpg",
+      "name": "2650 beige melert",
+      "color": "rgb(149,132,127)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3021_lys-beigemelert.jpg",
+      "name": "3021 lys beigemelert",
+      "color": "rgb(179,158,143)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3041_lys-eikenott.jpg",
+      "name": "3041 lys eikenott",
+      "color": "rgb(153,121,109)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3161_mellombrun.jpg",
+      "name": "3161 mellombrun",
+      "color": "rgb(104,82,77)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3326_oransje.jpg",
+      "name": "3326 oransje",
+      "color": "rgb(198,84,33)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3511_pudder-rosa.jpg",
+      "name": "3511 pudder rosa",
+      "color": "rgb(201,164,158)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3819_spicy-orange.jpg",
+      "name": "3819 spicy orange",
+      "color": "rgb(214,39,27)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/3880_mork-sjokolade.jpg",
+      "name": "3880 mork sjokolade",
+      "color": "rgb(75,61,60)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4023_gammelrosa.jpg",
+      "name": "4023 gammelrosa",
+      "color": "rgb(198,137,135)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4035_mork-terrakotta.jpg",
+      "name": "4035 mork terrakotta",
+      "color": "rgb(153,52,43)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4071_mork-brun-melert.jpg",
+      "name": "4071 mork brun-melert",
+      "color": "rgb(74,48,41)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4120_rod.jpg",
+      "name": "4120 rod",
+      "color": "rgb(160,1,30)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4219_dyp-rod.jpg",
+      "name": "4219 dyp rod",
+      "color": "rgb(147,1,30)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4236_rodmelert.jpg",
+      "name": "4236 rodmelert",
+      "color": "rgb(135,41,41)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4363_mork-rodmelert.jpg",
+      "name": "4363 mork rodmelert",
+      "color": "rgb(89,35,41)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4529_plomme.jpg",
+      "name": "4529 plomme",
+      "color": "rgb(121,2,51)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4627_cerise.jpg",
+      "name": "4627 cerise",
+      "color": "rgb(155,33,104)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4644_plomme.jpg",
+      "name": "4644 plomme",
+      "color": "rgb(153,65,98)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4715_rosa.jpg",
+      "name": "4715 rosa",
+      "color": "rgb(213,121,159)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/4813_pink-lilac_.jpg",
+      "name": "4813 pink lilac_",
+      "color": "rgb(213,164,184)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/5224_lys-lilla.jpg",
+      "name": "5224 lys lilla",
+      "color": "rgb(129,122,167)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/5235_pasjonsblomst.jpg",
+      "name": "5235 pasjonsblomst",
+      "color": "rgb(111,87,136)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/5575_marine.jpg",
+      "name": "5575 marine",
+      "color": "rgb(26,29,45)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/5924_blaa.jpg",
+      "name": "5924 blaa",
+      "color": "rgb(6,54,122)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/6052_jeansblaa.jpg",
+      "name": "6052 jeansblaa",
+      "color": "rgb(51,82,104)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/6071_blaagraa.jpg",
+      "name": "6071 blaagraa",
+      "color": "rgb(47,49,59)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/6364_mork-blaa.jpg",
+      "name": "6364 mork blaa",
+      "color": "rgb(38,60,89)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/6520_dream-blue_.jpg",
+      "name": "6520 dream blue_",
+      "color": "rgb(167,183,185)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/6573_kornblomst.jpg",
+      "name": "6573 kornblomst",
+      "color": "rgb(106,150,171)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/6937_petrol.jpg",
+      "name": "6937 petrol",
+      "color": "rgb(1,95,105)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/7213_bla-turkis.jpg",
+      "name": "7213 bla turkis",
+      "color": "rgb(129,199,193)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/7252_sjogronn-melert.jpg",
+      "name": "7252 sjogronn melert",
+      "color": "rgb(72,111,121)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/7272_dyp-petrol.jpg",
+      "name": "7272 dyp petrol",
+      "color": "rgb(2,56,56)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/8236_jellybean-gronn.jpg",
+      "name": "8236 jellybean gronn",
+      "color": "rgb(30,129,73)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/8260_agave-gronn.jpg",
+      "name": "8260 agave gronn",
+      "color": "rgb(97,100,92)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/8264_gronn.jpg",
+      "name": "8264 gronn",
+      "color": "rgb(49,86,64)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/8571_mork-gronn.jpg",
+      "name": "8571 mork gronn",
+      "color": "rgb(42,56,42)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/9041_stovet-lys-gronnmelert.jpg",
+      "name": "9041 stovet lys-gronnmelert",
+      "color": "rgb(132,133,115)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/9080_urban-chic_.jpg",
+      "name": "9080 urban chic_",
+      "color": "rgb(55,64,61)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/9336_olivengronn.jpg",
+      "name": "9336 olivengronn",
+      "color": "rgb(129,126,65)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    },
+    {
+      "image": "/yarns/sandnes-garn-fritidsgarn/images/9825_sunny-lime.jpg",
+      "name": "9825 sunny lime",
+      "color": "rgb(192,174,86)",
+      "yarn": "sandnes-garn-fritidsgarn"
+    }
+  ]
+}

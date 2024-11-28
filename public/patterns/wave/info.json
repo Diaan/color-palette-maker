@@ -11,12 +11,26 @@
       "id":"A",
       "name": "Main color",
       "required":[664, 747, 830, 913],
-      "default": {"image":"Vams-71.jpg","name":"Vams 71","color":"rgb(150,118,172)","patternYarn":"A","yarnFolder":"rauma-garn-vams"}
+      "default": {
+        "image":"/yarns/filcolana-peruvian-highland/images/ph222.jpg",
+        "name":"ph222",
+        "color":"rgb(42,7,10)",
+        "patternYarn":"A",
+        "yarn":"filcolana-peruvian-highland",
+        "yarnFolder":"filcolana-peruvian-highland"
+      }
     }, {
       "id": "B",
       "name": "Waves",
       "required":[580, 652, 725, 797],
-      "default":{"image":"Vams-45.jpg","name":"Vams 45","color":"rgb(112,179,55)","patternYarn":"B","yarnFolder":"rauma-garn-vams"}
+      "default":{
+        "image":"/yarns/sandnes-garn-borstet-alpakka/images/3819_spicy-orange.jpg",
+        "name":"3819 spicy orange",
+        "color":"rgb(212,65,55)",
+        "patternYarn":"B",
+        "yarn":"sandnes-garn-borstet-alpakka",
+        "yarnFolder":"sandnes-garn-borstet-alpakka"
+      }
     }
   ]
 }

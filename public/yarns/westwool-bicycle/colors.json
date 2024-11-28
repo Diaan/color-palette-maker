@@ -1,0 +1,316 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/westwool-bicycle/images/Aquamarine.jpg",
+      "name": "Aquamarine",
+      "color": "rgb(82,159,164)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Aubergine.jpg",
+      "name": "Aubergine",
+      "color": "rgb(39,25,36)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Avocado.jpg",
+      "name": "Avocado",
+      "color": "rgb(104,107,31)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Beatrix.jpg",
+      "name": "Beatrix",
+      "color": "rgb(221,59,51)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Berry.jpg",
+      "name": "Berry",
+      "color": "rgb(118,6,30)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Bianca.jpg",
+      "name": "Bianca",
+      "color": "rgb(195,172,5)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Birch_tree.jpg",
+      "name": "Birch tree",
+      "color": "rgb(202,195,187)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Biscuit.jpg",
+      "name": "Biscuit",
+      "color": "rgb(134,95,62)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Blue_Spruce.jpg",
+      "name": "Blue Spruce",
+      "color": "rgb(93,104,106)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Brakish.jpg",
+      "name": "Brakish",
+      "color": "rgb(12,87,98)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Buttercup.jpg",
+      "name": "Buttercup",
+      "color": "rgb(191,161,68)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Canal_House.jpg",
+      "name": "Canal House",
+      "color": "rgb(45,43,49)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Chestnut.jpg",
+      "name": "Chestnut",
+      "color": "rgb(85,35,23)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Copenhagen.jpg",
+      "name": "Copenhagen",
+      "color": "rgb(16,18,19)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Corduroy.jpg",
+      "name": "Corduroy",
+      "color": "rgb(54,17,31)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Dijon.jpg",
+      "name": "Dijon",
+      "color": "rgb(136,109,13)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Dutch_sky.jpg",
+      "name": "Dutch sky",
+      "color": "rgb(132,134,135)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Enchanted.jpg",
+      "name": "Enchanted",
+      "color": "rgb(25,55,60)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Fandango.jpg",
+      "name": "Fandango",
+      "color": "rgb(97,13,78)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Flamingo.jpg",
+      "name": "Flamingo",
+      "color": "rgb(219,108,96)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/French_Grey.jpg",
+      "name": "French Grey",
+      "color": "rgb(79,76,74)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Fuchsia.jpg",
+      "name": "Fuchsia",
+      "color": "rgb(179,8,89)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Glass.jpg",
+      "name": "Glass",
+      "color": "rgb(144,176,176)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Glow.jpg",
+      "name": "Glow",
+      "color": "rgb(186,138,18)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Grass_Green.jpg",
+      "name": "Grass Green",
+      "color": "rgb(8,126,76)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Green_Olive.jpg",
+      "name": "Green Olive",
+      "color": "rgb(71,74,12)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Greykjavik.jpg",
+      "name": "Greykjavik",
+      "color": "rgb(78,76,81)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Kardemumma.jpg",
+      "name": "Kardemumma",
+      "color": "rgb(149,47,28)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Mariniere.jpg",
+      "name": "Mariniere",
+      "color": "rgb(28,26,33)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Mocha.jpg",
+      "name": "Mocha",
+      "color": "rgb(103,78,68)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Morgaine.jpg",
+      "name": "Morgaine",
+      "color": "rgb(50,77,84)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Mouse.jpg",
+      "name": "Mouse",
+      "color": "rgb(44,43,43)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/North_Sea.jpg",
+      "name": "North Sea",
+      "color": "rgb(57,93,96)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Norway.jpg",
+      "name": "Norway",
+      "color": "rgb(5,44,48)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Pebble.jpg",
+      "name": "Pebble",
+      "color": "rgb(139,139,135)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Pickle_Juice.jpg",
+      "name": "Pickle Juice",
+      "color": "rgb(160,166,62)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Powder.jpg",
+      "name": "Powder",
+      "color": "rgb(206,173,176)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Red_Hot.jpg",
+      "name": "Red Hot",
+      "color": "rgb(177,2,8)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Roswitha.jpg",
+      "name": "Roswitha",
+      "color": "rgb(155,81,82)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Royal.jpg",
+      "name": "Royal",
+      "color": "rgb(3,32,108)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Sage.jpg",
+      "name": "Sage",
+      "color": "rgb(94,106,90)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Sand.jpg",
+      "name": "Sand",
+      "color": "rgb(165,138,124)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Seamist.jpg",
+      "name": "Seamist",
+      "color": "rgb(115,136,127)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Sherbert.jpg",
+      "name": "Sherbert",
+      "color": "rgb(205,154,119)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Starfish.jpg",
+      "name": "Starfish",
+      "color": "rgb(213,138,122)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Tandem_Taffy.jpg",
+      "name": "Tandem Taffy",
+      "color": "rgb(221,78,140)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Tandem_Tiger.jpg",
+      "name": "Tandem Tiger",
+      "color": "rgb(145,97,19)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Tangerine.jpg",
+      "name": "Tangerine",
+      "color": "rgb(201,108,41)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Truffle.jpg",
+      "name": "Truffle",
+      "color": "rgb(42,25,23)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Unicorn.jpg",
+      "name": "Unicorn",
+      "color": "rgb(175,144,180)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/Wellington.jpg",
+      "name": "Wellington",
+      "color": "rgb(30,30,23)",
+      "yarn": "westwool-bicycle"
+    },
+    {
+      "image": "/yarns/westwool-bicycle/images/White_peach.jpg",
+      "name": "White peach",
+      "color": "rgb(204,179,157)",
+      "yarn": "westwool-bicycle"
+    }
+  ]
+}

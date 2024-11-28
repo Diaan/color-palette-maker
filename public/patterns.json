@@ -1,6 +1,13 @@
 {
   "patterns": [
     {
+      "name": "Astrid cardigan",
+      "designer": "Sanne Bjerregaard for Filcolana",
+      "thumbnail": "thumbnail.webp",
+      "folder": "astrid",
+      "colorAmount": 5
+    },
+    {
       "name": "Hilma",
       "designer": "Amy Blackwell",
       "thumbnail": "thumbnail.jpg",
@@ -13,6 +20,20 @@
       "thumbnail": "thumbnail.jpeg",
       "folder": "holger-sweater",
       "colorAmount": 6
+    },
+    {
+      "name": "Lola top",
+      "designer": "Kutova kika",
+      "thumbnail": "thumbnail.jpg",
+      "folder": "lola-top",
+      "colorAmount": 2
+    },
+    {
+      "name": "Mood sweater",
+      "designer": "Spektakelstrik",
+      "thumbnail": "thumbnail.webp",
+      "folder": "mood-sweater",
+      "colorAmount": 5
     },
     {
       "name": "Quilting triangles",

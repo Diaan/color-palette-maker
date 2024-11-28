@@ -1,0 +1,108 @@
+{
+  "name": "Astrid cardigan",
+  "designer": "Sanne Bjerregaard for Filcolana",
+  "url": "https://filcolana.dk/astrid.html",
+  "patternFile": "pattern.svg",
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "yarnWeight": "dk",
+  "thumbnail": "thumbnail.webp",
+  "colors": [
+    {
+      "id": "MC",
+      "name": "Main color",
+      "required": [
+        664,
+        747,
+        830,
+        913
+      ],
+      "default": {
+        "image": "/yarns/filcolana-pernilla/images/145_-_Navy_Blue.jpg",
+        "name": "145  _Navy_Blue",
+        "color": "rgb(71,77,92)",
+        "yarn": "filcolana-pernilla",
+        "patternYarn": "MC",
+        "yarnFolder": "filcolana-pernilla"
+      }
+    },
+    {
+      "id": "CC1",
+      "name": "Contrast 1",
+      "required": [
+        580,
+        652,
+        725,
+        797
+      ],
+      "default": {
+        "image": "/yarns/filcolana-pernilla/images/366_-_Sugar_Almond.jpg",
+        "name": "366  _Sugar_Almond",
+        "color": "rgb(135,92,72)",
+        "yarn": "filcolana-pernilla",
+        "patternYarn": "CC1",
+        "yarnFolder": "filcolana-pernilla"
+      }
+    },
+    {
+      "id": "CC2",
+      "name": "Contrast 2",
+      "required": [
+        580,
+        652,
+        725,
+        797
+      ],
+      "default": {
+        "image": "/yarns/filcolana-pernilla/images/334_-_Light_Blush.jpg",
+        "name": "334  _Light_Blush",
+        "color": "rgb(197,174,168)",
+        "yarn": "filcolana-pernilla",
+        "patternYarn": "CC2",
+        "yarnFolder": "filcolana-pernilla"
+      }
+    },
+    {
+      "id": "CC3",
+      "name": "Contrast 3",
+      "required": [
+        580,
+        652,
+        725,
+        797
+      ],
+      "default": {
+        "image": "/yarns/filcolana-pernilla/images/366_-_Sugar_Almond.jpg",
+        "name": "366  _Sugar_Almond",
+        "color": "rgb(135,92,72)",
+        "yarn": "filcolana-pernilla",
+        "patternYarn": "CC3",
+        "yarnFolder": "filcolana-pernilla"
+      }
+    },
+    {
+      "id": "CC4",
+      "name": "Contrast 4",
+      "required": [
+        580,
+        652,
+        725,
+        797
+      ],
+      "default": {
+        "image": "/yarns/filcolana-pernilla/images/334_-_Light_Blush.jpg",
+        "name": "334  _Light_Blush",
+        "color": "rgb(197,174,168)",
+        "yarn": "filcolana-pernilla",
+        "patternYarn": "CC4",
+        "yarnFolder": "filcolana-pernilla"
+      }
+    }
+  ]
+}
