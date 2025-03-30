@@ -3,25 +3,25 @@
     {
       "image": "/yarns/foxy-fibers/images/010.jpg",
       "name": "010",
-      "color": "rgb(2,42,49)",
+      "color": "rgb(1,36,43)",
       "yarn": "foxy-fibers"
     },
     {
       "image": "/yarns/foxy-fibers/images/011.jpg",
       "name": "011",
-      "color": "rgb(32,78,73)",
+      "color": "rgb(41,89,85)",
       "yarn": "foxy-fibers"
     },
     {
       "image": "/yarns/foxy-fibers/images/012.jpg",
       "name": "012",
-      "color": "rgb(45,89,71)",
+      "color": "rgb(68,100,85)",
       "yarn": "foxy-fibers"
     },
     {
       "image": "/yarns/foxy-fibers/images/013.jpg",
       "name": "013",
-      "color": "rgb(160,183,146)",
+      "color": "rgb(154,175,139)",
       "yarn": "foxy-fibers"
     }
   ]

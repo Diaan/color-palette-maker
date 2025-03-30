@@ -1,0 +1,502 @@
+{
+  "colors": [
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw100.jpg",
+      "name": "aw100",
+      "color": "rgb(195,195,193)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw101.jpg",
+      "name": "aw101",
+      "color": "rgb(194,191,181)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw102.jpg",
+      "name": "aw102",
+      "color": "rgb(10,10,12)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw105.jpg",
+      "name": "aw105",
+      "color": "rgb(44,47,34)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw135.jpg",
+      "name": "aw135",
+      "color": "rgb(157,124,39)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw136.jpg",
+      "name": "aw136",
+      "color": "rgb(103,55,11)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw138.jpg",
+      "name": "aw138",
+      "color": "rgb(163,4,17)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw139.jpg",
+      "name": "aw139",
+      "color": "rgb(92,6,15)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw140.jpg",
+      "name": "aw140",
+      "color": "rgb(69,9,20)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw141.jpg",
+      "name": "aw141",
+      "color": "rgb(53,114,153)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw142.jpg",
+      "name": "aw142",
+      "color": "rgb(38,120,172)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw143.jpg",
+      "name": "aw143",
+      "color": "rgb(38,60,99)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw144.jpg",
+      "name": "aw144",
+      "color": "rgb(6,33,84)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw145.jpg",
+      "name": "aw145",
+      "color": "rgb(13,16,34)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw146.jpg",
+      "name": "aw146",
+      "color": "rgb(28,52,57)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw147.jpg",
+      "name": "aw147",
+      "color": "rgb(15,26,26)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw148.jpg",
+      "name": "aw148",
+      "color": "rgb(39,36,13)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw187.jpg",
+      "name": "aw187",
+      "color": "rgb(145,72,92)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw192.jpg",
+      "name": "aw192",
+      "color": "rgb(44,75,97)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw195.jpg",
+      "name": "aw195",
+      "color": "rgb(12,13,20)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw196.jpg",
+      "name": "aw196",
+      "color": "rgb(181,168,122)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw197.jpg",
+      "name": "aw197",
+      "color": "rgb(134,178,178)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw198.jpg",
+      "name": "aw198",
+      "color": "rgb(157,47,31)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw199.jpg",
+      "name": "aw199",
+      "color": "rgb(6,116,159)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw200.jpg",
+      "name": "aw200",
+      "color": "rgb(187,130,46)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw201.jpg",
+      "name": "aw201",
+      "color": "rgb(45,29,29)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw202.jpg",
+      "name": "aw202",
+      "color": "rgb(5,48,68)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw203.jpg",
+      "name": "aw203",
+      "color": "rgb(107,81,62)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw218.jpg",
+      "name": "aw218",
+      "color": "rgb(132,2,14)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw234.jpg",
+      "name": "aw234",
+      "color": "rgb(52,53,69)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw235.jpg",
+      "name": "aw235",
+      "color": "rgb(31,20,35)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw236.jpg",
+      "name": "aw236",
+      "color": "rgb(121,67,92)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw243.jpg",
+      "name": "aw243",
+      "color": "rgb(96,106,72)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw245.jpg",
+      "name": "aw245",
+      "color": "rgb(40,9,18)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw250.jpg",
+      "name": "aw250",
+      "color": "rgb(77,138,34)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw251.jpg",
+      "name": "aw251",
+      "color": "rgb(162,150,20)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw252.jpg",
+      "name": "aw252",
+      "color": "rgb(172,20,15)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw253.jpg",
+      "name": "aw253",
+      "color": "rgb(171,25,48)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw254.jpg",
+      "name": "aw254",
+      "color": "rgb(196,124,88)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw255.jpg",
+      "name": "aw255",
+      "color": "rgb(188,183,105)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw266.jpg",
+      "name": "aw266",
+      "color": "rgb(39,104,135)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw267.jpg",
+      "name": "aw267",
+      "color": "rgb(115,103,142)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw268.jpg",
+      "name": "aw268",
+      "color": "rgb(101,83,153)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw270.jpg",
+      "name": "aw270",
+      "color": "rgb(8,22,47)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw278.jpg",
+      "name": "aw278",
+      "color": "rgb(173,162,173)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw279.jpg",
+      "name": "aw279",
+      "color": "rgb(17,99,39)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw313_1.jpg",
+      "name": "aw313 1",
+      "color": "rgb(162,68,102)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw317.jpg",
+      "name": "aw317",
+      "color": "rgb(99,4,18)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw318.jpg",
+      "name": "aw318",
+      "color": "rgb(183,158,161)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw334.jpg",
+      "name": "aw334",
+      "color": "rgb(170,140,131)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw340.jpg",
+      "name": "aw340",
+      "color": "rgb(121,144,161)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw352.jpg",
+      "name": "aw352",
+      "color": "rgb(63,20,8)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw354.jpg",
+      "name": "aw354",
+      "color": "rgb(108,93,84)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw361.jpg",
+      "name": "aw361",
+      "color": "rgb(154,70,79)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw363.jpg",
+      "name": "aw363",
+      "color": "rgb(145,96,65)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw365.jpg",
+      "name": "aw365",
+      "color": "rgb(171,62,11)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw370_1.jpg",
+      "name": "aw370 1",
+      "color": "rgb(159,103,112)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw371.jpg",
+      "name": "aw371",
+      "color": "rgb(158,25,73)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw372.jpg",
+      "name": "aw372",
+      "color": "rgb(9,75,89)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw373_1.jpg",
+      "name": "aw373 1",
+      "color": "rgb(95,54,53)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw379_1.jpg",
+      "name": "aw379 1",
+      "color": "rgb(124,114,28)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw380_1.jpg",
+      "name": "aw380 1",
+      "color": "rgb(175,52,54)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw381_1.jpg",
+      "name": "aw381 1",
+      "color": "rgb(104,168,187)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw679.jpg",
+      "name": "aw679",
+      "color": "rgb(21,28,29)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw726.jpg",
+      "name": "aw726",
+      "color": "rgb(35,53,79)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw807.jpg",
+      "name": "aw807",
+      "color": "rgb(71,27,47)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw808.jpg",
+      "name": "aw808",
+      "color": "rgb(63,111,118)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw809.jpg",
+      "name": "aw809",
+      "color": "rgb(95,98,44)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw810.jpg",
+      "name": "aw810",
+      "color": "rgb(90,20,23)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw811.jpg",
+      "name": "aw811",
+      "color": "rgb(16,82,107)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw812.jpg",
+      "name": "aw812",
+      "color": "rgb(98,110,118)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw827.jpg",
+      "name": "aw827",
+      "color": "rgb(99,56,29)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw950_1.jpg",
+      "name": "aw950 1",
+      "color": "rgb(173,185,188)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw954.jpg",
+      "name": "aw954",
+      "color": "rgb(107,111,111)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw955.jpg",
+      "name": "aw955",
+      "color": "rgb(65,67,69)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw956.jpg",
+      "name": "aw956",
+      "color": "rgb(30,32,34)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw957.jpg",
+      "name": "aw957",
+      "color": "rgb(138,141,137)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw971.jpg",
+      "name": "aw971",
+      "color": "rgb(131,114,99)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw973.jpg",
+      "name": "aw973",
+      "color": "rgb(65,56,50)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw975.jpg",
+      "name": "aw975",
+      "color": "rgb(33,30,29)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw977.jpg",
+      "name": "aw977",
+      "color": "rgb(157,148,134)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw978.jpg",
+      "name": "aw978",
+      "color": "rgb(117,112,108)",
+      "yarn": "filcolana-arwetta"
+    },
+    {
+      "image": "/yarns/filcolana-arwetta/images/aw990.jpg",
+      "name": "aw990",
+      "color": "rgb(131,133,129)",
+      "yarn": "filcolana-arwetta"
+    }
+  ]
+}

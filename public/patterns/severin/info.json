@@ -1,0 +1,35 @@
+{
+  "name": "Severin",
+  "patternFile": "pattern.svg",
+  "thumbnail": "thumbnail.jpg",
+  "url": "https://filcolana.dk/severin.html",
+  "designer":"Maria Bach Jensen // Sanastrik",
+  "sizes":["1", "2", "4", "6", "8"],
+  "colors": [
+    {
+      "id":"MC",
+      "default": {
+        "image":"/yarns/filcolana-arwetta/images/aw146.jpg",
+        "name":"aw146",
+        "color":"rgb(28,52,57)",
+        "yarn":"filcolana-arwetta",
+        "patternYarn":"MC",
+        "yarnFolder":"filcolana-arwetta"
+      },
+      "name": "Main colour",
+      "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576]
+    },    {
+      "name": "Contrast 1",
+      "id":"CC1",
+      "default":{"image":"/yarns/filcolana-arwetta/images/aw136.jpg","name":"aw136","color":"rgb(103,55,11)","yarn":"filcolana-arwetta","patternYarn":"CC1","yarnFolder":"filcolana-arwetta"},
+      "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768]
+    },    {
+      "name": "Contrast 2",
+      "id":"CC2",
+      "default":{"image":"/yarns/filcolana-arwetta/images/aw200.jpg","name":"aw200","color":"rgb(187,130,46)","yarn":"filcolana-arwetta","patternYarn":"CC2","yarnFolder":"filcolana-arwetta"},
+      "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384]
+    }
+  ]
+}
+
+

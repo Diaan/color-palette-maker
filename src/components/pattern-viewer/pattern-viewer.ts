@@ -17,7 +17,7 @@ export class PatternViewer extends LitElement {
 
   @property({attribute: 'pattern-name'}) patternName!: string;
 
-  @state() imageScale:number = 50;
+  @state() imageScale:number = 150;
   @state() blurRadius:number = 2;
   @state() enrichedColors?: PatternColor[];
   @property({type:Boolean}) yarnImage:boolean = true;
@@ -66,6 +66,7 @@ export class PatternViewer extends LitElement {
             <filter id="f1" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
               <feGaussianBlur in="SourceGraphic" stdDeviation="${this.blurRadius}" />
             </filter>
+            
             ${this.enrichedColors?.map(c => { 
               const color = c.pickedColor?c.pickedColor:c.default;
               return svg`
@@ -77,7 +78,7 @@ export class PatternViewer extends LitElement {
                   fill="var(--yarn${color.patternYarn})">
                 <rect width="${this.imageScale}" height="${this.imageScale}" fill="${color.color}"></rect>
                 ${this.yarnImage&&color.image
-                  ?svg`<image href="${c.base64}" x="0" y="0" width="${this.imageScale}" height="${this.imageScale}" preserveAspectRatio="xMinYMin slice" filter="url(#f1)"/>`
+                  ?svg`<image href="${c.base64}" x="-3" y="-3" width="${this.imageScale+6}" height="${this.imageScale+6}" preserveAspectRatio="xMinYMin slice" filter="url(#f1)"/>`
                   :nothing
                 }
               </pattern>
