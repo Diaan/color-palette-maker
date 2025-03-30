@@ -60,6 +60,7 @@ const readColor = (image, yarn) => {
     const pxs = 4
     const w = img.bitmap.width;
     const h = img.bitmap.height;
+    img.crop(3, 3, w-6, h-6);
     img.pixelate(w/pxs);
     
     const nrOfPixels = pxs*(h/(w/pxs));

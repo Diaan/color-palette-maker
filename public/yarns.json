@@ -16,6 +16,13 @@
     },
     {
       "company": "Filcolana",
+      "name": "Arwetta",
+      "weight": "fingering",
+      "folder": "filcolana-arwetta",
+      "color": 0
+    },
+    {
+      "company": "Filcolana",
       "name": "Pernilla",
       "weight": "fingering",
       "folder": "filcolana-pernilla",

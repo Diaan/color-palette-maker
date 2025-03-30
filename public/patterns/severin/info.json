@@ -1,0 +1,45 @@
+{
+  "name": "Severin",
+  "patternFile": "pattern.svg",
+  "thumbnail": "thumbnail.jpg",
+  "designer":"Maria Bach Jensen // Sanastrik",
+  "sizes":["1", "2", "4", "6", "8"],
+  "colors": [
+    {
+      "id":"MC",
+      "default": {
+        "image": "/yarns/sandnes-garn-double-sunday/images/4018_scarlet-red.jpg",
+        "name": "scarlet red",
+        "color": "rgb(203,40,46)",
+        "patternYarn": "MC",
+        "yarnFolder": "sandnes-garn-double-sunday"
+      },
+      "name": "Main colour",
+      "required":[384, 384, 384, 384, 384, 384, 384, 576, 576, 576]
+    },    {
+      "name": "Contrast 1",
+      "id":"CC1",
+      "default":{
+        "image": "/yarns/sandnes-garn-double-sunday/images/1001_hvit.jpg",
+        "name": "hvit",
+        "color": "rgb(245,241,237)",
+        "patternYarn": "CC1",
+        "yarnFolder": "sandnes-garn-double-sunday"
+      },
+      "required":[384, 384, 384, 384, 576, 576, 576, 576, 768, 768]
+    },    {
+      "name": "Contrast 2",
+      "id":"CC2",
+      "default":{
+        "image": "/yarns/sandnes-garn-double-sunday/images/1099_svart.jpg",
+        "name": "svart",
+        "color": "rgb(23,22,27)",
+        "patternYarn": "CC2",
+        "yarnFolder": "sandnes-garn-double-sunday"
+      },
+      "required":[192, 192, 192, 192, 192, 192, 192, 384, 384, 384]
+    }
+  ]
+}
+
+
