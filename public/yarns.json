@@ -64,6 +64,13 @@
       "color": 30
     },
     {
+      "company": "Kremke Soul Wool",
+      "name": "Edelweiss Alpaca",
+      "weight": "fingering",
+      "folder": "kremke-edelweiss-alpaca",
+      "color": 0
+    },
+    {
       "company": "Malabrigo",
       "name": "Rios",
       "weight": "worsted",
