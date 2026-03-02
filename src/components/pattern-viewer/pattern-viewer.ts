@@ -16,6 +16,7 @@ import { getBase64FromImageUrl } from '../../util/image';
 export class PatternViewer extends LitElement {
 
   @property({attribute: 'pattern-name'}) patternName!: string;
+  @property({type: String}) workingYarn?: string;
 
   @state() imageScale:number = 150;
   @state() crop:number = 10;
@@ -34,7 +35,7 @@ export class PatternViewer extends LitElement {
         <span>by <a href=${ifDefined(this.patternData?.url)} target="_blank">${this.patternData?.designer}</a></span>
       </header>
      
-      <cp-pattern-colors .colors=${this.colors}></cp-pattern-colors>
+      <cp-pattern-colors .colors=${this.colors} .workingYarn=${this.workingYarn}></cp-pattern-colors>
       ${ unsafeHTML(this.patternCode)}
   
       <sl-button @click=${this.#saveImage}>Dowload image</sl-button>

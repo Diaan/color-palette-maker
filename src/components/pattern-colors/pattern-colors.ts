@@ -19,7 +19,7 @@ export class PatternColors extends LitElement {
   // The @event decorator is used to define a custom event that this component will emit.
   @event({name:'cp-set-working-yarn'}) setWorkingYarnEvent!: EventEmitter<CpSetWorkingYarnEvent>;
 
-  @state() workingYarn?:string;
+  @property({type: String}) workingYarn?:string;
 
   render() {
     return html`

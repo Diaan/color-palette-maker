@@ -1,9 +1,20 @@
 import fg from 'fast-glob';
 import fs from 'fs';
 import { resolve } from 'path';
-import Jimp from 'jimp';
+let JimpModule;
+let Jimp;
+try {
+  JimpModule = await import('jimp/es');
+  Jimp = JimpModule.default || JimpModule;
+} catch (e) {
+  JimpModule = await import('jimp');
+  Jimp = JimpModule.default || JimpModule;
+}
+const readFn = (Jimp.read && Jimp.read.bind(Jimp)) || (Jimp.Jimp && Jimp.Jimp.read && Jimp.Jimp.read.bind(Jimp.Jimp));
 
 const cwd = new URL('.', import.meta.url).pathname;
+const QUICK = process.argv.includes('--quick');
+if (QUICK) console.log('Running in QUICK mode: skipping image color extraction');
 
 const getPatternInfo = pattern => {
   const fullPath = resolve(pattern, 'info.json');
@@ -33,35 +44,70 @@ const buildPatterns = async () => {
 
 };
 
-const getYarnInfo = async yarn => {
+const getYarnInfo = async (yarn, quick = false) => {
   const fullPath = resolve(yarn, 'info.json');
+  if (quick) {
+    try {
+      const source = fs.readFileSync(fullPath).toString();
+      const parsed = JSON.parse(source);
+      const company = parsed.company;
+      const name = parsed.name || yarn.replace('public/yarns/','');
+      const weight = parsed.weight;
+      // Prefer an existing colors.json if present (generated earlier), otherwise fall back to `palette` in info.json
+      let paletteLen = 0;
+      try {
+        const colorsPath = resolve(`${yarn}/colors.json`);
+        if (fs.existsSync(colorsPath)) {
+          const csrc = fs.readFileSync(colorsPath).toString();
+          const cjson = JSON.parse(csrc);
+          paletteLen = Array.isArray(cjson.colors) ? cjson.colors.length : 0;
+        } else if (Array.isArray(parsed.palette)) {
+          paletteLen = parsed.palette.length;
+        } else {
+          paletteLen = parsed.colorAmount || 0;
+        }
+      } catch (e) {
+        paletteLen = Array.isArray(parsed.palette) ? parsed.palette.length : (parsed.colorAmount || 0);
+      }
+      return {
+        company,
+        name,
+        weight,
+        folder: yarn.replace('public/yarns/',''),
+        colorAmount: paletteLen
+      };
+    } catch (error) {
+      console.error(`😳 Error: File ${fullPath} not found`);
+      return;
+    }
+  }
+
   const images = await fg(resolve(`${yarn}/images/*`), { cwd });
   const colors = await Promise.all(images.map(img => readColor(img, yarn.replace('public/yarns/',''))));
   fs.writeFileSync(`${yarn}/colors.json`, `${JSON.stringify({ colors}, null, 2)}\n`);
 
   try {
     const source = fs.readFileSync(fullPath).toString();
-    const {company, name, weight, palette} = JSON.parse(source)
+    const {company, name, weight} = JSON.parse(source)
     return {
       company, 
       name: name || yarn.replace('public/yarns/',''), 
       weight, 
       folder: yarn.replace('public/yarns/',''),
-      color:palette.length
+      colorAmount:colors.length
     }
   } catch (error) {
     console.error(`😳 Error: File ${fullPath} not found`); 
-    
   }
 }
 
 const readColor = (image, yarn) => {
-  return Jimp.read(image).then(img => {
+  return readFn(image).then(img => {
     const pxs = 4
     const w = img.bitmap.width;
     const h = img.bitmap.height;
-    img.crop(3, 3, w-6, h-6);
-    img.pixelate(w/pxs);
+    img.crop({ x: 3, y: 3, w: w - 6, h: h - 6 });
+    img.pixelate(Math.floor(w/pxs));
     
     const nrOfPixels = pxs*(h/(w/pxs));
     const values = [];
@@ -97,7 +143,7 @@ const getPrettyName = path => {
 const buildYarns = async () => {
   const yarns = await fg('public/yarns/*', { cwd, onlyDirectories: true });
 
-  const extracted = await Promise.all(yarns.map(yarn => getYarnInfo(yarn)).filter(p => !!p));
+  const extracted = (await Promise.all(yarns.map(yarn => getYarnInfo(yarn, QUICK)).filter(p => !!p))).filter(p => p.colorAmount > 0);
   console.log(`Extracted info for ${extracted.length} yarns`);
   fs.writeFileSync('public/yarns.json', `${JSON.stringify({ yarns:extracted}, null, 2)}\n`);
 
