@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "extract-info": "node ./extract-info.js",
+    "extract-info-quick": "node ./extract-info.js --quick",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },

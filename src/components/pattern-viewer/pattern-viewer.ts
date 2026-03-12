@@ -205,6 +205,7 @@ export class PatternViewer extends LitElement {
     :host {
       display: flex;
       flex-direction: column; 
+      overflow: hidden;
     }
     header {
       display: flex;

@@ -8,13 +8,6 @@
       "colorAmount": 5
     },
     {
-      "name": "Hilma",
-      "designer": "Amy Blackwell",
-      "thumbnail": "thumbnail.jpg",
-      "folder": "hilma",
-      "colorAmount": 5
-    },
-    {
       "name": "Holger sweater",
       "designer": "Petite knit",
       "thumbnail": "thumbnail.jpeg",
@@ -36,24 +29,10 @@
       "colorAmount": 5
     },
     {
-      "name": "Quilting triangles",
-      "designer": "Stephen West",
-      "thumbnail": "thumbnail.jpeg",
-      "folder": "quilting-triangles",
-      "colorAmount": 5
-    },
-    {
       "name": "Severin",
       "designer": "Maria Bach Jensen // Sanastrik",
       "thumbnail": "thumbnail.jpg",
       "folder": "severin",
-      "colorAmount": 3
-    },
-    {
-      "name": "Stripeometry shawl",
-      "designer": "Stephen West",
-      "thumbnail": "thumbnail.jpg",
-      "folder": "stripeometry-shawl",
       "colorAmount": 3
     },
     {
