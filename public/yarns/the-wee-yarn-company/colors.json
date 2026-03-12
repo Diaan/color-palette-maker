@@ -3,25 +3,25 @@
     {
       "image": "/yarns/the-wee-yarn-company/images/slice1.png",
       "name": "slice1",
-      "color": "rgb(122,150,175)",
+      "color": "rgb(115,143,169)",
       "yarn": "the-wee-yarn-company"
     },
     {
       "image": "/yarns/the-wee-yarn-company/images/slice2.png",
       "name": "slice2",
-      "color": "rgb(162,102,46)",
+      "color": "rgb(161,100,45)",
       "yarn": "the-wee-yarn-company"
     },
     {
       "image": "/yarns/the-wee-yarn-company/images/slice3.png",
       "name": "slice3",
-      "color": "rgb(142,34,38)",
+      "color": "rgb(145,39,41)",
       "yarn": "the-wee-yarn-company"
     },
     {
       "image": "/yarns/the-wee-yarn-company/images/slice4.png",
       "name": "slice4",
-      "color": "rgb(60,96,137)",
+      "color": "rgb(65,102,144)",
       "yarn": "the-wee-yarn-company"
     }
   ]

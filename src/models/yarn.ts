@@ -2,12 +2,12 @@ export type YarnBase = {
   company: string;
   name: string; 
   folder: string 
+  colorAmount: number;
 };
 
 export type Yarn = YarnBase & { 
   weight: YarnWeight;
   runningLength: number;
-  palette: YarnColor[];
 }
  
 export type YarnWeight = 'dk'|'bulky'|'worsted'|'sport';

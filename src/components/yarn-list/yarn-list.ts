@@ -17,12 +17,26 @@ export class YarnList extends LitElement {
 
   render() {
     return html`
-      <ul>
-        ${this.yarns?.map(p => html`
-          <li  @click=${()=> this.selectYarn(p)} .yarn="${p}" >
-            ${p.company} - ${p.name} <sl-badge>${p.weight}</sl-badge>
-          </li>`)}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Name</th>
+            <th>Weight</th>
+            <th>Colours</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${this.yarns?.map(p => html`
+            <tr @click=${() => this.selectYarn(p)} .yarn=${p}>
+              <td>${p.company}</td>
+              <td>${p.name}</td>
+              <td>${p.weight}</td>
+              <td><sl-badge>${p.colorAmount}</sl-badge></td>
+            </tr>
+          `)}
+        </tbody>
+      </table>
     `;
   }
 
@@ -62,22 +76,34 @@ export class YarnList extends LitElement {
   
 
   static styles = css`
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin:0;
-      padding:0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
     }
-    
-    li {
-      cursor: pointer;
-      display: flex;
-      list-style: none;
 
-      sl-badge {
-        margin-inline-start: auto;
-      }
+    thead th {
+      text-align: left;
+      padding: 8px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--sl-color-neutral-200);
+    }
+
+    tbody td {
+      padding: 8px;
+      border-bottom: 1px solid var(--sl-color-neutral-100);
+    }
+
+    tr {
+      cursor: pointer;
+    }
+
+    tr:hover {
+      background: var(--sl-color-neutral-50);
+    }
+
+    sl-badge {
+      --badge-background: var(--sl-color-primary-600);
+      --badge-text-color: var(--sl-color-neutral-0);
     }
   `;
 }

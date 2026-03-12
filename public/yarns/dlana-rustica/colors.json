@@ -3,241 +3,241 @@
     {
       "image": "/yarns/dlana-rustica/images/Natural-BL.jpg",
       "name": "Natural BL",
-      "color": "rgb(170,163,156)",
+      "color": "rgb(175,166,154)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Natural-GR.jpg",
       "name": "Natural GR",
-      "color": "rgb(128,120,118)",
+      "color": "rgb(90,77,73)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Natural-GR1.jpg",
       "name": "Natural GR1",
-      "color": "rgb(137,128,124)",
+      "color": "rgb(100,88,82)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Natural-GR2.jpg",
       "name": "Natural GR2",
-      "color": "rgb(179,171,166)",
+      "color": "rgb(164,153,146)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Natural-MA.jpg",
       "name": "Natural MA",
-      "color": "rgb(104,89,87)",
+      "color": "rgb(80,63,58)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P1.jpg",
       "name": "Pastel P1",
-      "color": "rgb(180,162,151)",
+      "color": "rgb(186,165,153)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P10.jpg",
       "name": "Pastel P10",
-      "color": "rgb(127,137,127)",
+      "color": "rgb(120,136,122)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P11.jpg",
       "name": "Pastel P11",
-      "color": "rgb(102,127,138)",
+      "color": "rgb(114,148,163)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P12.jpg",
       "name": "Pastel P12",
-      "color": "rgb(139,145,153)",
+      "color": "rgb(136,143,153)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P13.jpg",
       "name": "Pastel P13",
-      "color": "rgb(147,161,167)",
+      "color": "rgb(124,146,156)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P14.jpg",
       "name": "Pastel P14",
-      "color": "rgb(173,165,179)",
+      "color": "rgb(156,144,163)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P2.jpg",
       "name": "Pastel P2",
-      "color": "rgb(168,152,148)",
+      "color": "rgb(153,132,127)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P3.jpg",
       "name": "Pastel P3",
-      "color": "rgb(159,137,133)",
+      "color": "rgb(138,106,99)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P4.jpg",
       "name": "Pastel P4",
-      "color": "rgb(148,129,117)",
+      "color": "rgb(147,122,105)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P5.jpg",
       "name": "Pastel P5",
-      "color": "rgb(142,110,100)",
+      "color": "rgb(143,108,96)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P6.jpg",
       "name": "Pastel P6",
-      "color": "rgb(193,150,120)",
+      "color": "rgb(182,125,88)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P7.jpg",
       "name": "Pastel P7",
-      "color": "rgb(142,96,92)",
+      "color": "rgb(165,101,94)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P8.jpg",
       "name": "Pastel P8",
-      "color": "rgb(153,100,107)",
+      "color": "rgb(164,105,113)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/Pastel-P9.jpg",
       "name": "Pastel P9",
-      "color": "rgb(148,152,114)",
+      "color": "rgb(142,150,93)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D1.jpg",
       "name": "oscuros D1",
-      "color": "rgb(183,140,100)",
+      "color": "rgb(181,124,73)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D10.jpg",
       "name": "oscuros D10",
-      "color": "rgb(71,72,75)",
+      "color": "rgb(36,37,39)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D11.jpg",
       "name": "oscuros D11",
-      "color": "rgb(117,116,118)",
+      "color": "rgb(77,76,79)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D2.jpg",
       "name": "oscuros D2",
-      "color": "rgb(129,84,93)",
+      "color": "rgb(112,45,58)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D3.jpg",
       "name": "oscuros D3",
-      "color": "rgb(97,67,82)",
+      "color": "rgb(67,33,51)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D4.jpg",
       "name": "oscuros D4",
-      "color": "rgb(126,108,151)",
+      "color": "rgb(85,58,118)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D5.jpg",
       "name": "oscuros D5",
-      "color": "rgb(61,102,137)",
+      "color": "rgb(31,89,131)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D6.jpg",
       "name": "oscuros D6",
-      "color": "rgb(67,81,95)",
+      "color": "rgb(45,61,77)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D7.jpg",
       "name": "oscuros D7",
-      "color": "rgb(57,109,92)",
+      "color": "rgb(22,80,61)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D8.jpg",
       "name": "oscuros D8",
-      "color": "rgb(93,125,118)",
+      "color": "rgb(53,94,82)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/oscuros-D9.jpg",
       "name": "oscuros D9",
-      "color": "rgb(124,127,115)",
+      "color": "rgb(77,81,67)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V1.jpg",
       "name": "vivos V1",
-      "color": "rgb(219,172,91)",
+      "color": "rgb(215,163,75)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V12.jpg",
       "name": "vivos V12",
-      "color": "rgb(177,110,116)",
+      "color": "rgb(172,79,86)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V13.jpg",
       "name": "vivos V13",
-      "color": "rgb(146,77,77)",
+      "color": "rgb(156,58,57)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V14.jpg",
       "name": "vivos V14",
-      "color": "rgb(32,142,161)",
+      "color": "rgb(8,135,156)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V2.jpg",
       "name": "vivos V2",
-      "color": "rgb(188,98,83)",
+      "color": "rgb(181,74,60)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V3.jpg",
       "name": "vivos V3",
-      "color": "rgb(223,125,172)",
+      "color": "rgb(220,79,145)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V5.jpg",
       "name": "vivos V5",
-      "color": "rgb(171,87,99)",
+      "color": "rgb(155,56,71)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V8.jpg",
       "name": "vivos V8",
-      "color": "rgb(134,124,154)",
+      "color": "rgb(95,83,123)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos-V9.jpg",
       "name": "vivos V9",
-      "color": "rgb(74,110,141)",
+      "color": "rgb(39,85,123)",
       "yarn": "dlana-rustica"
     },
     {
       "image": "/yarns/dlana-rustica/images/vivos0.jpg",
       "name": "vivos0",
-      "color": "rgb(146,165,129)",
+      "color": "rgb(116,145,83)",
       "yarn": "dlana-rustica"
     }
   ]

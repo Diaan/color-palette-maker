@@ -5,161 +5,154 @@
       "name": "Cool Wool Big",
       "weight": "worsted",
       "folder": "cool-wool-big",
-      "color": 76
+      "colorAmount": 76
     },
     {
       "company": "dlana",
       "name": "Rustica",
       "weight": "worsted",
       "folder": "dlana-rustica",
-      "color": 40
+      "colorAmount": 40
     },
     {
       "company": "Filcolana",
       "name": "Arwetta",
       "weight": "fingering",
       "folder": "filcolana-arwetta",
-      "color": 0
+      "colorAmount": 83
     },
     {
       "company": "Filcolana",
       "name": "Pernilla",
       "weight": "fingering",
       "folder": "filcolana-pernilla",
-      "color": 0
+      "colorAmount": 49
     },
     {
       "company": "Filcolana",
       "name": "Peruvian",
       "weight": "aran",
       "folder": "filcolana-peruvian-highland",
-      "color": 69
+      "colorAmount": 69
     },
     {
       "company": "Foxy Fibers",
       "name": "Supersoft Sock",
       "weight": "fingering",
       "folder": "foxy-fibers",
-      "color": 4
+      "colorAmount": 4
     },
     {
       "company": "Knitting for Olive",
       "name": "Heavy merino",
       "weight": "worsted",
       "folder": "heavy-merino",
-      "color": 62
+      "colorAmount": 52
     },
     {
       "company": "KAOS",
       "name": "Brushed Alpaca",
       "weight": "bulky",
       "folder": "kaos-brushed-alpaca",
-      "color": 28
+      "colorAmount": 28
     },
     {
       "company": "KAOS",
       "name": "Chunky Andean",
       "weight": "bulky",
       "folder": "kaos-chunky-andean",
-      "color": 30
+      "colorAmount": 30
     },
     {
       "company": "Kremke Soul Wool",
       "name": "Edelweiss Alpaca",
       "weight": "fingering",
       "folder": "kremke-edelweiss-alpaca",
-      "color": 0
+      "colorAmount": 56
     },
     {
       "company": "Malabrigo",
       "name": "Rios",
       "weight": "worsted",
       "folder": "malabrigo-rios",
-      "color": 108
+      "colorAmount": 90
     },
     {
       "company": "Garnstudio DROPS",
       "name": "Merino Extra Fine",
       "weight": "DK",
       "folder": "merino-extra-fine",
-      "color": 42
+      "colorAmount": 42
     },
     {
       "company": "Rauma Garn",
       "name": "Vams",
       "weight": "bulky",
       "folder": "rauma-garn-vams",
-      "color": 91
+      "colorAmount": 91
     },
     {
       "company": "Rosarios4",
       "name": "Terra",
       "weight": "worsted",
       "folder": "rosarios4-terra",
-      "color": 16
+      "colorAmount": 16
     },
     {
       "company": "Rowan",
       "name": "Pure Wool",
       "weight": "worsted",
       "folder": "rowan-pure-wool",
-      "color": 28
+      "colorAmount": 27
     },
     {
       "company": "Sandnes Garn",
       "name": "Borstet Alpakka",
       "weight": "bulky",
       "folder": "sandnes-garn-borstet-alpakka",
-      "color": 39
+      "colorAmount": 39
     },
     {
       "company": "Sandnes Garn",
       "name": "Double Sunday",
       "weight": "DK",
       "folder": "sandnes-garn-double-sunday",
-      "color": 55
+      "colorAmount": 55
     },
     {
       "company": "Sandnes Garn",
       "name": "Fritidsgarn",
       "weight": "bulky",
       "folder": "sandnes-garn-fritidsgarn",
-      "color": 51
+      "colorAmount": 51
     },
     {
       "company": "Sandnes Garn",
       "name": "Mandarin Petit",
       "weight": "fingering",
       "folder": "sandnes-garn-mandarin-petit",
-      "color": 0
+      "colorAmount": 38
     },
     {
       "company": "Sandnes Garn",
       "name": "Merinoull",
       "weight": "DK",
       "folder": "sandnes-garn-merinoull",
-      "color": 34
-    },
-    {
-      "company": "Westwool",
-      "name": "Tandem",
-      "weight": "DK",
-      "folder": "tandem",
-      "color": 52
+      "colorAmount": 34
     },
     {
       "company": "The Wee Yarn Company",
       "name": "Any",
       "weight": "DK",
       "folder": "the-wee-yarn-company",
-      "color": 0
+      "colorAmount": 4
     },
     {
       "company": "Westwool",
       "name": "Bicycle",
       "weight": "Fingering",
       "folder": "westwool-bicycle",
-      "color": 52
+      "colorAmount": 52
     }
   ]
 }
